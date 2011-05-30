@@ -94,7 +94,9 @@
     UIViewController* topViewController = navController.topViewController;
     UINavigationItem* navItem = topViewController.navigationItem;
 
-    navItem.leftBarButtonItem = _splitViewButton;
+    if ([[navController viewControllers] count]<=1) {
+      navItem.leftBarButtonItem = _splitViewButton;
+    }
   }
 }
 
