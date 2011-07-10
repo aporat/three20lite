@@ -85,7 +85,8 @@ const NSTimeInterval TTURLRequestUseDefaultTimeout = -1.0;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithURL:(NSString*)URL delegate:(id /*<TTURLRequestDelegate>*/)delegate {
-  if (self = [self init]) {
+	self = [self init];
+  if (self) {
     _urlPath = [URL retain];
     if (nil != delegate) {
       [_delegates addObject:delegate];
@@ -97,7 +98,8 @@ const NSTimeInterval TTURLRequestUseDefaultTimeout = -1.0;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)init {
-  if (self = [super init]) {
+	self = [super init];
+  if (self) {
     _delegates = TTCreateNonRetainingArray();
     _cachePolicy = TTURLRequestCachePolicyDefault;
     _cacheExpirationAge = TT_DEFAULT_CACHE_EXPIRATION_AGE;
@@ -256,6 +258,15 @@ const NSTimeInterval TTURLRequestUseDefaultTimeout = -1.0;
     _parameters = [[NSMutableDictionary alloc] init];
   }
   return _parameters;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSMutableDictionary*)headers {
+  if (!_headers) {
+    _headers = [[NSMutableDictionary alloc] init];
+  }
+  return _headers;
 }
 
 
