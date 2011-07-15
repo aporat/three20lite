@@ -127,7 +127,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)showInView:(UIView*)view animated:(BOOL)animated {
   [self viewWillAppear:animated];
-  [self.actionSheet showInView:view.window];
+  [self.actionSheet showInView:view];
   [self viewDidAppear:animated];
 }
 
