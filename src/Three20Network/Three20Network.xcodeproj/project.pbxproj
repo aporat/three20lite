@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,7 +42,6 @@
 		664B29C212848AAD0008D569 /* TTErrorCodes.m in Sources */ = {isa = PBXBuildFile; fileRef = 664B29C012848AAD0008D569 /* TTErrorCodes.m */; };
 		664B29C312848AAD0008D569 /* TTErrorCodes.m in Sources */ = {isa = PBXBuildFile; fileRef = 664B29C012848AAD0008D569 /* TTErrorCodes.m */; };
 		66C16B1C1263059A00A7825A /* libThree20Network-Xcode3.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 662D81EF12630516005851C2 /* libThree20Network-Xcode3.2.5.a */; };
-		66C16B21126305AB00A7825A /* libThree20Core-Xcode3.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C16AC31263027400A7825A /* libThree20Core-Xcode3.2.5.a */; };
 		66F955B0126662E300BEF6F0 /* NetworkURLCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F955AF126662E300BEF6F0 /* NetworkURLCacheTests.m */; };
 		66F955B1126662E300BEF6F0 /* NetworkURLCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F955AF126662E300BEF6F0 /* NetworkURLCacheTests.m */; };
 		66F955BA1266647A00BEF6F0 /* both.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F955B71266647A00BEF6F0 /* both.png */; };
@@ -87,34 +86,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		662D824C12630805005851C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6EE7366611849C5800A35176 /* Three20Core.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 664961541262EE5000C2C80E;
-			remoteInfo = "UnitTests-Xcode3.2.5";
-		};
-		662D82E012639FCA005851C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6EE7366611849C5800A35176 /* Three20Core.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 664961541262EE5000C2C80E;
-			remoteInfo = "UnitTests-Xcode3.2.5";
-		};
-		66C16AC21263027400A7825A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6EE7366611849C5800A35176 /* Three20Core.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6650CAA21262F6E2003FF804;
-			remoteInfo = "Three20Core-Xcode3.2.5";
-		};
-		66C16AC61263027400A7825A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6EE7366611849C5800A35176 /* Three20Core.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 664961641262EE5000C2C80E;
-			remoteInfo = "UnitTests-Xcode3.2.5";
-		};
 		66C16B26126305F500A7825A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -214,7 +185,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66C16B21126305AB00A7825A /* libThree20Core-Xcode3.2.5.a in Frameworks */,
 				66C16B1C1263059A00A7825A /* libThree20Network-Xcode3.2.5.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,9 +409,7 @@
 			isa = PBXGroup;
 			children = (
 				6EE7366C11849C5800A35176 /* libThree20Core.a */,
-				66C16AC31263027400A7825A /* libThree20Core-Xcode3.2.5.a */,
 				6EE7366E11849C5800A35176 /* CoreUnitTests.octest */,
-				66C16AC71263027400A7825A /* CoreUnitTests-Xcode3.2.5.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -522,7 +490,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				662D824D12630805005851C2 /* PBXTargetDependency */,
 				66C16B27126305F500A7825A /* PBXTargetDependency */,
 			);
 			name = "Three20NetworkUnitTests-Xcode3.2.5";
@@ -542,7 +509,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				662D82E112639FCA005851C2 /* PBXTargetDependency */,
 			);
 			name = "Three20Network-Xcode3.2.5";
 			productName = Three20;
@@ -595,9 +561,10 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0410;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Three20Network" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -625,20 +592,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		66C16AC31263027400A7825A /* libThree20Core-Xcode3.2.5.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libThree20Core-Xcode3.2.5.a";
-			remoteRef = 66C16AC21263027400A7825A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		66C16AC71263027400A7825A /* CoreUnitTests-Xcode3.2.5.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "CoreUnitTests-Xcode3.2.5.octest";
-			remoteRef = 66C16AC61263027400A7825A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		6EE7366C11849C5800A35176 /* libThree20Core.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -798,16 +751,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		662D824D12630805005851C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UnitTests-Xcode3.2.5";
-			targetProxy = 662D824C12630805005851C2 /* PBXContainerItemProxy */;
-		};
-		662D82E112639FCA005851C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UnitTests-Xcode3.2.5";
-			targetProxy = 662D82E012639FCA005851C2 /* PBXContainerItemProxy */;
-		};
 		66C16B27126305F500A7825A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 662D81C912630516005851C2 /* Three20Network-Xcode3.2.5 */;
@@ -837,11 +780,10 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				PREBINDING = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)-Xcode3.2.5";
 				SDKROOT = iphoneos;
 			};
@@ -853,11 +795,10 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				PREBINDING = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)-Xcode3.2.5";
 				SDKROOT = iphoneos;
 			};
@@ -869,9 +810,8 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				PREBINDING = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)-Xcode3.2.5";
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -886,7 +826,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				PREBINDING = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)-Xcode3.2.5";
 				SDKROOT = iphoneos;
 			};
@@ -901,7 +841,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				PREBINDING = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)-Xcode3.2.5";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
@@ -914,8 +854,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				PREBINDING = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)-Xcode3.2.5";
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -930,7 +869,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Internal;
@@ -944,7 +882,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../common/Xcode324iOS41Fix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				PREBINDING = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 			};
@@ -956,13 +894,12 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../common/Xcode324iOS41Fix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				PREBINDING = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				SDKROOT = iphoneos;
 			};
 			name = Internal;
@@ -975,7 +912,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				PREBINDING = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -986,8 +923,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				PREBINDING = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
@@ -1001,7 +937,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1014,7 +949,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -1025,13 +959,12 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../common/Xcode324iOS41Fix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				PREBINDING = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1042,11 +975,10 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../common/Xcode324iOS41Fix.pch";
-				PREBINDING = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
