@@ -14,28 +14,20 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableViewGroupedVarHeightDelegate.h"
-
-static const CGFloat kEmptyHeaderHeight = 1.0f;
-static const CGFloat kSectionHeaderHeight = 35.0f;
+#import "Three20Core/TTAvailability.h"
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-@implementation TTTableViewGroupedVarHeightDelegate
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section {
-  NSString* title = [tableView.dataSource tableView:tableView titleForHeaderInSection:section];
-  if (!title.length) {
-    return kEmptyHeaderHeight;
-
-  } else {
-    return kSectionHeaderHeight;
-  }
+BOOL TTDeviceOSVersionIsAtLeast(double versionNumber) {
+  return kCFCoreFoundationVersionNumber >= versionNumber;
 }
 
 
-@end
+///////////////////////////////////////////////////////////////////////////////////////////////////
+Class TTUIPopoverControllerClass() {
+  static Class sClass = nil;
+  if (nil == sClass) {
+    sClass = NSClassFromString(@"UIPopoverController");
+  }
+  return sClass;
+}
