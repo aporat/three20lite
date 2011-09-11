@@ -116,6 +116,7 @@
 #import "Three20UI/TTTableStyledTextItem.h"
 #import "Three20UI/TTTableControlItem.h"
 #import "Three20UI/TTTableViewItem.h"
+#import "Three20UI/TTTableSettingsItem.h"
 
 // Table Item Cells
 #import "Three20UI/TTTableLinkedItemCell.h"
@@ -132,6 +133,7 @@
 #import "Three20UI/TTTableActivityItemCell.h"
 #import "Three20UI/TTTableControlCell.h"
 #import "Three20UI/TTTableFlushViewCell.h"
+#import "Three20UI/TTTableSettingsItemCell.h"
 
 #import "Three20UI/TTErrorView.h"
 

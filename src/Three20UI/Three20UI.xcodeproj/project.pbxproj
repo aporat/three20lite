@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,9 +17,13 @@
 		66F2E85712D426AF006FB485 /* TTTableFooterInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F2E85512D426AF006FB485 /* TTTableFooterInfiniteScrollView.m */; };
 		66F2E85F12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F2E85D12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66F2E86512D426EF006FB485 /* TTTableViewNetworkEnabledDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F2E86312D426EF006FB485 /* TTTableViewNetworkEnabledDelegate.m */; };
-		6D672E67141B28D1001CE194 /* TTTableSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D672E66141B28D1001CE194 /* TTTableSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D672E6C141B28E0001CE194 /* TTTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D672E6B141B28E0001CE194 /* TTTableSection.m */; };
+		6D80BEEB141D1264002CF3CC /* TTTableSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D80BEEA141D1264002CF3CC /* TTTableSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D80BEED141D126E002CF3CC /* TTTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D80BEEC141D126E002CF3CC /* TTTableSection.m */; };
 		6DB1E37D13CA885B00A72466 /* TTLauncherPersistenceMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB1E37C13CA885B00A72466 /* TTLauncherPersistenceMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DD20D35141D0C1B00916A4A /* TTTableSettingsItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD20D34141D0C1B00916A4A /* TTTableSettingsItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DD20D37141D0C2800916A4A /* TTTableSettingsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD20D36141D0C2800916A4A /* TTTableSettingsItem.m */; };
+		6DD20D39141D0C3A00916A4A /* TTTableSettingsItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD20D38141D0C3A00916A4A /* TTTableSettingsItemCell.m */; };
+		6DD20D3B141D0C4800916A4A /* TTTableSettingsItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD20D3A141D0C4800916A4A /* TTTableSettingsItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E60820111B0C31400C93CD4 /* TTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6081FF11B0C31400C93CD4 /* TTNavigationController.m */; };
 		6E60820311B0C32600C93CD4 /* TTNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E60820211B0C32600C93CD4 /* TTNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E6454741184D2CD00F08CB1 /* Three20UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6454731184D2CD00F08CB1 /* Three20UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -286,20 +290,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6D397CC513DCFDEA0040E4EA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6EE7389D1184ADB400A35176 /* Three20Network.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 662D81EF12630516005851C2;
-			remoteInfo = "Three20Network-Xcode3.2.5";
-		};
-		6D397CC713DCFDEA0040E4EA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6EE7389D1184ADB400A35176 /* Three20Network.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 662D81B2126304EB005851C2;
-			remoteInfo = "Three20NetworkUnitTests-Xcode3.2.5";
-		};
 		6E6454A61184D42800F08CB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6E6454A11184D42800F08CB1 /* Three20Style.xcodeproj */;
@@ -460,9 +450,13 @@
 		66F2E85512D426AF006FB485 /* TTTableFooterInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableFooterInfiniteScrollView.m; path = Sources/TTTableFooterInfiniteScrollView.m; sourceTree = "<group>"; };
 		66F2E85D12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableViewNetworkEnabledDelegate.h; path = Headers/TTTableViewNetworkEnabledDelegate.h; sourceTree = "<group>"; };
 		66F2E86312D426EF006FB485 /* TTTableViewNetworkEnabledDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableViewNetworkEnabledDelegate.m; path = Sources/TTTableViewNetworkEnabledDelegate.m; sourceTree = "<group>"; };
-		6D672E66141B28D1001CE194 /* TTTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableSection.h; path = Headers/TTTableSection.h; sourceTree = "<group>"; };
-		6D672E6B141B28E0001CE194 /* TTTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableSection.m; path = Sources/TTTableSection.m; sourceTree = "<group>"; };
+		6D80BEEA141D1264002CF3CC /* TTTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableSection.h; path = Headers/TTTableSection.h; sourceTree = "<group>"; };
+		6D80BEEC141D126E002CF3CC /* TTTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableSection.m; path = Sources/TTTableSection.m; sourceTree = "<group>"; };
 		6DB1E37C13CA885B00A72466 /* TTLauncherPersistenceMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTLauncherPersistenceMode.h; path = Headers/TTLauncherPersistenceMode.h; sourceTree = "<group>"; };
+		6DD20D34141D0C1B00916A4A /* TTTableSettingsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableSettingsItem.h; path = Headers/TTTableSettingsItem.h; sourceTree = "<group>"; };
+		6DD20D36141D0C2800916A4A /* TTTableSettingsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableSettingsItem.m; path = Sources/TTTableSettingsItem.m; sourceTree = "<group>"; };
+		6DD20D38141D0C3A00916A4A /* TTTableSettingsItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableSettingsItemCell.m; path = Sources/TTTableSettingsItemCell.m; sourceTree = "<group>"; };
+		6DD20D3A141D0C4800916A4A /* TTTableSettingsItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableSettingsItemCell.h; path = Headers/TTTableSettingsItemCell.h; sourceTree = "<group>"; };
 		6E6081FF11B0C31400C93CD4 /* TTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTNavigationController.m; path = Sources/TTNavigationController.m; sourceTree = "<group>"; };
 		6E60820211B0C32600C93CD4 /* TTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTNavigationController.h; path = Headers/TTNavigationController.h; sourceTree = "<group>"; };
 		6E64543D1184BE1B00F08CB1 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Configurations/Project.xcconfig; sourceTree = "<group>"; };
@@ -793,11 +787,11 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		6D672E6D141B28F7001CE194 /* Table Section */ = {
+		6D80BEE6141D1257002CF3CC /* Table Section */ = {
 			isa = PBXGroup;
 			children = (
-				6D672E66141B28D1001CE194 /* TTTableSection.h */,
-				6D672E6B141B28E0001CE194 /* TTTableSection.m */,
+				6D80BEEA141D1264002CF3CC /* TTTableSection.h */,
+				6D80BEEC141D126E002CF3CC /* TTTableSection.m */,
 			);
 			name = "Table Section";
 			sourceTree = "<group>";
@@ -1313,12 +1307,12 @@
 		6E6458271184DF1E00F08CB1 /* Tables */ = {
 			isa = PBXGroup;
 			children = (
+				6D80BEE6141D1257002CF3CC /* Table Section */,
 				6E6458281184DF5F00F08CB1 /* Table Controller */,
 				6E6458291184DF6C00F08CB1 /* Table Delegate */,
 				6E64582C1184DFC500F08CB1 /* Table Data Source */,
 				6E64582B1184DFB500F08CB1 /* Search Display Controller */,
 				6E64582E1184E01E00F08CB1 /* Table Views */,
-				6D672E6D141B28F7001CE194 /* Table Section */,
 				6E6458301184E04F00F08CB1 /* Table Item */,
 				6E6458311184E05900F08CB1 /* Table Cell */,
 				6E6458371184E1D500F08CB1 /* Error View */,
@@ -1440,6 +1434,8 @@
 		6E6458321184E06F00F08CB1 /* Table Items */ = {
 			isa = PBXGroup;
 			children = (
+				6DD20D34141D0C1B00916A4A /* TTTableSettingsItem.h */,
+				6DD20D36141D0C2800916A4A /* TTTableSettingsItem.m */,
 				6E6455061184D4C500F08CB1 /* TTTableActivityItem.h */,
 				6E6456361184D4DA00F08CB1 /* TTTableActivityItem.m */,
 				6E6455081184D4C500F08CB1 /* TTTableButton.h */,
@@ -1485,6 +1481,8 @@
 		6E6458361184E10200F08CB1 /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
+				6DD20D3A141D0C4800916A4A /* TTTableSettingsItemCell.h */,
+				6DD20D38141D0C3A00916A4A /* TTTableSettingsItemCell.m */,
 				6E6454FE1184D4C500F08CB1 /* TTStyledTextTableCell.h */,
 				6E64562F1184D4DA00F08CB1 /* TTStyledTextTableCell.m */,
 				6E6454FF1184D4C500F08CB1 /* TTStyledTextTableItemCell.h */,
@@ -1735,9 +1733,7 @@
 			isa = PBXGroup;
 			children = (
 				6EE738A31184ADB400A35176 /* libThree20Network.a */,
-				6D397CC613DCFDEA0040E4EA /* libThree20Network-Xcode3.2.5.a */,
 				6EE738A51184ADB400A35176 /* NetworkUnitTests.octest */,
-				6D397CC813DCFDEA0040E4EA /* NetworkUnitTests-Xcode3.2.5.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1893,7 +1889,9 @@
 				66F2E85412D426A5006FB485 /* TTTableFooterInfiniteScrollView.h in Headers */,
 				66F2E85F12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h in Headers */,
 				6DB1E37D13CA885B00A72466 /* TTLauncherPersistenceMode.h in Headers */,
-				6D672E67141B28D1001CE194 /* TTTableSection.h in Headers */,
+				6DD20D35141D0C1B00916A4A /* TTTableSettingsItem.h in Headers */,
+				6DD20D3B141D0C4800916A4A /* TTTableSettingsItemCell.h in Headers */,
+				6D80BEEB141D1264002CF3CC /* TTTableSection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1955,10 +1953,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 0420;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Three20UI" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -2000,20 +1997,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		6D397CC613DCFDEA0040E4EA /* libThree20Network-Xcode3.2.5.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libThree20Network-Xcode3.2.5.a";
-			remoteRef = 6D397CC513DCFDEA0040E4EA /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6D397CC813DCFDEA0040E4EA /* NetworkUnitTests-Xcode3.2.5.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "NetworkUnitTests-Xcode3.2.5.octest";
-			remoteRef = 6D397CC713DCFDEA0040E4EA /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		6E6454A71184D42800F08CB1 /* libThree20Style.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -2269,7 +2252,9 @@
 				666E18E912945430001C1D97 /* TTSplitViewController.m in Sources */,
 				66F2E85712D426AF006FB485 /* TTTableFooterInfiniteScrollView.m in Sources */,
 				66F2E86512D426EF006FB485 /* TTTableViewNetworkEnabledDelegate.m in Sources */,
-				6D672E6C141B28E0001CE194 /* TTTableSection.m in Sources */,
+				6DD20D37141D0C2800916A4A /* TTTableSettingsItem.m in Sources */,
+				6DD20D39141D0C3A00916A4A /* TTTableSettingsItemCell.m in Sources */,
+				6D80BEED141D126E002CF3CC /* TTTableSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2350,6 +2335,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Internal;
@@ -2364,7 +2350,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 			};
@@ -2376,12 +2362,13 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -2395,7 +2382,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2406,7 +2393,8 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
@@ -2420,6 +2408,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2432,6 +2421,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -2442,11 +2432,12 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -2458,9 +2449,10 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
