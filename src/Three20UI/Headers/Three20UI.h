@@ -107,7 +107,6 @@
 #import "Three20UI/TTTableLongTextItem.h"
 #import "Three20UI/TTTableGrayTextItem.h"
 #import "Three20UI/TTTableSummaryItem.h"
-#import "Three20UI/TTTableLink.h"
 #import "Three20UI/TTTableButton.h"
 #import "Three20UI/TTTableMoreButton.h"
 #import "Three20UI/TTTableImageItem.h"

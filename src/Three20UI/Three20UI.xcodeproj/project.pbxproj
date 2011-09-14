@@ -105,7 +105,6 @@
 		6E6455AF1184D4C500F08CB1 /* TTTableImageItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6455111184D4C500F08CB1 /* TTTableImageItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E6455B01184D4C500F08CB1 /* TTTableImageItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6455121184D4C500F08CB1 /* TTTableImageItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E6455B11184D4C500F08CB1 /* TTTableItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6455131184D4C500F08CB1 /* TTTableItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E6455B21184D4C500F08CB1 /* TTTableLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6455141184D4C500F08CB1 /* TTTableLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E6455B31184D4C500F08CB1 /* TTTableLinkedItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6455151184D4C500F08CB1 /* TTTableLinkedItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E6455B41184D4C500F08CB1 /* TTTableLinkedItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6455161184D4C500F08CB1 /* TTTableLinkedItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E6455B51184D4C500F08CB1 /* TTTableLongTextItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6455171184D4C500F08CB1 /* TTTableLongTextItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -223,7 +222,6 @@
 		6E6456C91184D4DA00F08CB1 /* TTTableImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456411184D4DA00F08CB1 /* TTTableImageItem.m */; };
 		6E6456CA1184D4DA00F08CB1 /* TTTableImageItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456421184D4DA00F08CB1 /* TTTableImageItemCell.m */; };
 		6E6456CB1184D4DA00F08CB1 /* TTTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456431184D4DA00F08CB1 /* TTTableItem.m */; };
-		6E6456CC1184D4DA00F08CB1 /* TTTableLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456441184D4DA00F08CB1 /* TTTableLink.m */; };
 		6E6456CD1184D4DA00F08CB1 /* TTTableLinkedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456451184D4DA00F08CB1 /* TTTableLinkedItem.m */; };
 		6E6456CE1184D4DA00F08CB1 /* TTTableLinkedItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456461184D4DA00F08CB1 /* TTTableLinkedItemCell.m */; };
 		6E6456CF1184D4DA00F08CB1 /* TTTableLongTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6456471184D4DA00F08CB1 /* TTTableLongTextItem.m */; };
@@ -539,7 +537,6 @@
 		6E6455111184D4C500F08CB1 /* TTTableImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableImageItem.h; path = Headers/TTTableImageItem.h; sourceTree = "<group>"; };
 		6E6455121184D4C500F08CB1 /* TTTableImageItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableImageItemCell.h; path = Headers/TTTableImageItemCell.h; sourceTree = "<group>"; };
 		6E6455131184D4C500F08CB1 /* TTTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableItem.h; path = Headers/TTTableItem.h; sourceTree = "<group>"; };
-		6E6455141184D4C500F08CB1 /* TTTableLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableLink.h; path = Headers/TTTableLink.h; sourceTree = "<group>"; };
 		6E6455151184D4C500F08CB1 /* TTTableLinkedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableLinkedItem.h; path = Headers/TTTableLinkedItem.h; sourceTree = "<group>"; };
 		6E6455161184D4C500F08CB1 /* TTTableLinkedItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableLinkedItemCell.h; path = Headers/TTTableLinkedItemCell.h; sourceTree = "<group>"; };
 		6E6455171184D4C500F08CB1 /* TTTableLongTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableLongTextItem.h; path = Headers/TTTableLongTextItem.h; sourceTree = "<group>"; };
@@ -657,7 +654,6 @@
 		6E6456411184D4DA00F08CB1 /* TTTableImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableImageItem.m; path = Sources/TTTableImageItem.m; sourceTree = "<group>"; };
 		6E6456421184D4DA00F08CB1 /* TTTableImageItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableImageItemCell.m; path = Sources/TTTableImageItemCell.m; sourceTree = "<group>"; };
 		6E6456431184D4DA00F08CB1 /* TTTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableItem.m; path = Sources/TTTableItem.m; sourceTree = "<group>"; };
-		6E6456441184D4DA00F08CB1 /* TTTableLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableLink.m; path = Sources/TTTableLink.m; sourceTree = "<group>"; };
 		6E6456451184D4DA00F08CB1 /* TTTableLinkedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableLinkedItem.m; path = Sources/TTTableLinkedItem.m; sourceTree = "<group>"; };
 		6E6456461184D4DA00F08CB1 /* TTTableLinkedItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableLinkedItemCell.m; path = Sources/TTTableLinkedItemCell.m; sourceTree = "<group>"; };
 		6E6456471184D4DA00F08CB1 /* TTTableLongTextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableLongTextItem.m; path = Sources/TTTableLongTextItem.m; sourceTree = "<group>"; };
@@ -1448,8 +1444,6 @@
 				6E64563E1184D4DA00F08CB1 /* TTTableGrayTextItem.m */,
 				6E6455111184D4C500F08CB1 /* TTTableImageItem.h */,
 				6E6456411184D4DA00F08CB1 /* TTTableImageItem.m */,
-				6E6455141184D4C500F08CB1 /* TTTableLink.h */,
-				6E6456441184D4DA00F08CB1 /* TTTableLink.m */,
 				6E6455151184D4C500F08CB1 /* TTTableLinkedItem.h */,
 				6E6456451184D4DA00F08CB1 /* TTTableLinkedItem.m */,
 				6E6455171184D4C500F08CB1 /* TTTableLongTextItem.h */,
@@ -1823,7 +1817,6 @@
 				6E6455AF1184D4C500F08CB1 /* TTTableImageItem.h in Headers */,
 				6E6455B01184D4C500F08CB1 /* TTTableImageItemCell.h in Headers */,
 				6E6455B11184D4C500F08CB1 /* TTTableItem.h in Headers */,
-				6E6455B21184D4C500F08CB1 /* TTTableLink.h in Headers */,
 				6E6455B31184D4C500F08CB1 /* TTTableLinkedItem.h in Headers */,
 				6E6455B41184D4C500F08CB1 /* TTTableLinkedItemCell.h in Headers */,
 				6E6455B51184D4C500F08CB1 /* TTTableLongTextItem.h in Headers */,
@@ -2191,7 +2184,6 @@
 				6E6456C91184D4DA00F08CB1 /* TTTableImageItem.m in Sources */,
 				6E6456CA1184D4DA00F08CB1 /* TTTableImageItemCell.m in Sources */,
 				6E6456CB1184D4DA00F08CB1 /* TTTableItem.m in Sources */,
-				6E6456CC1184D4DA00F08CB1 /* TTTableLink.m in Sources */,
 				6E6456CD1184D4DA00F08CB1 /* TTTableLinkedItem.m in Sources */,
 				6E6456CE1184D4DA00F08CB1 /* TTTableLinkedItemCell.m in Sources */,
 				6E6456CF1184D4DA00F08CB1 /* TTTableLongTextItem.m in Sources */,

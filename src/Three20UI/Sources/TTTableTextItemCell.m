@@ -25,7 +25,6 @@
 #import "Three20UI/TTTableLongTextItem.h"
 #import "Three20UI/TTTableGrayTextItem.h"
 #import "Three20UI/TTTableButton.h"
-#import "Three20UI/TTTableLink.h"
 #import "Three20UI/TTTableSummaryItem.h"
 
 // Style
@@ -133,11 +132,6 @@ static const UILineBreakMode kLineBreakMode = UILineBreakModeWordWrap;
       self.textLabel.textAlignment = UITextAlignmentCenter;
       self.accessoryType = UITableViewCellAccessoryNone;
       self.selectionStyle = TTSTYLEVAR(tableSelectionStyle);
-
-    } else if ([object isKindOfClass:[TTTableLink class]]) {
-      self.textLabel.font = TTSTYLEVAR(tableFont);
-      self.textLabel.textColor = TTSTYLEVAR(linkTextColor);
-      self.textLabel.textAlignment = UITextAlignmentLeft;
 
     } else if ([object isKindOfClass:[TTTableSummaryItem class]]) {
       self.textLabel.font = TTSTYLEVAR(tableSummaryFont);
