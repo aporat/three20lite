@@ -165,14 +165,14 @@
 
     _lastUpdatedDate = [newDate retain];
 
-    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+    [NSDateFormatter setDefaultFormatterBehavior:NSDateFormatterBehaviorDefault];
+    NSDateFormatter* formatter = [[[NSDateFormatter alloc] init] autorelease];
     [formatter setDateStyle:NSDateFormatterShortStyle];
     [formatter setTimeStyle:NSDateFormatterShortStyle];
     _lastUpdatedLabel.text = [NSString stringWithFormat:
                               TTLocalizedString(@"Last updated: %@",
                                                 @"The last time the table view was updated."),
                               [formatter stringFromDate:_lastUpdatedDate]];
-    [formatter release];
 
   } else {
     _lastUpdatedDate = nil;
