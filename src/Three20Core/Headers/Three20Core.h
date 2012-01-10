@@ -30,11 +30,6 @@
 // - Debug
 #import "Three20Core/TTDebug.h"
 
-// - Extensions
-#import "Three20Core/TTExtensionInfo.h"
-#import "Three20Core/TTExtensionAuthor.h"
-#import "Three20Core/TTExtensionLoader.h"
-
 // - Entity Tables
 #import "Three20Core/TTEntityTables.h"
 
