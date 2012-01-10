@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		666E18E912945430001C1D97 /* TTSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666E18E712945430001C1D97 /* TTSplitViewController.m */; };
-		666E18F51294543F001C1D97 /* TTSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 666E18F41294543F001C1D97 /* TTSplitViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66F2E85412D426A5006FB485 /* TTTableFooterInfiniteScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F2E85212D426A5006FB485 /* TTTableFooterInfiniteScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66F2E85712D426AF006FB485 /* TTTableFooterInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F2E85512D426AF006FB485 /* TTTableFooterInfiniteScrollView.m */; };
 		66F2E85F12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F2E85D12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -434,8 +432,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		666E18E712945430001C1D97 /* TTSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTSplitViewController.m; path = Sources/TTSplitViewController.m; sourceTree = "<group>"; };
-		666E18F41294543F001C1D97 /* TTSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTSplitViewController.h; path = Headers/TTSplitViewController.h; sourceTree = "<group>"; };
 		66F2E85212D426A5006FB485 /* TTTableFooterInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableFooterInfiniteScrollView.h; path = Headers/TTTableFooterInfiniteScrollView.h; sourceTree = "<group>"; };
 		66F2E85512D426AF006FB485 /* TTTableFooterInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableFooterInfiniteScrollView.m; path = Sources/TTTableFooterInfiniteScrollView.m; sourceTree = "<group>"; };
 		66F2E85D12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableViewNetworkEnabledDelegate.h; path = Headers/TTTableViewNetworkEnabledDelegate.h; sourceTree = "<group>"; };
@@ -831,8 +827,6 @@
 			children = (
 				6E6455501184D4C500F08CB1 /* TTViewController.h */,
 				6E6456791184D4DA00F08CB1 /* TTViewController.m */,
-				666E18F41294543F001C1D97 /* TTSplitViewController.h */,
-				666E18E712945430001C1D97 /* TTSplitViewController.m */,
 				6E60820211B0C32600C93CD4 /* TTNavigationController.h */,
 				6E6081FF11B0C31400C93CD4 /* TTNavigationController.m */,
 				6E6457A81184D85D00F08CB1 /* Action Sheet Controller */,
@@ -1856,7 +1850,6 @@
 				6E86A8DB118CBF7500662DA5 /* TTNavigatorWindow.h in Headers */,
 				6E60820311B0C32600C93CD4 /* TTNavigationController.h in Headers */,
 				6ECCA60011C0C105002296C7 /* TTLauncherHighlightView.h in Headers */,
-				666E18F51294543F001C1D97 /* TTSplitViewController.h in Headers */,
 				66F2E85412D426A5006FB485 /* TTTableFooterInfiniteScrollView.h in Headers */,
 				66F2E85F12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h in Headers */,
 				6DB1E37D13CA885B00A72466 /* TTLauncherPersistenceMode.h in Headers */,
@@ -2218,7 +2211,6 @@
 				6E86A8EC118CBF8E00662DA5 /* TTNavigatorWindow.m in Sources */,
 				6E60820111B0C31400C93CD4 /* TTNavigationController.m in Sources */,
 				6ECCA5FE11C0C0F6002296C7 /* TTLauncherHighlightView.m in Sources */,
-				666E18E912945430001C1D97 /* TTSplitViewController.m in Sources */,
 				66F2E85712D426AF006FB485 /* TTTableFooterInfiniteScrollView.m in Sources */,
 				66F2E86512D426EF006FB485 /* TTTableViewNetworkEnabledDelegate.m in Sources */,
 				6DD20D37141D0C2800916A4A /* TTTableSettingsItem.m in Sources */,
