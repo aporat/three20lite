@@ -195,9 +195,11 @@
     TTTab* tab = [_tabViews objectAtIndex:i];
     if (selectedTabIndex-1==i) {
       horizontalOffset += tab.size.width*1.5;
+
     } else {
       horizontalOffset += tab.size.width;
     }
+
   }
   if (horizontalOffset<0) {
     horizontalOffset = 0;
