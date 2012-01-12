@@ -313,7 +313,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0420;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "extThree20XML" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -507,7 +507,6 @@
 					EXTJSON_SBJSON,
 					DEBUG,
 				);
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 			};
@@ -522,7 +521,6 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				SDKROOT = iphoneos;
 			};
 			name = Internal;
@@ -538,7 +536,6 @@
 					EXTJSON_SBJSON,
 					DEBUG,
 				);
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -550,7 +547,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PREPROCESSOR_DEFINITIONS = EXTJSON_SBJSON;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
@@ -590,7 +586,6 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -602,7 +597,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};

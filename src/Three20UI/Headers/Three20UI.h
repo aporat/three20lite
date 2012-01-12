@@ -91,6 +91,7 @@
 #import "Three20UI/TTSectionedDataSource.h"
 #import "Three20UI/TTTableSection.h"
 #import "Three20UI/TTTableHeaderView.h"
+#import "Three20UI/TTTableSection.h"
 #import "Three20UI/TTTableFooterInfiniteScrollView.h"
 #import "Three20UI/TTTableHeaderDragRefreshView.h"
 #import "Three20UI/TTTableViewCell.h"
