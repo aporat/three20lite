@@ -31,7 +31,7 @@ void TTNetworkRequestStarted() {
   pthread_mutex_lock(&gMutex);
 
   if (0 == gNetworkTaskCount) {
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
   }
   gNetworkTaskCount++;
 
