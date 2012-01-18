@@ -39,11 +39,7 @@ static NSString* kLoremIpsum = @"Lorem ipsum dolor sit amet, consectetur adipisi
                                                      URL:@"tt://tableItemTest"],
       [TTTableTextItem itemWithText:@"TTTableTextItem" URL:@"tt://tableItemTest"
                        accessoryURL:@"http://www.google.com"],
-<<<<<<< HEAD
-=======
       [TTTableSection sectionWithHeaderTitle:@"Links & Buttons" footerTitle:nil],
-      [TTTableLink itemWithText:@"TTTableLink" URL:@"tt://tableItemTest"],
->>>>>>> orign/development
       [TTTableButton itemWithText:@"TTTableButton"],
       [TTTableCaptionItem itemWithText:@"TTTableCaptionItem" caption:@"caption"
                              URL:@"tt://tableItemTest"],
