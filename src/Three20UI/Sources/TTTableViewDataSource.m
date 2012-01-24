@@ -108,12 +108,11 @@
         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   id object = [self tableView:tableView objectForRowAtIndexPath:indexPath];
 
-  UITableViewCell* cell;
-
   Class cellClass = [self tableView:tableView cellClassForObject:object];
   NSString* identifier = NSStringFromClass(cellClass);
 
-  cell = (UITableViewCell*)[tableView dequeueReusableCellWithIdentifier:identifier];
+  UITableViewCell* cell = (UITableViewCell*)[tableView
+                                             dequeueReusableCellWithIdentifier:identifier];
   if (cell == nil) {
     cell = [[[cellClass alloc] initWithStyle:UITableViewCellStyleDefault
                              reuseIdentifier:identifier] autorelease];
@@ -237,7 +236,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (Class)tableView:(UITableView*)tableView cellClassForObject:(id)object {
   if ([object isKindOfClass:[TTTableItem class]]) {
-      return [object cellClass];
+    return [object cellClass];
 
   } else if ([object isKindOfClass:[TTStyledText class]]) {
     return [TTStyledTextTableCell class];

@@ -22,8 +22,6 @@
 // UI
 #import "Three20UI/TTTableViewCell.h"
 
-#import <objc/runtime.h>
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -70,16 +68,14 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSString*)cellIdentifier {
-  const char *className = class_getName([self cellClass]);
-  return [NSString stringWithCString:className encoding:NSASCIIStringEncoding];
+  return NSStringFromClass([self cellClass]);
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (TTTableViewCell*)newCell {
   TTTableViewCell *cell = [[[self cellClass] alloc] initWithStyle:UITableViewCellStyleDefault
-                                                  reuseIdentifier:[self cellIdentifier]];
-  [cell setObject:self];
+                                 reuseIdentifier:[self cellIdentifier]];
   return cell;
 }
 
