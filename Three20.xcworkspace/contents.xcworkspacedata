@@ -86,9 +86,6 @@
          location = "container:"
          name = "extensions">
          <FileRef
-            location = "group:src/extThree20CSSStyle/extThree20CSSStyle.xcodeproj">
-         </FileRef>
-         <FileRef
             location = "group:src/extThree20JSON/extThree20JSON.xcodeproj">
          </FileRef>
          <FileRef
@@ -164,12 +161,6 @@
    </Group>
    <FileRef
       location = "group:AUTHORS">
-   </FileRef>
-   <FileRef
-      location = "group:config.template">
-   </FileRef>
-   <FileRef
-      location = "group:diffstrings.py">
    </FileRef>
    <FileRef
       location = "group:LICENSE">
