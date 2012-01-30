@@ -26,76 +26,13 @@ Documentation
 
 You can access Three20 API documentation in several ways:
 
-1. Online: http://facebook.github.com/three20/api
+1. Online: http://aporat.github.com/three20/api
 1. Within Xcode: 
     1. Open your Xcode Preferences (`⌘,`) and switch to Documentation tab. 
     1. Click the `+` button
-    1. Add the Three20 doc set feed: `feed://facebook.github.com/three20/api/com.facebook.Three20.atom`
+    1. Add the Three20 doc set feed: `feed://aporat.github.com/three20/api/com.facebook.Three20.atom`
 1. Generate the documentation from the project repository with the `src/scripts/docs.py` script
 
-Adding Three20 to your project
-==============================
-
-Three20 is compiled as static libraries. It use Xcode's "dependent project" facilities.
-There are two methods of adding Three20 to your project.
-
-The first is with the [TTModule Python Script][].
-
-The Second option is to add it to your project manually.  Here is how:  
-**Estimated time:** 5 minutes.
-
-1. Clone the three20 git repository: `git clone git://github.com/facebook/three20.git`.  Make sure 
-   you store the repository in a permanent place because Xcode will need to reference the files
-   every time you compile your project.
-
-2. Locate the "Three20.xcodeproj" file under "`three20/src/Three20/`". Drag Three20.xcodeproj and
-   drop it onto the root of your Xcode project's "Groups and Files"  sidebar.  A dialog will
-   appear -- make sure "Copy items" is unchecked and "Reference Type" is "Relative to Project"
-   before clicking "Add".    
-
-3. Open the Three20 Xcode Project that you just added to your app and expand the "Dependencies"
-   group. Select all of the projects listed there and drag them to your app as well. You should
-   now have the following list of Three20 projects added to your app:
-     * Three20Core
-     * Three20Network
-     * Three20Style
-     * Three20UICommon
-     * Three20UINavigator
-     * Three20UI
-     * Three20
-
-4. Now you need to link the Three20 static libraries to your project.  Select all of the
-   project items that you just added to the sidebar.  Under the "Details" table, you will see
-   a number of items, such as libThree20.a and libThree20Core.a.  Check the checkbox on the
-   far right for each of the `lib` files (not the UnitTests). This will link each part of the
-   Three20 framework to your app.
-
-5. Now you need to add Three20 as a dependency of your project, so Xcode compiles it whenever
-   you compile your project.  Expand the "Targets" section of the sidebar and double-click your
-   application's target.  Under the "General" tab you will see a "Direct Dependencies" section. 
-   Click the "+" button, select "Three20" and each of the other libs, and click "Add Target".
-   You do *not* need to add the `UnitTests` target for each lib.
-
-6. Now you need to add the bundle of images and strings to your app.  Locate "Three20.bundle" under
-   "three20/src" and drag and drop it into your project.  A dialog will appear -- make sure 
-   "Create Folder References" is selected,  "Copy items" is unchecked, and "Reference Type" is 
-   "Relative to Project" before clicking "Add".
-
-7. Now you need to add the Core Animation framework to your project.  Right click on the
-   "Frameworks" group in your project (or equivalent) and select Add > Existing Frameworks. 
-   Then locate QuartzCore.framework and add it to the project.
-
-8. Finally, we need to tell your project where to find the Three20 headers.  Open your
-   "Project Settings" and go to the "Build" tab. Look for "Header Search Paths" and double-click
-   it.  Add the relative path from your project's directory to the
-   "three20/Build/Products/three20" directory.
-
-9. While you are in Project Settings, go to "Other Linker Flags" under the "Linker" section, and
-   add "-ObjC" and "-all_load" to the list of flags.
-
-10. You're ready to go.  Just #import "Three20/Three20.h" anywhere you want to use Three20 classes
-   in your project.
-  
 An Overview of Three20
 ======================
                   

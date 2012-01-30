@@ -52,15 +52,15 @@ def generate_appledoc(version):
               "--warn-missing-arg " + 
               "--keep-intermediate-files " +
               "--docset-feed-name \"Three20 " + version + " Documentation\" " +
-              "--docset-feed-url http://facebook.github.com/three20/api/%DOCSETATOMFILENAME " + 
-              "--docset-package-url http://facebook.github.com/three20/api/%DOCSETPACKAGEFILENAME " + 
+              "--docset-feed-url http://aporat.github.com/three20/api/%DOCSETATOMFILENAME " + 
+              "--docset-package-url http://aporat.github.com/three20/api/%DOCSETPACKAGEFILENAME " + 
               "--publish-docset " + 
               "--verbose 5 src/")
 
 def publish_ghpages(version):
 		
 	logging.info("Cloning and checking out gh-pages")
-	os.system("git clone git@github.com:facebook/three20.git Docs/gh-pages")
+	os.system("git clone git@github.com:aporat/three20.git Docs/gh-pages")
 	os.system("cd Docs/gh-pages && git pull")
 	os.system("cd Docs/gh-pages && git checkout gh-pages")
 			
