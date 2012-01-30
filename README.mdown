@@ -10,6 +10,7 @@ This fork contains some major changes from the main repository.
 - Appledoc Documentation
 - TTSplitViewController removed
 - Major iOS 5 TTNaviagtor bug fixes
+- iOS 3.1 support
 
 
 Three20
