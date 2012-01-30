@@ -52,27 +52,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
-#pragma mark Versioning
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)testThree20Versioning {
-  STAssertTrue([[Three20 version] isEqualToString:Three20Version],
-               @"The latest version has not been updated correctly.");
-  STAssertEquals([Three20 majorVersion], 1,
-                 @"The latest major version has not been updated correctly.");
-  STAssertEquals([Three20 minorVersion], 0,
-                 @"The latest minor version has not been updated correctly.");
-  STAssertEquals([Three20 bugfixVersion], 10,
-                 @"The latest bugfix version has not been updated correctly.");
-  STAssertEquals([Three20 hotfixVersion], 0,
-                 @"The latest hotfix version has not been updated correctly.");
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark -
 #pragma mark Macros
 
 
