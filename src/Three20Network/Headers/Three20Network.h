@@ -36,8 +36,8 @@
 #import "Three20Network/TTURLResponse.h"
 #import "Three20Network/TTURLDataResponse.h"
 #import "Three20Network/TTURLImageResponse.h"
-// TODO (jverkoey April 27, 2010: Add back support for XML.
-//#import "Three20Network/TTURLXMLResponse.h"
+#import "Three20Network/TTURLXMLResponse.h"
+#import "Three20Network/TTURLJSONResponse.h"
 
 // - Classes
 #import "Three20Network/TTUserInfo.h"

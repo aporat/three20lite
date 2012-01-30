@@ -14,10 +14,10 @@
 // limitations under the License.
 //
 
-#import "extThree20XML/TTURLXMLResponse.h"
+#import "Three20Network/TTURLXMLResponse.h"
 
-// extThree20XML
-#import "extThree20XML/TTXMLParser.h"
+// Network
+#import "Three20Network/TTXMLParser.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

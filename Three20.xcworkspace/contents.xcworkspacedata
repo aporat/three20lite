@@ -82,17 +82,13 @@
       <FileRef
          location = "group:src/Three20UI/Three20UI.xcodeproj">
       </FileRef>
-      <Group
-         location = "container:"
-         name = "extensions">
-         <FileRef
-            location = "group:src/extThree20XML/extThree20XML.xcodeproj">
-         </FileRef>
-      </Group>
    </Group>
    <Group
       location = "container:"
       name = "Samples">
+      <FileRef
+         location = "group:samples/Network/TTNetworkDemo/TTNetworkDemo.xcodeproj">
+      </FileRef>
       <Group
          location = "group:samples/common"
          name = "common">

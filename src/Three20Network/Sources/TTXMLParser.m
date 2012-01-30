@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "extThree20XML/TTXMLParser.h"
+#import "Three20Network/TTXMLParser.h"
 
 // Core
 #import "Three20Core/TTGlobalCore.h"

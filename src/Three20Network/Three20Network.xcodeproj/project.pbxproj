@@ -13,7 +13,11 @@
 		66F955BA1266647A00BEF6F0 /* both.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F955B71266647A00BEF6F0 /* both.png */; };
 		66F955BB1266647A00BEF6F0 /* both@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F955B81266647A00BEF6F0 /* both@2x.png */; };
 		66F955BC1266647A00BEF6F0 /* only@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F955B91266647A00BEF6F0 /* only@2x.png */; };
-		6D81E29E14D6471300AA570A /* TTURLJSONResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D81E29D14D6471300AA570A /* TTURLJSONResponse.h */; };
+		6D56F0A414D64A6B00CDA05C /* TTURLXMLResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D56F0A214D64A6B00CDA05C /* TTURLXMLResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D56F0A514D64A6B00CDA05C /* TTXMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D56F0A314D64A6B00CDA05C /* TTXMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D56F0A814D64A7500CDA05C /* TTURLXMLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D56F0A614D64A7500CDA05C /* TTURLXMLResponse.m */; };
+		6D56F0A914D64A7500CDA05C /* TTXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D56F0A714D64A7500CDA05C /* TTXMLParser.m */; };
+		6D81E29E14D6471300AA570A /* TTURLJSONResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D81E29D14D6471300AA570A /* TTURLJSONResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D81E2A014D6471F00AA570A /* TTURLJSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D81E29F14D6471F00AA570A /* TTURLJSONResponse.m */; };
 		6D81E2BD14D6477200AA570A /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D81E2A214D6477200AA570A /* NSObject+SBJSON.h */; };
 		6D81E2BE14D6477200AA570A /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D81E2A314D6477200AA570A /* NSObject+SBJSON.m */; };
@@ -121,6 +125,10 @@
 		66F955B71266647A00BEF6F0 /* both.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = both.png; path = UnitTests/Resources/both.png; sourceTree = "<group>"; };
 		66F955B81266647A00BEF6F0 /* both@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "both@2x.png"; path = "UnitTests/Resources/both@2x.png"; sourceTree = "<group>"; };
 		66F955B91266647A00BEF6F0 /* only@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "only@2x.png"; path = "UnitTests/Resources/only@2x.png"; sourceTree = "<group>"; };
+		6D56F0A214D64A6B00CDA05C /* TTURLXMLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTURLXMLResponse.h; path = Headers/TTURLXMLResponse.h; sourceTree = "<group>"; };
+		6D56F0A314D64A6B00CDA05C /* TTXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTXMLParser.h; path = Headers/TTXMLParser.h; sourceTree = "<group>"; };
+		6D56F0A614D64A7500CDA05C /* TTURLXMLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTURLXMLResponse.m; path = Sources/TTURLXMLResponse.m; sourceTree = "<group>"; };
+		6D56F0A714D64A7500CDA05C /* TTXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTXMLParser.m; path = Sources/TTXMLParser.m; sourceTree = "<group>"; };
 		6D64C15814B7C9C100BF5E23 /* NetworkRequestTimeoutTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkRequestTimeoutTests.m; path = UnitTests/NetworkRequestTimeoutTests.m; sourceTree = "<group>"; };
 		6D81E29D14D6471300AA570A /* TTURLJSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTURLJSONResponse.h; path = Headers/TTURLJSONResponse.h; sourceTree = "<group>"; };
 		6D81E29F14D6471F00AA570A /* TTURLJSONResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTURLJSONResponse.m; path = Sources/TTURLJSONResponse.m; sourceTree = "<group>"; };
@@ -234,6 +242,17 @@
 			name = CustomTemplate;
 			sourceTree = "<group>";
 		};
+		6D56F0A014D64A5700CDA05C /* XML Response */ = {
+			isa = PBXGroup;
+			children = (
+				6D56F0A214D64A6B00CDA05C /* TTURLXMLResponse.h */,
+				6D56F0A314D64A6B00CDA05C /* TTXMLParser.h */,
+				6D56F0A614D64A7500CDA05C /* TTURLXMLResponse.m */,
+				6D56F0A714D64A7500CDA05C /* TTXMLParser.m */,
+			);
+			name = "XML Response";
+			sourceTree = "<group>";
+		};
 		6D81E28F14D6465F00AA570A /* JSON Response */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +328,7 @@
 		6E08B8041183B28A00DA1579 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				6D56F0A014D64A5700CDA05C /* XML Response */,
 				6D81E28F14D6465F00AA570A /* JSON Response */,
 				6E08B86E1183B38400DA1579 /* Global */,
 				6EE7360111849A1F00A35176 /* TTUserInfo.h */,
@@ -491,6 +511,8 @@
 				6D81E2D214D6477200AA570A /* SBJsonTokeniser.h in Headers */,
 				6D81E2D414D6477200AA570A /* SBJsonUTF8Stream.h in Headers */,
 				6D81E2D614D6477200AA570A /* SBJsonWriter.h in Headers */,
+				6D56F0A414D64A6B00CDA05C /* TTURLXMLResponse.h in Headers */,
+				6D56F0A514D64A6B00CDA05C /* TTXMLParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +683,8 @@
 				6D81E2D314D6477200AA570A /* SBJsonTokeniser.m in Sources */,
 				6D81E2D514D6477200AA570A /* SBJsonUTF8Stream.m in Sources */,
 				6D81E2D714D6477200AA570A /* SBJsonWriter.m in Sources */,
+				6D56F0A814D64A7500CDA05C /* TTURLXMLResponse.m in Sources */,
+				6D56F0A914D64A7500CDA05C /* TTXMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
