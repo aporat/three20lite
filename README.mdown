@@ -1,3 +1,17 @@
+About This Fork
+=======
+
+This fork contains some major changes from the main repository. 
+
+- XML & JSON extensions merged back to TTNetwork
+- TTExtensionLoader removed
+- Removed YAJL JSON support
+- Removed old xcode templates
+- Appledoc Documentation
+- TTSplitViewController removed
+- Major iOS 5 TTNaviagtor bug fixes
+
+
 Three20
 =======
 
