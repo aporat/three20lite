@@ -14,12 +14,12 @@
 // limitations under the License.
 //
 
-#import "extThree20JSON/TTURLJSONResponse.h"
+#import "Three20Network/TTURLJSONResponse.h"
 
-// extJSON
-#import "extThree20JSON/TTErrorCodes.h"
-#import "extThree20JSON/SBJson.h"
-#import "extThree20JSON/NSString+SBJSON.h"
+// Network
+#import "Three20Network/TTErrorCodes.h"
+#import "Three20Network/SBJson.h"
+#import "Three20Network/NSString+SBJSON.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"
@@ -63,8 +63,8 @@
     json =  [json stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]]; 
     _rootObject = [[json JSONValue] retain];
     if (!_rootObject) {
-      err = [NSError errorWithDomain:kTTExtJSONErrorDomain
-                                code:kTTExtJSONErrorCodeInvalidJSON
+      err = [NSError errorWithDomain:kTTNetworkErrorDomain
+                                code:kTTNetworkErrorCodeInvalidJSON
                             userInfo:nil];
     }
   }

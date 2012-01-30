@@ -19,3 +19,4 @@
 extern NSString* const kTTNetworkErrorDomain;
 extern NSInteger const kTTNetworkErrorCodeInvalidImage;
 extern NSString* const kTTErrorResponseDataKey;
+extern NSInteger const kTTNetworkErrorCodeInvalidJSON;

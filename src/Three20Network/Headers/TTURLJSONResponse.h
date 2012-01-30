@@ -14,10 +14,16 @@
 // limitations under the License.
 //
 
-#import "Three20Network/TTErrorCodes.h"
+// Network
+#import "Three20Network/TTURLResponse.h"
 
-NSString* const kTTNetworkErrorDomain = @"three20.network";
-NSInteger const kTTNetworkErrorCodeInvalidImage = 100;
-NSString* const kTTErrorResponseDataKey = @"responsedata";
+/**
+ * An implementation of the TTURLResponse protocal for turning JSON responses into NSObjects.
+ */
+@interface TTURLJSONResponse : NSObject <TTURLResponse> {
+  id _rootObject;
+}
 
-NSInteger const kTTNetworkErrorCodeInvalidJSON = 101;
+@property (nonatomic, retain, readonly) id    rootObject;
+
+@end

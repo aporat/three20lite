@@ -86,9 +86,6 @@
          location = "container:"
          name = "extensions">
          <FileRef
-            location = "group:src/extThree20JSON/extThree20JSON.xcodeproj">
-         </FileRef>
-         <FileRef
             location = "group:src/extThree20XML/extThree20XML.xcodeproj">
          </FileRef>
       </Group>
@@ -159,16 +156,4 @@
          location = "group:samples/TTTwitter/TTTwitter.xcodeproj">
       </FileRef>
    </Group>
-   <FileRef
-      location = "group:AUTHORS">
-   </FileRef>
-   <FileRef
-      location = "group:LICENSE">
-   </FileRef>
-   <FileRef
-      location = "group:project.dev">
-   </FileRef>
-   <FileRef
-      location = "group:README.mdown">
-   </FileRef>
 </Workspace>
