@@ -20,12 +20,12 @@
 #import <SenTestingKit/SenTestingKit.h>
 
 // Core
-#import "Three20Core/TTCorePreprocessorMacros.h"
-#import "Three20Core/NSArrayAdditions.h"
-#import "Three20Core/NSDataAdditions.h"
-#import "Three20Core/NSMutableArrayAdditions.h"
-#import "Three20Core/NSMutableDictionaryAdditions.h"
-#import "Three20Core/NSStringAdditions.h"
+#import "TTCorePreprocessorMacros.h"
+#import "NSArrayAdditions.h"
+#import "NSDataAdditions.h"
+#import "NSMutableArrayAdditions.h"
+#import "NSMutableDictionaryAdditions.h"
+#import "NSStringAdditions.h"
 
 /**
  * Unit tests for the Core additions found within Three20. These tests are a part of

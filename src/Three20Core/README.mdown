@@ -16,7 +16,7 @@ How to use it
 * In your target settings, under the "Build" tab, add the relative path to
   `three20/Build/Products/three20` in the "Header Search Paths".
 * In your target settings, under the "General" tab, add Three20Core as a direct dependency.
-* Now #import "Three20Core/Three20Core.h" in your precompiled header (or wherever you choose).
+* Now #import "Three20Core.h" in your precompiled header (or wherever you choose).
 * Build and go!
 
 
@@ -70,7 +70,7 @@ General information for when you're making modifications to the Core.
 Importing specific files
 ------------------------
 
-    #import "Three20Core/<filename>.h"
+    #import "<filename>.h"
 
 
 Dependencies
