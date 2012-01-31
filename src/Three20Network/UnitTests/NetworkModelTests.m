@@ -23,9 +23,9 @@
 #import "mocks/MockModelDelegate.h"
 
 // Network
-#import "Three20Network/TTModel.h"
-#import "Three20Network/TTURLRequest.h"
-#import "Three20Network/TTURLRequestModel.h"
+#import "TTModel.h"
+#import "TTURLRequest.h"
+#import "TTURLRequestModel.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

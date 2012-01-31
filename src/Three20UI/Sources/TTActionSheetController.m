@@ -14,12 +14,12 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTActionSheetController.h"
+#import "TTActionSheetController.h"
 
 // UI
-#import "Three20UI/TTNavigator.h"
-#import "Three20UI/TTActionSheetControllerDelegate.h"
-#import "Three20UI/TTActionSheet.h"
+#import "TTNavigator.h"
+#import "TTActionSheetControllerDelegate.h"
+#import "TTActionSheet.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

@@ -14,10 +14,10 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTModelViewController.h"
+#import "TTModelViewController.h"
 
 // UI
-#import "Three20UI/TTNavigator.h"
+#import "TTNavigator.h"
 
 // UICommon
 #import "Three20UICommon/UIViewControllerAdditions.h"

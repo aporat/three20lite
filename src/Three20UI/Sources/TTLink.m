@@ -14,11 +14,11 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTLink.h"
+#import "TTLink.h"
 
 // UI
-#import "Three20UI/TTNavigator.h"
-#import "Three20UI/TTView.h"
+#import "TTNavigator.h"
+#import "TTView.h"
 
 // UINavigator
 #import "Three20UINavigator/TTURLAction.h"

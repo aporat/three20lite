@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "Three20UINavigator/TTURLAction.h"
+#import "TTURLAction.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UI/TTTableItem.h"
+#import "TTTableItem.h"
 
 @interface TTTableViewItem : TTTableItem {
   NSString* _caption;

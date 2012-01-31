@@ -14,12 +14,12 @@
 // limitations under the License.
 //
 
-#import "Three20Style/TTTextStyle.h"
+#import "TTTextStyle.h"
 
 // Style
-#import "Three20Style/TTStyleContext.h"
-#import "Three20Style/TTStyleDelegate.h"
-#import "Three20Style/UIFontAdditions.h"
+#import "TTStyleContext.h"
+#import "TTStyleDelegate.h"
+#import "UIFontAdditions.h"
 
 // Core
 #import "Three20Core/NSStringAdditions.h"

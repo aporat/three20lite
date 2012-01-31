@@ -14,14 +14,14 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTabStrip.h"
+#import "TTTabStrip.h"
 
 // UI
-#import "Three20UI/TTTab.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTTab.h"
+#import "UIViewAdditions.h"
 
 // UI (private)
-#import "Three20UI/private/TTTabBarInternal.h"
+#import "TTTabBarInternal.h"
 
 // Style
 #import "Three20Style/TTGlobalStyle.h"

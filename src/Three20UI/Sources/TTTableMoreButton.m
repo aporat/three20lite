@@ -14,10 +14,10 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableMoreButton.h"
+#import "TTTableMoreButton.h"
 
 // UI
-#import "Three20UI/TTTableMoreButtonCell.h"
+#import "TTTableMoreButtonCell.h"
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UI/TTView.h"
+#import "TTView.h"
 
 @class TTTabItem;
 @class TTTab;

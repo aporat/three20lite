@@ -207,7 +207,7 @@
 /* Begin PBXFileReference section */
 		66313A7D1267B4E800C09C9F /* Three20Style_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Three20Style_Prefix.pch; path = Headers/Three20Style_Prefix.pch; sourceTree = "<group>"; };
 		6E64543D1184BE1B00F08CB1 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Configurations/Project.xcconfig; sourceTree = "<group>"; };
-		6E64548F1184D3BC00F08CB1 /* Three20Style+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Three20Style+Additions.h"; path = "Headers/Three20Style+Additions.h"; sourceTree = "<group>"; };
+		6E64548F1184D3BC00F08CB1 /* Three20Style+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = "Three20Style+Additions.h"; path = "Headers/Three20Style+Additions.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6E6464021187F5CB00F08CB1 /* TTStyledButtonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTStyledButtonNode.h; path = Headers/TTStyledButtonNode.h; sourceTree = "<group>"; };
 		6E6464031187F5CB00F08CB1 /* TTStyledLinkNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTStyledLinkNode.h; path = Headers/TTStyledLinkNode.h; sourceTree = "<group>"; };
 		6E64640A1187F5EC00F08CB1 /* TTStyledButtonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTStyledButtonNode.m; path = Sources/TTStyledButtonNode.m; sourceTree = "<group>"; };
@@ -335,9 +335,9 @@
 		6EE737C11184A39B00A35176 /* UIFontAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIFontAdditions.m; path = Sources/UIFontAdditions.m; sourceTree = "<group>"; };
 		6EE737C21184A39B00A35176 /* UIImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageAdditions.m; path = Sources/UIImageAdditions.m; sourceTree = "<group>"; };
 		6EE7389D1184ADB400A35176 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = ../Three20Network/Three20Network.xcodeproj; sourceTree = SOURCE_ROOT; };
-		6EE738C11184AE4A00A35176 /* Three20Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Three20Style.h; path = Headers/Three20Style.h; sourceTree = "<group>"; };
-		6EE739981184B9CE00A35176 /* StyleAdditionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StyleAdditionTests.m; path = UnitTests/StyleAdditionTests.m; sourceTree = "<group>"; };
-		6EE739991184B9CE00A35176 /* StyleGlobalTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StyleGlobalTests.m; path = UnitTests/StyleGlobalTests.m; sourceTree = "<group>"; };
+		6EE738C11184AE4A00A35176 /* Three20Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Three20Style.h; path = Headers/Three20Style.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		6EE739981184B9CE00A35176 /* StyleAdditionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = StyleAdditionTests.m; path = UnitTests/StyleAdditionTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6EE739991184B9CE00A35176 /* StyleGlobalTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = StyleGlobalTests.m; path = UnitTests/StyleGlobalTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		BEF31F3A0F352DF5000DE5D2 /* libThree20Style.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libThree20Style.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9E6C6210B6A8F800DE563C /* StyleUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StyleUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -816,7 +816,6 @@
 				BEF31F360F352DF5000DE5D2 /* Headers */,
 				6E645F2C1187AFFE00F08CB1 /* Protect Copied Headers */,
 				BEF31F370F352DF5000DE5D2 /* Sources */,
-				668E65BA131ADFB500ACE4AB /* Lint */,
 				BEF31F380F352DF5000DE5D2 /* Frameworks */,
 			);
 			buildRules = (
@@ -932,21 +931,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		668E65BA131ADFB500ACE4AB /* Lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Lint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/usr/bin/env python ../scripts/lint";
-			shellScript = "";
-			showEnvVarsInLog = 0;
-		};
 		6E645F2C1187AFFE00F08CB1 /* Protect Copied Headers */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

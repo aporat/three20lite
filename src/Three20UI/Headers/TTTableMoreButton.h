@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UI/TTTableSubtitleItem.h"
+#import "TTTableSubtitleItem.h"
 
 @protocol TTModel;
 

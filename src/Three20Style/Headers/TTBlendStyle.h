@@ -15,7 +15,7 @@
 //
 
 // Style
-#import "Three20Style/TTStyle.h"
+#import "TTStyle.h"
 
 @interface TTBlendStyle : TTStyle {
   CGBlendMode _blendMode;

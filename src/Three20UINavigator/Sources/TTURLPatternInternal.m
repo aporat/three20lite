@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "Three20UINavigator/private/TTURLPatternInternal.h"
+#import "TTURLPatternInternal.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

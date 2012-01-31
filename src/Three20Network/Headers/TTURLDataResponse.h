@@ -15,7 +15,7 @@
 //
 
 // Network
-#import "Three20Network/TTURLResponse.h"
+#import "TTURLResponse.h"
 
 /**
  * An implementation of the TTURLResponse protocal for generic NSData objects.

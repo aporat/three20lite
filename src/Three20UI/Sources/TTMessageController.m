@@ -14,18 +14,18 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTMessageController.h"
+#import "TTMessageController.h"
 
 // UI
-#import "Three20UI/TTMessageControllerDelegate.h"
-#import "Three20UI/TTMessageRecipientField.h"
-#import "Three20UI/TTMessageTextField.h"
-#import "Three20UI/TTMessageSubjectField.h"
-#import "Three20UI/TTActivityLabel.h"
-#import "Three20UI/TTPickerTextField.h"
-#import "Three20UI/TTTextEditor.h"
-#import "Three20UI/TTTableViewDataSource.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTMessageControllerDelegate.h"
+#import "TTMessageRecipientField.h"
+#import "TTMessageTextField.h"
+#import "TTMessageSubjectField.h"
+#import "TTActivityLabel.h"
+#import "TTPickerTextField.h"
+#import "TTTextEditor.h"
+#import "TTTableViewDataSource.h"
+#import "UIViewAdditions.h"
 
 // UINavigator
 #import "Three20UINavigator/TTGlobalNavigatorMetrics.h"

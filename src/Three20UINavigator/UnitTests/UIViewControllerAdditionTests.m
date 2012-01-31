@@ -19,7 +19,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 
 // UINavigator
-#import "Three20UINavigator/UIViewController+TTNavigator.h"
+#import "UIViewController+TTNavigator.h"
 
 // UICommon
 #import "Three20UICommon/UIViewControllerAdditions.h"

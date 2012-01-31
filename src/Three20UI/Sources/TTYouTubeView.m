@@ -14,10 +14,10 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTYouTubeView.h"
+#import "TTYouTubeView.h"
 
 // UI
-#import "Three20UI/UIViewAdditions.h"
+#import "UIViewAdditions.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

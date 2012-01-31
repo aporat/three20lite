@@ -19,7 +19,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import <UIKit/UIKit.h>
 
-#import "Three20Style/TTGlobalStyle.h"
+#import "TTGlobalStyle.h"
 
 // Core
 #import "Three20Core/TTGlobalCoreRects.h"

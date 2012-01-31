@@ -14,12 +14,12 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableMessageItemCell.h"
+#import "TTTableMessageItemCell.h"
 
 // UI
-#import "Three20UI/TTImageView.h"
-#import "Three20UI/TTTableMessageItem.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTImageView.h"
+#import "TTTableMessageItem.h"
+#import "UIViewAdditions.h"
 #import "Three20Style/UIFontAdditions.h"
 
 // Style

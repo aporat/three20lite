@@ -16,29 +16,29 @@
 
 // Navigator
 
-#import "Three20UINavigator/TTGlobalNavigatorMetrics.h"
-#import "Three20UINavigator/TTURLObject.h"
+#import "TTGlobalNavigatorMetrics.h"
+#import "TTURLObject.h"
 
 // - View Controllers
-#import "Three20UINavigator/TTNavigatorViewController.h"
-#import "Three20UINavigator/TTBaseNavigationController.h"
+#import "TTNavigatorViewController.h"
+#import "TTBaseNavigationController.h"
 
 // - Navigator
-#import "Three20UINavigator/TTNavigatorPersistenceMode.h"
-#import "Three20UINavigator/TTBaseNavigator.h"
-#import "Three20UINavigator/TTNavigatorDelegate.h"
-#import "Three20UINavigator/TTNavigatorRootContainer.h"
+#import "TTNavigatorPersistenceMode.h"
+#import "TTBaseNavigator.h"
+#import "TTNavigatorDelegate.h"
+#import "TTNavigatorRootContainer.h"
 
 // -- URL Action
-#import "Three20UINavigator/TTURLAction.h"
+#import "TTURLAction.h"
 
 // -- URL Map
-#import "Three20UINavigator/TTURLMap.h"
-#import "Three20UINavigator/TTNavigationMode.h"
+#import "TTURLMap.h"
+#import "TTNavigationMode.h"
 
 // -- URL Pattern
-#import "Three20UINavigator/TTURLPattern.h"
+#import "TTURLPattern.h"
 
 // --- Patterns
-#import "Three20UINavigator/TTURLGeneratorPattern.h"
-#import "Three20UINavigator/TTURLNavigatorPattern.h"
+#import "TTURLGeneratorPattern.h"
+#import "TTURLNavigatorPattern.h"

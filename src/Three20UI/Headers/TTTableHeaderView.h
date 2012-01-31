@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UI/TTView.h"
+#import "TTView.h"
 
 @interface TTTableHeaderView : TTView {
   UILabel* _label;

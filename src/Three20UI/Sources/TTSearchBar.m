@@ -14,13 +14,13 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTSearchBar.h"
+#import "TTSearchBar.h"
 
 // UI
-#import "Three20UI/TTSearchTextField.h"
-#import "Three20UI/TTButton.h"
-#import "Three20UI/UIViewAdditions.h"
-#import "Three20UI/UITableViewAdditions.h"
+#import "TTSearchTextField.h"
+#import "TTButton.h"
+#import "UIViewAdditions.h"
+#import "UITableViewAdditions.h"
 #import "Three20Style/UIFontAdditions.h"
 
 // UICommon

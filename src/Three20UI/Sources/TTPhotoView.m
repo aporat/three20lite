@@ -14,16 +14,16 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTPhotoView.h"
+#import "TTPhotoView.h"
 
 // UI
-#import "Three20UI/TTPhoto.h"
-#import "Three20UI/TTPhotoSource.h"
-#import "Three20UI/TTLabel.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTPhoto.h"
+#import "TTPhotoSource.h"
+#import "TTLabel.h"
+#import "UIViewAdditions.h"
 
 // UI (private)
-#import "Three20UI/private/TTImageViewInternal.h"
+#import "TTImageViewInternal.h"
 
 // UINavigator
 #import "Three20UINavigator/TTGlobalNavigatorMetrics.h"

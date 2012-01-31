@@ -14,11 +14,11 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableLinkedItemCell.h"
+#import "TTTableLinkedItemCell.h"
 
 // UI
-#import "Three20UI/TTNavigator.h"
-#import "Three20UI/TTTableLinkedItem.h"
+#import "TTNavigator.h"
+#import "TTTableLinkedItem.h"
 
 // UINavigator
 #import "Three20UINavigator/TTURLMap.h"

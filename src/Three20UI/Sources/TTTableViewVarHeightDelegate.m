@@ -14,11 +14,11 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableViewVarHeightDelegate.h"
+#import "TTTableViewVarHeightDelegate.h"
 
 // UI
-#import "Three20UI/TTTableViewDataSource.h"
-#import "Three20UI/TTTableViewCell.h"         // For tableView:rowHeightForObject:
+#import "TTTableViewDataSource.h"
+#import "TTTableViewCell.h"         // For tableView:rowHeightForObject:
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

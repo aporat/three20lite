@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UI/TTTableViewDataSource.h"
+#import "TTTableViewDataSource.h"
 
 @interface TTListDataSource : TTTableViewDataSource {
   NSMutableArray* _items;

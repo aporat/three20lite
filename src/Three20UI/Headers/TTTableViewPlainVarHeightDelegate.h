@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UI/TTTableViewVarHeightDelegate.h"
+#import "TTTableViewVarHeightDelegate.h"
 
 @interface TTTableViewPlainVarHeightDelegate : TTTableViewVarHeightDelegate {
 

@@ -14,13 +14,13 @@
 // limitations under the License.
 //
 
-#import "Three20UI/UITableViewAdditions.h"
+#import "UITableViewAdditions.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"
 
 // UI
-#import "Three20UI/UIViewAdditions.h"
+#import "UIViewAdditions.h"
 
 // UICommon
 #import "Three20UICommon/UIWindowAdditions.h"

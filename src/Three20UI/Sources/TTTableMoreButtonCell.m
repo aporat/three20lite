@@ -14,11 +14,11 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableMoreButtonCell.h"
+#import "TTTableMoreButtonCell.h"
 
 // UI
-#import "Three20UI/TTTableMoreButton.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTTableMoreButton.h"
+#import "UIViewAdditions.h"
 
 // UICommon
 #import "Three20UICommon/TTGlobalUICommon.h"

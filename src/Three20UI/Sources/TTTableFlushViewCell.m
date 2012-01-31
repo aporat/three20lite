@@ -14,10 +14,10 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableFlushViewCell.h"
+#import "TTTableFlushViewCell.h"
 
 // UI
-#import "Three20UI/TTTableViewItem.h"
+#import "TTTableViewItem.h"
 
 // UICommon
 #import "Three20UICommon/TTGlobalUICommon.h"

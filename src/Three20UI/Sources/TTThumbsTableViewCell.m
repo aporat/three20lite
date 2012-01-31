@@ -14,14 +14,14 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTThumbsTableViewCell.h"
+#import "TTThumbsTableViewCell.h"
 
 // UI
-#import "Three20UI/TTThumbView.h"
-#import "Three20UI/TTThumbsTableViewCellDelegate.h"
-#import "Three20UI/TTPhotoVersion.h"
-#import "Three20UI/TTPhotoSource.h"
-#import "Three20UI/TTPhoto.h"
+#import "TTThumbView.h"
+#import "TTThumbsTableViewCellDelegate.h"
+#import "TTPhotoVersion.h"
+#import "TTPhotoSource.h"
+#import "TTPhoto.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

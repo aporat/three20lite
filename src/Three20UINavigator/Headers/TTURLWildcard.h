@@ -15,8 +15,8 @@
 //
 
 // UINavigator (private)
-#import "Three20UINavigator/private/TTURLPatternText.h"
-#import "Three20UINavigator/private/TTURLArgumentType.h"
+#import "TTURLPatternText.h"
+#import "TTURLArgumentType.h"
 
 @class TTURLSelector;
 

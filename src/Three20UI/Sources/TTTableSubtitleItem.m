@@ -14,13 +14,13 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableSubtitleItem.h"
+#import "TTTableSubtitleItem.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"
 
 // UI
-#import "Three20UI/TTTableSubtitleItemCell.h"
+#import "TTTableSubtitleItemCell.h"
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

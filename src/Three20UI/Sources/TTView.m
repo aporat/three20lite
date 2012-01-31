@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTView.h"
+#import "TTView.h"
 
 // Style
 #import "Three20Style/TTStyleContext.h"

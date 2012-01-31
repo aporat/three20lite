@@ -27,8 +27,8 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "Three20Network/NSString+SBJSON.h"
-#import "Three20Network/SBJsonParser.h"
+#import "NSString+SBJSON.h"
+#import "SBJsonParser.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

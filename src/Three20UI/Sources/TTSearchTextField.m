@@ -14,19 +14,19 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTSearchTextField.h"
+#import "TTSearchTextField.h"
 
 // UI
-#import "Three20UI/TTNavigator.h"
-#import "Three20UI/TTView.h"
-#import "Three20UI/TTSearchTextFieldDelegate.h"
-#import "Three20UI/TTTableView.h"
-#import "Three20UI/TTTableViewCell.h"
-#import "Three20UI/TTTableViewDataSource.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTNavigator.h"
+#import "TTView.h"
+#import "TTSearchTextFieldDelegate.h"
+#import "TTTableView.h"
+#import "TTTableViewCell.h"
+#import "TTTableViewDataSource.h"
+#import "UIViewAdditions.h"
 
 // UI (private)
-#import "Three20UI/private/TTSearchTextFieldInternal.h"
+#import "TTSearchTextFieldInternal.h"
 
 // UINavigator
 #import "Three20UINavigator/TTGlobalNavigatorMetrics.h"

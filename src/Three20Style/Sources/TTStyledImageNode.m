@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "Three20Style/TTStyledImageNode.h"
+#import "TTStyledImageNode.h"
 
 // Network
 #import "Three20Network/TTURLCache.h"

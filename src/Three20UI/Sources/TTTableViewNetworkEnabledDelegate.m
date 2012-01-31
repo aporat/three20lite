@@ -14,13 +14,13 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableViewNetworkEnabledDelegate.h"
+#import "TTTableViewNetworkEnabledDelegate.h"
 
 // UI
-#import "Three20UI/TTTableHeaderDragRefreshView.h"
-#import "Three20UI/TTTableFooterInfiniteScrollView.h"
-#import "Three20UI/TTTableViewController.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTTableHeaderDragRefreshView.h"
+#import "TTTableFooterInfiniteScrollView.h"
+#import "TTTableViewController.h"
+#import "UIViewAdditions.h"
 
 // UICommon
 #import "Three20UICommon/TTGlobalUICommon.h"

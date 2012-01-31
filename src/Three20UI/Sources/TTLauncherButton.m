@@ -14,12 +14,12 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTLauncherButton.h"
+#import "TTLauncherButton.h"
 
 // UI
-#import "Three20UI/TTLauncherItem.h"
-#import "Three20UI/TTLabel.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTLauncherItem.h"
+#import "TTLabel.h"
+#import "UIViewAdditions.h"
 
 // Style
 #import "Three20Style/TTGlobalStyle.h"

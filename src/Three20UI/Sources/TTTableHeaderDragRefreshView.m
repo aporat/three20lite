@@ -24,7 +24,7 @@
 //  THE SOFTWARE.
 //
 
-#import "Three20UI/TTTableHeaderDragRefreshView.h"
+#import "TTTableHeaderDragRefreshView.h"
 
 // UICommon
 #import "Three20UICommon/TTGlobalUICommon.h"

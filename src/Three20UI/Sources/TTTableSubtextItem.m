@@ -14,10 +14,10 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableSubtextItem.h"
+#import "TTTableSubtextItem.h"
 
 // UI
-#import "Three20UI/TTTableSubtextItemCell.h"
+#import "TTTableSubtextItemCell.h"
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

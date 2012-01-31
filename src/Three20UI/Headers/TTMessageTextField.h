@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UI/TTMessageField.h"
+#import "TTMessageField.h"
 
 /**
  * A field for holding variable free form text.

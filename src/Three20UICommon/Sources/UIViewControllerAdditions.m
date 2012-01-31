@@ -14,14 +14,14 @@
 // limitations under the License.
 //
 
-#import "Three20UICommon/UIViewControllerAdditions.h"
+#import "UIViewControllerAdditions.h"
 
 // UICommon
-#import "Three20UICommon/TTGlobalUICommon.h"
-#import "Three20UICommon/TTBaseViewController.h"
+#import "TTGlobalUICommon.h"
+#import "TTBaseViewController.h"
 
 // UICommon (private)
-#import "Three20UICommon/private/UIViewControllerGarbageCollection.h"
+#import "UIViewControllerGarbageCollection.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

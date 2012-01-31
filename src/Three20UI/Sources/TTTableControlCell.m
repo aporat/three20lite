@@ -14,12 +14,12 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableControlCell.h"
+#import "TTTableControlCell.h"
 
 // UI
-#import "Three20UI/TTTableControlItem.h"
-#import "Three20UI/TTTextEditor.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTTableControlItem.h"
+#import "TTTextEditor.h"
+#import "UIViewAdditions.h"
 #import "Three20Style/UIFontAdditions.h"
 
 // UICommon

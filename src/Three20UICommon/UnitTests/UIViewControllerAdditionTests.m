@@ -20,7 +20,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 
 // UICommon
-#import "Three20UICommon/UIViewControllerAdditions.h"
+#import "UIViewControllerAdditions.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

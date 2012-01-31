@@ -14,11 +14,11 @@
 // limitations under the License.
 //
 
-#import "Three20UI/private/TTLauncherHighlightView.h"
+#import "TTLauncherHighlightView.h"
 
 // UI
-#import "Three20UI/TTLauncherButton.h"
-#import "Three20UI/TTLauncherView.h"
+#import "TTLauncherButton.h"
+#import "TTLauncherView.h"
 
 // UICommon
 #import "Three20UICommon/TTGlobalUICommon.h"

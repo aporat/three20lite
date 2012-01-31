@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "Three20Network/TTModel.h"
+#import "TTModel.h"
 
 // Core
 #import "Three20Core/TTGlobalCore.h"

@@ -14,10 +14,10 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableHeaderView.h"
+#import "TTTableHeaderView.h"
 
 // UI
-#import "Three20UI/UIViewAdditions.h"
+#import "UIViewAdditions.h"
 
 // Style
 #import "Three20Style/TTGlobalStyle.h"

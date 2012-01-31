@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "Three20Style/TTPartStyle.h"
+#import "TTPartStyle.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

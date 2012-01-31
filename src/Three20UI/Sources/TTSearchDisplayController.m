@@ -14,11 +14,11 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTSearchDisplayController.h"
+#import "TTSearchDisplayController.h"
 
 // UI
-#import "Three20UI/TTTableViewController.h"
-#import "Three20UI/TTTableViewDataSource.h"
+#import "TTTableViewController.h"
+#import "TTTableViewDataSource.h"
 
 // UICommon
 #import "Three20UICommon/TTGlobalUICommon.h"

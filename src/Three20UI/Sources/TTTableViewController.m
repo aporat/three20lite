@@ -14,18 +14,18 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableViewController.h"
+#import "TTTableViewController.h"
 
 // UI
-#import "Three20UI/TTNavigator.h"
-#import "Three20UI/TTActivityLabel.h"
-#import "Three20UI/TTErrorView.h"
-#import "Three20UI/TTListDataSource.h"
-#import "Three20UI/TTTableView.h"
-#import "Three20UI/TTTableViewDelegate.h"
-#import "Three20UI/TTTableViewVarHeightDelegate.h"
-#import "Three20UI/UIViewAdditions.h"
-#import "Three20UI/UITableViewAdditions.h"
+#import "TTNavigator.h"
+#import "TTActivityLabel.h"
+#import "TTErrorView.h"
+#import "TTListDataSource.h"
+#import "TTTableView.h"
+#import "TTTableViewDelegate.h"
+#import "TTTableViewVarHeightDelegate.h"
+#import "UIViewAdditions.h"
+#import "UITableViewAdditions.h"
 
 // UINavigator
 #import "Three20UINavigator/TTURLObject.h"

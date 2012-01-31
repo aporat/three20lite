@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTPickerViewCell.h"
+#import "TTPickerViewCell.h"
 
 // Style
 #import "Three20Style/TTGlobalStyle.h"

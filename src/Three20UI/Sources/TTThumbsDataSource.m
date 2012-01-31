@@ -14,12 +14,12 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTThumbsDataSource.h"
+#import "TTThumbsDataSource.h"
 
 // UI
-#import "Three20UI/TTPhotoSource.h"
-#import "Three20UI/TTTableMoreButton.h"
-#import "Three20UI/TTThumbsTableViewCell.h"
+#import "TTPhotoSource.h"
+#import "TTTableMoreButton.h"
+#import "TTThumbsTableViewCell.h"
 
 // UINavigator
 #import "Three20UINavigator/TTGlobalNavigatorMetrics.h"

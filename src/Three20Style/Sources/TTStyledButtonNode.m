@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "Three20Style/TTStyledButtonNode.h"
+#import "TTStyledButtonNode.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

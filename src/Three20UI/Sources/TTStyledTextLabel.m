@@ -14,12 +14,12 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTStyledTextLabel.h"
+#import "TTStyledTextLabel.h"
 
 // UI
-#import "Three20UI/TTNavigator.h"
-#import "Three20UI/TTTableView.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTNavigator.h"
+#import "TTTableView.h"
+#import "UIViewAdditions.h"
 
 // Style
 #import "Three20Style/TTGlobalStyle.h"

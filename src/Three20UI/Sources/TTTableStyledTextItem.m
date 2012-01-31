@@ -14,13 +14,13 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableStyledTextItem.h"
+#import "TTTableStyledTextItem.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"
 
 // UI
-#import "Three20UI/TTStyledTextTableItemCell.h"
+#import "TTStyledTextTableItemCell.h"
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

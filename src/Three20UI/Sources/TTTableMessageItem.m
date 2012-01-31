@@ -14,13 +14,13 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableMessageItem.h"
+#import "TTTableMessageItem.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"
 
 // UI
-#import "Three20UI/TTTableMessageItemCell.h"
+#import "TTTableMessageItemCell.h"
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

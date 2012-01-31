@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UI/TTPopupViewController.h"
+#import "TTPopupViewController.h"
 
 @protocol TTAlertViewControllerDelegate;
 

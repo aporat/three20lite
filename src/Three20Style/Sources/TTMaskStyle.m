@@ -14,10 +14,10 @@
 // limitations under the License.
 //
 
-#import "Three20Style/TTMaskStyle.h"
+#import "TTMaskStyle.h"
 
 // Style
-#import "Three20Style/TTStyleContext.h"
+#import "TTStyleContext.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

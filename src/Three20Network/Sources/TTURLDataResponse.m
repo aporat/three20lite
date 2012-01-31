@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "Three20Network/TTURLDataResponse.h"
+#import "TTURLDataResponse.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

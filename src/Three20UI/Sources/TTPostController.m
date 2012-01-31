@@ -14,14 +14,14 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTPostController.h"
+#import "TTPostController.h"
 
 // UI
-#import "Three20UI/TTNavigator.h"
-#import "Three20UI/TTPostControllerDelegate.h"
-#import "Three20UI/TTActivityLabel.h"
-#import "Three20UI/TTView.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTNavigator.h"
+#import "TTPostControllerDelegate.h"
+#import "TTActivityLabel.h"
+#import "TTView.h"
+#import "UIViewAdditions.h"
 
 // UINavigator
 #import "Three20UINavigator/TTGlobalNavigatorMetrics.h"

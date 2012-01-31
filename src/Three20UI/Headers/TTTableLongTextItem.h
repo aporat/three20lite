@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UI/TTTableTextItem.h"
+#import "TTTableTextItem.h"
 
 @interface TTTableLongTextItem : TTTableTextItem
 @end

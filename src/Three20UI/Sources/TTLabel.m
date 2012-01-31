@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTLabel.h"
+#import "TTLabel.h"
 
 // Style
 #import "Three20Style/TTGlobalStyle.h"

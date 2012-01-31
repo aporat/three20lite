@@ -14,10 +14,10 @@
 // limitations under the License.
 //
 
-#import "Three20Network/TTURLCache.h"
+#import "TTURLCache.h"
 
 // Network
-#import "Three20Network/TTGlobalNetwork.h"
+#import "TTGlobalNetwork.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

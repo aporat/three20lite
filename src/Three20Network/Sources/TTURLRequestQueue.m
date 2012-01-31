@@ -14,18 +14,18 @@
 // limitations under the License.
 //
 
-#import "Three20Network/TTURLRequestQueue.h"
+#import "TTURLRequestQueue.h"
 
 // Network
-#import "Three20Network/TTGlobalNetwork.h"
-#import "Three20Network/TTURLRequest.h"
-#import "Three20Network/TTURLRequestDelegate.h"
-#import "Three20Network/TTUserInfo.h"
-#import "Three20Network/TTURLResponse.h"
-#import "Three20Network/TTURLCache.h"
+#import "TTGlobalNetwork.h"
+#import "TTURLRequest.h"
+#import "TTURLRequestDelegate.h"
+#import "TTUserInfo.h"
+#import "TTURLResponse.h"
+#import "TTURLCache.h"
 
 // Network (Private)
-#import "Three20Network/private/TTRequestLoader.h"
+#import "TTRequestLoader.h"
 
 // Core
 #import "Three20Core/TTGlobalCore.h"

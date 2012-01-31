@@ -14,16 +14,16 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTThumbsViewController.h"
+#import "TTThumbsViewController.h"
 
 // UI
-#import "Three20UI/TTNavigator.h"
-#import "Three20UI/TTThumbsDataSource.h"
-#import "Three20UI/TTThumbsTableViewCell.h"
-#import "Three20UI/TTPhoto.h"
-#import "Three20UI/TTPhotoSource.h"
-#import "Three20UI/TTPhotoViewController.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTNavigator.h"
+#import "TTThumbsDataSource.h"
+#import "TTThumbsTableViewCell.h"
+#import "TTPhoto.h"
+#import "TTPhotoSource.h"
+#import "TTPhotoViewController.h"
+#import "UIViewAdditions.h"
 
 // UINavigator
 #import "Three20UINavigator/TTGlobalNavigatorMetrics.h"

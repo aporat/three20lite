@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UI/TTTableViewCell.h"
+#import "TTTableViewCell.h"
 
 @class TTTableActivityItem;
 @class TTActivityLabel;

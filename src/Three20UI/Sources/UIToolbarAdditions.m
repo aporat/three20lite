@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "Three20UI/UIToolbarAdditions.h"
+#import "UIToolbarAdditions.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

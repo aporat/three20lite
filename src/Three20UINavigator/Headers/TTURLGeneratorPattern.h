@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UINavigator/TTURLPattern.h"
+#import "TTURLPattern.h"
 
 @interface TTURLGeneratorPattern : TTURLPattern {
   Class _targetClass;

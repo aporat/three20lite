@@ -15,7 +15,7 @@
 //
 
 // UINavigator (private)
-#import "Three20UINavigator/private/TTURLArgumentType.h"
+#import "TTURLArgumentType.h"
 
 @interface TTURLSelector : NSObject {
   NSString*       _name;

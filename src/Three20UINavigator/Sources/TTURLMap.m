@@ -14,14 +14,14 @@
 // limitations under the License.
 //
 
-#import "Three20UINavigator/TTURLMap.h"
+#import "TTURLMap.h"
 
 // UINavigator
-#import "Three20UINavigator/TTURLNavigatorPattern.h"
-#import "Three20UINavigator/TTURLGeneratorPattern.h"
+#import "TTURLNavigatorPattern.h"
+#import "TTURLGeneratorPattern.h"
 
 // UINavigator (private)
-#import "Three20UINavigator/private/UIViewController+TTNavigatorGarbageCollection.h"
+#import "UIViewController+TTNavigatorGarbageCollection.h"
 
 // Core
 #import "Three20Core/TTGlobalCore.h"

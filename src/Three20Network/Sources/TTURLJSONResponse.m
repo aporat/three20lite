@@ -14,12 +14,12 @@
 // limitations under the License.
 //
 
-#import "Three20Network/TTURLJSONResponse.h"
+#import "TTURLJSONResponse.h"
 
 // Network
-#import "Three20Network/TTErrorCodes.h"
-#import "Three20Network/SBJson.h"
-#import "Three20Network/NSString+SBJSON.h"
+#import "TTErrorCodes.h"
+#import "SBJson.h"
+#import "NSString+SBJSON.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"

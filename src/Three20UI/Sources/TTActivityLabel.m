@@ -14,12 +14,12 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTActivityLabel.h"
+#import "TTActivityLabel.h"
 
 // UI
-#import "Three20UI/TTView.h"
-#import "Three20UI/TTButton.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTView.h"
+#import "TTButton.h"
+#import "UIViewAdditions.h"
 
 // UINavigator
 #import "Three20UINavigator/TTGlobalNavigatorMetrics.h"

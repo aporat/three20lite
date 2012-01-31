@@ -14,11 +14,11 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTabGrid.h"
+#import "TTTabGrid.h"
 
 // UI
-#import "Three20UI/TTButton.h"
-#import "Three20UI/UIViewAdditions.h"
+#import "TTButton.h"
+#import "UIViewAdditions.h"
 
 // Style
 #import "Three20Style/TTGlobalStyle.h"

@@ -19,7 +19,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import <UIKit/UIKit.h>
 
-#import "Three20Style/UIColorAdditions.h"
+#import "UIColorAdditions.h"
 
 @interface UIAdditionTests : SenTestCase {
 }

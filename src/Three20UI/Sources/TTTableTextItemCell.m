@@ -14,18 +14,18 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTTableTextItemCell.h"
+#import "TTTableTextItemCell.h"
 
 // UI
-#import "Three20UI/UIViewAdditions.h"
-#import "Three20UI/UITableViewAdditions.h"
+#import "UIViewAdditions.h"
+#import "UITableViewAdditions.h"
 
 // - Table items
-#import "Three20UI/TTTableTextItem.h"
-#import "Three20UI/TTTableLongTextItem.h"
-#import "Three20UI/TTTableGrayTextItem.h"
-#import "Three20UI/TTTableButton.h"
-#import "Three20UI/TTTableSummaryItem.h"
+#import "TTTableTextItem.h"
+#import "TTTableLongTextItem.h"
+#import "TTTableGrayTextItem.h"
+#import "TTTableButton.h"
+#import "TTTableSummaryItem.h"
 
 // Style
 #import "Three20Style/TTDefaultStyleSheet.h"

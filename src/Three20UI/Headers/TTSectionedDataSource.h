@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UI/TTTableViewDataSource.h"
+#import "TTTableViewDataSource.h"
 
 @interface TTSectionedDataSource : TTTableViewDataSource {
   NSMutableArray* _sections;

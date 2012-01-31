@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "Three20Network/TTURLRequestQueue.h"
+#import "TTURLRequestQueue.h"
 
 @class TTRequestLoader;
 

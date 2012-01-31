@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "Three20UI/TTTableImageItem.h"
+#import "TTTableImageItem.h"
 
 @interface TTTableRightImageItem : TTTableImageItem
 @end

@@ -14,20 +14,20 @@
 // limitations under the License.
 //
 
-#import "Three20UI/TTPhotoViewController.h"
+#import "TTPhotoViewController.h"
 
 // UI
-#import "Three20UI/TTNavigator.h"
-#import "Three20UI/TTThumbsViewController.h"
-#import "Three20UI/TTNavigationController.h"
-#import "Three20UI/TTPhotoSource.h"
-#import "Three20UI/TTPhoto.h"
-#import "Three20UI/TTPhotoView.h"
-#import "Three20UI/TTActivityLabel.h"
-#import "Three20UI/TTScrollView.h"
-#import "Three20UI/UIViewAdditions.h"
-#import "Three20UI/UINavigationControllerAdditions.h"
-#import "Three20UI/UIToolbarAdditions.h"
+#import "TTNavigator.h"
+#import "TTThumbsViewController.h"
+#import "TTNavigationController.h"
+#import "TTPhotoSource.h"
+#import "TTPhoto.h"
+#import "TTPhotoView.h"
+#import "TTActivityLabel.h"
+#import "TTScrollView.h"
+#import "UIViewAdditions.h"
+#import "UINavigationControllerAdditions.h"
+#import "UIToolbarAdditions.h"
 
 // UINavigator
 #import "Three20UINavigator/TTGlobalNavigatorMetrics.h"

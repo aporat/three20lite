@@ -14,13 +14,13 @@
 // limitations under the License.
 //
 
-#import "Three20UI/private/TTButtonContent.h"
+#import "TTButtonContent.h"
 
 // Style
 #import "Three20Style/TTImageStyle.h"
 
 // UI
-#import "Three20UI/TTImageViewDelegate.h"
+#import "TTImageViewDelegate.h"
 
 // Network
 #import "Three20Network/TTURLImageResponse.h"
