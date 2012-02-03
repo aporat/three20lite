@@ -1,6 +1,6 @@
 
 #import "ActivityTestController.h"
-#import <Three20/Three20.h>
+#import <Three20Lite/Three20Lite.h>
 #import <Three20UI/UIViewAdditions.h>
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

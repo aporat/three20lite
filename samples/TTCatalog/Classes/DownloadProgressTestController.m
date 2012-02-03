@@ -1,5 +1,5 @@
 #import "DownloadProgressTestController.h"
-#import <Three20/Three20.h>
+#import <Three20Lite/Three20Lite.h>
 #import "DownloadTestModel.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

@@ -1,5 +1,5 @@
 //
-// Copyright 2009-2010 Facebook
+// Copyright 2009-2011 Facebook
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,5 +14,17 @@
 // limitations under the License.
 //
 
-#include "../../common/Configurations/Project.xcconfig"
-#include "RelPath.xcconfig"
+// Three20, without additions.
+#import "Three20.h"
+
+// Core Additions
+#import "Three20Core+Additions.h"
+
+// Style Additions
+#import "Three20Style+Additions.h"
+
+// UINavigator
+#import "Three20UINavigator+Additions.h"
+
+// UI Additions
+#import "Three20UI+Additions.h"

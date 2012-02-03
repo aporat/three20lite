@@ -1,5 +1,5 @@
 //
-// Copyright 2009-2010 Facebook
+// Copyright 2009-2011 Facebook
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,9 +14,17 @@
 // limitations under the License.
 //
 
-#include "../../common/Configurations/UnitTests.xcconfig"
-#include "../../common/Configurations/Libraries.xcconfig"
-#include "RelPath.xcconfig"
+// Core
+#import "Three20Core.h"
 
-PRODUCT_NAME          = TTCatalogUnitTests
-BUILD_BUNDLE_VERSION  = 1.0
+// Network
+#import "Three20Network.h"
+
+// Style
+#import "Three20Style.h"
+
+// UINavigator
+#import "Three20UINavigator.h"
+
+// UI
+#import "Three20UI.h"
