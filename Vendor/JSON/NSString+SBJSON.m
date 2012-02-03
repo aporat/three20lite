@@ -31,7 +31,7 @@
 #import "SBJsonParser.h"
 
 // Core
-#import "Three20Core/TTCorePreprocessorMacros.h"
+#import "TTCorePreprocessorMacros.h"
 
 
 TT_FIX_CATEGORY_BUG(NSString_SBJSON)
