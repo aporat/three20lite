@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D0DB39114DC10C400CA0177 /* NSArrayAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB36A14DC10C400CA0177 /* NSArrayAdditions.h */; };
+		6D0DB39214DC10C400CA0177 /* NSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB36B14DC10C400CA0177 /* NSArrayAdditions.m */; };
+		6D0DB39314DC10C400CA0177 /* NSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB36C14DC10C400CA0177 /* NSDataAdditions.h */; };
+		6D0DB39414DC10C400CA0177 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB36D14DC10C400CA0177 /* NSDataAdditions.m */; };
+		6D0DB39514DC10C400CA0177 /* NSDateAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB36E14DC10C400CA0177 /* NSDateAdditions.h */; };
+		6D0DB39614DC10C400CA0177 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB36F14DC10C400CA0177 /* NSDateAdditions.m */; };
+		6D0DB39714DC10C400CA0177 /* NSMutableArrayAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB37014DC10C400CA0177 /* NSMutableArrayAdditions.h */; };
+		6D0DB39814DC10C400CA0177 /* NSMutableArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB37114DC10C400CA0177 /* NSMutableArrayAdditions.m */; };
+		6D0DB39914DC10C400CA0177 /* NSMutableDictionaryAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB37214DC10C400CA0177 /* NSMutableDictionaryAdditions.h */; };
+		6D0DB39A14DC10C400CA0177 /* NSMutableDictionaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB37314DC10C400CA0177 /* NSMutableDictionaryAdditions.m */; };
+		6D0DB39B14DC10C400CA0177 /* NSObjectAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB37414DC10C400CA0177 /* NSObjectAdditions.h */; };
+		6D0DB39C14DC10C400CA0177 /* NSObjectAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB37514DC10C400CA0177 /* NSObjectAdditions.m */; };
+		6D0DB39D14DC10C400CA0177 /* NSStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB37614DC10C400CA0177 /* NSStringAdditions.h */; };
+		6D0DB39E14DC10C400CA0177 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB37714DC10C400CA0177 /* NSStringAdditions.m */; };
+		6D0DB39F14DC10C400CA0177 /* Three20.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB37814DC10C400CA0177 /* Three20.h */; };
+		6D0DB3A014DC10C400CA0177 /* Three20.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB37914DC10C400CA0177 /* Three20.m */; };
+		6D0DB3A114DC10C400CA0177 /* Three20Core_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB37A14DC10C400CA0177 /* Three20Core_Prefix.pch */; };
+		6D0DB3A214DC10C400CA0177 /* Three20Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB37B14DC10C400CA0177 /* Three20Core.h */; };
+		6D0DB3A314DC10C400CA0177 /* Three20Core+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB37C14DC10C400CA0177 /* Three20Core+Additions.h */; };
+		6D0DB3A414DC10C400CA0177 /* Three20Version.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB37D14DC10C400CA0177 /* Three20Version.h */; };
+		6D0DB3A514DC10C400CA0177 /* Three20Version.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB37E14DC10C400CA0177 /* Three20Version.m */; };
+		6D0DB3A614DC10C400CA0177 /* TTAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB37F14DC10C400CA0177 /* TTAvailability.h */; };
+		6D0DB3A714DC10C400CA0177 /* TTAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB38014DC10C400CA0177 /* TTAvailability.m */; };
+		6D0DB3A814DC10C400CA0177 /* TTCorePreprocessorMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB38114DC10C400CA0177 /* TTCorePreprocessorMacros.h */; };
+		6D0DB3A914DC10C400CA0177 /* TTDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB38214DC10C400CA0177 /* TTDebug.h */; };
+		6D0DB3AA14DC10C400CA0177 /* TTDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB38314DC10C400CA0177 /* TTDebug.m */; };
+		6D0DB3AB14DC10C400CA0177 /* TTDebugFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB38414DC10C400CA0177 /* TTDebugFlags.h */; };
+		6D0DB3AC14DC10C400CA0177 /* TTEntityTables.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB38514DC10C400CA0177 /* TTEntityTables.h */; };
+		6D0DB3AD14DC10C400CA0177 /* TTEntityTables.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB38614DC10C400CA0177 /* TTEntityTables.m */; };
+		6D0DB3AE14DC10C400CA0177 /* TTGlobalCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB38714DC10C400CA0177 /* TTGlobalCore.h */; };
+		6D0DB3AF14DC10C400CA0177 /* TTGlobalCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB38814DC10C400CA0177 /* TTGlobalCore.m */; };
+		6D0DB3B014DC10C400CA0177 /* TTGlobalCoreLocale.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB38914DC10C400CA0177 /* TTGlobalCoreLocale.h */; };
+		6D0DB3B114DC10C400CA0177 /* TTGlobalCoreLocale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB38A14DC10C400CA0177 /* TTGlobalCoreLocale.m */; };
+		6D0DB3B214DC10C400CA0177 /* TTGlobalCorePaths.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB38B14DC10C400CA0177 /* TTGlobalCorePaths.h */; };
+		6D0DB3B314DC10C400CA0177 /* TTGlobalCorePaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB38C14DC10C400CA0177 /* TTGlobalCorePaths.m */; };
+		6D0DB3B414DC10C400CA0177 /* TTGlobalCoreRects.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB38D14DC10C400CA0177 /* TTGlobalCoreRects.h */; };
+		6D0DB3B514DC10C400CA0177 /* TTGlobalCoreRects.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB38E14DC10C400CA0177 /* TTGlobalCoreRects.m */; };
+		6D0DB3B614DC10C400CA0177 /* TTMarkupStripper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB38F14DC10C400CA0177 /* TTMarkupStripper.h */; };
+		6D0DB3B714DC10C400CA0177 /* TTMarkupStripper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB39014DC10C400CA0177 /* TTMarkupStripper.m */; };
+		6EE739D01184BB0400A35176 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF31F3A0F352DF5000DE5D2 /* libThree20.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66FC2E291265264C00F56B19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = "Three20-Xcode3.2.4";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D0DB36A14DC10C400CA0177 /* NSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSArrayAdditions.h; path = Core/NSArrayAdditions.h; sourceTree = "<group>"; };
+		6D0DB36B14DC10C400CA0177 /* NSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSArrayAdditions.m; path = Core/NSArrayAdditions.m; sourceTree = "<group>"; };
+		6D0DB36C14DC10C400CA0177 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataAdditions.h; path = Core/NSDataAdditions.h; sourceTree = "<group>"; };
+		6D0DB36D14DC10C400CA0177 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDataAdditions.m; path = Core/NSDataAdditions.m; sourceTree = "<group>"; };
+		6D0DB36E14DC10C400CA0177 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateAdditions.h; path = Core/NSDateAdditions.h; sourceTree = "<group>"; };
+		6D0DB36F14DC10C400CA0177 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateAdditions.m; path = Core/NSDateAdditions.m; sourceTree = "<group>"; };
+		6D0DB37014DC10C400CA0177 /* NSMutableArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSMutableArrayAdditions.h; path = Core/NSMutableArrayAdditions.h; sourceTree = "<group>"; };
+		6D0DB37114DC10C400CA0177 /* NSMutableArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSMutableArrayAdditions.m; path = Core/NSMutableArrayAdditions.m; sourceTree = "<group>"; };
+		6D0DB37214DC10C400CA0177 /* NSMutableDictionaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSMutableDictionaryAdditions.h; path = Core/NSMutableDictionaryAdditions.h; sourceTree = "<group>"; };
+		6D0DB37314DC10C400CA0177 /* NSMutableDictionaryAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSMutableDictionaryAdditions.m; path = Core/NSMutableDictionaryAdditions.m; sourceTree = "<group>"; };
+		6D0DB37414DC10C400CA0177 /* NSObjectAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObjectAdditions.h; path = Core/NSObjectAdditions.h; sourceTree = "<group>"; };
+		6D0DB37514DC10C400CA0177 /* NSObjectAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObjectAdditions.m; path = Core/NSObjectAdditions.m; sourceTree = "<group>"; };
+		6D0DB37614DC10C400CA0177 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSStringAdditions.h; path = Core/NSStringAdditions.h; sourceTree = "<group>"; };
+		6D0DB37714DC10C400CA0177 /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringAdditions.m; path = Core/NSStringAdditions.m; sourceTree = "<group>"; };
+		6D0DB37814DC10C400CA0177 /* Three20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Three20.h; path = Core/Three20.h; sourceTree = "<group>"; };
+		6D0DB37914DC10C400CA0177 /* Three20.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Three20.m; path = Core/Three20.m; sourceTree = "<group>"; };
+		6D0DB37A14DC10C400CA0177 /* Three20Core_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Three20Core_Prefix.pch; path = Core/Three20Core_Prefix.pch; sourceTree = "<group>"; };
+		6D0DB37B14DC10C400CA0177 /* Three20Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Three20Core.h; path = Core/Three20Core.h; sourceTree = "<group>"; };
+		6D0DB37C14DC10C400CA0177 /* Three20Core+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Three20Core+Additions.h"; path = "Core/Three20Core+Additions.h"; sourceTree = "<group>"; };
+		6D0DB37D14DC10C400CA0177 /* Three20Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Three20Version.h; path = Core/Three20Version.h; sourceTree = "<group>"; };
+		6D0DB37E14DC10C400CA0177 /* Three20Version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Three20Version.m; path = Core/Three20Version.m; sourceTree = "<group>"; };
+		6D0DB37F14DC10C400CA0177 /* TTAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTAvailability.h; path = Core/TTAvailability.h; sourceTree = "<group>"; };
+		6D0DB38014DC10C400CA0177 /* TTAvailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTAvailability.m; path = Core/TTAvailability.m; sourceTree = "<group>"; };
+		6D0DB38114DC10C400CA0177 /* TTCorePreprocessorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTCorePreprocessorMacros.h; path = Core/TTCorePreprocessorMacros.h; sourceTree = "<group>"; };
+		6D0DB38214DC10C400CA0177 /* TTDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTDebug.h; path = Core/TTDebug.h; sourceTree = "<group>"; };
+		6D0DB38314DC10C400CA0177 /* TTDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTDebug.m; path = Core/TTDebug.m; sourceTree = "<group>"; };
+		6D0DB38414DC10C400CA0177 /* TTDebugFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTDebugFlags.h; path = Core/TTDebugFlags.h; sourceTree = "<group>"; };
+		6D0DB38514DC10C400CA0177 /* TTEntityTables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTEntityTables.h; path = Core/TTEntityTables.h; sourceTree = "<group>"; };
+		6D0DB38614DC10C400CA0177 /* TTEntityTables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTEntityTables.m; path = Core/TTEntityTables.m; sourceTree = "<group>"; };
+		6D0DB38714DC10C400CA0177 /* TTGlobalCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTGlobalCore.h; path = Core/TTGlobalCore.h; sourceTree = "<group>"; };
+		6D0DB38814DC10C400CA0177 /* TTGlobalCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTGlobalCore.m; path = Core/TTGlobalCore.m; sourceTree = "<group>"; };
+		6D0DB38914DC10C400CA0177 /* TTGlobalCoreLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTGlobalCoreLocale.h; path = Core/TTGlobalCoreLocale.h; sourceTree = "<group>"; };
+		6D0DB38A14DC10C400CA0177 /* TTGlobalCoreLocale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTGlobalCoreLocale.m; path = Core/TTGlobalCoreLocale.m; sourceTree = "<group>"; };
+		6D0DB38B14DC10C400CA0177 /* TTGlobalCorePaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTGlobalCorePaths.h; path = Core/TTGlobalCorePaths.h; sourceTree = "<group>"; };
+		6D0DB38C14DC10C400CA0177 /* TTGlobalCorePaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTGlobalCorePaths.m; path = Core/TTGlobalCorePaths.m; sourceTree = "<group>"; };
+		6D0DB38D14DC10C400CA0177 /* TTGlobalCoreRects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTGlobalCoreRects.h; path = Core/TTGlobalCoreRects.h; sourceTree = "<group>"; };
+		6D0DB38E14DC10C400CA0177 /* TTGlobalCoreRects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTGlobalCoreRects.m; path = Core/TTGlobalCoreRects.m; sourceTree = "<group>"; };
+		6D0DB38F14DC10C400CA0177 /* TTMarkupStripper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTMarkupStripper.h; path = Core/TTMarkupStripper.h; sourceTree = "<group>"; };
+		6D0DB39014DC10C400CA0177 /* TTMarkupStripper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTMarkupStripper.m; path = Core/TTMarkupStripper.m; sourceTree = "<group>"; };
+		BEF31F3A0F352DF5000DE5D2 /* libThree20.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libThree20.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9E6C6210B6A8F800DE563C /* Three20UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Three20UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEF31F380F352DF5000DE5D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9E6C5F10B6A8F800DE563C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE739D01184BB0400A35176 /* libThree20.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEF31F3A0F352DF5000DE5D2 /* libThree20.a */,
+				EB9E6C6210B6A8F800DE563C /* Three20UnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				6E7F96F2118E361F00443B46 /* Sources */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		6D0DB36914DC10B500CA0177 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB36A14DC10C400CA0177 /* NSArrayAdditions.h */,
+				6D0DB36B14DC10C400CA0177 /* NSArrayAdditions.m */,
+				6D0DB36C14DC10C400CA0177 /* NSDataAdditions.h */,
+				6D0DB36D14DC10C400CA0177 /* NSDataAdditions.m */,
+				6D0DB36E14DC10C400CA0177 /* NSDateAdditions.h */,
+				6D0DB36F14DC10C400CA0177 /* NSDateAdditions.m */,
+				6D0DB37014DC10C400CA0177 /* NSMutableArrayAdditions.h */,
+				6D0DB37114DC10C400CA0177 /* NSMutableArrayAdditions.m */,
+				6D0DB37214DC10C400CA0177 /* NSMutableDictionaryAdditions.h */,
+				6D0DB37314DC10C400CA0177 /* NSMutableDictionaryAdditions.m */,
+				6D0DB37414DC10C400CA0177 /* NSObjectAdditions.h */,
+				6D0DB37514DC10C400CA0177 /* NSObjectAdditions.m */,
+				6D0DB37614DC10C400CA0177 /* NSStringAdditions.h */,
+				6D0DB37714DC10C400CA0177 /* NSStringAdditions.m */,
+				6D0DB37814DC10C400CA0177 /* Three20.h */,
+				6D0DB37914DC10C400CA0177 /* Three20.m */,
+				6D0DB37A14DC10C400CA0177 /* Three20Core_Prefix.pch */,
+				6D0DB37B14DC10C400CA0177 /* Three20Core.h */,
+				6D0DB37C14DC10C400CA0177 /* Three20Core+Additions.h */,
+				6D0DB37D14DC10C400CA0177 /* Three20Version.h */,
+				6D0DB37E14DC10C400CA0177 /* Three20Version.m */,
+				6D0DB37F14DC10C400CA0177 /* TTAvailability.h */,
+				6D0DB38014DC10C400CA0177 /* TTAvailability.m */,
+				6D0DB38114DC10C400CA0177 /* TTCorePreprocessorMacros.h */,
+				6D0DB38214DC10C400CA0177 /* TTDebug.h */,
+				6D0DB38314DC10C400CA0177 /* TTDebug.m */,
+				6D0DB38414DC10C400CA0177 /* TTDebugFlags.h */,
+				6D0DB38514DC10C400CA0177 /* TTEntityTables.h */,
+				6D0DB38614DC10C400CA0177 /* TTEntityTables.m */,
+				6D0DB38714DC10C400CA0177 /* TTGlobalCore.h */,
+				6D0DB38814DC10C400CA0177 /* TTGlobalCore.m */,
+				6D0DB38914DC10C400CA0177 /* TTGlobalCoreLocale.h */,
+				6D0DB38A14DC10C400CA0177 /* TTGlobalCoreLocale.m */,
+				6D0DB38B14DC10C400CA0177 /* TTGlobalCorePaths.h */,
+				6D0DB38C14DC10C400CA0177 /* TTGlobalCorePaths.m */,
+				6D0DB38D14DC10C400CA0177 /* TTGlobalCoreRects.h */,
+				6D0DB38E14DC10C400CA0177 /* TTGlobalCoreRects.m */,
+				6D0DB38F14DC10C400CA0177 /* TTMarkupStripper.h */,
+				6D0DB39014DC10C400CA0177 /* TTMarkupStripper.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		6E7F96F2118E361F00443B46 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB36914DC10B500CA0177 /* Core */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BEF31F360F352DF5000DE5D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0DB39114DC10C400CA0177 /* NSArrayAdditions.h in Headers */,
+				6D0DB39314DC10C400CA0177 /* NSDataAdditions.h in Headers */,
+				6D0DB39514DC10C400CA0177 /* NSDateAdditions.h in Headers */,
+				6D0DB39714DC10C400CA0177 /* NSMutableArrayAdditions.h in Headers */,
+				6D0DB39914DC10C400CA0177 /* NSMutableDictionaryAdditions.h in Headers */,
+				6D0DB39B14DC10C400CA0177 /* NSObjectAdditions.h in Headers */,
+				6D0DB39D14DC10C400CA0177 /* NSStringAdditions.h in Headers */,
+				6D0DB39F14DC10C400CA0177 /* Three20.h in Headers */,
+				6D0DB3A114DC10C400CA0177 /* Three20Core_Prefix.pch in Headers */,
+				6D0DB3A214DC10C400CA0177 /* Three20Core.h in Headers */,
+				6D0DB3A314DC10C400CA0177 /* Three20Core+Additions.h in Headers */,
+				6D0DB3A414DC10C400CA0177 /* Three20Version.h in Headers */,
+				6D0DB3A614DC10C400CA0177 /* TTAvailability.h in Headers */,
+				6D0DB3A814DC10C400CA0177 /* TTCorePreprocessorMacros.h in Headers */,
+				6D0DB3A914DC10C400CA0177 /* TTDebug.h in Headers */,
+				6D0DB3AB14DC10C400CA0177 /* TTDebugFlags.h in Headers */,
+				6D0DB3AC14DC10C400CA0177 /* TTEntityTables.h in Headers */,
+				6D0DB3AE14DC10C400CA0177 /* TTGlobalCore.h in Headers */,
+				6D0DB3B014DC10C400CA0177 /* TTGlobalCoreLocale.h in Headers */,
+				6D0DB3B214DC10C400CA0177 /* TTGlobalCorePaths.h in Headers */,
+				6D0DB3B414DC10C400CA0177 /* TTGlobalCoreRects.h in Headers */,
+				6D0DB3B614DC10C400CA0177 /* TTMarkupStripper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BEF31F390F352DF5000DE5D2 /* Three20 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF31F410F352E14000DE5D2 /* Build configuration list for PBXNativeTarget "Three20" */;
+			buildPhases = (
+				BEF31F360F352DF5000DE5D2 /* Headers */,
+				BEF31F370F352DF5000DE5D2 /* Sources */,
+				BEF31F380F352DF5000DE5D2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Three20;
+			productName = Three20;
+			productReference = BEF31F3A0F352DF5000DE5D2 /* libThree20.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EB9E6C6110B6A8F800DE563C /* Three20UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9E6C6710B6A8F900DE563C /* Build configuration list for PBXNativeTarget "Three20UnitTests" */;
+			buildPhases = (
+				EB9E6C5D10B6A8F800DE563C /* Resources */,
+				EB9E6C5E10B6A8F800DE563C /* Sources */,
+				EB9E6C5F10B6A8F800DE563C /* Frameworks */,
+				EB9E6C6010B6A8F800DE563C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66FC2E2A1265264C00F56B19 /* PBXTargetDependency */,
+			);
+			name = Three20UnitTests;
+			productName = CoreUnitTests;
+			productReference = EB9E6C6210B6A8F800DE563C /* Three20UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Three20" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEF31F390F352DF5000DE5D2 /* Three20 */,
+				EB9E6C6110B6A8F800DE563C /* Three20UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB9E6C5D10B6A8F800DE563C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB9E6C6010B6A8F800DE563C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEF31F370F352DF5000DE5D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0DB39214DC10C400CA0177 /* NSArrayAdditions.m in Sources */,
+				6D0DB39414DC10C400CA0177 /* NSDataAdditions.m in Sources */,
+				6D0DB39614DC10C400CA0177 /* NSDateAdditions.m in Sources */,
+				6D0DB39814DC10C400CA0177 /* NSMutableArrayAdditions.m in Sources */,
+				6D0DB39A14DC10C400CA0177 /* NSMutableDictionaryAdditions.m in Sources */,
+				6D0DB39C14DC10C400CA0177 /* NSObjectAdditions.m in Sources */,
+				6D0DB39E14DC10C400CA0177 /* NSStringAdditions.m in Sources */,
+				6D0DB3A014DC10C400CA0177 /* Three20.m in Sources */,
+				6D0DB3A514DC10C400CA0177 /* Three20Version.m in Sources */,
+				6D0DB3A714DC10C400CA0177 /* TTAvailability.m in Sources */,
+				6D0DB3AA14DC10C400CA0177 /* TTDebug.m in Sources */,
+				6D0DB3AD14DC10C400CA0177 /* TTEntityTables.m in Sources */,
+				6D0DB3AF14DC10C400CA0177 /* TTGlobalCore.m in Sources */,
+				6D0DB3B114DC10C400CA0177 /* TTGlobalCoreLocale.m in Sources */,
+				6D0DB3B314DC10C400CA0177 /* TTGlobalCorePaths.m in Sources */,
+				6D0DB3B514DC10C400CA0177 /* TTGlobalCoreRects.m in Sources */,
+				6D0DB3B714DC10C400CA0177 /* TTMarkupStripper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9E6C5E10B6A8F800DE563C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66FC2E2A1265264C00F56B19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF31F390F352DF5000DE5D2 /* Three20 */;
+			targetProxy = 66FC2E291265264C00F56B19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6E92493F112C6F4000531F03 /* Internal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Internal;
+		};
+		6E924940112C6F4000531F03 /* Internal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Internal;
+		};
+		6E924941112C6F4000531F03 /* Internal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Internal;
+		};
+		BEF31F3B0F352DF6000DE5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BEF31F3C0F352DF6000DE5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		EB9E6C6510B6A8F900DE563C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EB9E6C6610B6A8F900DE563C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEF31F410F352E14000DE5D2 /* Build configuration list for PBXNativeTarget "Three20" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF31F3B0F352DF6000DE5D2 /* Debug */,
+				6E924940112C6F4000531F03 /* Internal */,
+				BEF31F3C0F352DF6000DE5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Three20" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				6E92493F112C6F4000531F03 /* Internal */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB9E6C6710B6A8F900DE563C /* Build configuration list for PBXNativeTarget "Three20UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9E6C6510B6A8F900DE563C /* Debug */,
+				6E924941112C6F4000531F03 /* Internal */,
+				EB9E6C6610B6A8F900DE563C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
