@@ -230,9 +230,6 @@
 		6D0DB53814DC13B600CA0177 /* UIFontAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB4BB14DC13B600CA0177 /* UIFontAdditions.m */; };
 		6D0DB53914DC13B600CA0177 /* UIImageAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB4BC14DC13B600CA0177 /* UIImageAdditions.h */; };
 		6D0DB53A14DC13B600CA0177 /* UIImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB4BD14DC13B600CA0177 /* UIImageAdditions.m */; };
-		6D0DB54E14DC143900CA0177 /* Three20UICommon_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54014DC143900CA0177 /* Three20UICommon_Prefix.pch */; };
-		6D0DB54F14DC143900CA0177 /* Three20UICommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54114DC143900CA0177 /* Three20UICommon.h */; };
-		6D0DB55014DC143900CA0177 /* Three20UICommon+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54214DC143900CA0177 /* Three20UICommon+Additions.h */; };
 		6D0DB55114DC143900CA0177 /* TTBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54314DC143900CA0177 /* TTBaseViewController.h */; };
 		6D0DB55214DC143900CA0177 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB54414DC143900CA0177 /* TTBaseViewController.m */; };
 		6D0DB55314DC143900CA0177 /* TTGlobalUICommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54514DC143900CA0177 /* TTGlobalUICommon.h */; };
@@ -787,9 +784,6 @@
 		6D0DB4BB14DC13B600CA0177 /* UIFontAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIFontAdditions.m; path = Style/UIFontAdditions.m; sourceTree = "<group>"; };
 		6D0DB4BC14DC13B600CA0177 /* UIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageAdditions.h; path = Style/UIImageAdditions.h; sourceTree = "<group>"; };
 		6D0DB4BD14DC13B600CA0177 /* UIImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageAdditions.m; path = Style/UIImageAdditions.m; sourceTree = "<group>"; };
-		6D0DB54014DC143900CA0177 /* Three20UICommon_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Three20UICommon_Prefix.pch; path = UI/Three20UICommon_Prefix.pch; sourceTree = "<group>"; };
-		6D0DB54114DC143900CA0177 /* Three20UICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Three20UICommon.h; path = UI/Three20UICommon.h; sourceTree = "<group>"; };
-		6D0DB54214DC143900CA0177 /* Three20UICommon+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Three20UICommon+Additions.h"; path = "UI/Three20UICommon+Additions.h"; sourceTree = "<group>"; };
 		6D0DB54314DC143900CA0177 /* TTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTBaseViewController.h; path = UI/TTBaseViewController.h; sourceTree = "<group>"; };
 		6D0DB54414DC143900CA0177 /* TTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TTBaseViewController.m; path = UI/TTBaseViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB54514DC143900CA0177 /* TTGlobalUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTGlobalUICommon.h; path = UI/TTGlobalUICommon.h; sourceTree = "<group>"; };
@@ -1151,44 +1145,14 @@
 		6D0DB36914DC10B500CA0177 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				6D0DB36A14DC10C400CA0177 /* NSArrayAdditions.h */,
-				6D0DB36B14DC10C400CA0177 /* NSArrayAdditions.m */,
-				6D0DB36C14DC10C400CA0177 /* NSDataAdditions.h */,
-				6D0DB36D14DC10C400CA0177 /* NSDataAdditions.m */,
-				6D0DB36E14DC10C400CA0177 /* NSDateAdditions.h */,
-				6D0DB36F14DC10C400CA0177 /* NSDateAdditions.m */,
-				6D0DB37014DC10C400CA0177 /* NSMutableArrayAdditions.h */,
-				6D0DB37114DC10C400CA0177 /* NSMutableArrayAdditions.m */,
-				6D0DB37214DC10C400CA0177 /* NSMutableDictionaryAdditions.h */,
-				6D0DB37314DC10C400CA0177 /* NSMutableDictionaryAdditions.m */,
-				6D0DB37414DC10C400CA0177 /* NSObjectAdditions.h */,
-				6D0DB37514DC10C400CA0177 /* NSObjectAdditions.m */,
-				6D0DB37614DC10C400CA0177 /* NSStringAdditions.h */,
-				6D0DB37714DC10C400CA0177 /* NSStringAdditions.m */,
-				6D0DB37814DC10C400CA0177 /* Three20.h */,
-				6D0DB37914DC10C400CA0177 /* Three20.m */,
 				6D0DB37B14DC10C400CA0177 /* Three20Core.h */,
 				6D0DB37C14DC10C400CA0177 /* Three20Core+Additions.h */,
-				6D0DB37D14DC10C400CA0177 /* Three20Version.h */,
-				6D0DB37E14DC10C400CA0177 /* Three20Version.m */,
-				6D0DB37F14DC10C400CA0177 /* TTAvailability.h */,
-				6D0DB38014DC10C400CA0177 /* TTAvailability.m */,
+				6D0DB81814DC188900CA0177 /* Additions */,
+				6D0DB81714DC187000CA0177 /* Global */,
+				6D0DB81914DC18C000CA0177 /* Debug */,
+				6D0DB81A14DC190B00CA0177 /* EntityTables */,
+				6D0DB81B14DC191D00CA0177 /* MarkupStrippe */,
 				6D0DB38114DC10C400CA0177 /* TTCorePreprocessorMacros.h */,
-				6D0DB38214DC10C400CA0177 /* TTDebug.h */,
-				6D0DB38314DC10C400CA0177 /* TTDebug.m */,
-				6D0DB38414DC10C400CA0177 /* TTDebugFlags.h */,
-				6D0DB38514DC10C400CA0177 /* TTEntityTables.h */,
-				6D0DB38614DC10C400CA0177 /* TTEntityTables.m */,
-				6D0DB38714DC10C400CA0177 /* TTGlobalCore.h */,
-				6D0DB38814DC10C400CA0177 /* TTGlobalCore.m */,
-				6D0DB38914DC10C400CA0177 /* TTGlobalCoreLocale.h */,
-				6D0DB38A14DC10C400CA0177 /* TTGlobalCoreLocale.m */,
-				6D0DB38B14DC10C400CA0177 /* TTGlobalCorePaths.h */,
-				6D0DB38C14DC10C400CA0177 /* TTGlobalCorePaths.m */,
-				6D0DB38D14DC10C400CA0177 /* TTGlobalCoreRects.h */,
-				6D0DB38E14DC10C400CA0177 /* TTGlobalCoreRects.m */,
-				6D0DB38F14DC10C400CA0177 /* TTMarkupStripper.h */,
-				6D0DB39014DC10C400CA0177 /* TTMarkupStripper.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -1197,39 +1161,14 @@
 			isa = PBXGroup;
 			children = (
 				6D0DB3BE14DC12F900CA0177 /* Three20Network.h */,
-				6D0DB3BF14DC12F900CA0177 /* TTErrorCodes.h */,
-				6D0DB3C014DC12F900CA0177 /* TTErrorCodes.m */,
-				6D0DB3C114DC12F900CA0177 /* TTGlobalNetwork.h */,
-				6D0DB3C214DC12F900CA0177 /* TTGlobalNetwork.m */,
-				6D0DB3C314DC12F900CA0177 /* TTModel.h */,
-				6D0DB3C414DC12F900CA0177 /* TTModel.m */,
-				6D0DB3C514DC12F900CA0177 /* TTModelDelegate.h */,
-				6D0DB3C614DC12F900CA0177 /* TTRequestLoader.h */,
-				6D0DB3C714DC12F900CA0177 /* TTRequestLoader.m */,
-				6D0DB3C814DC12F900CA0177 /* TTURLCache.h */,
-				6D0DB3C914DC12F900CA0177 /* TTURLCache.m */,
-				6D0DB3CA14DC12F900CA0177 /* TTURLDataResponse.h */,
-				6D0DB3CB14DC12F900CA0177 /* TTURLDataResponse.m */,
-				6D0DB3CC14DC12F900CA0177 /* TTURLImageResponse.h */,
-				6D0DB3CD14DC12F900CA0177 /* TTURLImageResponse.m */,
-				6D0DB3CE14DC12F900CA0177 /* TTURLJSONResponse.h */,
-				6D0DB3CF14DC12F900CA0177 /* TTURLJSONResponse.m */,
-				6D0DB3D014DC12F900CA0177 /* TTURLRequest.h */,
-				6D0DB3D114DC12F900CA0177 /* TTURLRequest.m */,
-				6D0DB3D214DC12F900CA0177 /* TTURLRequestCachePolicy.h */,
-				6D0DB3D314DC12F900CA0177 /* TTURLRequestDelegate.h */,
-				6D0DB3D414DC12F900CA0177 /* TTURLRequestModel.h */,
-				6D0DB3D514DC12F900CA0177 /* TTURLRequestModel.m */,
-				6D0DB3D614DC12F900CA0177 /* TTURLRequestQueue.h */,
-				6D0DB3D714DC12F900CA0177 /* TTURLRequestQueue.m */,
-				6D0DB3D814DC12F900CA0177 /* TTURLRequestQueueInternal.h */,
-				6D0DB3D914DC12F900CA0177 /* TTURLResponse.h */,
-				6D0DB3DA14DC12F900CA0177 /* TTURLXMLResponse.h */,
-				6D0DB3DB14DC12F900CA0177 /* TTURLXMLResponse.m */,
-				6D0DB3DC14DC12F900CA0177 /* TTUserInfo.h */,
-				6D0DB3DD14DC12F900CA0177 /* TTUserInfo.m */,
-				6D0DB3DE14DC12F900CA0177 /* TTXMLParser.h */,
-				6D0DB3DF14DC12F900CA0177 /* TTXMLParser.m */,
+				6D0DB82414DC1A6A00CA0177 /* Error Codes */,
+				6D0DB82514DC1A7800CA0177 /* Global Network */,
+				6D0DB81F14DC19E900CA0177 /* Model */,
+				6D0DB82014DC1A2000CA0177 /* Request */,
+				6D0DB82214DC1A4700CA0177 /* Cache */,
+				6D0DB82114DC1A3800CA0177 /* Response */,
+				6D0DB82614DC1A8B00CA0177 /* User Info */,
+				6D0DB82314DC1A5500CA0177 /* XML Parser */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -1412,114 +1351,276 @@
 			children = (
 				6D0DB55D14DC148A00CA0177 /* Three20UI.h */,
 				6D0DB55E14DC148A00CA0177 /* Three20UI+Additions.h */,
-				6D0DB55F14DC148A00CA0177 /* TTActionSheet.h */,
-				6D0DB56014DC148A00CA0177 /* TTActionSheet.m */,
-				6D0DB56114DC148A00CA0177 /* TTActionSheetController.h */,
-				6D0DB56214DC148A00CA0177 /* TTActionSheetController.m */,
-				6D0DB56314DC148A00CA0177 /* TTActionSheetControllerDelegate.h */,
-				6D0DB56414DC148A00CA0177 /* TTActivityLabel.h */,
-				6D0DB56514DC148A00CA0177 /* TTActivityLabel.m */,
-				6D0DB56614DC148A00CA0177 /* TTAlertView.h */,
-				6D0DB56714DC148A00CA0177 /* TTAlertView.m */,
-				6D0DB56814DC148A00CA0177 /* TTAlertViewController.h */,
-				6D0DB56914DC148A00CA0177 /* TTAlertViewController.m */,
-				6D0DB56A14DC148A00CA0177 /* TTAlertViewControllerDelegate.h */,
-				6D0DB56B14DC148A00CA0177 /* TTButton.h */,
-				6D0DB56C14DC148A00CA0177 /* TTButton.m */,
-				6D0DB56D14DC148A00CA0177 /* TTButtonBar.h */,
-				6D0DB56E14DC148A00CA0177 /* TTButtonBar.m */,
-				6D0DB56F14DC148B00CA0177 /* TTButtonContent.h */,
-				6D0DB57014DC148B00CA0177 /* TTButtonContent.m */,
-				6D0DB57114DC148B00CA0177 /* TTErrorView.h */,
-				6D0DB57214DC148B00CA0177 /* TTErrorView.m */,
-				6D0DB57314DC148B00CA0177 /* TTImageLayer.h */,
-				6D0DB57414DC148B00CA0177 /* TTImageLayer.m */,
-				6D0DB57514DC148B00CA0177 /* TTImageView.h */,
-				6D0DB57614DC148B00CA0177 /* TTImageView.m */,
-				6D0DB57714DC148B00CA0177 /* TTImageViewDelegate.h */,
-				6D0DB57814DC148B00CA0177 /* TTImageViewInternal.h */,
-				6D0DB57914DC148B00CA0177 /* TTImageViewInternal.m */,
-				6D0DB57A14DC148B00CA0177 /* TTLabel.h */,
-				6D0DB57B14DC148B00CA0177 /* TTLabel.m */,
-				6D0DB57C14DC148B00CA0177 /* TTLauncherButton.h */,
-				6D0DB57D14DC148B00CA0177 /* TTLauncherButton.m */,
-				6D0DB57E14DC148B00CA0177 /* TTLauncherHighlightView.h */,
-				6D0DB57F14DC148B00CA0177 /* TTLauncherHighlightView.m */,
-				6D0DB58014DC148B00CA0177 /* TTLauncherItem.h */,
-				6D0DB58114DC148B00CA0177 /* TTLauncherItem.m */,
-				6D0DB58214DC148B00CA0177 /* TTLauncherPersistenceMode.h */,
-				6D0DB58314DC148B00CA0177 /* TTLauncherScrollView.h */,
-				6D0DB58414DC148B00CA0177 /* TTLauncherScrollView.m */,
-				6D0DB58514DC148B00CA0177 /* TTLauncherView.h */,
-				6D0DB58614DC148B00CA0177 /* TTLauncherView.m */,
-				6D0DB58714DC148B00CA0177 /* TTLauncherViewDelegate.h */,
-				6D0DB58814DC148B00CA0177 /* TTLink.h */,
-				6D0DB58914DC148B00CA0177 /* TTLink.m */,
-				6D0DB58A14DC148B00CA0177 /* TTListDataSource.h */,
-				6D0DB58B14DC148B00CA0177 /* TTListDataSource.m */,
-				6D0DB58C14DC148B00CA0177 /* TTMessageController.h */,
-				6D0DB58D14DC148B00CA0177 /* TTMessageController.m */,
-				6D0DB58E14DC148C00CA0177 /* TTMessageControllerDelegate.h */,
-				6D0DB58F14DC148C00CA0177 /* TTMessageField.h */,
-				6D0DB59014DC148C00CA0177 /* TTMessageField.m */,
-				6D0DB59114DC148C00CA0177 /* TTMessageRecipientField.h */,
-				6D0DB59214DC148C00CA0177 /* TTMessageRecipientField.m */,
-				6D0DB59314DC148C00CA0177 /* TTMessageSubjectField.h */,
-				6D0DB59414DC148D00CA0177 /* TTMessageSubjectField.m */,
-				6D0DB59514DC148D00CA0177 /* TTMessageTextField.h */,
-				6D0DB59614DC148D00CA0177 /* TTMessageTextField.m */,
-				6D0DB59714DC148D00CA0177 /* TTModelViewController.h */,
-				6D0DB59814DC148D00CA0177 /* TTModelViewController.m */,
-				6D0DB59914DC148D00CA0177 /* TTNavigationController.h */,
-				6D0DB59A14DC148D00CA0177 /* TTNavigationController.m */,
-				6D0DB59B14DC148D00CA0177 /* TTNavigator.h */,
-				6D0DB59C14DC148D00CA0177 /* TTNavigator.m */,
-				6D0DB59D14DC148D00CA0177 /* TTNavigatorWindow.h */,
-				6D0DB59E14DC148D00CA0177 /* TTNavigatorWindow.m */,
-				6D0DB59F14DC148D00CA0177 /* TTPageControl.h */,
-				6D0DB5A014DC148D00CA0177 /* TTPageControl.m */,
-				6D0DB5A114DC148D00CA0177 /* TTPhoto.h */,
-				6D0DB5A214DC148D00CA0177 /* TTPhotoSource.h */,
-				6D0DB5A314DC148D00CA0177 /* TTPhotoVersion.h */,
-				6D0DB5A414DC148D00CA0177 /* TTPhotoView.h */,
-				6D0DB5A514DC148D00CA0177 /* TTPhotoView.m */,
-				6D0DB5A614DC148D00CA0177 /* TTPhotoViewController.h */,
-				6D0DB5A714DC148D00CA0177 /* TTPhotoViewController.m */,
-				6D0DB5A814DC148D00CA0177 /* TTPickerTextField.h */,
-				6D0DB5A914DC148D00CA0177 /* TTPickerTextField.m */,
-				6D0DB5AA14DC148D00CA0177 /* TTPickerTextFieldDelegate.h */,
-				6D0DB5AB14DC148D00CA0177 /* TTPickerViewCell.h */,
-				6D0DB5AC14DC148D00CA0177 /* TTPickerViewCell.m */,
-				6D0DB5AD14DC148D00CA0177 /* TTPopupViewController.h */,
-				6D0DB5AE14DC148D00CA0177 /* TTPopupViewController.m */,
-				6D0DB5AF14DC148D00CA0177 /* TTPostController.h */,
-				6D0DB5B014DC148D00CA0177 /* TTPostController.m */,
-				6D0DB5B114DC148D00CA0177 /* TTPostControllerDelegate.h */,
-				6D0DB5B214DC148D00CA0177 /* TTRecursiveProgress.h */,
-				6D0DB5B314DC148D00CA0177 /* TTRecursiveProgress.m */,
-				6D0DB5B414DC148F00CA0177 /* TTScrollView.h */,
-				6D0DB5B514DC148F00CA0177 /* TTScrollView.m */,
-				6D0DB5B614DC148F00CA0177 /* TTScrollViewDataSource.h */,
-				6D0DB5B714DC148F00CA0177 /* TTScrollViewDelegate.h */,
-				6D0DB5B814DC148F00CA0177 /* TTSearchBar.h */,
-				6D0DB5B914DC148F00CA0177 /* TTSearchBar.m */,
-				6D0DB5BA14DC148F00CA0177 /* TTSearchDisplayController.h */,
-				6D0DB5BB14DC148F00CA0177 /* TTSearchDisplayController.m */,
-				6D0DB5BC14DC148F00CA0177 /* TTSearchlightLabel.h */,
-				6D0DB5BD14DC148F00CA0177 /* TTSearchlightLabel.m */,
-				6D0DB5BE14DC148F00CA0177 /* TTSearchTextField.h */,
-				6D0DB5BF14DC148F00CA0177 /* TTSearchTextField.m */,
-				6D0DB5C014DC148F00CA0177 /* TTSearchTextFieldDelegate.h */,
-				6D0DB5C114DC148F00CA0177 /* TTSearchTextFieldInternal.h */,
-				6D0DB5C214DC148F00CA0177 /* TTSearchTextFieldInternal.m */,
-				6D0DB5C314DC148F00CA0177 /* TTSectionedDataSource.h */,
-				6D0DB5C414DC148F00CA0177 /* TTSectionedDataSource.m */,
-				6D0DB5C514DC148F00CA0177 /* TTStyledTextLabel.h */,
-				6D0DB5C614DC148F00CA0177 /* TTStyledTextLabel.m */,
-				6D0DB5C714DC148F00CA0177 /* TTStyledTextTableCell.h */,
-				6D0DB5C814DC149000CA0177 /* TTStyledTextTableCell.m */,
-				6D0DB5C914DC149000CA0177 /* TTStyledTextTableItemCell.h */,
-				6D0DB5CA14DC149000CA0177 /* TTStyledTextTableItemCell.m */,
+				6DCA657814DC1EB400880863 /* Action Sheet */,
+				6DCA657B14DC1EDF00880863 /* Activity Label */,
+				6DCA657914DC1EC200880863 /* Alert View */,
+				6DCA657A14DC1ED100880863 /* Button */,
+				6DCA657D14DC1EFE00880863 /* Error View */,
+				6DCA657C14DC1EEE00880863 /* Image View */,
+				6DCA657E14DC1F0A00880863 /* Label */,
+				6DCA657714DC1E1200880863 /* Launcher View */,
+				6DCA657F14DC1F1C00880863 /* Link */,
+				6DCA657614DC1DFB00880863 /* Message Controller */,
+				6D4283C114DC204F002FDD03 /* Model View Controller */,
+				6DCA658014DC1F2900880863 /* Navigator */,
+				6D4283C014DC2043002FDD03 /* Page Control */,
+				6DCA657114DC1D4600880863 /* Photo Controller */,
+				6D4283C214DC205E002FDD03 /* Picker View */,
+				6D4283CA14DC20DE002FDD03 /* Popup Controller */,
+				6D4283C914DC20D3002FDD03 /* Post Controller */,
+				6D4283CB14DC20EC002FDD03 /* Recursive Progress */,
+				6D4283C414DC2089002FDD03 /* Scroll View */,
+				6D4283C314DC2073002FDD03 /* Search Controller */,
+				6D0DB82714DC1ADC00CA0177 /* Tabs */,
+				6DCA657314DC1D5E00880863 /* Table Controller */,
+				6D4283BF14DC2017002FDD03 /* Text Editor */,
+				6D4283BD14DC2005002FDD03 /* Thumbs Controller */,
+				6D4283C814DC20C8002FDD03 /* View */,
+				6D4283C514DC20A0002FDD03 /* View Controller */,
+				6D4283C614DC20AC002FDD03 /* Web Controller */,
+				6D4283C714DC20B9002FDD03 /* YouTube View */,
+				6DCA657414DC1DB900880863 /* Additions */,
+				6DCA657514DC1DE000880863 /* Base Controller */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		6D0DB77014DC159800CA0177 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB77214DC15AA00CA0177 /* Three20UINavigator.h */,
+				6D0DB77314DC15AA00CA0177 /* Three20UINavigator+Additions.h */,
+				6D0DB81D14DC196A00CA0177 /* Global Navigator */,
+				6D0DB81C14DC194C00CA0177 /* URL Mapping */,
+				6D0DB81E14DC198C00CA0177 /* Additions */,
+			);
+			name = Navigator;
+			sourceTree = "<group>";
+		};
+		6D0DB81714DC187000CA0177 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB37814DC10C400CA0177 /* Three20.h */,
+				6D0DB37914DC10C400CA0177 /* Three20.m */,
+				6D0DB37D14DC10C400CA0177 /* Three20Version.h */,
+				6D0DB37E14DC10C400CA0177 /* Three20Version.m */,
+				6D0DB37F14DC10C400CA0177 /* TTAvailability.h */,
+				6D0DB38014DC10C400CA0177 /* TTAvailability.m */,
+				6D0DB38714DC10C400CA0177 /* TTGlobalCore.h */,
+				6D0DB38814DC10C400CA0177 /* TTGlobalCore.m */,
+				6D0DB38914DC10C400CA0177 /* TTGlobalCoreLocale.h */,
+				6D0DB38A14DC10C400CA0177 /* TTGlobalCoreLocale.m */,
+				6D0DB38B14DC10C400CA0177 /* TTGlobalCorePaths.h */,
+				6D0DB38C14DC10C400CA0177 /* TTGlobalCorePaths.m */,
+				6D0DB38D14DC10C400CA0177 /* TTGlobalCoreRects.h */,
+				6D0DB38E14DC10C400CA0177 /* TTGlobalCoreRects.m */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		6D0DB81814DC188900CA0177 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB36A14DC10C400CA0177 /* NSArrayAdditions.h */,
+				6D0DB36B14DC10C400CA0177 /* NSArrayAdditions.m */,
+				6D0DB36C14DC10C400CA0177 /* NSDataAdditions.h */,
+				6D0DB36D14DC10C400CA0177 /* NSDataAdditions.m */,
+				6D0DB36E14DC10C400CA0177 /* NSDateAdditions.h */,
+				6D0DB36F14DC10C400CA0177 /* NSDateAdditions.m */,
+				6D0DB37014DC10C400CA0177 /* NSMutableArrayAdditions.h */,
+				6D0DB37114DC10C400CA0177 /* NSMutableArrayAdditions.m */,
+				6D0DB37214DC10C400CA0177 /* NSMutableDictionaryAdditions.h */,
+				6D0DB37314DC10C400CA0177 /* NSMutableDictionaryAdditions.m */,
+				6D0DB37414DC10C400CA0177 /* NSObjectAdditions.h */,
+				6D0DB37514DC10C400CA0177 /* NSObjectAdditions.m */,
+				6D0DB37614DC10C400CA0177 /* NSStringAdditions.h */,
+				6D0DB37714DC10C400CA0177 /* NSStringAdditions.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		6D0DB81914DC18C000CA0177 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB38414DC10C400CA0177 /* TTDebugFlags.h */,
+				6D0DB38214DC10C400CA0177 /* TTDebug.h */,
+				6D0DB38314DC10C400CA0177 /* TTDebug.m */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		6D0DB81A14DC190B00CA0177 /* EntityTables */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB38514DC10C400CA0177 /* TTEntityTables.h */,
+				6D0DB38614DC10C400CA0177 /* TTEntityTables.m */,
+			);
+			name = EntityTables;
+			sourceTree = "<group>";
+		};
+		6D0DB81B14DC191D00CA0177 /* MarkupStrippe */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB38F14DC10C400CA0177 /* TTMarkupStripper.h */,
+				6D0DB39014DC10C400CA0177 /* TTMarkupStripper.m */,
+			);
+			name = MarkupStrippe;
+			sourceTree = "<group>";
+		};
+		6D0DB81C14DC194C00CA0177 /* URL Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB78114DC15AA00CA0177 /* TTURLAction.h */,
+				6D0DB78214DC15AA00CA0177 /* TTURLAction.m */,
+				6D0DB78314DC15AA00CA0177 /* TTURLArguments.h */,
+				6D0DB78414DC15AA00CA0177 /* TTURLArguments.m */,
+				6D0DB78514DC15AA00CA0177 /* TTURLArgumentType.h */,
+				6D0DB78614DC15AA00CA0177 /* TTURLGeneratorPattern.h */,
+				6D0DB78714DC15AA00CA0177 /* TTURLGeneratorPattern.m */,
+				6D0DB78814DC15AA00CA0177 /* TTURLLiteral.h */,
+				6D0DB78914DC15AA00CA0177 /* TTURLLiteral.m */,
+				6D0DB78A14DC15AA00CA0177 /* TTURLMap.h */,
+				6D0DB78B14DC15AA00CA0177 /* TTURLMap.m */,
+				6D0DB78C14DC15AA00CA0177 /* TTURLNavigatorPattern.h */,
+				6D0DB78D14DC15AA00CA0177 /* TTURLNavigatorPattern.m */,
+				6D0DB78E14DC15AA00CA0177 /* TTURLObject.h */,
+				6D0DB78F14DC15AA00CA0177 /* TTURLPattern.h */,
+				6D0DB79014DC15AA00CA0177 /* TTURLPattern.m */,
+				6D0DB79114DC15AA00CA0177 /* TTURLPatternInternal.h */,
+				6D0DB79214DC15AA00CA0177 /* TTURLPatternInternal.m */,
+				6D0DB79314DC15AA00CA0177 /* TTURLPatternText.h */,
+				6D0DB79414DC15AA00CA0177 /* TTURLSelector.h */,
+				6D0DB79514DC15AA00CA0177 /* TTURLSelector.m */,
+				6D0DB79614DC15AA00CA0177 /* TTURLWildcard.h */,
+				6D0DB79714DC15AA00CA0177 /* TTURLWildcard.m */,
+			);
+			name = "URL Mapping";
+			sourceTree = "<group>";
+		};
+		6D0DB81D14DC196A00CA0177 /* Global Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB77414DC15AA00CA0177 /* TTBaseNavigationController.h */,
+				6D0DB77514DC15AA00CA0177 /* TTBaseNavigationController.m */,
+				6D0DB77614DC15AA00CA0177 /* TTBaseNavigator.h */,
+				6D0DB77714DC15AA00CA0177 /* TTBaseNavigator.m */,
+				6D0DB77814DC15AA00CA0177 /* TTBaseNavigatorInternal.h */,
+				6D0DB77914DC15AA00CA0177 /* TTGlobalNavigatorMetrics.h */,
+				6D0DB77A14DC15AA00CA0177 /* TTGlobalNavigatorMetrics.m */,
+				6D0DB77B14DC15AA00CA0177 /* TTNavigationMode.h */,
+				6D0DB77C14DC15AA00CA0177 /* TTNavigatorDelegate.h */,
+				6D0DB77D14DC15AA00CA0177 /* TTNavigatorPersistenceMode.h */,
+				6D0DB77E14DC15AA00CA0177 /* TTNavigatorRootContainer.h */,
+				6D0DB77F14DC15AA00CA0177 /* TTNavigatorViewController.h */,
+				6D0DB78014DC15AA00CA0177 /* TTNavigatorViewController.m */,
+			);
+			name = "Global Navigator";
+			sourceTree = "<group>";
+		};
+		6D0DB81E14DC198C00CA0177 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB79814DC15AA00CA0177 /* UIViewController+TTNavigator.h */,
+				6D0DB79914DC15AA00CA0177 /* UIViewController+TTNavigator.m */,
+				6D0DB79A14DC15AA00CA0177 /* UIViewController+TTNavigatorGarbageCollection.h */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		6D0DB81F14DC19E900CA0177 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB3C314DC12F900CA0177 /* TTModel.h */,
+				6D0DB3C414DC12F900CA0177 /* TTModel.m */,
+				6D0DB3C514DC12F900CA0177 /* TTModelDelegate.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6D0DB82014DC1A2000CA0177 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB3C614DC12F900CA0177 /* TTRequestLoader.h */,
+				6D0DB3C714DC12F900CA0177 /* TTRequestLoader.m */,
+				6D0DB3D014DC12F900CA0177 /* TTURLRequest.h */,
+				6D0DB3D114DC12F900CA0177 /* TTURLRequest.m */,
+				6D0DB3D214DC12F900CA0177 /* TTURLRequestCachePolicy.h */,
+				6D0DB3D314DC12F900CA0177 /* TTURLRequestDelegate.h */,
+				6D0DB3D414DC12F900CA0177 /* TTURLRequestModel.h */,
+				6D0DB3D514DC12F900CA0177 /* TTURLRequestModel.m */,
+				6D0DB3D614DC12F900CA0177 /* TTURLRequestQueue.h */,
+				6D0DB3D714DC12F900CA0177 /* TTURLRequestQueue.m */,
+				6D0DB3D814DC12F900CA0177 /* TTURLRequestQueueInternal.h */,
+				6D0DB3D914DC12F900CA0177 /* TTURLResponse.h */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		6D0DB82114DC1A3800CA0177 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB3CA14DC12F900CA0177 /* TTURLDataResponse.h */,
+				6D0DB3CB14DC12F900CA0177 /* TTURLDataResponse.m */,
+				6D0DB3CC14DC12F900CA0177 /* TTURLImageResponse.h */,
+				6D0DB3CD14DC12F900CA0177 /* TTURLImageResponse.m */,
+				6D0DB3CE14DC12F900CA0177 /* TTURLJSONResponse.h */,
+				6D0DB3CF14DC12F900CA0177 /* TTURLJSONResponse.m */,
+				6D0DB3DA14DC12F900CA0177 /* TTURLXMLResponse.h */,
+				6D0DB3DB14DC12F900CA0177 /* TTURLXMLResponse.m */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		6D0DB82214DC1A4700CA0177 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB3C814DC12F900CA0177 /* TTURLCache.h */,
+				6D0DB3C914DC12F900CA0177 /* TTURLCache.m */,
+			);
+			name = Cache;
+			sourceTree = "<group>";
+		};
+		6D0DB82314DC1A5500CA0177 /* XML Parser */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB3DE14DC12F900CA0177 /* TTXMLParser.h */,
+				6D0DB3DF14DC12F900CA0177 /* TTXMLParser.m */,
+			);
+			name = "XML Parser";
+			sourceTree = "<group>";
+		};
+		6D0DB82414DC1A6A00CA0177 /* Error Codes */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB3BF14DC12F900CA0177 /* TTErrorCodes.h */,
+				6D0DB3C014DC12F900CA0177 /* TTErrorCodes.m */,
+			);
+			name = "Error Codes";
+			sourceTree = "<group>";
+		};
+		6D0DB82514DC1A7800CA0177 /* Global Network */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB3C114DC12F900CA0177 /* TTGlobalNetwork.h */,
+				6D0DB3C214DC12F900CA0177 /* TTGlobalNetwork.m */,
+			);
+			name = "Global Network";
+			sourceTree = "<group>";
+		};
+		6D0DB82614DC1A8B00CA0177 /* User Info */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB3DC14DC12F900CA0177 /* TTUserInfo.h */,
+				6D0DB3DD14DC12F900CA0177 /* TTUserInfo.m */,
+			);
+			name = "User Info";
+			sourceTree = "<group>";
+		};
+		6D0DB82714DC1ADC00CA0177 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB63614DC149600CA0177 /* TTTabStrip.h */,
+				6D0DB63714DC149600CA0177 /* TTTabStrip.m */,
 				6D0DB5CB14DC149000CA0177 /* TTTab.h */,
 				6D0DB5CC14DC149000CA0177 /* TTTab.m */,
 				6D0DB5CD14DC149000CA0177 /* TTTabBar.h */,
@@ -1531,6 +1632,264 @@
 				6D0DB5D314DC149000CA0177 /* TTTabGrid.m */,
 				6D0DB5D414DC149000CA0177 /* TTTabItem.h */,
 				6D0DB5D514DC149000CA0177 /* TTTabItem.m */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		6D4283BD14DC2005002FDD03 /* Thumbs Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB64214DC149600CA0177 /* TTThumbsDataSource.h */,
+				6D0DB64314DC149600CA0177 /* TTThumbsDataSource.m */,
+				6D0DB64414DC149600CA0177 /* TTThumbsTableViewCell.h */,
+				6D0DB64514DC149600CA0177 /* TTThumbsTableViewCell.m */,
+				6D0DB64614DC149600CA0177 /* TTThumbsTableViewCellDelegate.h */,
+				6D0DB64714DC149600CA0177 /* TTThumbsViewController.h */,
+				6D0DB64814DC149600CA0177 /* TTThumbsViewController.m */,
+				6D0DB64914DC149600CA0177 /* TTThumbsViewControllerDelegate.h */,
+				6D0DB64A14DC149600CA0177 /* TTThumbView.h */,
+				6D0DB64B14DC149600CA0177 /* TTThumbView.m */,
+			);
+			name = "Thumbs Controller";
+			sourceTree = "<group>";
+		};
+		6D4283BF14DC2017002FDD03 /* Text Editor */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB63814DC149600CA0177 /* TTTextBarController.h */,
+				6D0DB63914DC149600CA0177 /* TTTextBarController.m */,
+				6D0DB63A14DC149600CA0177 /* TTTextBarDelegate.h */,
+				6D0DB63B14DC149600CA0177 /* TTTextEditor.h */,
+				6D0DB63C14DC149600CA0177 /* TTTextEditor.m */,
+				6D0DB63D14DC149600CA0177 /* TTTextEditorDelegate.h */,
+				6D0DB63E14DC149600CA0177 /* TTTextEditorInternal.h */,
+				6D0DB63F14DC149600CA0177 /* TTTextEditorInternal.m */,
+				6D0DB64014DC149600CA0177 /* TTTextView.h */,
+				6D0DB64114DC149600CA0177 /* TTTextView.m */,
+			);
+			name = "Text Editor";
+			sourceTree = "<group>";
+		};
+		6D4283C014DC2043002FDD03 /* Page Control */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB59F14DC148D00CA0177 /* TTPageControl.h */,
+				6D0DB5A014DC148D00CA0177 /* TTPageControl.m */,
+			);
+			name = "Page Control";
+			sourceTree = "<group>";
+		};
+		6D4283C114DC204F002FDD03 /* Model View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB59714DC148D00CA0177 /* TTModelViewController.h */,
+				6D0DB59814DC148D00CA0177 /* TTModelViewController.m */,
+			);
+			name = "Model View Controller";
+			sourceTree = "<group>";
+		};
+		6D4283C214DC205E002FDD03 /* Picker View */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB5A814DC148D00CA0177 /* TTPickerTextField.h */,
+				6D0DB5A914DC148D00CA0177 /* TTPickerTextField.m */,
+				6D0DB5AA14DC148D00CA0177 /* TTPickerTextFieldDelegate.h */,
+				6D0DB5AB14DC148D00CA0177 /* TTPickerViewCell.h */,
+				6D0DB5AC14DC148D00CA0177 /* TTPickerViewCell.m */,
+			);
+			name = "Picker View";
+			sourceTree = "<group>";
+		};
+		6D4283C314DC2073002FDD03 /* Search Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB5B814DC148F00CA0177 /* TTSearchBar.h */,
+				6D0DB5B914DC148F00CA0177 /* TTSearchBar.m */,
+				6D0DB5BA14DC148F00CA0177 /* TTSearchDisplayController.h */,
+				6D0DB5BB14DC148F00CA0177 /* TTSearchDisplayController.m */,
+				6D0DB5BC14DC148F00CA0177 /* TTSearchlightLabel.h */,
+				6D0DB5BD14DC148F00CA0177 /* TTSearchlightLabel.m */,
+				6D0DB5BE14DC148F00CA0177 /* TTSearchTextField.h */,
+				6D0DB5BF14DC148F00CA0177 /* TTSearchTextField.m */,
+				6D0DB5C014DC148F00CA0177 /* TTSearchTextFieldDelegate.h */,
+				6D0DB5C114DC148F00CA0177 /* TTSearchTextFieldInternal.h */,
+				6D0DB5C214DC148F00CA0177 /* TTSearchTextFieldInternal.m */,
+			);
+			name = "Search Controller";
+			sourceTree = "<group>";
+		};
+		6D4283C414DC2089002FDD03 /* Scroll View */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB5B414DC148F00CA0177 /* TTScrollView.h */,
+				6D0DB5B514DC148F00CA0177 /* TTScrollView.m */,
+				6D0DB5B614DC148F00CA0177 /* TTScrollViewDataSource.h */,
+				6D0DB5B714DC148F00CA0177 /* TTScrollViewDelegate.h */,
+			);
+			name = "Scroll View";
+			sourceTree = "<group>";
+		};
+		6D4283C514DC20A0002FDD03 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB65014DC149600CA0177 /* TTViewController.h */,
+				6D0DB65114DC149600CA0177 /* TTViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		6D4283C614DC20AC002FDD03 /* Web Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB65214DC149600CA0177 /* TTWebController.h */,
+				6D0DB65314DC149600CA0177 /* TTWebController.m */,
+			);
+			name = "Web Controller";
+			sourceTree = "<group>";
+		};
+		6D4283C714DC20B9002FDD03 /* YouTube View */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB65414DC149600CA0177 /* TTYouTubeView.h */,
+				6D0DB65514DC149600CA0177 /* TTYouTubeView.m */,
+			);
+			name = "YouTube View";
+			sourceTree = "<group>";
+		};
+		6D4283C814DC20C8002FDD03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB64C14DC149600CA0177 /* TTUnclippedView.h */,
+				6D0DB64D14DC149600CA0177 /* TTUnclippedView.m */,
+				6D0DB64E14DC149600CA0177 /* TTView.h */,
+				6D0DB64F14DC149600CA0177 /* TTView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6D4283C914DC20D3002FDD03 /* Post Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB5AF14DC148D00CA0177 /* TTPostController.h */,
+				6D0DB5B014DC148D00CA0177 /* TTPostController.m */,
+				6D0DB5B114DC148D00CA0177 /* TTPostControllerDelegate.h */,
+			);
+			name = "Post Controller";
+			sourceTree = "<group>";
+		};
+		6D4283CA14DC20DE002FDD03 /* Popup Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB5AD14DC148D00CA0177 /* TTPopupViewController.h */,
+				6D0DB5AE14DC148D00CA0177 /* TTPopupViewController.m */,
+			);
+			name = "Popup Controller";
+			sourceTree = "<group>";
+		};
+		6D4283CB14DC20EC002FDD03 /* Recursive Progress */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB5B214DC148D00CA0177 /* TTRecursiveProgress.h */,
+				6D0DB5B314DC148D00CA0177 /* TTRecursiveProgress.m */,
+			);
+			name = "Recursive Progress";
+			sourceTree = "<group>";
+		};
+		6DCA657114DC1D4600880863 /* Photo Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB5A114DC148D00CA0177 /* TTPhoto.h */,
+				6D0DB5A214DC148D00CA0177 /* TTPhotoSource.h */,
+				6D0DB5A314DC148D00CA0177 /* TTPhotoVersion.h */,
+				6D0DB5A414DC148D00CA0177 /* TTPhotoView.h */,
+				6D0DB5A514DC148D00CA0177 /* TTPhotoView.m */,
+				6D0DB5A614DC148D00CA0177 /* TTPhotoViewController.h */,
+				6D0DB5A714DC148D00CA0177 /* TTPhotoViewController.m */,
+			);
+			name = "Photo Controller";
+			sourceTree = "<group>";
+		};
+		6DCA657314DC1D5E00880863 /* Table Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB5C514DC148F00CA0177 /* TTStyledTextLabel.h */,
+				6D0DB5C614DC148F00CA0177 /* TTStyledTextLabel.m */,
+				6D0DB5C714DC148F00CA0177 /* TTStyledTextTableCell.h */,
+				6D0DB5C814DC149000CA0177 /* TTStyledTextTableCell.m */,
+				6D0DB5C914DC149000CA0177 /* TTStyledTextTableItemCell.h */,
+				6D0DB5CA14DC149000CA0177 /* TTStyledTextTableItemCell.m */,
+				6D0DB5C314DC148F00CA0177 /* TTSectionedDataSource.h */,
+				6D0DB5C414DC148F00CA0177 /* TTSectionedDataSource.m */,
+				6D0DB58A14DC148B00CA0177 /* TTListDataSource.h */,
+				6D0DB58B14DC148B00CA0177 /* TTListDataSource.m */,
+				6D0DB61F14DC149500CA0177 /* TTTableView.m */,
+				6D0DB62014DC149500CA0177 /* TTTableViewCell.h */,
+				6D0DB62114DC149500CA0177 /* TTTableViewCell.m */,
+				6D0DB62214DC149500CA0177 /* TTTableViewController.h */,
+				6D0DB62314DC149500CA0177 /* TTTableViewController.m */,
+				6D0DB62414DC149500CA0177 /* TTTableViewDataSource.h */,
+				6D0DB62514DC149500CA0177 /* TTTableViewDataSource.m */,
+				6D0DB62614DC149500CA0177 /* TTTableViewDelegate.h */,
+				6D0DB62714DC149500CA0177 /* TTTableViewDelegate.m */,
+				6D0DB62814DC149500CA0177 /* TTTableViewDragRefreshDelegate.h */,
+				6D0DB62914DC149500CA0177 /* TTTableViewDragRefreshDelegate.m */,
+				6D0DB62A14DC149500CA0177 /* TTTableViewGroupedVarHeightDelegate.h */,
+				6D0DB62B14DC149500CA0177 /* TTTableViewGroupedVarHeightDelegate.m */,
+				6D0DB62C14DC149500CA0177 /* TTTableViewItem.h */,
+				6D0DB62D14DC149500CA0177 /* TTTableViewItem.m */,
+				6D0DB62E14DC149500CA0177 /* TTTableViewNetworkEnabledDelegate.h */,
+				6D0DB62F14DC149600CA0177 /* TTTableViewNetworkEnabledDelegate.m */,
+				6D0DB63014DC149600CA0177 /* TTTableViewPlainDelegate.h */,
+				6D0DB63114DC149600CA0177 /* TTTableViewPlainDelegate.m */,
+				6D0DB63214DC149600CA0177 /* TTTableViewPlainVarHeightDelegate.h */,
+				6D0DB63314DC149600CA0177 /* TTTableViewPlainVarHeightDelegate.m */,
+				6D0DB63414DC149600CA0177 /* TTTableViewVarHeightDelegate.h */,
+				6D0DB63514DC149600CA0177 /* TTTableViewVarHeightDelegate.m */,
+				6D0DB60514DC149100CA0177 /* TTTableRightCaptionItemCell.m */,
+				6D0DB60614DC149100CA0177 /* TTTableRightImageItem.h */,
+				6D0DB60714DC149100CA0177 /* TTTableRightImageItem.m */,
+				6D0DB60814DC149100CA0177 /* TTTableSection.h */,
+				6D0DB60914DC149100CA0177 /* TTTableSection.m */,
+				6D0DB60A14DC149100CA0177 /* TTTableSettingsItem.h */,
+				6D0DB60B14DC149100CA0177 /* TTTableSettingsItem.m */,
+				6D0DB60C14DC149100CA0177 /* TTTableSettingsItemCell.h */,
+				6D0DB60D14DC149100CA0177 /* TTTableSettingsItemCell.m */,
+				6D0DB60E14DC149100CA0177 /* TTTableStyledTextItem.h */,
+				6D0DB60F14DC149100CA0177 /* TTTableStyledTextItem.m */,
+				6D0DB61014DC149500CA0177 /* TTTableSubtextItem.h */,
+				6D0DB61114DC149500CA0177 /* TTTableSubtextItem.m */,
+				6D0DB61214DC149500CA0177 /* TTTableSubtextItemCell.h */,
+				6D0DB61314DC149500CA0177 /* TTTableSubtextItemCell.m */,
+				6D0DB61414DC149500CA0177 /* TTTableSubtitleItem.h */,
+				6D0DB61514DC149500CA0177 /* TTTableSubtitleItem.m */,
+				6D0DB61614DC149500CA0177 /* TTTableSubtitleItemCell.h */,
+				6D0DB61714DC149500CA0177 /* TTTableSubtitleItemCell.m */,
+				6D0DB61814DC149500CA0177 /* TTTableSummaryItem.h */,
+				6D0DB61914DC149500CA0177 /* TTTableSummaryItem.m */,
+				6D0DB61A14DC149500CA0177 /* TTTableTextItem.h */,
+				6D0DB61B14DC149500CA0177 /* TTTableTextItem.m */,
+				6D0DB61C14DC149500CA0177 /* TTTableTextItemCell.h */,
+				6D0DB61D14DC149500CA0177 /* TTTableTextItemCell.m */,
+				6D0DB61E14DC149500CA0177 /* TTTableView.h */,
+				6D0DB5F214DC149000CA0177 /* TTTableItem.h */,
+				6D0DB5F314DC149100CA0177 /* TTTableItem.m */,
+				6D0DB5F414DC149100CA0177 /* TTTableLinkedItem.h */,
+				6D0DB5F514DC149100CA0177 /* TTTableLinkedItem.m */,
+				6D0DB5F614DC149100CA0177 /* TTTableLinkedItemCell.h */,
+				6D0DB5F714DC149100CA0177 /* TTTableLinkedItemCell.m */,
+				6D0DB5F814DC149100CA0177 /* TTTableLongTextItem.h */,
+				6D0DB5F914DC149100CA0177 /* TTTableLongTextItem.m */,
+				6D0DB5FA14DC149100CA0177 /* TTTableMessageItem.h */,
+				6D0DB5FB14DC149100CA0177 /* TTTableMessageItem.m */,
+				6D0DB5FC14DC149100CA0177 /* TTTableMessageItemCell.h */,
+				6D0DB5FD14DC149100CA0177 /* TTTableMessageItemCell.m */,
+				6D0DB5FE14DC149100CA0177 /* TTTableMoreButton.h */,
+				6D0DB5FF14DC149100CA0177 /* TTTableMoreButton.m */,
+				6D0DB60014DC149100CA0177 /* TTTableMoreButtonCell.h */,
+				6D0DB60114DC149100CA0177 /* TTTableMoreButtonCell.m */,
+				6D0DB60214DC149100CA0177 /* TTTableRightCaptionItem.h */,
+				6D0DB60314DC149100CA0177 /* TTTableRightCaptionItem.m */,
+				6D0DB60414DC149100CA0177 /* TTTableRightCaptionItemCell.h */,
 				6D0DB5D614DC149000CA0177 /* TTTableActivityItem.h */,
 				6D0DB5D714DC149000CA0177 /* TTTableActivityItem.m */,
 				6D0DB5D814DC149000CA0177 /* TTTableActivityItemCell.h */,
@@ -1559,106 +1918,22 @@
 				6D0DB5EF14DC149000CA0177 /* TTTableImageItem.m */,
 				6D0DB5F014DC149000CA0177 /* TTTableImageItemCell.h */,
 				6D0DB5F114DC149000CA0177 /* TTTableImageItemCell.m */,
-				6D0DB5F214DC149000CA0177 /* TTTableItem.h */,
-				6D0DB5F314DC149100CA0177 /* TTTableItem.m */,
-				6D0DB5F414DC149100CA0177 /* TTTableLinkedItem.h */,
-				6D0DB5F514DC149100CA0177 /* TTTableLinkedItem.m */,
-				6D0DB5F614DC149100CA0177 /* TTTableLinkedItemCell.h */,
-				6D0DB5F714DC149100CA0177 /* TTTableLinkedItemCell.m */,
-				6D0DB5F814DC149100CA0177 /* TTTableLongTextItem.h */,
-				6D0DB5F914DC149100CA0177 /* TTTableLongTextItem.m */,
-				6D0DB5FA14DC149100CA0177 /* TTTableMessageItem.h */,
-				6D0DB5FB14DC149100CA0177 /* TTTableMessageItem.m */,
-				6D0DB5FC14DC149100CA0177 /* TTTableMessageItemCell.h */,
-				6D0DB5FD14DC149100CA0177 /* TTTableMessageItemCell.m */,
-				6D0DB5FE14DC149100CA0177 /* TTTableMoreButton.h */,
-				6D0DB5FF14DC149100CA0177 /* TTTableMoreButton.m */,
-				6D0DB60014DC149100CA0177 /* TTTableMoreButtonCell.h */,
-				6D0DB60114DC149100CA0177 /* TTTableMoreButtonCell.m */,
-				6D0DB60214DC149100CA0177 /* TTTableRightCaptionItem.h */,
-				6D0DB60314DC149100CA0177 /* TTTableRightCaptionItem.m */,
-				6D0DB60414DC149100CA0177 /* TTTableRightCaptionItemCell.h */,
-				6D0DB60514DC149100CA0177 /* TTTableRightCaptionItemCell.m */,
-				6D0DB60614DC149100CA0177 /* TTTableRightImageItem.h */,
-				6D0DB60714DC149100CA0177 /* TTTableRightImageItem.m */,
-				6D0DB60814DC149100CA0177 /* TTTableSection.h */,
-				6D0DB60914DC149100CA0177 /* TTTableSection.m */,
-				6D0DB60A14DC149100CA0177 /* TTTableSettingsItem.h */,
-				6D0DB60B14DC149100CA0177 /* TTTableSettingsItem.m */,
-				6D0DB60C14DC149100CA0177 /* TTTableSettingsItemCell.h */,
-				6D0DB60D14DC149100CA0177 /* TTTableSettingsItemCell.m */,
-				6D0DB60E14DC149100CA0177 /* TTTableStyledTextItem.h */,
-				6D0DB60F14DC149100CA0177 /* TTTableStyledTextItem.m */,
-				6D0DB61014DC149500CA0177 /* TTTableSubtextItem.h */,
-				6D0DB61114DC149500CA0177 /* TTTableSubtextItem.m */,
-				6D0DB61214DC149500CA0177 /* TTTableSubtextItemCell.h */,
-				6D0DB61314DC149500CA0177 /* TTTableSubtextItemCell.m */,
-				6D0DB61414DC149500CA0177 /* TTTableSubtitleItem.h */,
-				6D0DB61514DC149500CA0177 /* TTTableSubtitleItem.m */,
-				6D0DB61614DC149500CA0177 /* TTTableSubtitleItemCell.h */,
-				6D0DB61714DC149500CA0177 /* TTTableSubtitleItemCell.m */,
-				6D0DB61814DC149500CA0177 /* TTTableSummaryItem.h */,
-				6D0DB61914DC149500CA0177 /* TTTableSummaryItem.m */,
-				6D0DB61A14DC149500CA0177 /* TTTableTextItem.h */,
-				6D0DB61B14DC149500CA0177 /* TTTableTextItem.m */,
-				6D0DB61C14DC149500CA0177 /* TTTableTextItemCell.h */,
-				6D0DB61D14DC149500CA0177 /* TTTableTextItemCell.m */,
-				6D0DB61E14DC149500CA0177 /* TTTableView.h */,
-				6D0DB61F14DC149500CA0177 /* TTTableView.m */,
-				6D0DB62014DC149500CA0177 /* TTTableViewCell.h */,
-				6D0DB62114DC149500CA0177 /* TTTableViewCell.m */,
-				6D0DB62214DC149500CA0177 /* TTTableViewController.h */,
-				6D0DB62314DC149500CA0177 /* TTTableViewController.m */,
-				6D0DB62414DC149500CA0177 /* TTTableViewDataSource.h */,
-				6D0DB62514DC149500CA0177 /* TTTableViewDataSource.m */,
-				6D0DB62614DC149500CA0177 /* TTTableViewDelegate.h */,
-				6D0DB62714DC149500CA0177 /* TTTableViewDelegate.m */,
-				6D0DB62814DC149500CA0177 /* TTTableViewDragRefreshDelegate.h */,
-				6D0DB62914DC149500CA0177 /* TTTableViewDragRefreshDelegate.m */,
-				6D0DB62A14DC149500CA0177 /* TTTableViewGroupedVarHeightDelegate.h */,
-				6D0DB62B14DC149500CA0177 /* TTTableViewGroupedVarHeightDelegate.m */,
-				6D0DB62C14DC149500CA0177 /* TTTableViewItem.h */,
-				6D0DB62D14DC149500CA0177 /* TTTableViewItem.m */,
-				6D0DB62E14DC149500CA0177 /* TTTableViewNetworkEnabledDelegate.h */,
-				6D0DB62F14DC149600CA0177 /* TTTableViewNetworkEnabledDelegate.m */,
-				6D0DB63014DC149600CA0177 /* TTTableViewPlainDelegate.h */,
-				6D0DB63114DC149600CA0177 /* TTTableViewPlainDelegate.m */,
-				6D0DB63214DC149600CA0177 /* TTTableViewPlainVarHeightDelegate.h */,
-				6D0DB63314DC149600CA0177 /* TTTableViewPlainVarHeightDelegate.m */,
-				6D0DB63414DC149600CA0177 /* TTTableViewVarHeightDelegate.h */,
-				6D0DB63514DC149600CA0177 /* TTTableViewVarHeightDelegate.m */,
-				6D0DB63614DC149600CA0177 /* TTTabStrip.h */,
-				6D0DB63714DC149600CA0177 /* TTTabStrip.m */,
-				6D0DB63814DC149600CA0177 /* TTTextBarController.h */,
-				6D0DB63914DC149600CA0177 /* TTTextBarController.m */,
-				6D0DB63A14DC149600CA0177 /* TTTextBarDelegate.h */,
-				6D0DB63B14DC149600CA0177 /* TTTextEditor.h */,
-				6D0DB63C14DC149600CA0177 /* TTTextEditor.m */,
-				6D0DB63D14DC149600CA0177 /* TTTextEditorDelegate.h */,
-				6D0DB63E14DC149600CA0177 /* TTTextEditorInternal.h */,
-				6D0DB63F14DC149600CA0177 /* TTTextEditorInternal.m */,
-				6D0DB64014DC149600CA0177 /* TTTextView.h */,
-				6D0DB64114DC149600CA0177 /* TTTextView.m */,
-				6D0DB64214DC149600CA0177 /* TTThumbsDataSource.h */,
-				6D0DB64314DC149600CA0177 /* TTThumbsDataSource.m */,
-				6D0DB64414DC149600CA0177 /* TTThumbsTableViewCell.h */,
-				6D0DB64514DC149600CA0177 /* TTThumbsTableViewCell.m */,
-				6D0DB64614DC149600CA0177 /* TTThumbsTableViewCellDelegate.h */,
-				6D0DB64714DC149600CA0177 /* TTThumbsViewController.h */,
-				6D0DB64814DC149600CA0177 /* TTThumbsViewController.m */,
-				6D0DB64914DC149600CA0177 /* TTThumbsViewControllerDelegate.h */,
-				6D0DB64A14DC149600CA0177 /* TTThumbView.h */,
-				6D0DB64B14DC149600CA0177 /* TTThumbView.m */,
-				6D0DB64C14DC149600CA0177 /* TTUnclippedView.h */,
-				6D0DB64D14DC149600CA0177 /* TTUnclippedView.m */,
-				6D0DB64E14DC149600CA0177 /* TTView.h */,
-				6D0DB64F14DC149600CA0177 /* TTView.m */,
-				6D0DB65014DC149600CA0177 /* TTViewController.h */,
-				6D0DB65114DC149600CA0177 /* TTViewController.m */,
-				6D0DB65214DC149600CA0177 /* TTWebController.h */,
-				6D0DB65314DC149600CA0177 /* TTWebController.m */,
-				6D0DB65414DC149600CA0177 /* TTYouTubeView.h */,
-				6D0DB65514DC149600CA0177 /* TTYouTubeView.m */,
+			);
+			name = "Table Controller";
+			sourceTree = "<group>";
+		};
+		6DCA657414DC1DB900880863 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB54514DC143900CA0177 /* TTGlobalUICommon.h */,
+				6D0DB54614DC143900CA0177 /* TTGlobalUICommon.m */,
+				6D0DB54714DC143900CA0177 /* UIView+TTUICommon.h */,
+				6D0DB54814DC143900CA0177 /* UIView+TTUICommon.m */,
+				6D0DB54914DC143900CA0177 /* UIViewControllerAdditions.h */,
+				6D0DB54A14DC143900CA0177 /* UIViewControllerAdditions.m */,
+				6D0DB54B14DC143900CA0177 /* UIViewControllerGarbageCollection.h */,
+				6D0DB54C14DC143900CA0177 /* UIWindowAdditions.h */,
+				6D0DB54D14DC143900CA0177 /* UIWindowAdditions.m */,
 				6D0DB65614DC149600CA0177 /* UINavigationControllerAdditions.h */,
 				6D0DB65714DC149600CA0177 /* UINavigationControllerAdditions.m */,
 				6D0DB65814DC149600CA0177 /* UINSObjectAdditions.h */,
@@ -1675,68 +1950,152 @@
 				6D0DB66314DC149700CA0177 /* UIViewAdditions.m */,
 				6D0DB66414DC149700CA0177 /* UIWebViewAdditions.h */,
 				6D0DB66514DC149700CA0177 /* UIWebViewAdditions.m */,
-				6D0DB54014DC143900CA0177 /* Three20UICommon_Prefix.pch */,
-				6D0DB54114DC143900CA0177 /* Three20UICommon.h */,
-				6D0DB54214DC143900CA0177 /* Three20UICommon+Additions.h */,
-				6D0DB54314DC143900CA0177 /* TTBaseViewController.h */,
-				6D0DB54414DC143900CA0177 /* TTBaseViewController.m */,
-				6D0DB54514DC143900CA0177 /* TTGlobalUICommon.h */,
-				6D0DB54614DC143900CA0177 /* TTGlobalUICommon.m */,
-				6D0DB54714DC143900CA0177 /* UIView+TTUICommon.h */,
-				6D0DB54814DC143900CA0177 /* UIView+TTUICommon.m */,
-				6D0DB54914DC143900CA0177 /* UIViewControllerAdditions.h */,
-				6D0DB54A14DC143900CA0177 /* UIViewControllerAdditions.m */,
-				6D0DB54B14DC143900CA0177 /* UIViewControllerGarbageCollection.h */,
-				6D0DB54C14DC143900CA0177 /* UIWindowAdditions.h */,
-				6D0DB54D14DC143900CA0177 /* UIWindowAdditions.m */,
 			);
-			name = UI;
+			name = Additions;
 			sourceTree = "<group>";
 		};
-		6D0DB77014DC159800CA0177 /* Navigator */ = {
+		6DCA657514DC1DE000880863 /* Base Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6D0DB77214DC15AA00CA0177 /* Three20UINavigator.h */,
-				6D0DB77314DC15AA00CA0177 /* Three20UINavigator+Additions.h */,
-				6D0DB77414DC15AA00CA0177 /* TTBaseNavigationController.h */,
-				6D0DB77514DC15AA00CA0177 /* TTBaseNavigationController.m */,
-				6D0DB77614DC15AA00CA0177 /* TTBaseNavigator.h */,
-				6D0DB77714DC15AA00CA0177 /* TTBaseNavigator.m */,
-				6D0DB77814DC15AA00CA0177 /* TTBaseNavigatorInternal.h */,
-				6D0DB77914DC15AA00CA0177 /* TTGlobalNavigatorMetrics.h */,
-				6D0DB77A14DC15AA00CA0177 /* TTGlobalNavigatorMetrics.m */,
-				6D0DB77B14DC15AA00CA0177 /* TTNavigationMode.h */,
-				6D0DB77C14DC15AA00CA0177 /* TTNavigatorDelegate.h */,
-				6D0DB77D14DC15AA00CA0177 /* TTNavigatorPersistenceMode.h */,
-				6D0DB77E14DC15AA00CA0177 /* TTNavigatorRootContainer.h */,
-				6D0DB77F14DC15AA00CA0177 /* TTNavigatorViewController.h */,
-				6D0DB78014DC15AA00CA0177 /* TTNavigatorViewController.m */,
-				6D0DB78114DC15AA00CA0177 /* TTURLAction.h */,
-				6D0DB78214DC15AA00CA0177 /* TTURLAction.m */,
-				6D0DB78314DC15AA00CA0177 /* TTURLArguments.h */,
-				6D0DB78414DC15AA00CA0177 /* TTURLArguments.m */,
-				6D0DB78514DC15AA00CA0177 /* TTURLArgumentType.h */,
-				6D0DB78614DC15AA00CA0177 /* TTURLGeneratorPattern.h */,
-				6D0DB78714DC15AA00CA0177 /* TTURLGeneratorPattern.m */,
-				6D0DB78814DC15AA00CA0177 /* TTURLLiteral.h */,
-				6D0DB78914DC15AA00CA0177 /* TTURLLiteral.m */,
-				6D0DB78A14DC15AA00CA0177 /* TTURLMap.h */,
-				6D0DB78B14DC15AA00CA0177 /* TTURLMap.m */,
-				6D0DB78C14DC15AA00CA0177 /* TTURLNavigatorPattern.h */,
-				6D0DB78D14DC15AA00CA0177 /* TTURLNavigatorPattern.m */,
-				6D0DB78E14DC15AA00CA0177 /* TTURLObject.h */,
-				6D0DB78F14DC15AA00CA0177 /* TTURLPattern.h */,
-				6D0DB79014DC15AA00CA0177 /* TTURLPattern.m */,
-				6D0DB79114DC15AA00CA0177 /* TTURLPatternInternal.h */,
-				6D0DB79214DC15AA00CA0177 /* TTURLPatternInternal.m */,
-				6D0DB79314DC15AA00CA0177 /* TTURLPatternText.h */,
-				6D0DB79414DC15AA00CA0177 /* TTURLSelector.h */,
-				6D0DB79514DC15AA00CA0177 /* TTURLSelector.m */,
-				6D0DB79614DC15AA00CA0177 /* TTURLWildcard.h */,
-				6D0DB79714DC15AA00CA0177 /* TTURLWildcard.m */,
-				6D0DB79814DC15AA00CA0177 /* UIViewController+TTNavigator.h */,
-				6D0DB79914DC15AA00CA0177 /* UIViewController+TTNavigator.m */,
-				6D0DB79A14DC15AA00CA0177 /* UIViewController+TTNavigatorGarbageCollection.h */,
+				6D0DB54314DC143900CA0177 /* TTBaseViewController.h */,
+				6D0DB54414DC143900CA0177 /* TTBaseViewController.m */,
+			);
+			name = "Base Controller";
+			sourceTree = "<group>";
+		};
+		6DCA657614DC1DFB00880863 /* Message Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB58C14DC148B00CA0177 /* TTMessageController.h */,
+				6D0DB58D14DC148B00CA0177 /* TTMessageController.m */,
+				6D0DB58E14DC148C00CA0177 /* TTMessageControllerDelegate.h */,
+				6D0DB58F14DC148C00CA0177 /* TTMessageField.h */,
+				6D0DB59014DC148C00CA0177 /* TTMessageField.m */,
+				6D0DB59114DC148C00CA0177 /* TTMessageRecipientField.h */,
+				6D0DB59214DC148C00CA0177 /* TTMessageRecipientField.m */,
+				6D0DB59314DC148C00CA0177 /* TTMessageSubjectField.h */,
+				6D0DB59414DC148D00CA0177 /* TTMessageSubjectField.m */,
+				6D0DB59514DC148D00CA0177 /* TTMessageTextField.h */,
+				6D0DB59614DC148D00CA0177 /* TTMessageTextField.m */,
+			);
+			name = "Message Controller";
+			sourceTree = "<group>";
+		};
+		6DCA657714DC1E1200880863 /* Launcher View */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB57C14DC148B00CA0177 /* TTLauncherButton.h */,
+				6D0DB57D14DC148B00CA0177 /* TTLauncherButton.m */,
+				6D0DB57E14DC148B00CA0177 /* TTLauncherHighlightView.h */,
+				6D0DB57F14DC148B00CA0177 /* TTLauncherHighlightView.m */,
+				6D0DB58014DC148B00CA0177 /* TTLauncherItem.h */,
+				6D0DB58114DC148B00CA0177 /* TTLauncherItem.m */,
+				6D0DB58214DC148B00CA0177 /* TTLauncherPersistenceMode.h */,
+				6D0DB58314DC148B00CA0177 /* TTLauncherScrollView.h */,
+				6D0DB58414DC148B00CA0177 /* TTLauncherScrollView.m */,
+				6D0DB58514DC148B00CA0177 /* TTLauncherView.h */,
+				6D0DB58614DC148B00CA0177 /* TTLauncherView.m */,
+				6D0DB58714DC148B00CA0177 /* TTLauncherViewDelegate.h */,
+			);
+			name = "Launcher View";
+			sourceTree = "<group>";
+		};
+		6DCA657814DC1EB400880863 /* Action Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB55F14DC148A00CA0177 /* TTActionSheet.h */,
+				6D0DB56014DC148A00CA0177 /* TTActionSheet.m */,
+				6D0DB56114DC148A00CA0177 /* TTActionSheetController.h */,
+				6D0DB56214DC148A00CA0177 /* TTActionSheetController.m */,
+				6D0DB56314DC148A00CA0177 /* TTActionSheetControllerDelegate.h */,
+			);
+			name = "Action Sheet";
+			sourceTree = "<group>";
+		};
+		6DCA657914DC1EC200880863 /* Alert View */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB56614DC148A00CA0177 /* TTAlertView.h */,
+				6D0DB56714DC148A00CA0177 /* TTAlertView.m */,
+				6D0DB56814DC148A00CA0177 /* TTAlertViewController.h */,
+				6D0DB56914DC148A00CA0177 /* TTAlertViewController.m */,
+				6D0DB56A14DC148A00CA0177 /* TTAlertViewControllerDelegate.h */,
+			);
+			name = "Alert View";
+			sourceTree = "<group>";
+		};
+		6DCA657A14DC1ED100880863 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB56B14DC148A00CA0177 /* TTButton.h */,
+				6D0DB56C14DC148A00CA0177 /* TTButton.m */,
+				6D0DB56D14DC148A00CA0177 /* TTButtonBar.h */,
+				6D0DB56E14DC148A00CA0177 /* TTButtonBar.m */,
+				6D0DB56F14DC148B00CA0177 /* TTButtonContent.h */,
+				6D0DB57014DC148B00CA0177 /* TTButtonContent.m */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		6DCA657B14DC1EDF00880863 /* Activity Label */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB56414DC148A00CA0177 /* TTActivityLabel.h */,
+				6D0DB56514DC148A00CA0177 /* TTActivityLabel.m */,
+			);
+			name = "Activity Label";
+			sourceTree = "<group>";
+		};
+		6DCA657C14DC1EEE00880863 /* Image View */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB57314DC148B00CA0177 /* TTImageLayer.h */,
+				6D0DB57414DC148B00CA0177 /* TTImageLayer.m */,
+				6D0DB57514DC148B00CA0177 /* TTImageView.h */,
+				6D0DB57614DC148B00CA0177 /* TTImageView.m */,
+				6D0DB57714DC148B00CA0177 /* TTImageViewDelegate.h */,
+				6D0DB57814DC148B00CA0177 /* TTImageViewInternal.h */,
+				6D0DB57914DC148B00CA0177 /* TTImageViewInternal.m */,
+			);
+			name = "Image View";
+			sourceTree = "<group>";
+		};
+		6DCA657D14DC1EFE00880863 /* Error View */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB57114DC148B00CA0177 /* TTErrorView.h */,
+				6D0DB57214DC148B00CA0177 /* TTErrorView.m */,
+			);
+			name = "Error View";
+			sourceTree = "<group>";
+		};
+		6DCA657E14DC1F0A00880863 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB57A14DC148B00CA0177 /* TTLabel.h */,
+				6D0DB57B14DC148B00CA0177 /* TTLabel.m */,
+			);
+			name = Label;
+			sourceTree = "<group>";
+		};
+		6DCA657F14DC1F1C00880863 /* Link */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB58814DC148B00CA0177 /* TTLink.h */,
+				6D0DB58914DC148B00CA0177 /* TTLink.m */,
+			);
+			name = Link;
+			sourceTree = "<group>";
+		};
+		6DCA658014DC1F2900880863 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB59914DC148D00CA0177 /* TTNavigationController.h */,
+				6D0DB59A14DC148D00CA0177 /* TTNavigationController.m */,
+				6D0DB59B14DC148D00CA0177 /* TTNavigator.h */,
+				6D0DB59C14DC148D00CA0177 /* TTNavigator.m */,
+				6D0DB59D14DC148D00CA0177 /* TTNavigatorWindow.h */,
+				6D0DB59E14DC148D00CA0177 /* TTNavigatorWindow.m */,
 			);
 			name = Navigator;
 			sourceTree = "<group>";
@@ -1744,12 +2103,12 @@
 		6E7F96F2118E361F00443B46 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				6D0DB36914DC10B500CA0177 /* Core */,
+				6D0DB3BC14DC12ED00CA0177 /* Network */,
 				6D0DB77014DC159800CA0177 /* Navigator */,
 				6D0DB53F14DC142D00CA0177 /* UI */,
 				6D0DB44014DC13A300CA0177 /* Style */,
 				6D0DB40314DC132F00CA0177 /* Vendor */,
-				6D0DB3BC14DC12ED00CA0177 /* Network */,
-				6D0DB36914DC10B500CA0177 /* Core */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -1881,9 +2240,6 @@
 				6D0DB53514DC13B600CA0177 /* UIColorAdditions.h in Headers */,
 				6D0DB53714DC13B600CA0177 /* UIFontAdditions.h in Headers */,
 				6D0DB53914DC13B600CA0177 /* UIImageAdditions.h in Headers */,
-				6D0DB54E14DC143900CA0177 /* Three20UICommon_Prefix.pch in Headers */,
-				6D0DB54F14DC143900CA0177 /* Three20UICommon.h in Headers */,
-				6D0DB55014DC143900CA0177 /* Three20UICommon+Additions.h in Headers */,
 				6D0DB55114DC143900CA0177 /* TTBaseViewController.h in Headers */,
 				6D0DB55314DC143900CA0177 /* TTGlobalUICommon.h in Headers */,
 				6D0DB55514DC143900CA0177 /* UIView+TTUICommon.h in Headers */,

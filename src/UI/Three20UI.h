@@ -15,6 +15,8 @@
 //
 
 // UI Controllers
+#import "TTBaseViewController.h"
+#import "TTGlobalUICommon.h"
 #import "TTNavigator.h"
 #import "TTViewController.h"
 #import "TTNavigationController.h"
