@@ -14,6 +14,9 @@
 // limitations under the License.
 //
 
+
+#import "Three20+Additions.h"
+
 // Core
 #import "Three20Core.h"
 

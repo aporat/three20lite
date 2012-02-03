@@ -94,6 +94,21 @@ TT_FIX_CATEGORY_BUG(UIViewController_TTNavigator)
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)unsetNavigatorProperties {
+  TTDCONDITIONLOG(TTDFLAG_CONTROLLERGARBAGECOLLECTION,
+                  @"Unsetting this controller's properties: %X", (unsigned int)self);
+  
+  NSString* urlPath = self.originalNavigatorURL;
+  if (nil != urlPath) {
+    TTDCONDITIONLOG(TTDFLAG_CONTROLLERGARBAGECOLLECTION,
+                    @"Removing this URL path: %@", urlPath);
+    
+    [[TTBaseNavigator globalNavigator].URLMap removeObjectForURL:urlPath];
+    self.originalNavigatorURL = nil;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 + (void)ttAddNavigatorController:(UIViewController*)controller {
 
   // TTNavigatorViewController calls unsetNavigatorProperties in its dealloc.

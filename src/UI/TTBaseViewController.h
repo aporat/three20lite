@@ -16,6 +16,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "UIViewControllerAdditions.h"
 
 /**
  * A view controller with some useful additions.
