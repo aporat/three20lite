@@ -3,7 +3,10 @@ About This Fork
 
 This fork contains some major changes from the main repository. 
 
+- All sub projects were into a simple project
+- Simplified installation using a CocoaPods (https://github.com/CocoaPods/CocoaPods)
 - XML & JSON extensions merged back to TTNetwork
+- SBSON is linked as a submodule
 - TTExtensionLoader removed
 - Removed YAJL JSON support
 - Removed old xcode templates
