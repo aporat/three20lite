@@ -64,7 +64,6 @@
   TTTableCaptionItem* item = [[[self alloc] init] autorelease];
   item.text = text;
   item.caption = caption;
-  item.URL = URL;
   return item;
 }
 
@@ -75,8 +74,6 @@
   TTTableCaptionItem* item = [[[self alloc] init] autorelease];
   item.text = text;
   item.caption = caption;
-  item.URL = URL;
-  item.accessoryURL = accessoryURL;
   return item;
 }
 

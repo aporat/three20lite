@@ -298,7 +298,7 @@ static CGFloat kPadding = 5.0f;
   [UIView setAnimationDelegate:self];
   [UIView setAnimationDidStopSelector:@selector(showAnimationDidStop)];
 
-  CGRect rect = [self.view.superview frameWithKeyboardSubtracted:0];
+  CGRect rect = [self.view.superview frame];
   self.view.top = rect.size.height - self.view.height;
 
   [UIView commitAnimations];

@@ -28,16 +28,13 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation TTTableLinkedItem
 
-@synthesize URL           = _URL;
-@synthesize accessoryURL  = _accessoryURL;
+@synthesize accessoryType = _accessoryType;
 @synthesize delegate      = _delegate;
 @synthesize selector      = _selector;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)dealloc {
-  TT_RELEASE_SAFELY(_URL);
-  TT_RELEASE_SAFELY(_accessoryURL);
   _delegate = nil;
   _selector = nil;
 
@@ -61,8 +58,6 @@
 - (id)initWithCoder:(NSCoder*)decoder {
 	self = [super initWithCoder:decoder];
   if (self) {
-    self.URL = [decoder decodeObjectForKey:@"URL"];
-    self.accessoryURL = [decoder decodeObjectForKey:@"accessoryURL"];
   }
   return self;
 }
@@ -71,12 +66,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)encodeWithCoder:(NSCoder*)encoder {
   [super encodeWithCoder:encoder];
-  if (self.URL) {
-    [encoder encodeObject:self.URL forKey:@"URL"];
-  }
-  if (self.accessoryURL) {
-    [encoder encodeObject:self.accessoryURL forKey:@"accessoryURL"];
-  }
 }
 
 

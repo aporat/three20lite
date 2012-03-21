@@ -69,7 +69,6 @@
   TTTableImageItem* item = [[[self alloc] init] autorelease];
   item.text = text;
   item.imageURL = imageURL;
-  item.URL = URL;
   return item;
 }
 
@@ -81,7 +80,6 @@
   item.text = text;
   item.imageURL = imageURL;
   item.defaultImage = defaultImage;
-  item.URL = URL;
   return item;
 }
 
@@ -94,7 +92,6 @@
   item.imageURL = imageURL;
   item.defaultImage = defaultImage;
   item.imageStyle = imageStyle;
-  item.URL = URL;
   return item;
 }
 

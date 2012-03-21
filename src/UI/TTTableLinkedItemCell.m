@@ -65,16 +65,8 @@
 
     TTTableLinkedItem* item = object;
 
-    if (item.URL) {
-      if (item.accessoryURL) {
-        self.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-
-      } else {
-        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-      }
-
-      self.selectionStyle = TTSTYLEVAR(tableSelectionStyle);
-
+    if (item.accessoryType) {
+      self.accessoryType = item.accessoryType;
     } else if (nil != item.delegate && nil != item.selector) {
       self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
       self.selectionStyle = TTSTYLEVAR(tableSelectionStyle);

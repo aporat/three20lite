@@ -505,7 +505,7 @@
       [groups setObject:section forKey:letter];
     }
 
-    TTTableItem* item = [TTTableTextItem itemWithText:name URL:nil];
+    TTTableItem* item = [TTTableTextItem itemWithText:name];
     [section addObject:item];
   }
 
@@ -557,7 +557,7 @@
   self.items = [NSMutableArray array];
 
   for (NSString* name in _addressBook.names) {
-    TTTableItem* item = [TTTableTextItem itemWithText:name URL:@"http://google.com"];
+    TTTableItem* item = [TTTableTextItem itemWithText:name];
     [_items addObject:item];
   }
 }

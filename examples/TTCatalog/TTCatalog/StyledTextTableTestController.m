@@ -7,7 +7,6 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-    self.autoresizesForKeyboard = YES;
     self.variableHeightRows = YES;
 
     // Uncomment this to see how the table cells look against a custom background color

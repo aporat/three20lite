@@ -60,23 +60,12 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (id)itemWithText:(NSString*)text URL:(NSString*)URL {
++ (id)itemWithText:(NSString*)text accessory:(UITableViewCellAccessoryType)accessoryType {
   TTTableTextItem* item = [[[self alloc] init] autorelease];
   item.text = text;
-  item.URL = URL;
+  item.accessoryType = accessoryType;
   return item;
 }
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (id)itemWithText:(NSString*)text URL:(NSString*)URL accessoryURL:(NSString*)accessoryURL {
-  TTTableTextItem* item = [[[self alloc] init] autorelease];
-  item.text = text;
-  item.URL = URL;
-  item.accessoryURL = accessoryURL;
-  return item;
-}
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 + (id)itemWithText:(NSString*)text delegate:(id)delegate selector:(SEL)selector {

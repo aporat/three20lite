@@ -149,27 +149,4 @@
  */
 - (CGPoint)offsetFromView:(UIView*)otherView;
 
-/**
- * Calculates the frame of this view with parts that intersect with the keyboard subtracted.
- *
- * If the keyboard is not showing, this will simply return the normal frame.
- */
-- (CGRect)frameWithKeyboardSubtracted:(CGFloat)plusHeight;
-
-/**
- * Shows the view in a window at the bottom of the screen.
- *
- * This will send a notification pretending that a keyboard is about to appear so that
- * observers who adjust their layout for the keyboard will also adjust for this view.
- */
-- (void)presentAsKeyboardInView:(UIView*)containingView;
-
-/**
- * Hides a view that was showing in a window at the bottom of the screen (via presentAsKeyboard).
- *
- * This will send a notification pretending that a keyboard is about to disappear so that
- * observers who adjust their layout for the keyboard will also adjust for this view.
- */
-- (void)dismissAsKeyboard:(BOOL)animated;
-
 @end

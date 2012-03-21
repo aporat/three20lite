@@ -18,17 +18,13 @@
 #import "TTTableItem.h"
 
 @interface TTTableLinkedItem : TTTableItem {
-  // If a URL is specified, TTNavigator will be used. Otherwise, the delegate+selector will
-  // be invoked.
-  NSString* _URL;
-  NSString* _accessoryURL;
+  UITableViewCellAccessoryType _accessoryType;
 
   id        _delegate;
   SEL       _selector;
 }
 
-@property (nonatomic, copy) 	NSString* URL;
-@property (nonatomic, copy)   NSString* accessoryURL;
+@property (nonatomic, assign)   UITableViewCellAccessoryType accessoryType;
 @property (nonatomic, assign) id        delegate;
 @property (nonatomic, assign) SEL       selector;
 

@@ -10,7 +10,7 @@
 // private
 
 - (UIViewController*)composeTo:(NSString*)recipient {
-  TTTableTextItem* item = [TTTableTextItem itemWithText:recipient URL:nil];
+  TTTableTextItem* item = [TTTableTextItem itemWithText:recipient];
 
   TTMessageController* controller =
     [[[TTMessageController alloc] initWithRecipients:[NSArray arrayWithObject:item]] autorelease];

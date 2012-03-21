@@ -10,7 +10,6 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
     self.tableViewStyle = UITableViewStyleGrouped;
-    self.autoresizesForKeyboard = YES;
     self.variableHeightRows = YES;
 
     UITextField* textField = [[[UITextField alloc] init] autorelease];

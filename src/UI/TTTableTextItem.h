@@ -24,9 +24,7 @@
 @property (nonatomic, copy) NSString* text;
 
 + (id)itemWithText:(NSString*)text;
-+ (id)itemWithText:(NSString*)text URL:(NSString*)URL;
-+ (id)itemWithText:(NSString*)text URL:(NSString*)URL accessoryURL:(NSString*)accessoryURL;
-
++ (id)itemWithText:(NSString*)text accessory:(UITableViewCellAccessoryType)accessoryType;
 + (id)itemWithText:(NSString*)text delegate:(id)delegate selector:(SEL)selector;
 
 @end

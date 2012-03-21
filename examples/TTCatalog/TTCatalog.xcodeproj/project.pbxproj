@@ -28,7 +28,6 @@
 		6D64FCA014DC4A2C0099CBC0 /* MockDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC6E14DC4A2C0099CBC0 /* MockDataSource.m */; };
 		6D64FCA114DC4A2C0099CBC0 /* MockPhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC7014DC4A2C0099CBC0 /* MockPhotoSource.m */; };
 		6D64FCA214DC4A2C0099CBC0 /* person.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D64FC7114DC4A2C0099CBC0 /* person.jpg */; };
-		6D64FCA314DC4A2C0099CBC0 /* PhotoTest1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC7314DC4A2C0099CBC0 /* PhotoTest1Controller.m */; };
 		6D64FCA414DC4A2C0099CBC0 /* PhotoTest2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC7514DC4A2C0099CBC0 /* PhotoTest2Controller.m */; };
 		6D64FCA514DC4A2C0099CBC0 /* ScrollViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC7714DC4A2C0099CBC0 /* ScrollViewTestController.m */; };
 		6D64FCA614DC4A2C0099CBC0 /* SearchTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC7914DC4A2C0099CBC0 /* SearchTestController.m */; };
@@ -45,9 +44,12 @@
 		6D64FCB114DC4A2C0099CBC0 /* TableTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC8D14DC4A2C0099CBC0 /* TableTestController.m */; };
 		6D64FCB214DC4A2C0099CBC0 /* TableWithBannerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC8F14DC4A2C0099CBC0 /* TableWithBannerController.m */; };
 		6D64FCB314DC4A2C0099CBC0 /* TableWithShadowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC9114DC4A2C0099CBC0 /* TableWithShadowController.m */; };
-		6D64FCB414DC4A2C0099CBC0 /* YouTubeTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC9314DC4A2C0099CBC0 /* YouTubeTestController.m */; };
 		6D64FCCB14DC4A6C0099CBC0 /* libThree20Lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D64FCBB14DC4A4F0099CBC0 /* libThree20Lite.a */; };
 		6D64FCDC14DC4B040099CBC0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D64FCDB14DC4B040099CBC0 /* QuartzCore.framework */; };
+		6DCCDE4D15195328000659C7 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DCCDE4B15195328000659C7 /* Icon@2x.png */; };
+		6DCCDE4E15195328000659C7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DCCDE4C15195328000659C7 /* Icon.png */; };
+		6DCCDED915196E21000659C7 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DCCDED815196E21000659C7 /* Three20.bundle */; };
+		6DCCDEDC15196E77000659C7 /* PhotoTest1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCCDEDB15196E77000659C7 /* PhotoTest1Controller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,8 +112,6 @@
 		6D64FC6F14DC4A2C0099CBC0 /* MockPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockPhotoSource.h; sourceTree = "<group>"; };
 		6D64FC7014DC4A2C0099CBC0 /* MockPhotoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockPhotoSource.m; sourceTree = "<group>"; };
 		6D64FC7114DC4A2C0099CBC0 /* person.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person.jpg; sourceTree = "<group>"; };
-		6D64FC7214DC4A2C0099CBC0 /* PhotoTest1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTest1Controller.h; sourceTree = "<group>"; };
-		6D64FC7314DC4A2C0099CBC0 /* PhotoTest1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTest1Controller.m; sourceTree = "<group>"; };
 		6D64FC7414DC4A2C0099CBC0 /* PhotoTest2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTest2Controller.h; sourceTree = "<group>"; };
 		6D64FC7514DC4A2C0099CBC0 /* PhotoTest2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTest2Controller.m; sourceTree = "<group>"; };
 		6D64FC7614DC4A2C0099CBC0 /* ScrollViewTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewTestController.h; sourceTree = "<group>"; };
@@ -142,10 +142,13 @@
 		6D64FC8F14DC4A2C0099CBC0 /* TableWithBannerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableWithBannerController.m; sourceTree = "<group>"; };
 		6D64FC9014DC4A2C0099CBC0 /* TableWithShadowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableWithShadowController.h; sourceTree = "<group>"; };
 		6D64FC9114DC4A2C0099CBC0 /* TableWithShadowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableWithShadowController.m; sourceTree = "<group>"; };
-		6D64FC9214DC4A2C0099CBC0 /* YouTubeTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeTestController.h; sourceTree = "<group>"; };
-		6D64FC9314DC4A2C0099CBC0 /* YouTubeTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeTestController.m; sourceTree = "<group>"; };
 		6D64FCB514DC4A4B0099CBC0 /* Three20Lite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Lite.xcodeproj; path = ../../src/Three20Lite.xcodeproj; sourceTree = "<group>"; };
 		6D64FCDB14DC4B040099CBC0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6DCCDE4B15195328000659C7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		6DCCDE4C15195328000659C7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6DCCDED815196E21000659C7 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../../../src/Three20.bundle; sourceTree = "<group>"; };
+		6DCCDEDA15196E77000659C7 /* PhotoTest1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTest1Controller.h; sourceTree = "<group>"; };
+		6DCCDEDB15196E77000659C7 /* PhotoTest1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTest1Controller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,40 +199,35 @@
 		6D64FC4614DC49EC0099CBC0 /* TTCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				6DCCDED815196E21000659C7 /* Three20.bundle */,
+				6DCCDE7115195EDA000659C7 /* App Delegate */,
+				6DCCDE7215195F09000659C7 /* Catalog Controller */,
 				6D64FC5714DC4A2C0099CBC0 /* ActivityTestController.h */,
 				6D64FC5814DC4A2C0099CBC0 /* ActivityTestController.m */,
+				6DCCDEDA15196E77000659C7 /* PhotoTest1Controller.h */,
+				6DCCDEDB15196E77000659C7 /* PhotoTest1Controller.m */,
 				6D64FC5914DC4A2C0099CBC0 /* ButtonTestController.h */,
 				6D64FC5A14DC4A2C0099CBC0 /* ButtonTestController.m */,
-				6D64FC5B14DC4A2C0099CBC0 /* CatalogController.h */,
-				6D64FC5C14DC4A2C0099CBC0 /* CatalogController.m */,
-				6D64FC5D14DC4A2C0099CBC0 /* defaultMusic.png */,
-				6D64FC5E14DC4A2C0099CBC0 /* defaultPerson.png */,
 				6D64FC5F14DC4A2C0099CBC0 /* DownloadProgressTestController.h */,
 				6D64FC6014DC4A2C0099CBC0 /* DownloadProgressTestController.m */,
 				6D64FC6114DC4A2C0099CBC0 /* DownloadTestModel.h */,
 				6D64FC6214DC4A2C0099CBC0 /* DownloadTestModel.m */,
-				6D64FC6314DC4A2C0099CBC0 /* en.lproj */,
 				6D64FC6614DC4A2C0099CBC0 /* ImageTest1Controller.h */,
 				6D64FC6714DC4A2C0099CBC0 /* ImageTest1Controller.m */,
 				6D64FC6814DC4A2C0099CBC0 /* LauncherViewTestController.h */,
 				6D64FC6914DC4A2C0099CBC0 /* LauncherViewTestController.m */,
-				6D64FC6A14DC4A2C0099CBC0 /* mask.png */,
 				6D64FC6B14DC4A2C0099CBC0 /* MessageTestController.h */,
 				6D64FC6C14DC4A2C0099CBC0 /* MessageTestController.m */,
 				6D64FC6D14DC4A2C0099CBC0 /* MockDataSource.h */,
 				6D64FC6E14DC4A2C0099CBC0 /* MockDataSource.m */,
 				6D64FC6F14DC4A2C0099CBC0 /* MockPhotoSource.h */,
 				6D64FC7014DC4A2C0099CBC0 /* MockPhotoSource.m */,
-				6D64FC7114DC4A2C0099CBC0 /* person.jpg */,
-				6D64FC7214DC4A2C0099CBC0 /* PhotoTest1Controller.h */,
-				6D64FC7314DC4A2C0099CBC0 /* PhotoTest1Controller.m */,
 				6D64FC7414DC4A2C0099CBC0 /* PhotoTest2Controller.h */,
 				6D64FC7514DC4A2C0099CBC0 /* PhotoTest2Controller.m */,
 				6D64FC7614DC4A2C0099CBC0 /* ScrollViewTestController.h */,
 				6D64FC7714DC4A2C0099CBC0 /* ScrollViewTestController.m */,
 				6D64FC7814DC4A2C0099CBC0 /* SearchTestController.h */,
 				6D64FC7914DC4A2C0099CBC0 /* SearchTestController.m */,
-				6D64FC7A14DC4A2C0099CBC0 /* smiley.png */,
 				6D64FC7B14DC4A2C0099CBC0 /* StyledTextTableTestController.h */,
 				6D64FC7C14DC4A2C0099CBC0 /* StyledTextTableTestController.m */,
 				6D64FC7D14DC4A2C0099CBC0 /* StyledTextTestController.h */,
@@ -242,7 +240,6 @@
 				6D64FC8414DC4A2C0099CBC0 /* TableControlsTestController.m */,
 				6D64FC8514DC4A2C0099CBC0 /* TableDragRefreshController.h */,
 				6D64FC8614DC4A2C0099CBC0 /* TableDragRefreshController.m */,
-				6D64FC8714DC4A2C0099CBC0 /* tableIcon.png */,
 				6D64FC8814DC4A2C0099CBC0 /* TableImageTestController.h */,
 				6D64FC8914DC4A2C0099CBC0 /* TableImageTestController.m */,
 				6D64FC8A14DC4A2C0099CBC0 /* TableItemTestController.h */,
@@ -253,10 +250,6 @@
 				6D64FC8F14DC4A2C0099CBC0 /* TableWithBannerController.m */,
 				6D64FC9014DC4A2C0099CBC0 /* TableWithShadowController.h */,
 				6D64FC9114DC4A2C0099CBC0 /* TableWithShadowController.m */,
-				6D64FC9214DC4A2C0099CBC0 /* YouTubeTestController.h */,
-				6D64FC9314DC4A2C0099CBC0 /* YouTubeTestController.m */,
-				6D64FC4F14DC49EC0099CBC0 /* AppDelegate.h */,
-				6D64FC5014DC49EC0099CBC0 /* AppDelegate.m */,
 				6D64FC4714DC49EC0099CBC0 /* Supporting Files */,
 			);
 			path = TTCatalog;
@@ -265,6 +258,15 @@
 		6D64FC4714DC49EC0099CBC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6D64FC5D14DC4A2C0099CBC0 /* defaultMusic.png */,
+				6D64FC5E14DC4A2C0099CBC0 /* defaultPerson.png */,
+				6DCCDE4B15195328000659C7 /* Icon@2x.png */,
+				6DCCDE4C15195328000659C7 /* Icon.png */,
+				6D64FC6314DC4A2C0099CBC0 /* en.lproj */,
+				6D64FC6A14DC4A2C0099CBC0 /* mask.png */,
+				6D64FC7114DC4A2C0099CBC0 /* person.jpg */,
+				6D64FC7A14DC4A2C0099CBC0 /* smiley.png */,
+				6D64FC8714DC4A2C0099CBC0 /* tableIcon.png */,
 				6D64FC4814DC49EC0099CBC0 /* TTCatalog-Info.plist */,
 				6D64FC4914DC49EC0099CBC0 /* InfoPlist.strings */,
 				6D64FC4C14DC49EC0099CBC0 /* main.m */,
@@ -288,6 +290,24 @@
 				6D64FCBD14DC4A4F0099CBC0 /* Three20LiteUnitTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6DCCDE7115195EDA000659C7 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6D64FC4F14DC49EC0099CBC0 /* AppDelegate.h */,
+				6D64FC5014DC49EC0099CBC0 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		6DCCDE7215195F09000659C7 /* Catalog Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D64FC5B14DC4A2C0099CBC0 /* CatalogController.h */,
+				6D64FC5C14DC4A2C0099CBC0 /* CatalogController.m */,
+			);
+			name = "Catalog Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +337,7 @@
 		6D64FC3314DC49EC0099CBC0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 6D64FC3614DC49EC0099CBC0 /* Build configuration list for PBXProject "TTCatalog" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -372,6 +392,9 @@
 				6D64FCA214DC4A2C0099CBC0 /* person.jpg in Resources */,
 				6D64FCA714DC4A2C0099CBC0 /* smiley.png in Resources */,
 				6D64FCAE14DC4A2C0099CBC0 /* tableIcon.png in Resources */,
+				6DCCDE4D15195328000659C7 /* Icon@2x.png in Resources */,
+				6DCCDE4E15195328000659C7 /* Icon.png in Resources */,
+				6DCCDED915196E21000659C7 /* Three20.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +417,6 @@
 				6D64FC9F14DC4A2C0099CBC0 /* MessageTestController.m in Sources */,
 				6D64FCA014DC4A2C0099CBC0 /* MockDataSource.m in Sources */,
 				6D64FCA114DC4A2C0099CBC0 /* MockPhotoSource.m in Sources */,
-				6D64FCA314DC4A2C0099CBC0 /* PhotoTest1Controller.m in Sources */,
 				6D64FCA414DC4A2C0099CBC0 /* PhotoTest2Controller.m in Sources */,
 				6D64FCA514DC4A2C0099CBC0 /* ScrollViewTestController.m in Sources */,
 				6D64FCA614DC4A2C0099CBC0 /* SearchTestController.m in Sources */,
@@ -409,7 +431,7 @@
 				6D64FCB114DC4A2C0099CBC0 /* TableTestController.m in Sources */,
 				6D64FCB214DC4A2C0099CBC0 /* TableWithBannerController.m in Sources */,
 				6D64FCB314DC4A2C0099CBC0 /* TableWithShadowController.m in Sources */,
-				6D64FCB414DC4A2C0099CBC0 /* YouTubeTestController.m in Sources */,
+				6DCCDEDC15196E77000659C7 /* PhotoTest1Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +472,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -475,7 +497,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

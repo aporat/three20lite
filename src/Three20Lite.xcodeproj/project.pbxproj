@@ -461,8 +461,6 @@
 		6D0DB75B14DC149700CA0177 /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB65114DC149600CA0177 /* TTViewController.m */; };
 		6D0DB75C14DC149700CA0177 /* TTWebController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB65214DC149600CA0177 /* TTWebController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB75D14DC149700CA0177 /* TTWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB65314DC149600CA0177 /* TTWebController.m */; };
-		6D0DB75E14DC149700CA0177 /* TTYouTubeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB65414DC149600CA0177 /* TTYouTubeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB75F14DC149700CA0177 /* TTYouTubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB65514DC149600CA0177 /* TTYouTubeView.m */; };
 		6D0DB76014DC149700CA0177 /* UINavigationControllerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB65614DC149600CA0177 /* UINavigationControllerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB76114DC149700CA0177 /* UINavigationControllerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB65714DC149600CA0177 /* UINavigationControllerAdditions.m */; };
 		6D0DB76214DC149700CA0177 /* UINSObjectAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB65814DC149600CA0177 /* UINSObjectAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1004,8 +1002,6 @@
 		6D0DB65114DC149600CA0177 /* TTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTViewController.m; path = UI/TTViewController.m; sourceTree = "<group>"; };
 		6D0DB65214DC149600CA0177 /* TTWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTWebController.h; path = UI/TTWebController.h; sourceTree = "<group>"; };
 		6D0DB65314DC149600CA0177 /* TTWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTWebController.m; path = UI/TTWebController.m; sourceTree = "<group>"; };
-		6D0DB65414DC149600CA0177 /* TTYouTubeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTYouTubeView.h; path = UI/TTYouTubeView.h; sourceTree = "<group>"; };
-		6D0DB65514DC149600CA0177 /* TTYouTubeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTYouTubeView.m; path = UI/TTYouTubeView.m; sourceTree = "<group>"; };
 		6D0DB65614DC149600CA0177 /* UINavigationControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UINavigationControllerAdditions.h; path = UI/UINavigationControllerAdditions.h; sourceTree = "<group>"; };
 		6D0DB65714DC149600CA0177 /* UINavigationControllerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UINavigationControllerAdditions.m; path = UI/UINavigationControllerAdditions.m; sourceTree = "<group>"; };
 		6D0DB65814DC149600CA0177 /* UINSObjectAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UINSObjectAdditions.h; path = UI/UINSObjectAdditions.h; sourceTree = "<group>"; };
@@ -1222,7 +1218,6 @@
 				6D4283C814DC20C8002FDD03 /* View */,
 				6D4283C514DC20A0002FDD03 /* View Controller */,
 				6D4283C614DC20AC002FDD03 /* Web Controller */,
-				6D4283C714DC20B9002FDD03 /* YouTube View */,
 				6DCA657414DC1DB900880863 /* Additions */,
 				6DCA657514DC1DE000880863 /* Base Controller */,
 			);
@@ -1589,15 +1584,6 @@
 				6D0DB65314DC149600CA0177 /* TTWebController.m */,
 			);
 			name = "Web Controller";
-			sourceTree = "<group>";
-		};
-		6D4283C714DC20B9002FDD03 /* YouTube View */ = {
-			isa = PBXGroup;
-			children = (
-				6D0DB65414DC149600CA0177 /* TTYouTubeView.h */,
-				6D0DB65514DC149600CA0177 /* TTYouTubeView.m */,
-			);
-			name = "YouTube View";
 			sourceTree = "<group>";
 		};
 		6D4283C814DC20C8002FDD03 /* View */ = {
@@ -2349,7 +2335,6 @@
 				6D0DB75814DC149700CA0177 /* TTView.h in Headers */,
 				6D0DB75A14DC149700CA0177 /* TTViewController.h in Headers */,
 				6D0DB75C14DC149700CA0177 /* TTWebController.h in Headers */,
-				6D0DB75E14DC149700CA0177 /* TTYouTubeView.h in Headers */,
 				6D0DB76014DC149700CA0177 /* UINavigationControllerAdditions.h in Headers */,
 				6D0DB76214DC149700CA0177 /* UINSObjectAdditions.h in Headers */,
 				6D0DB76414DC149700CA0177 /* UINSStringAdditions.h in Headers */,
@@ -2445,7 +2430,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Three20Lite" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2734,7 +2719,6 @@
 				6D0DB75914DC149700CA0177 /* TTView.m in Sources */,
 				6D0DB75B14DC149700CA0177 /* TTViewController.m in Sources */,
 				6D0DB75D14DC149700CA0177 /* TTWebController.m in Sources */,
-				6D0DB75F14DC149700CA0177 /* TTYouTubeView.m in Sources */,
 				6D0DB76114DC149700CA0177 /* UINavigationControllerAdditions.m in Sources */,
 				6D0DB76314DC149700CA0177 /* UINSObjectAdditions.m in Sources */,
 				6D0DB76514DC149700CA0177 /* UINSStringAdditions.m in Sources */,
@@ -2818,6 +2802,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Three20_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_THUMB_SUPPORT = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -2857,6 +2842,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Three20_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_THUMB_SUPPORT = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -2879,6 +2865,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Three20_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",

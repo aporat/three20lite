@@ -69,7 +69,6 @@
   TTTableSubtitleItem* item = [[[self alloc] init] autorelease];
   item.text = text;
   item.subtitle = subtitle;
-  item.URL = URL;
   return item;
 }
 
@@ -80,8 +79,6 @@
   TTTableSubtitleItem* item = [[[self alloc] init] autorelease];
   item.text = text;
   item.subtitle = subtitle;
-  item.URL = URL;
-  item.accessoryURL = accessoryURL;
   return item;
 }
 
@@ -93,7 +90,6 @@
   item.text = text;
   item.subtitle = subtitle;
   item.imageURL = imageURL;
-  item.URL = URL;
   return item;
 }
 
@@ -106,8 +102,6 @@
   item.subtitle = subtitle;
   item.imageURL = imageURL;
   item.defaultImage = defaultImage;
-  item.URL = URL;
-  item.accessoryURL = accessoryURL;
   return item;
 }
 

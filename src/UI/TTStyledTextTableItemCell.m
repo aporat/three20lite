@@ -76,7 +76,7 @@ static const CGFloat kDisclosureIndicatorWidth = 23.0f;
   }
 
   CGFloat padding = [tableView tableCellMargin]*2 + item.padding.left + item.padding.right;
-  if (item.URL) {
+  if (item.accessoryType) {
     padding += kDisclosureIndicatorWidth;
   }
 

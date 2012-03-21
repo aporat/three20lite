@@ -76,7 +76,6 @@
 + (id)itemWithText:(TTStyledText*)text URL:(NSString*)URL {
   TTTableStyledTextItem* item = [[[self alloc] init] autorelease];
   item.text = text;
-  item.URL = URL;
   return item;
 }
 
@@ -85,8 +84,6 @@
 + (id)itemWithText:(TTStyledText*)text URL:(NSString*)URL accessoryURL:(NSString*)accessoryURL {
   TTTableStyledTextItem* item = [[[self alloc] init] autorelease];
   item.text = text;
-  item.URL = URL;
-  item.accessoryURL = accessoryURL;
   return item;
 }
 

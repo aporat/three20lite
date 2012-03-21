@@ -41,6 +41,11 @@
 
   id<TTTableViewDataSource> _dataSource;
   id<UITableViewDelegate>   _tableDelegate;
+  
+  BOOL _keyboardVisible;
+  BOOL _viewOnScreen;
+  BOOL _resizeWhenKeyboardPresented;
+
 }
 
 @property (nonatomic, retain) IBOutlet UITableView* tableView;
@@ -92,6 +97,9 @@
  * Default is YES.
  */
 @property (nonatomic) BOOL clearsSelectionOnViewWillAppear;
+
+
+@property(nonatomic) BOOL resizeWhenKeyboardPresented;
 
 /**
  * Initializes and returns a controller having the given style.
@@ -152,5 +160,9 @@
  * The rectangle where the banner view should appear.
  */
 - (CGRect)rectForBannerView;
+
+
+
+
 
 @end

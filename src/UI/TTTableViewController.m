@@ -63,6 +63,7 @@
 @synthesize showTableShadows    = _showTableShadows;
 @synthesize clearsSelectionOnViewWillAppear = _clearsSelectionOnViewWillAppear;
 @synthesize dataSource          = _dataSource;
+@synthesize resizeWhenKeyboardPresented = _resizeWhenKeyboardPresented;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -72,6 +73,7 @@
     _lastInterfaceOrientation = self.interfaceOrientation;
     _tableViewStyle = UITableViewStylePlain;
     _clearsSelectionOnViewWillAppear = YES;
+    self.resizeWhenKeyboardPresented = YES;
   }
 
   return self;
@@ -101,6 +103,10 @@
   TT_RELEASE_SAFELY(_emptyView);
   TT_RELEASE_SAFELY(_tableOverlayView);
   TT_RELEASE_SAFELY(_tableBannerView);
+  
+  [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+  [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+
 
   [super dealloc];
 }
@@ -269,6 +275,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
+  _viewOnScreen = YES;
 
   if (_lastInterfaceOrientation != self.interfaceOrientation) {
     _lastInterfaceOrientation = self.interfaceOrientation;
@@ -288,6 +295,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)viewDidAppear:(BOOL)animated {
+
   [super viewDidAppear:animated];
   if (_flags.isShowingModel) {
     [_tableView flashScrollIndicators];
@@ -297,6 +305,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)viewWillDisappear:(BOOL)animated {
+  _viewOnScreen = NO;
   [super viewWillDisappear:animated];
   [self hideMenu:YES];
 }
@@ -336,52 +345,6 @@
       _tableView.contentOffset = CGPointMake(0, maxY);
     }
   }
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark -
-#pragma mark TTViewController
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)keyboardDidAppear:(BOOL)animated withBounds:(CGRect)bounds {
-  [super keyboardDidAppear:animated withBounds:bounds];
-  self.tableView.frame = TTRectContract(self.tableView.frame, 0, bounds.size.height);
-  [self.tableView scrollFirstResponderIntoView];
-  [self layoutOverlayView];
-  [self layoutBannerView];
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)keyboardWillDisappear:(BOOL)animated withBounds:(CGRect)bounds {
-  [super keyboardWillDisappear:animated withBounds:bounds];
-
-  // If we do this when there is currently no table view, we can get into a weird loop where the
-  // table view gets doubly-initialized. self.tableView will try to initialize it; this will call
-  // self.view, which will call -loadView, which often calls self.tableView, which initializes it.
-  if (_tableView) {
-    CGRect previousFrame = self.tableView.frame;
-    self.tableView.frame = TTRectContract(self.tableView.frame, 0, -bounds.size.height);
-
-    // There's any number of edge cases wherein a table view controller will get this callback but
-    // it shouldn't resize itself -- e.g. when a controller has the keyboard up, and then drills
-    // down into this controller. This is a sanity check to avoid situations where the table
-    // extends way off the bottom of the screen and becomes unusable.
-    if (self.tableView.height > self.view.bounds.size.height) {
-      self.tableView.frame = previousFrame;
-    }
-  }
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)keyboardDidDisappear:(BOOL)animated withBounds:(CGRect)bounds {
-  [super keyboardDidDisappear:animated withBounds:bounds];
-  [self layoutOverlayView];
-  [self layoutBannerView];
 }
 
 
@@ -947,13 +910,13 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (CGRect)rectForOverlayView {
-  return [_tableView frameWithKeyboardSubtracted:0];
+  return [_tableView frame];
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (CGRect)rectForBannerView {
-  CGRect tableFrame = [_tableView frameWithKeyboardSubtracted:0];
+  CGRect tableFrame = [_tableView frame];
   const CGFloat bannerViewHeight = TTSTYLEVAR(tableBannerViewHeight);
   return CGRectMake(tableFrame.origin.x,
                     (tableFrame.origin.y + tableFrame.size.height) - bannerViewHeight,
@@ -972,5 +935,50 @@
   _tableView.delegate = nil;
   [self updateTableDelegate];
 }
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)resizeForKeyboard:(NSNotification*)aNotification {
+  if (!_viewOnScreen)
+    return;
+  
+  BOOL up = aNotification.name == UIKeyboardWillShowNotification;
+  
+  if (_keyboardVisible == up)
+    return;
+  
+
+  _keyboardVisible = up;
+  NSDictionary* userInfo = [aNotification userInfo];
+  NSTimeInterval animationDuration;
+  UIViewAnimationCurve animationCurve;
+  CGRect keyboardEndFrame;
+  [[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] getValue:&animationCurve];
+  [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
+  [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] getValue:&keyboardEndFrame];
+  
+  [UIView animateWithDuration:animationDuration delay:0 options:animationCurve
+                   animations:^{
+                     CGRect keyboardFrame = [self.view convertRect:keyboardEndFrame toView:nil];
+                     self.tableView.contentInset = UIEdgeInsetsMake(0.0, 0.0,  up ? keyboardFrame.size.height : 0, 0.0);
+                   }
+                   completion:NULL];
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setResizeWhenKeyboardPresented:(BOOL)observesKeyboard {
+  if (observesKeyboard != _resizeWhenKeyboardPresented) {
+    _resizeWhenKeyboardPresented = observesKeyboard;
+    
+    if (_resizeWhenKeyboardPresented) {
+      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resizeForKeyboard:) name:UIKeyboardWillShowNotification object:nil];
+      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resizeForKeyboard:) name:UIKeyboardWillHideNotification object:nil];
+    } else {
+      [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+      [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+    }
+  }
+}
+
 
 @end

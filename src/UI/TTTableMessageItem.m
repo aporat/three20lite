@@ -65,7 +65,6 @@
   item.caption = caption;
   item.text = text;
   item.timestamp = timestamp;
-  item.URL = URL;
   return item;
 }
 
@@ -79,7 +78,6 @@
   item.text = text;
   item.timestamp = timestamp;
   item.imageURL = imageURL;
-  item.URL = URL;
   return item;
 }
 

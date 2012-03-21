@@ -152,10 +152,7 @@ static const NSUInteger kFirstTableSection = 0;
   id object = [dataSource tableView:tableView objectForRowAtIndexPath:indexPath];
   if ([object isKindOfClass:[TTTableLinkedItem class]]) {
     TTTableLinkedItem* item = object;
-    if (item.URL && [_controller shouldOpenURL:item.URL]) {
-      TTOpenURLFromView(item.URL, tableView);
-
-    } else if (item.delegate && item.selector) {
+    if (item.delegate && item.selector) {
       [item.delegate performSelector:item.selector withObject:object];
     }
 
@@ -182,23 +179,6 @@ static const NSUInteger kFirstTableSection = 0;
   [_controller didSelectObject:object atIndexPath:indexPath];
 }
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-/**
- * Similar logic to the above. If the user taps an accessory item and there is an associated URL,
- * we navigate to that URL.
- */
-- (void)tableView:(UITableView*)tableView
-        accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath {
-  id<TTTableViewDataSource> dataSource = (id<TTTableViewDataSource>)tableView.dataSource;
-  id object = [dataSource tableView:tableView objectForRowAtIndexPath:indexPath];
-  if ([object isKindOfClass:[TTTableLinkedItem class]]) {
-    TTTableLinkedItem* item = object;
-    if (item.accessoryURL && [_controller shouldOpenURL:item.accessoryURL]) {
-      TTOpenURLFromView(item.accessoryURL, tableView);
-    }
-  }
-}
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
