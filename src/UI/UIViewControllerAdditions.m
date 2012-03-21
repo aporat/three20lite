@@ -239,16 +239,6 @@ TT_FIX_CATEGORY_BUG(UIViewControllerAdditions)
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)addSubcontroller:(UIViewController*)controller animated:(BOOL)animated
-        transition:(UIViewAnimationTransition)transition {
-  if (self.navigationController) {
-    [self.navigationController addSubcontroller:controller animated:animated
-                               transition:transition];
-  }
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)removeFromSupercontroller {
   [self removeFromSupercontrollerAnimated:YES];
 }

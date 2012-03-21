@@ -19,7 +19,6 @@
 #import "TTGlobalNavigatorMetrics.h"
 
 // - View Controllers
-#import "TTNavigatorViewController.h"
 #import "TTBaseNavigationController.h"
 
 // - Navigator

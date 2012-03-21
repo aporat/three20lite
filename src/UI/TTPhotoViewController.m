@@ -370,7 +370,6 @@ static const NSInteger kActivityLabelTag          = 96;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)showThumbnails {
   if (!_thumbsController) {
-    // The photo source had no URL mapping in TTURLMap, so we let the subclass show the thumbs
     _thumbsController = [[self createThumbsViewController] retain];
     _thumbsController.photoSource = _photoSource;
   }

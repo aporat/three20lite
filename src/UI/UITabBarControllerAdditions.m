@@ -80,13 +80,6 @@ TT_FIX_CATEGORY_BUG(UITabBarControllerAdditions)
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)addSubcontroller:(UIViewController*)controller animated:(BOOL)animated
-        transition:(UIViewAnimationTransition)transition {
-  self.selectedViewController = controller;
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)bringControllerToFront:(UIViewController*)controller animated:(BOOL)animated {
   self.selectedViewController = controller;
 }

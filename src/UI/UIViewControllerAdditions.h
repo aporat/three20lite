@@ -70,15 +70,6 @@
  */
 @property (nonatomic, retain) UIViewController* popupViewController;
 
-/**
- * Displays a controller inside this controller.
- *
- * TTURLMap uses this to display newly created controllers.  The default does nothing --
- * UIViewController categories and subclasses should implement to display the controller
- * in a manner specific to them.
- */
-- (void)addSubcontroller:(UIViewController*)controller animated:(BOOL)animated
-        transition:(UIViewAnimationTransition)transition;
 
 /**
  * Dismisses a view controller using the opposite transition it was presented with.

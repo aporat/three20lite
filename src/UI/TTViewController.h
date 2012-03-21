@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "TTNavigatorViewController.h"
+#import "TTBaseViewController.h"
 
 @class TTTableViewController;
 @class TTSearchDisplayController;
@@ -22,7 +22,7 @@
 /**
  * A view controller with some useful additions.
  */
-@interface TTViewController : TTNavigatorViewController {
+@interface TTViewController : TTBaseViewController {
 @protected
   TTSearchDisplayController* _searchController;
 }

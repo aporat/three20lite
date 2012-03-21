@@ -77,23 +77,6 @@ TT_FIX_CATEGORY_BUG(UINavigationControllerAdditions)
 }
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)addSubcontroller:(UIViewController*)controller animated:(BOOL)animated
-        transition:(UIViewAnimationTransition)transition {
-  if (animated && transition) {
-    if ([self isKindOfClass:[TTNavigationController class]]) {
-      [(TTNavigationController*)self pushViewController: controller
-                                 animatedWithTransition: transition];
-
-    } else {
-      [self pushViewController:controller animated:YES];
-    }
-
-  } else {
-    [self pushViewController:controller animated:animated];
-  }
-}
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)bringControllerToFront:(UIViewController*)controller animated:(BOOL)animated {
