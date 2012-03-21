@@ -16,12 +16,6 @@
 
 #import "TTBaseNavigationController.h"
 
-// UINavigator
-#import "TTBaseNavigator.h"
-#import "TTURLMap.h"
-
-// UINavigator (Additions)
-#import "UIViewController+TTNavigator.h"
 
 // UICommon
 #import "TTGlobalUICommon.h"
@@ -55,27 +49,6 @@
 }
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark -
-#pragma mark UINavigationController
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (UIViewController*)popViewControllerAnimated:(BOOL)animated {
-  if (animated) {
-    NSString* URL = self.topViewController.originalNavigatorURL;
-    UIViewAnimationTransition transition = URL
-      ? [[TTBaseNavigator globalNavigator].URLMap transitionForURL:URL]
-      : UIViewAnimationTransitionNone;
-    if (transition) {
-      UIViewAnimationTransition inverseTransition = [self invertTransition:transition];
-      return [self popViewControllerAnimatedWithTransition:inverseTransition];
-    }
-  }
-
-  return [super popViewControllerAnimated:animated];
-}
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

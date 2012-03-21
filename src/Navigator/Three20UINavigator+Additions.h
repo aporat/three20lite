@@ -15,6 +15,3 @@
 //
 
 #import "Three20UINavigator.h"
-
-// Additions
-#import "UIViewController+TTNavigator.h"

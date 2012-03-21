@@ -17,7 +17,6 @@
 #import "TTTableViewDelegate.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTTableViewDataSource.h"
 #import "TTTableViewController.h"
 #import "TTTableHeaderView.h"

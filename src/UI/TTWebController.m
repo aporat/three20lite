@@ -17,13 +17,11 @@
 #import "TTWebController.h"
 
 // UI
-#import "TTNavigator.h"
 #import "UIViewAdditions.h"
 #import "UIToolbarAdditions.h"
 
 // UINavigator
 #import "TTGlobalNavigatorMetrics.h"
-#import "TTURLMap.h"
 
 // UICommon
 #import "TTGlobalUICommon.h"
@@ -330,12 +328,6 @@
     return NO;
   }
 
-  if ([[TTNavigator navigator].URLMap isAppURL:request.URL]) {
-    [_loadingURL release];
-    _loadingURL = [[NSURL URLWithString:@"about:blank"] retain];
-    [[UIApplication sharedApplication] openURL:request.URL];
-    return NO;
-  }
 
   [_loadingURL release];
   _loadingURL = [request.URL retain];

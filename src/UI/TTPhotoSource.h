@@ -17,15 +17,12 @@
 // Network
 #import "TTModel.h"
 
-// UINavigator
-#import "TTURLObject.h"
-
 #define TT_NULL_PHOTO_INDEX NSIntegerMax
 
 @protocol TTPhoto;
 @class TTURLRequest;
 
-@protocol TTPhotoSource <TTModel, TTURLObject>
+@protocol TTPhotoSource <TTModel>
 
 /**
  * The title of this collection of photos.

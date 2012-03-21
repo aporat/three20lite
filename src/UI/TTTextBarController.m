@@ -17,7 +17,6 @@
 #import "TTTextBarController.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTTextBarDelegate.h"
 #import "TTButton.h"
 #import "TTTextEditor.h"
@@ -194,45 +193,6 @@ static CGFloat kPadding = 5.0f;
 }
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark -
-#pragma mark UIViewController (TTCategory)
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (BOOL)persistView:(NSMutableDictionary*)state {
-  [state setObject:[NSNumber numberWithBool:YES] forKey:@"__important__"];
-
-  NSString* delegate = [[TTNavigator navigator] pathForObject:_delegate];
-  if (delegate) {
-    [state setObject:delegate forKey:@"delegate"];
-  }
-  [state setObject:_textEditor.text forKey:@"text"];
-
-  NSString* title = self.navigationItem.title;
-
-  if (title) {
-    [state setObject:title forKey:@"title"];
-  }
-
-  return [super persistView:state];
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)restoreView:(NSDictionary*)state {
-  [super restoreView:state];
-  NSString* delegate = [state objectForKey:@"delegate"];
-  if (delegate) {
-    _delegate = [[TTNavigator navigator] objectForPath:delegate];
-  }
-  NSString* title = [state objectForKey:@"title"];
-  if (title) {
-    self.navigationItem.title = title;
-  }
-  _defaultText = [[state objectForKey:@"text"] retain];
-}
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

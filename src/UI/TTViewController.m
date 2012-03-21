@@ -17,13 +17,11 @@
 #import "TTViewController.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTTableViewController.h"
 #import "TTSearchDisplayController.h"
 
 // UINavigator
 #import "TTGlobalNavigatorMetrics.h"
-#import "UIViewController+TTNavigator.h"
 
 // UICommon
 #import "TTGlobalUICommon.h"
@@ -154,11 +152,6 @@
 }
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (void)doGarbageCollection {
-  [UIViewController doNavigatorGarbageCollection];
-  [UIViewController doCommonGarbageCollection];
-}
 
 
 @end

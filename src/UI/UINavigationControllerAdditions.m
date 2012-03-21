@@ -20,12 +20,7 @@
 #import "TTCorePreprocessorMacros.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTNavigationController.h"
-
-// UINavigator
-#import "TTURLMap.h"
-#import "UIViewController+TTNavigator.h"
 
 // UICommon
 #import "TTGlobalUICommon.h"
@@ -132,13 +127,6 @@ TT_FIX_CATEGORY_BUG(UINavigationControllerAdditions)
   }
 }
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)persistNavigationPath:(NSMutableArray*)path {
-  for (UIViewController* controller in self.viewControllers) {
-    [[TTNavigator navigator] persistController:controller path:path];
-  }
-}
 
 
 @end

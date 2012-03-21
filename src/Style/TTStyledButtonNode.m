@@ -93,8 +93,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)performDefaultAction {
   if (nil != _URL) {
-    // TODO (jverkoey 04/20/2010): Remove dependency on UI.
-    //TTOpenURL(_URL);
+
   }
 }
 

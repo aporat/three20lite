@@ -17,7 +17,6 @@
 #import "TTPhotoViewController.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTThumbsViewController.h"
 #import "TTNavigationController.h"
 #import "TTPhotoSource.h"
@@ -31,9 +30,6 @@
 
 // UINavigator
 #import "TTGlobalNavigatorMetrics.h"
-#import "TTURLObject.h"
-#import "TTURLMap.h"
-#import "TTBaseNavigationController.h"
 
 // UICommon
 #import "TTGlobalUICommon.h"
@@ -373,27 +369,12 @@ static const NSInteger kActivityLabelTag          = 96;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)showThumbnails {
-  NSString* URL = [self URLForThumbnails];
   if (!_thumbsController) {
-    if (URL) {
-      // The photo source has a URL mapping in TTURLMap, so we use that to show the thumbs
-      NSDictionary* query = [NSDictionary dictionaryWithObject:self forKey:@"delegate"];
-      TTBaseNavigator* navigator = [TTBaseNavigator navigatorForView:self.view];
-      _thumbsController = (TTThumbsViewController*)[[navigator viewControllerForURL:URL
-                                                                              query:query] retain];
-      [navigator.URLMap setObject:_thumbsController forURL:URL];
-
-    } else {
-      // The photo source had no URL mapping in TTURLMap, so we let the subclass show the thumbs
-      _thumbsController = [[self createThumbsViewController] retain];
-      _thumbsController.photoSource = _photoSource;
-    }
+    // The photo source had no URL mapping in TTURLMap, so we let the subclass show the thumbs
+    _thumbsController = [[self createThumbsViewController] retain];
+    _thumbsController.photoSource = _photoSource;
   }
 
-  if (URL) {
-    TTOpenURLFromView(URL, self.view);
-
-  } else {
     if ([self.navigationController isKindOfClass:[TTNavigationController class]]) {
       [(TTNavigationController*)self.navigationController
            pushViewController: _thumbsController
@@ -401,7 +382,6 @@ static const NSInteger kActivityLabelTag          = 96;
 
     } else {
       [self.navigationController pushViewController:_thumbsController animated:YES];
-    }
   }
 }
 

@@ -16,10 +16,6 @@
 
 #import "TTNavigatorViewController.h"
 
-// UINavigator (private)
-#import "UIViewController+TTNavigatorGarbageCollection.h"
-#import "UIViewController+TTNavigator.h"
-#import "TTBaseNavigator.h"
 
 // Core
 #import "TTDebug.h"
@@ -32,17 +28,6 @@
 @implementation TTNavigatorViewController
 
 
-
-
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void) dealloc {
-  [self unsetNavigatorProperties];
-
-  [super dealloc];
-}
 
 
 @end

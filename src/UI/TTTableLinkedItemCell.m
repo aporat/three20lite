@@ -17,11 +17,8 @@
 #import "TTTableLinkedItemCell.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTTableLinkedItem.h"
 
-// UINavigator
-#import "TTURLMap.h"
 
 // Style
 #import "TTGlobalStyle.h"

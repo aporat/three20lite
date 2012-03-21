@@ -17,7 +17,6 @@
 #import "TTActionSheetController.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTActionSheetControllerDelegate.h"
 #import "TTActionSheet.h"
 
@@ -215,9 +214,6 @@
                                               URL: URL];
   }
 
-  if (URL && canOpenURL) {
-    TTOpenURL(URL);
-  }
 
   if ([_delegate respondsToSelector:@selector(actionSheet:didDismissWithButtonIndex:)]) {
     [_delegate actionSheet:actionSheet didDismissWithButtonIndex:buttonIndex];

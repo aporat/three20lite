@@ -16,9 +16,6 @@
 
 #import "TTModelViewController.h"
 
-// UI
-#import "TTNavigator.h"
-
 // UICommon
 #import "UIViewControllerAdditions.h"
 
@@ -321,13 +318,11 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id<TTModel>)model {
   if (!_model) {
-    if (![TTNavigator navigator].isDelayed) {
-      [self createModel];
-    }
-
-    if (!_model) {
-      [self createInterstitialModel];
-    }
+    [self createModel];
+  }
+  
+  if (!_model) {
+    [self createInterstitialModel];
   }
   return _model;
 }

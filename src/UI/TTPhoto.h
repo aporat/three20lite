@@ -17,12 +17,10 @@
 // UI
 #import "TTPhotoVersion.h"
 
-// UINavigator
-#import "TTURLObject.h"
 
 @protocol TTPhotoSource;
 
-@protocol TTPhoto <NSObject, TTURLObject>
+@protocol TTPhoto <NSObject>
 
 /**
  * The photo source that the photo belongs to.

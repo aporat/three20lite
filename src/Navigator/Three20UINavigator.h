@@ -17,7 +17,6 @@
 // Navigator
 
 #import "TTGlobalNavigatorMetrics.h"
-#import "TTURLObject.h"
 
 // - View Controllers
 #import "TTNavigatorViewController.h"
@@ -28,17 +27,3 @@
 #import "TTBaseNavigator.h"
 #import "TTNavigatorDelegate.h"
 #import "TTNavigatorRootContainer.h"
-
-// -- URL Action
-#import "TTURLAction.h"
-
-// -- URL Map
-#import "TTURLMap.h"
-#import "TTNavigationMode.h"
-
-// -- URL Pattern
-#import "TTURLPattern.h"
-
-// --- Patterns
-#import "TTURLGeneratorPattern.h"
-#import "TTURLNavigatorPattern.h"

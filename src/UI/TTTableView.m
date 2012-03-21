@@ -17,7 +17,6 @@
 #import "TTTableView.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTStyledTextLabel.h"
 #import "UIViewAdditions.h"
 
@@ -123,19 +122,7 @@ static const CGFloat kCancelHighlightThreshold = 4.0f;
 
   if (_highlightedLabel) {
     TTStyledElement* element = _highlightedLabel.highlightedNode;
-    // This is a dirty hack to decouple the UI from Style. TTOpenURL was originally within
-    // the node implementation. One potential fix would be to provide some protocol for these
-    // nodes to converse with.
-    if ([element isKindOfClass:[TTStyledLinkNode class]]) {
-      TTOpenURLFromView([(TTStyledLinkNode*)element URL], self);
-
-    } else if ([element isKindOfClass:[TTStyledButtonNode class]]) {
-      TTOpenURLFromView([(TTStyledButtonNode*)element URL], self);
-
-
-    } else {
-      [element performDefaultAction];
-    }
+    [element performDefaultAction];
   }
 }
 

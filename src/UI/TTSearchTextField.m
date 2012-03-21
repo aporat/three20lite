@@ -17,7 +17,6 @@
 #import "TTSearchTextField.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTView.h"
 #import "TTSearchTextFieldDelegate.h"
 #import "TTTableView.h"
@@ -98,23 +97,7 @@ static const CGFloat kDesiredTableHeight = 150.0f;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)showDoneButton:(BOOL)show {
-  UIViewController* controller = [TTNavigator navigator].visibleViewController;
-  if (controller) {
-    if (show) {
-      _previousNavigationItem = [controller.navigationItem retain];
-      _previousRightBarButtonItem = [controller.navigationItem.rightBarButtonItem retain];
 
-      UIBarButtonItem* doneButton = [[[UIBarButtonItem alloc]
-      initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-      target:self action:@selector(doneAction)] autorelease];
-      [controller.navigationItem setRightBarButtonItem:doneButton animated:YES];
-
-    } else {
-      [_previousNavigationItem setRightBarButtonItem:_previousRightBarButtonItem animated:YES];
-      TT_RELEASE_SAFELY(_previousRightBarButtonItem);
-      TT_RELEASE_SAFELY(_previousNavigationItem);
-    }
-  }
 }
 
 

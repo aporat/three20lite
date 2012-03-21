@@ -20,7 +20,6 @@
 #import "TTCorePreprocessorMacros.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTNavigationController.h"
 
 // UICommon
@@ -105,31 +104,7 @@ TT_FIX_CATEGORY_BUG(UITabBarControllerAdditions)
 }
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)persistNavigationPath:(NSMutableArray*)path {
-  UIViewController* controller = self.selectedViewController;
-  [[TTNavigator navigator] persistController:controller path:path];
-}
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark -
-#pragma mark Public
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)setTabURLs:(NSArray*)URLs {
-  NSMutableArray* controllers = [NSMutableArray array];
-  for (NSString* URL in URLs) {
-    UIViewController* controller = [[TTNavigator navigator] viewControllerForURL:URL];
-    if (controller) {
-      UIViewController* tabController = [self rootControllerForController:controller];
-      [controllers addObject:tabController];
-    }
-  }
-  self.viewControllers = controllers;
-}
 
 
 @end

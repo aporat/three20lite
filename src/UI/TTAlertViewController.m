@@ -17,7 +17,6 @@
 #import "TTAlertViewController.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTAlertViewControllerDelegate.h"
 #import "TTAlertView.h"
 
@@ -198,9 +197,7 @@
        @selector(alertViewController:didDismissWithButtonIndex:URL:)]) {
     canOpenURL = [_delegate alertViewController:self didDismissWithButtonIndex:buttonIndex URL:URL];
   }
-  if (URL && canOpenURL) {
-    TTOpenURL(URL);
-  }
+
   if ([_delegate respondsToSelector:@selector(alertView:didDismissWithButtonIndex:)]) {
     [_delegate alertView:alertView didDismissWithButtonIndex:buttonIndex];
   }

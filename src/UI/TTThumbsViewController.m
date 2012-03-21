@@ -17,7 +17,6 @@
 #import "TTThumbsViewController.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTThumbsDataSource.h"
 #import "TTThumbsTableViewCell.h"
 #import "TTPhoto.h"
@@ -141,12 +140,7 @@ static CGFloat kThumbnailRowHeight = 79.0f;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSString*)URLForPhoto:(id<TTPhoto>)photo {
-  if ([photo respondsToSelector:@selector(URLValueWithName:)]) {
-    return [photo URLValueWithName:@"TTPhotoViewController"];
-
-  } else {
-    return nil;
-  }
+  return nil;
 }
 
 
@@ -195,31 +189,6 @@ static CGFloat kThumbnailRowHeight = 79.0f;
   [self.tableView reloadData];
 }
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark -
-#pragma mark UIViewController (TTCategory)
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (BOOL)persistView:(NSMutableDictionary*)state {
-  NSString* delegate = [[TTNavigator navigator] pathForObject:_delegate];
-  if (delegate) {
-    [state setObject:delegate forKey:@"delegate"];
-  }
-  return [super persistView:state];
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)restoreView:(NSDictionary*)state {
-  [super restoreView:state];
-  NSString* delegate = [state objectForKey:@"delegate"];
-  if (delegate) {
-    self.delegate = [[TTNavigator navigator] objectForPath:delegate];
-  }
-}
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -282,15 +251,9 @@ static CGFloat kThumbnailRowHeight = 79.0f;
   }
 
   if (shouldNavigate) {
-    NSString* URL = [self URLForPhoto:photo];
-    if (URL) {
-      TTOpenURLFromView(URL, self.view);
-
-    } else {
-      TTPhotoViewController* controller = [self createPhotoViewController];
-      controller.centerPhoto = photo;
-      [self.navigationController pushViewController:controller animated:YES];
-    }
+    TTPhotoViewController* controller = [self createPhotoViewController];
+    controller.centerPhoto = photo;
+    [self.navigationController pushViewController:controller animated:YES];
   }
 }
 

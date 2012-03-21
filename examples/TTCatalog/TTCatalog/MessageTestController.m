@@ -21,16 +21,10 @@
 }
 
 - (UIViewController*)post:(NSDictionary*)query {
-  TTPostController* controller = [[[TTPostController alloc] initWithNavigatorURL:nil
-																		   query:
-								   [NSDictionary dictionaryWithObjectsAndKeys:@"Default Text", @"text", nil]]
-								   autorelease];
-  controller.originView = [query objectForKey:@"__target__"];
-  return controller;
+  return nil;
 }
 
 - (void)cancelAddressBook {
-  [[TTNavigator navigator].visibleViewController dismissModalViewControllerAnimated:YES];
 }
 
 - (void)sendDelayed:(NSTimer*)timer {
@@ -61,18 +55,11 @@
   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
     _sendTimer = nil;
 
-    [[TTNavigator navigator].URLMap from:@"tt://compose?to=(composeTo:)"
-                                    toModalViewController:self selector:@selector(composeTo:)];
-
-    [[TTNavigator navigator].URLMap from:@"tt://post"
-                                    toViewController:self selector:@selector(post:)];
   }
   return self;
 }
 
 - (void)dealloc {
-  [[TTNavigator navigator].URLMap removeURL:@"tt://compose?to=(composeTo:)"];
-  [[TTNavigator navigator].URLMap removeURL:@"tt://post"];
   [_sendTimer invalidate];
 	[super dealloc];
 }

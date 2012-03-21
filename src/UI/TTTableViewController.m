@@ -17,7 +17,6 @@
 #import "TTTableViewController.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTActivityLabel.h"
 #import "TTErrorView.h"
 #import "TTListDataSource.h"
@@ -26,9 +25,6 @@
 #import "TTTableViewVarHeightDelegate.h"
 #import "UIViewAdditions.h"
 #import "UITableViewAdditions.h"
-
-// UINavigator
-#import "TTURLObject.h"
 
 // UICommon
 #import "TTGlobalUICommon.h"
@@ -882,12 +878,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath {
-  if ([object respondsToSelector:@selector(URLValue)]) {
-    NSString* URL = [object URLValue];
-    if (URL) {
-      TTOpenURLFromView(URL, self.tableView);
-    }
-  }
+
 }
 
 

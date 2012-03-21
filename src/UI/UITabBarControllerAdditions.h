@@ -19,6 +19,4 @@
 
 @interface UITabBarController (TTCategory)
 
-- (void)setTabURLs:(NSArray*)URLs;
-
 @end

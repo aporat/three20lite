@@ -25,10 +25,6 @@
   
 }
 
-- (BOOL)application:(UIApplication*)application handleOpenURL:(NSURL*)URL {
-  [[TTNavigator navigator] openURLAction:[TTURLAction actionWithURLPath:URL.absoluteString]];
-  return YES;
-}
 
 
 - (void)dealloc {

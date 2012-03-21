@@ -17,7 +17,6 @@
 #import "TTStyledTextLabel.h"
 
 // UI
-#import "TTNavigator.h"
 #import "TTTableView.h"
 #import "UIViewAdditions.h"
 
@@ -324,10 +323,6 @@ static const CGFloat kCancelHighlightThreshold = 4.0f;
       // the node implementation. One potential fix would be to provide some protocol for these
       // nodes to converse with.
       if ([_highlightedNode isKindOfClass:[TTStyledLinkNode class]]) {
-        TTOpenURL([(TTStyledLinkNode*)_highlightedNode URL]);
-
-      } else if ([_highlightedNode isKindOfClass:[TTStyledButtonNode class]]) {
-        TTOpenURL([(TTStyledButtonNode*)_highlightedNode URL]);
 
       } else {
         [_highlightedNode performDefaultAction];
