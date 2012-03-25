@@ -1,3 +1,3 @@
 [submodule "Vendor/SBJSON"]
 	path = Vendor/SBJSON
-	url = https://github.com/groopd/SBJSON-library
+	url = https://github.com/stig/json-framework.git
