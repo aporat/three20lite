@@ -43,6 +43,32 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)layoutSubviews {
+  [super layoutSubviews];
+
+  NSLocale* locale = TTCurrentLocale();
+  if ([locale.localeIdentifier isEqualToString:@"he"]) {
+    self.textLabel.textAlignment = UITextAlignmentRight; 
+    self.detailTextLabel.textAlignment = UITextAlignmentLeft;
+
+    self.detailTextLabel.frame = CGRectMake(30, 
+                                      self.detailTextLabel.frame.origin.y, 
+                                      self.detailTextLabel.frame.size.width, 
+                                      self.detailTextLabel.frame.size.height);
+    
+    self.textLabel.frame = CGRectMake(self.contentView.frame.size.width - self.textLabel.frame.size.width - 10, 
+                                      self.textLabel.frame.origin.y, 
+                                      self.textLabel.frame.size.width, 
+                                      self.textLabel.frame.size.height);
+    
+    
+  }
+  
+  
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)setObject:(id)object {
   if (_item != object) {
     [super setObject:object];
@@ -51,6 +77,7 @@
     self.textLabel.text = item.caption;
     self.detailTextLabel.text = item.text;
   }
+    
 }
 
 

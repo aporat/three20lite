@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#import "TTTableHeaderView.h"
+#import "TTTableGroupedHeaderView.h"
 
 // UI
 #import "UIViewAdditions.h"
@@ -32,16 +32,15 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-@implementation TTTableHeaderView
+@implementation TTTableGroupedHeaderView
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithTitle:(NSString*)title {
 	self = [super init];
   if (self) {
-    self.backgroundColor = [UIColor clearColor];
-    self.style = TTSTYLE(tableHeader);
-
+    self.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    
     _label = [[UILabel alloc] init];
     _label.text = title;
     NSLocale* locale = TTCurrentLocale();
@@ -50,51 +49,21 @@
       _label.textAlignment = UITextAlignmentRight;
     }
     _label.backgroundColor = [UIColor clearColor];
-    _label.textColor = [UIColor whiteColor];
-    _label.shadowColor = RGBCOLOR(100, 100, 100);
+    _label.font = [UIFont boldSystemFontOfSize:17];
+    _label.shadowColor = [UIColor colorWithWhite:1.0 alpha:1];
     _label.shadowOffset = CGSizeMake(0, 1);
-    _label.font = TTSTYLEVAR(tableHeaderPlainFont);
+    _label.textColor = [UIColor colorWithRed:0.265 green:0.294 blue:0.367 alpha:1.000];
     [self addSubview:_label];
   }
-
+  
   return self;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)drawRect:(CGRect)rect {
-  [super drawRect:rect];
-  NSLocale* locale = TTCurrentLocale();
-
-  if ([locale.localeIdentifier isEqualToString:@"he"]) {
-  UIColor* lineColor = RGBCOLOR(94, 94, 94);
-  UIColor* topColor = RGBCOLOR(144, 159, 170);
-  UIColor* bottomColor = RGBCOLOR(199, 199, 199);
-
-  //add a gradient:
-  CAGradientLayer *gradientLayer = [[[CAGradientLayer alloc] init] autorelease];
-  [gradientLayer setBounds:[self bounds]];
-  CGRect newRect = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height -1);
-  [gradientLayer setFrame:newRect];
-  [gradientLayer setColors:[NSArray arrayWithObjects:(id)[topColor CGColor], (id)[bottomColor CGColor], nil]];
-  [[self layer] insertSublayer:gradientLayer atIndex:0];
-
-  //draw line
-  CGContextRef ctx = UIGraphicsGetCurrentContext(); 
-  CGContextBeginPath(ctx);
-  // This gets the RGB Float values from the color initialized for lineColor
-  const float* colors = CGColorGetComponents( lineColor.CGColor );
-    CGContextSetRGBStrokeColor(ctx, colors[0], colors[1], colors[2], 1);
-    
-  CGContextMoveToPoint(ctx, 0, rect.size.height);
-  CGContextAddLineToPoint( ctx, rect.size.width, rect.size.height);
-  CGContextStrokePath(ctx);
-  }
-}
-///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)dealloc {
   TT_RELEASE_SAFELY(_label);
-
+  
   [super dealloc];
 }
 

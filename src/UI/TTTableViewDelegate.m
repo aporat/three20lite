@@ -20,6 +20,7 @@
 #import "TTTableViewDataSource.h"
 #import "TTTableViewController.h"
 #import "TTTableHeaderView.h"
+#import "TTTableGroupedHeaderView.h"
 #import "TTTableView.h"
 #import "TTStyledTextLabel.h"
 
@@ -41,6 +42,7 @@
 
 // Core
 #import "TTCorePreprocessorMacros.h"
+#import "TTGlobalCoreLocale.h"
 
 static const CGFloat kEmptyHeaderHeight = 0.0f;
 static const CGFloat kSectionHeaderHeight = 22.0f;
@@ -92,7 +94,9 @@ static const NSUInteger kFirstTableSection = 0;
  * drawing ourselves.
  */
 - (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-  if (tableView.style == UITableViewStylePlain && TTSTYLEVAR(tableHeaderTintColor)) {
+  NSLocale* locale = TTCurrentLocale();
+
+  if (tableView.style == UITableViewStylePlain && [locale.localeIdentifier isEqualToString:@"he"]) {
     if ([tableView.dataSource respondsToSelector:@selector(tableView:titleForHeaderInSection:)]) {
       NSString* title = [tableView.dataSource tableView:tableView titleForHeaderInSection:section];
       if (title.length > 0) {
@@ -110,6 +114,29 @@ static const NSUInteger kFirstTableSection = 0;
             _headers = [[NSMutableDictionary alloc] init];
           }
           header = [[[TTTableHeaderView alloc] initWithTitle:title] autorelease];
+          [_headers setObject:header forKey:title];
+        }
+        return header;
+      }
+    }
+  } else if (tableView.style == UITableViewStyleGrouped && [locale.localeIdentifier isEqualToString:@"he"]) {
+    if ([tableView.dataSource respondsToSelector:@selector(tableView:titleForHeaderInSection:)]) {
+      NSString* title = [tableView.dataSource tableView:tableView titleForHeaderInSection:section];
+      if (title.length > 0) {
+        TTTableGroupedHeaderView* header = [_headers objectForKey:title];
+        
+        // If retrieved from cache, prepare for reuse here.
+        // We reset the the opacity to 1 because UITableView might set this property to 0 after
+        // removing it.
+        // TODO (jverkoey Feb 26, 2011): When does this happen, exactly?
+        if (nil != header) {
+          header.alpha = 1;
+          
+        } else {
+          if (nil == _headers) {
+            _headers = [[NSMutableDictionary alloc] init];
+          }
+          header = [[[TTTableGroupedHeaderView alloc] initWithTitle:title] autorelease];
           [_headers setObject:header forKey:title];
         }
         return header;
