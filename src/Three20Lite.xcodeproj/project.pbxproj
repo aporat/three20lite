@@ -478,32 +478,31 @@
 		6D5067F014DC28E000663F09 /* Three20Lite.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D5067EE14DC28E000663F09 /* Three20Lite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D5067F114DC28E000663F09 /* Three20+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D5067EF14DC28E000663F09 /* Three20+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D5067F914DC2B6C00663F09 /* Three20_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 6D5067F814DC2B6C00663F09 /* Three20_Prefix.pch */; };
-		6DD6C271151EA3DA003FC0FB /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C257151EA3DA003FC0FB /* JSON.h */; };
 		6DD6C272151EA3DA003FC0FB /* NSObject+SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C258151EA3DA003FC0FB /* NSObject+SBJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DD6C273151EA3DA003FC0FB /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C259151EA3DA003FC0FB /* NSObject+SBJson.m */; };
 		6DD6C274151EA3DA003FC0FB /* SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C25A151EA3DA003FC0FB /* SBJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DD6C275151EA3DA003FC0FB /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C25B151EA3DA003FC0FB /* SBJsonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD6C276151EA3DA003FC0FB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C25C151EA3DA003FC0FB /* SBJsonParser.m */; };
+		6DD6C276151EA3DA003FC0FB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C25C151EA3DA003FC0FB /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6DD6C277151EA3DA003FC0FB /* SBJsonStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C25D151EA3DA003FC0FB /* SBJsonStreamParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD6C278151EA3DA003FC0FB /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C25E151EA3DA003FC0FB /* SBJsonStreamParser.m */; };
+		6DD6C278151EA3DA003FC0FB /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C25E151EA3DA003FC0FB /* SBJsonStreamParser.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6DD6C279151EA3DA003FC0FB /* SBJsonStreamParserAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C25F151EA3DA003FC0FB /* SBJsonStreamParserAccumulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD6C27A151EA3DA003FC0FB /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C260151EA3DA003FC0FB /* SBJsonStreamParserAccumulator.m */; };
+		6DD6C27A151EA3DA003FC0FB /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C260151EA3DA003FC0FB /* SBJsonStreamParserAccumulator.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6DD6C27B151EA3DA003FC0FB /* SBJsonStreamParserAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C261151EA3DA003FC0FB /* SBJsonStreamParserAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD6C27C151EA3DA003FC0FB /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C262151EA3DA003FC0FB /* SBJsonStreamParserAdapter.m */; };
+		6DD6C27C151EA3DA003FC0FB /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C262151EA3DA003FC0FB /* SBJsonStreamParserAdapter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6DD6C27D151EA3DA003FC0FB /* SBJsonStreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C263151EA3DA003FC0FB /* SBJsonStreamParserState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD6C27E151EA3DA003FC0FB /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C264151EA3DA003FC0FB /* SBJsonStreamParserState.m */; };
+		6DD6C27E151EA3DA003FC0FB /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C264151EA3DA003FC0FB /* SBJsonStreamParserState.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6DD6C27F151EA3DA003FC0FB /* SBJsonStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C265151EA3DA003FC0FB /* SBJsonStreamWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD6C280151EA3DA003FC0FB /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C266151EA3DA003FC0FB /* SBJsonStreamWriter.m */; };
+		6DD6C280151EA3DA003FC0FB /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C266151EA3DA003FC0FB /* SBJsonStreamWriter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6DD6C281151EA3DA003FC0FB /* SBJsonStreamWriterAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C267151EA3DA003FC0FB /* SBJsonStreamWriterAccumulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD6C282151EA3DA003FC0FB /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C268151EA3DA003FC0FB /* SBJsonStreamWriterAccumulator.m */; };
+		6DD6C282151EA3DA003FC0FB /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C268151EA3DA003FC0FB /* SBJsonStreamWriterAccumulator.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6DD6C283151EA3DA003FC0FB /* SBJsonStreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C269151EA3DA003FC0FB /* SBJsonStreamWriterState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD6C284151EA3DA003FC0FB /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C26A151EA3DA003FC0FB /* SBJsonStreamWriterState.m */; };
+		6DD6C284151EA3DA003FC0FB /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C26A151EA3DA003FC0FB /* SBJsonStreamWriterState.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6DD6C285151EA3DA003FC0FB /* SBJsonTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C26B151EA3DA003FC0FB /* SBJsonTokeniser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD6C286151EA3DA003FC0FB /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C26C151EA3DA003FC0FB /* SBJsonTokeniser.m */; };
+		6DD6C286151EA3DA003FC0FB /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C26C151EA3DA003FC0FB /* SBJsonTokeniser.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6DD6C287151EA3DA003FC0FB /* SBJsonUTF8Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C26D151EA3DA003FC0FB /* SBJsonUTF8Stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD6C288151EA3DA003FC0FB /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C26E151EA3DA003FC0FB /* SBJsonUTF8Stream.m */; };
+		6DD6C288151EA3DA003FC0FB /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C26E151EA3DA003FC0FB /* SBJsonUTF8Stream.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6DD6C289151EA3DA003FC0FB /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C26F151EA3DA003FC0FB /* SBJsonWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD6C28A151EA3DA003FC0FB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C270151EA3DA003FC0FB /* SBJsonWriter.m */; };
+		6DD6C28A151EA3DA003FC0FB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C270151EA3DA003FC0FB /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6EE739D01184BB0400A35176 /* libThree20Lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF31F3A0F352DF5000DE5D2 /* libThree20Lite.a */; };
 /* End PBXBuildFile section */
 
@@ -989,7 +988,6 @@
 		6D5067EE14DC28E000663F09 /* Three20Lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20Lite.h; sourceTree = "<group>"; };
 		6D5067EF14DC28E000663F09 /* Three20+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Three20+Additions.h"; sourceTree = "<group>"; };
 		6D5067F814DC2B6C00663F09 /* Three20_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20_Prefix.pch; sourceTree = "<group>"; };
-		6DD6C257151EA3DA003FC0FB /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = ../Vendor/SBJSON/Classes/JSON.h; sourceTree = "<group>"; };
 		6DD6C258151EA3DA003FC0FB /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "../Vendor/SBJSON/Classes/NSObject+SBJson.h"; sourceTree = "<group>"; };
 		6DD6C259151EA3DA003FC0FB /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "../Vendor/SBJSON/Classes/NSObject+SBJson.m"; sourceTree = "<group>"; };
 		6DD6C25A151EA3DA003FC0FB /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = ../Vendor/SBJSON/Classes/SBJson.h; sourceTree = "<group>"; };
@@ -1098,7 +1096,6 @@
 		6D0DB40414DC133A00CA0177 /* SBJSON */ = {
 			isa = PBXGroup;
 			children = (
-				6DD6C257151EA3DA003FC0FB /* JSON.h */,
 				6DD6C258151EA3DA003FC0FB /* NSObject+SBJson.h */,
 				6DD6C259151EA3DA003FC0FB /* NSObject+SBJson.m */,
 				6DD6C25A151EA3DA003FC0FB /* SBJson.h */,
@@ -2240,7 +2237,6 @@
 				6D5067F014DC28E000663F09 /* Three20Lite.h in Headers */,
 				6D5067F114DC28E000663F09 /* Three20+Additions.h in Headers */,
 				6D5067F914DC2B6C00663F09 /* Three20_Prefix.pch in Headers */,
-				6DD6C271151EA3DA003FC0FB /* JSON.h in Headers */,
 				6DD6C272151EA3DA003FC0FB /* NSObject+SBJson.h in Headers */,
 				6DD6C274151EA3DA003FC0FB /* SBJson.h in Headers */,
 				6DD6C275151EA3DA003FC0FB /* SBJsonParser.h in Headers */,
