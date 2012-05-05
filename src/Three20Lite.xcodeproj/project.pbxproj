@@ -481,7 +481,7 @@
 		6D94641D154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D94641B154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.h */; };
 		6D94641E154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D94641C154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.m */; };
 		6DD6C272151EA3DA003FC0FB /* NSObject+SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C258151EA3DA003FC0FB /* NSObject+SBJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD6C273151EA3DA003FC0FB /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C259151EA3DA003FC0FB /* NSObject+SBJson.m */; };
+		6DD6C273151EA3DA003FC0FB /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C259151EA3DA003FC0FB /* NSObject+SBJson.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6DD6C274151EA3DA003FC0FB /* SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C25A151EA3DA003FC0FB /* SBJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DD6C275151EA3DA003FC0FB /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C25B151EA3DA003FC0FB /* SBJsonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DD6C276151EA3DA003FC0FB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C25C151EA3DA003FC0FB /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };

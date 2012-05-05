@@ -60,20 +60,11 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (id)itemWithText:(NSString*)text caption:(NSString*)caption URL:(NSString*)URL {
++ (id)itemWithText:(NSString*)text caption:(NSString*)caption accessory:(UITableViewCellAccessoryType)accessoryType {
   TTTableCaptionItem* item = [[[self alloc] init] autorelease];
   item.text = text;
   item.caption = caption;
-  return item;
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (id)itemWithText:(NSString*)text caption:(NSString*)caption URL:(NSString*)URL
-      accessoryURL:(NSString*)accessoryURL {
-  TTTableCaptionItem* item = [[[self alloc] init] autorelease];
-  item.text = text;
-  item.caption = caption;
+  item.accessoryType = accessoryType;
   return item;
 }
 

@@ -24,8 +24,6 @@
 @property (nonatomic, copy) NSString* caption;
 
 + (id)itemWithText:(NSString*)text caption:(NSString*)caption;
-+ (id)itemWithText:(NSString*)text caption:(NSString*)caption URL:(NSString*)URL;
-+ (id)itemWithText:(NSString*)text caption:(NSString*)caption URL:(NSString*)URL
-      accessoryURL:(NSString*)accessoryURL;
++ (id)itemWithText:(NSString*)text caption:(NSString*)caption accessory:(UITableViewCellAccessoryType)accessoryType;
 
 @end

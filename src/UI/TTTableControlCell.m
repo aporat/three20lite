@@ -21,6 +21,7 @@
 #import "TTTextEditor.h"
 #import "UIViewAdditions.h"
 #import "UIFontAdditions.h"
+#import "TTButton.h"
 
 // UICommon
 #import "TTGlobalUICommon.h"
@@ -122,7 +123,7 @@ static const CGFloat kControlPadding = 8.0f;
       height = ttLineHeight + kTableCellSmallMargin*2;
 
     } else {
-      [view sizeToFit];
+    //  [view sizeToFit];
       height = view.height;
     }
   }
@@ -160,6 +161,8 @@ static const CGFloat kControlPadding = 8.0f;
       contentWidth -= textSize.width + kTableCellSpacing;
       minX += textSize.width + kTableCellSpacing;
     }
+    
+
 
     if (!_control.height) {
       [_control sizeToFit];
@@ -168,6 +171,13 @@ static const CGFloat kControlPadding = 8.0f;
     if ([TTTableControlCell shouldConsiderControlIntrinsicSize:_control]) {
       minX += contentWidth - _control.width;
       contentWidth = _control.width;
+    }
+    
+    // hack to prevent TTButton's from autosizing
+    if ([_control isKindOfClass:[TTButton class]]) {
+      contentWidth = _control.frame.size.width;
+      minX += _control.frame.size.width;
+      
     }
 
     // XXXjoe For some reason I need to re-add the control as a subview or else
