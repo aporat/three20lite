@@ -125,11 +125,7 @@ BOOL TTIsMultiTaskingSupported() {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 BOOL TTIsPad() {
-#ifdef __IPHONE_3_2
-		return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
-#else
-		return NO;
-#endif
+  return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
 }
 
 
