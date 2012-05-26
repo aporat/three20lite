@@ -115,12 +115,7 @@ BOOL TTIsPhoneSupported() {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 BOOL TTIsMultiTaskingSupported() {
-    UIDevice* device = [UIDevice currentDevice];
-    BOOL backgroundSupported = NO;
-    if ([device respondsToSelector:@selector(isMultitaskingSupported)]){
-         backgroundSupported = device.multitaskingSupported;
-    }
-    return backgroundSupported;
+  return [[UIDevice currentDevice] isMultitaskingSupported];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
