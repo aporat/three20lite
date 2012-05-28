@@ -110,7 +110,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // TTPhotoSource
 
-- (NSInteger)numberOfPhotos {
+- (NSInteger)numOfPhotos {
   if (_tempPhotos) {
     return _photos.count + (_type & MockPhotoSourceVariableCount ? 0 : _tempPhotos.count);
   } else {

@@ -35,13 +35,11 @@ static NSString* kLoremIpsum = @"Lorem ipsum dolor sit amet, consectetur adipisi
     // fields with URLs that will be visited when the row is selected
     self.dataSource = [TTSectionedDataSource dataSourceWithObjects:
       @"Generic Items",
-      [TTTableSettingsItem itemWithText:Three20Version caption:@"Three20 Version"
-                                                     URL:@"tt://tableItemTest"],
+      [TTTableSettingsItem itemWithText:Three20Version caption:@"Three20 Version"],
       [TTTableTextItem itemWithText:@"TTTableTextItem"],
       [TTTableSection sectionWithHeaderTitle:@"Links & Buttons" footerTitle:nil],
       [TTTableButton itemWithText:@"TTTableButton"],
-      [TTTableCaptionItem itemWithText:@"TTTableCaptionItem" caption:@"caption"
-                             URL:@"tt://tableItemTest"],
+      [TTTableCaptionItem itemWithText:@"TTTableCaptionItem" caption:@"caption"],
       [TTTableSubtitleItem itemWithText:@"TTTableSubtitleItem" subtitle:kLoremIpsum
                             URL:@"tt://tableItemTest"],
       [TTTableMessageItem itemWithTitle:@"Bob Jones" caption:@"TTTableMessageItem"
