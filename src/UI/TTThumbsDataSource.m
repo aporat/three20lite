@@ -32,8 +32,8 @@
 #import "TTGlobalCoreLocale.h"
 #import "TTCorePreprocessorMacros.h"
 
-static CGFloat kThumbSize = 75.0f;
-static CGFloat kThumbSpacing = 4.0f;
+static CGFloat kThumbSize = 140.0f;
+static CGFloat kThumbSpacing = 10.0f;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

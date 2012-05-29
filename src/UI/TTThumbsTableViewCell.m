@@ -26,8 +26,8 @@
 // Core
 #import "TTCorePreprocessorMacros.h"
 
-static const CGFloat kSpacing = 4.0f;
-static const CGFloat kDefaultThumbSize = 75.0f;
+static const CGFloat kSpacing = 12.0f;
+static const CGFloat kDefaultThumbSize = 140.0;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

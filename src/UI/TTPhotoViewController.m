@@ -588,7 +588,7 @@ static const NSInteger kActivityLabelTag          = 96;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)showBars:(BOOL)show animated:(BOOL)animated {
-  [super showBars:show animated:animated];
+  [super showNavigationBar:show animated:animated];
 
   CGFloat alpha = show ? 1 : 0;
   if (alpha == _toolbar.alpha)

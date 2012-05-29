@@ -40,7 +40,7 @@
 #import "TTGlobalCoreRects.h"
 #import "TTCorePreprocessorMacros.h"
 
-static CGFloat kThumbnailRowHeight = 79.0f;
+static CGFloat kThumbnailRowHeight = 150.0f;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
