@@ -1,7 +1,7 @@
 About This Fork
 =======
 
-This fork contains some major changes from the main repository. 
+This fork contains some major changes from the main three20 repository. 
 
 - All sub projects were into a simple project
 - Simplified installation using a CocoaPods (https://github.com/CocoaPods/CocoaPods)
@@ -12,8 +12,7 @@ This fork contains some major changes from the main repository.
 - Removed old xcode templates
 - Appledoc Documentation
 - TTSplitViewController removed
-- Major iOS 5 TTNaviagtor bug fixes
-- iOS 3.1 support
+- TTNaviagtor removed
 
 
 Three20

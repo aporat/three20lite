@@ -115,21 +115,12 @@ BOOL TTIsPhoneSupported() {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 BOOL TTIsMultiTaskingSupported() {
-    UIDevice* device = [UIDevice currentDevice];
-    BOOL backgroundSupported = NO;
-    if ([device respondsToSelector:@selector(isMultitaskingSupported)]){
-         backgroundSupported = device.multitaskingSupported;
-    }
-    return backgroundSupported;
+  return [[UIDevice currentDevice] isMultitaskingSupported];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 BOOL TTIsPad() {
-#ifdef __IPHONE_3_2
-		return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
-#else
-		return NO;
-#endif
+  return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
 }
 
 

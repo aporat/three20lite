@@ -114,4 +114,6 @@
  */
 - (void)showActivity:(NSString*)title;
 
+- (TTPhotoView*)centerPhotoView;
+
 @end
