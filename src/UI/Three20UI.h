@@ -34,6 +34,10 @@
 #import "TTTextBarDelegate.h"
 #import "TTURLCache.h"
 
+// Navigator
+#import "TTBaseNavigationController.h"
+#import "TTGlobalNavigatorMetrics.h"
+
 // UI Views
 #import "TTView.h"
 #import "TTImageView.h"

@@ -443,8 +443,6 @@
 		6D0DB76D14DC149700CA0177 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB66314DC149700CA0177 /* UIViewAdditions.m */; };
 		6D0DB76E14DC149700CA0177 /* UIWebViewAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB66414DC149700CA0177 /* UIWebViewAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB76F14DC149700CA0177 /* UIWebViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB66514DC149700CA0177 /* UIWebViewAdditions.m */; };
-		6D0DB79C14DC15AA00CA0177 /* Three20UINavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB77214DC15AA00CA0177 /* Three20UINavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB79D14DC15AA00CA0177 /* Three20UINavigator+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB77314DC15AA00CA0177 /* Three20UINavigator+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB79E14DC15AA00CA0177 /* TTBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB77414DC15AA00CA0177 /* TTBaseNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB79F14DC15AA00CA0177 /* TTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB77514DC15AA00CA0177 /* TTBaseNavigationController.m */; };
 		6D0DB7A314DC15AA00CA0177 /* TTGlobalNavigatorMetrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB77914DC15AA00CA0177 /* TTGlobalNavigatorMetrics.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -934,8 +932,6 @@
 		6D0DB66314DC149700CA0177 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewAdditions.m; path = UI/UIViewAdditions.m; sourceTree = "<group>"; };
 		6D0DB66414DC149700CA0177 /* UIWebViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWebViewAdditions.h; path = UI/UIWebViewAdditions.h; sourceTree = "<group>"; };
 		6D0DB66514DC149700CA0177 /* UIWebViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWebViewAdditions.m; path = UI/UIWebViewAdditions.m; sourceTree = "<group>"; };
-		6D0DB77214DC15AA00CA0177 /* Three20UINavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Three20UINavigator.h; path = Navigator/Three20UINavigator.h; sourceTree = "<group>"; };
-		6D0DB77314DC15AA00CA0177 /* Three20UINavigator+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Three20UINavigator+Additions.h"; path = "Navigator/Three20UINavigator+Additions.h"; sourceTree = "<group>"; };
 		6D0DB77414DC15AA00CA0177 /* TTBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTBaseNavigationController.h; path = Navigator/TTBaseNavigationController.h; sourceTree = "<group>"; };
 		6D0DB77514DC15AA00CA0177 /* TTBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TTBaseNavigationController.m; path = Navigator/TTBaseNavigationController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB77914DC15AA00CA0177 /* TTGlobalNavigatorMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTGlobalNavigatorMetrics.h; path = Navigator/TTGlobalNavigatorMetrics.h; sourceTree = "<group>"; };
@@ -1103,6 +1099,7 @@
 			children = (
 				6D0DB55D14DC148A00CA0177 /* Three20UI.h */,
 				6D0DB55E14DC148A00CA0177 /* Three20UI+Additions.h */,
+				6D0DB81D14DC196A00CA0177 /* Global Navigator */,
 				6DCA657814DC1EB400880863 /* Action Sheet */,
 				6DCA657B14DC1EDF00880863 /* Activity Label */,
 				6DCA657914DC1EC200880863 /* Alert View */,
@@ -1131,16 +1128,6 @@
 				6DCA657414DC1DB900880863 /* Additions */,
 			);
 			name = UI;
-			sourceTree = "<group>";
-		};
-		6D0DB77014DC159800CA0177 /* Navigator */ = {
-			isa = PBXGroup;
-			children = (
-				6D0DB77214DC15AA00CA0177 /* Three20UINavigator.h */,
-				6D0DB77314DC15AA00CA0177 /* Three20UINavigator+Additions.h */,
-				6D0DB81D14DC196A00CA0177 /* Global Navigator */,
-			);
-			name = Navigator;
 			sourceTree = "<group>";
 		};
 		6D0DB81714DC187000CA0177 /* Global */ = {
@@ -1884,7 +1871,6 @@
 				6D5067F814DC2B6C00663F09 /* Three20_Prefix.pch */,
 				6D0DB36914DC10B500CA0177 /* Core */,
 				6D0DB3BC14DC12ED00CA0177 /* Network */,
-				6D0DB77014DC159800CA0177 /* Navigator */,
 				6D0DB53F14DC142D00CA0177 /* UI */,
 				6D0DB44014DC13A300CA0177 /* Style */,
 				6D0DB40314DC132F00CA0177 /* Vendor */,
@@ -2134,8 +2120,6 @@
 				6D0DB76A14DC149700CA0177 /* UIToolbarAdditions.h in Headers */,
 				6D0DB76C14DC149700CA0177 /* UIViewAdditions.h in Headers */,
 				6D0DB76E14DC149700CA0177 /* UIWebViewAdditions.h in Headers */,
-				6D0DB79C14DC15AA00CA0177 /* Three20UINavigator.h in Headers */,
-				6D0DB79D14DC15AA00CA0177 /* Three20UINavigator+Additions.h in Headers */,
 				6D0DB79E14DC15AA00CA0177 /* TTBaseNavigationController.h in Headers */,
 				6D0DB7A314DC15AA00CA0177 /* TTGlobalNavigatorMetrics.h in Headers */,
 				6D5067F014DC28E000663F09 /* Three20Lite.h in Headers */,
