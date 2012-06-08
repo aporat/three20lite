@@ -41,12 +41,6 @@ TT_FIX_CATEGORY_BUG(UIViewControllerAdditions)
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (void)ttAddCommonController:(UIViewController*)controller {
-
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
 #pragma mark Public
@@ -89,8 +83,6 @@ TT_FIX_CATEGORY_BUG(UIViewControllerAdditions)
     }
     [gSuperControllers setObject:viewController forKey:key];
 
-    [UIViewController ttAddCommonController:self];
-
   } else {
     [gSuperControllers removeObjectForKey:key];
   }
@@ -99,20 +91,6 @@ TT_FIX_CATEGORY_BUG(UIViewControllerAdditions)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (UIViewController*)topSubcontroller {
-  return nil;
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (UIViewController*)ttPreviousViewController {
-  NSArray* viewControllers = self.navigationController.viewControllers;
-  if (viewControllers.count > 1) {
-    NSUInteger controllerIndex = [viewControllers indexOfObject:self];
-    if (controllerIndex != NSNotFound && controllerIndex > 0) {
-      return [viewControllers objectAtIndex:controllerIndex-1];
-    }
-  }
-
   return nil;
 }
 
@@ -145,8 +123,6 @@ TT_FIX_CATEGORY_BUG(UIViewControllerAdditions)
       gPopupViewControllers = TTCreateNonRetainingDictionary();
     }
     [gPopupViewControllers setObject:viewController forKey:key];
-
-    [UIViewController ttAddCommonController:self];
 
   } else {
     [gPopupViewControllers removeObjectForKey:key];

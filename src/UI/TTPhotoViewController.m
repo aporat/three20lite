@@ -209,7 +209,7 @@ static const NSInteger kActivityLabelTag          = 96;
                   _centerPhotoIndex+1, _photoSource.numOfPhotos];
   }
 
-  if (![self.ttPreviousViewController isKindOfClass:[TTThumbsViewController class]]) {
+  if (![self.presentedViewController isKindOfClass:[TTThumbsViewController class]]) {
     if (_photoSource.numOfPhotos > 1) {
       self.navigationItem.rightBarButtonItem =
       [[[UIBarButtonItem alloc] initWithTitle:TTLocalizedString(@"See All",

@@ -54,13 +54,6 @@
 - (UIViewController*)topSubcontroller;
 
 /**
- * The view controller that comes before this one in a navigation controller's history.
- *
- * This is an App Store-compatible version of previousViewController.
- */
-- (UIViewController*)ttPreviousViewController;
-
-/**
  * The view controller that comes after this one in a navigation controller's history.
  */
 - (UIViewController*)nextViewController;
