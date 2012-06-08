@@ -209,7 +209,6 @@
 		6D0DB55614DC143900CA0177 /* UIView+TTUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB54814DC143900CA0177 /* UIView+TTUICommon.m */; };
 		6D0DB55714DC143900CA0177 /* UIViewControllerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54914DC143900CA0177 /* UIViewControllerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB55814DC143900CA0177 /* UIViewControllerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB54A14DC143900CA0177 /* UIViewControllerAdditions.m */; };
-		6D0DB55914DC143900CA0177 /* UIViewControllerGarbageCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54B14DC143900CA0177 /* UIViewControllerGarbageCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB55A14DC143900CA0177 /* UIWindowAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54C14DC143900CA0177 /* UIWindowAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB55B14DC143900CA0177 /* UIWindowAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB54D14DC143900CA0177 /* UIWindowAdditions.m */; };
 		6D0DB66714DC149700CA0177 /* Three20UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB55D14DC148A00CA0177 /* Three20UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -704,7 +703,6 @@
 		6D0DB54814DC143900CA0177 /* UIView+TTUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "UIView+TTUICommon.m"; path = "UI/UIView+TTUICommon.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB54914DC143900CA0177 /* UIViewControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewControllerAdditions.h; path = UI/UIViewControllerAdditions.h; sourceTree = "<group>"; };
 		6D0DB54A14DC143900CA0177 /* UIViewControllerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = UIViewControllerAdditions.m; path = UI/UIViewControllerAdditions.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6D0DB54B14DC143900CA0177 /* UIViewControllerGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewControllerGarbageCollection.h; path = UI/UIViewControllerGarbageCollection.h; sourceTree = "<group>"; };
 		6D0DB54C14DC143900CA0177 /* UIWindowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWindowAdditions.h; path = UI/UIWindowAdditions.h; sourceTree = "<group>"; };
 		6D0DB54D14DC143900CA0177 /* UIWindowAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = UIWindowAdditions.m; path = UI/UIWindowAdditions.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB55D14DC148A00CA0177 /* Three20UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Three20UI.h; path = UI/Three20UI.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -1754,7 +1752,6 @@
 				6D0DB54814DC143900CA0177 /* UIView+TTUICommon.m */,
 				6D0DB54914DC143900CA0177 /* UIViewControllerAdditions.h */,
 				6D0DB54A14DC143900CA0177 /* UIViewControllerAdditions.m */,
-				6D0DB54B14DC143900CA0177 /* UIViewControllerGarbageCollection.h */,
 				6D0DB54C14DC143900CA0177 /* UIWindowAdditions.h */,
 				6D0DB54D14DC143900CA0177 /* UIWindowAdditions.m */,
 				6D0DB65614DC149600CA0177 /* UINavigationControllerAdditions.h */,
@@ -2020,7 +2017,6 @@
 				6D0DB55314DC143900CA0177 /* TTGlobalUICommon.h in Headers */,
 				6D0DB55514DC143900CA0177 /* UIView+TTUICommon.h in Headers */,
 				6D0DB55714DC143900CA0177 /* UIViewControllerAdditions.h in Headers */,
-				6D0DB55914DC143900CA0177 /* UIViewControllerGarbageCollection.h in Headers */,
 				6D0DB55A14DC143900CA0177 /* UIWindowAdditions.h in Headers */,
 				6D0DB66714DC149700CA0177 /* Three20UI.h in Headers */,
 				6D0DB66814DC149700CA0177 /* Three20UI+Additions.h in Headers */,

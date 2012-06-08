@@ -30,9 +30,6 @@
 #import "TTGlobalUICommon.h"
 #import "UIViewControllerAdditions.h"
 
-// UICommon (Private)
-#import "UIViewControllerGarbageCollection.h"
-
 // Core
 #import "TTDebug.h"
 #import "TTDebugFlags.h"
@@ -80,9 +77,7 @@
   TT_RELEASE_SAFELY(_modelError);
   
   TTDCONDITIONLOG(TTDFLAG_VIEWCONTROLLERS, @"DEALLOC %@", self);
-  
-  [self unsetCommonProperties];
-  
+    
   TT_RELEASE_SAFELY(_navigationBarTintColor);
   TT_RELEASE_SAFELY(_frozenState);
   
