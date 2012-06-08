@@ -203,8 +203,6 @@
 		6D0DB53814DC13B600CA0177 /* UIFontAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB4BB14DC13B600CA0177 /* UIFontAdditions.m */; };
 		6D0DB53914DC13B600CA0177 /* UIImageAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB4BC14DC13B600CA0177 /* UIImageAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB53A14DC13B600CA0177 /* UIImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB4BD14DC13B600CA0177 /* UIImageAdditions.m */; };
-		6D0DB55114DC143900CA0177 /* TTBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54314DC143900CA0177 /* TTBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB55214DC143900CA0177 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB54414DC143900CA0177 /* TTBaseViewController.m */; };
 		6D0DB55314DC143900CA0177 /* TTGlobalUICommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54514DC143900CA0177 /* TTGlobalUICommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB55414DC143900CA0177 /* TTGlobalUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB54614DC143900CA0177 /* TTGlobalUICommon.m */; };
 		6D0DB55514DC143900CA0177 /* UIView+TTUICommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54714DC143900CA0177 /* UIView+TTUICommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -700,8 +698,6 @@
 		6D0DB4BB14DC13B600CA0177 /* UIFontAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIFontAdditions.m; path = Style/UIFontAdditions.m; sourceTree = "<group>"; };
 		6D0DB4BC14DC13B600CA0177 /* UIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageAdditions.h; path = Style/UIImageAdditions.h; sourceTree = "<group>"; };
 		6D0DB4BD14DC13B600CA0177 /* UIImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageAdditions.m; path = Style/UIImageAdditions.m; sourceTree = "<group>"; };
-		6D0DB54314DC143900CA0177 /* TTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTBaseViewController.h; path = UI/TTBaseViewController.h; sourceTree = "<group>"; };
-		6D0DB54414DC143900CA0177 /* TTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TTBaseViewController.m; path = UI/TTBaseViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB54514DC143900CA0177 /* TTGlobalUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTGlobalUICommon.h; path = UI/TTGlobalUICommon.h; sourceTree = "<group>"; };
 		6D0DB54614DC143900CA0177 /* TTGlobalUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TTGlobalUICommon.m; path = UI/TTGlobalUICommon.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB54714DC143900CA0177 /* UIView+TTUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+TTUICommon.h"; path = "UI/UIView+TTUICommon.h"; sourceTree = "<group>"; };
@@ -1141,7 +1137,6 @@
 				6D4283C814DC20C8002FDD03 /* View */,
 				6D4283C614DC20AC002FDD03 /* Web Controller */,
 				6DCA657414DC1DB900880863 /* Additions */,
-				6DCA657514DC1DE000880863 /* Base Controller */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -1778,15 +1773,6 @@
 			name = Additions;
 			sourceTree = "<group>";
 		};
-		6DCA657514DC1DE000880863 /* Base Controller */ = {
-			isa = PBXGroup;
-			children = (
-				6D0DB54314DC143900CA0177 /* TTBaseViewController.h */,
-				6D0DB54414DC143900CA0177 /* TTBaseViewController.m */,
-			);
-			name = "Base Controller";
-			sourceTree = "<group>";
-		};
 		6DCA657714DC1E1200880863 /* Launcher View */ = {
 			isa = PBXGroup;
 			children = (
@@ -2031,7 +2017,6 @@
 				6D0DB53514DC13B600CA0177 /* UIColorAdditions.h in Headers */,
 				6D0DB53714DC13B600CA0177 /* UIFontAdditions.h in Headers */,
 				6D0DB53914DC13B600CA0177 /* UIImageAdditions.h in Headers */,
-				6D0DB55114DC143900CA0177 /* TTBaseViewController.h in Headers */,
 				6D0DB55314DC143900CA0177 /* TTGlobalUICommon.h in Headers */,
 				6D0DB55514DC143900CA0177 /* UIView+TTUICommon.h in Headers */,
 				6D0DB55714DC143900CA0177 /* UIViewControllerAdditions.h in Headers */,
@@ -2410,7 +2395,6 @@
 				6D0DB53614DC13B600CA0177 /* UIColorAdditions.m in Sources */,
 				6D0DB53814DC13B600CA0177 /* UIFontAdditions.m in Sources */,
 				6D0DB53A14DC13B600CA0177 /* UIImageAdditions.m in Sources */,
-				6D0DB55214DC143900CA0177 /* TTBaseViewController.m in Sources */,
 				6D0DB55414DC143900CA0177 /* TTGlobalUICommon.m in Sources */,
 				6D0DB55614DC143900CA0177 /* UIView+TTUICommon.m in Sources */,
 				6D0DB55814DC143900CA0177 /* UIViewControllerAdditions.m in Sources */,

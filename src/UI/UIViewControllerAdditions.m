@@ -18,7 +18,6 @@
 
 // UICommon
 #import "TTGlobalUICommon.h"
-#import "TTBaseViewController.h"
 
 // UICommon (private)
 #import "UIViewControllerGarbageCollection.h"
@@ -104,29 +103,6 @@ TT_FIX_CATEGORY_BUG(UIViewControllerAdditions)
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 + (void)ttAddCommonController:(UIViewController*)controller {
 
-  // TTBaseViewController calls unsetCommonProperties in its dealloc, so we don't need
-  // to set up the garbage collector in that case.
-  if (![controller isKindOfClass:[TTBaseViewController class]]) {
-    [[UIViewController ttCommonControllers] addObject:controller];
-
-    TTDCONDITIONLOG(TTDFLAG_CONTROLLERGARBAGECOLLECTION,
-                    @"Adding a common controller.");
-
-    if (nil == gsGarbageCollectorTimer) {
-      gsGarbageCollectorTimer =
-        [[NSTimer scheduledTimerWithTimeInterval: kGarbageCollectionInterval
-                                          target: [UIViewController class]
-                                        selector: @selector(doCommonGarbageCollection)
-                                        userInfo: nil
-                                         repeats: YES] retain];
-    }
-#if TTDFLAG_CONTROLLERGARBAGECOLLECTION
-
-  } else {
-    TTDCONDITIONLOG(TTDFLAG_CONTROLLERGARBAGECOLLECTION,
-                    @"Not adding a common controller.");
-#endif
-  }
 }
 
 
