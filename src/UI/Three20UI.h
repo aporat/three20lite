@@ -17,7 +17,6 @@
 // UI Controllers
 #import "TTBaseViewController.h"
 #import "TTGlobalUICommon.h"
-#import "TTViewController.h"
 #import "TTNavigationController.h"
 #import "TTWebController.h"
 #import "TTMessageController.h"

@@ -1,7 +1,7 @@
 #import <Three20Lite/Three20Lite.h>
 
 @class DownloadTestModel;
-@interface DownloadProgressTestController : TTViewController <TTModelDelegate> {
+@interface DownloadProgressTestController : UIViewController <TTModelDelegate> {
   NSUInteger        _defaultMaxContentLength;
   TTActivityLabel   *_activityLabel;
   DownloadTestModel *_loadingModel;

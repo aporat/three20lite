@@ -24,13 +24,11 @@
 		6D64FC9C14DC4A2C0099CBC0 /* ImageTest1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC6714DC4A2C0099CBC0 /* ImageTest1Controller.m */; };
 		6D64FC9D14DC4A2C0099CBC0 /* LauncherViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC6914DC4A2C0099CBC0 /* LauncherViewTestController.m */; };
 		6D64FC9E14DC4A2C0099CBC0 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D64FC6A14DC4A2C0099CBC0 /* mask.png */; };
-		6D64FC9F14DC4A2C0099CBC0 /* MessageTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC6C14DC4A2C0099CBC0 /* MessageTestController.m */; };
 		6D64FCA014DC4A2C0099CBC0 /* MockDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC6E14DC4A2C0099CBC0 /* MockDataSource.m */; };
 		6D64FCA114DC4A2C0099CBC0 /* MockPhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC7014DC4A2C0099CBC0 /* MockPhotoSource.m */; };
 		6D64FCA214DC4A2C0099CBC0 /* person.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D64FC7114DC4A2C0099CBC0 /* person.jpg */; };
 		6D64FCA414DC4A2C0099CBC0 /* PhotoTest2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC7514DC4A2C0099CBC0 /* PhotoTest2Controller.m */; };
 		6D64FCA514DC4A2C0099CBC0 /* ScrollViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC7714DC4A2C0099CBC0 /* ScrollViewTestController.m */; };
-		6D64FCA614DC4A2C0099CBC0 /* SearchTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC7914DC4A2C0099CBC0 /* SearchTestController.m */; };
 		6D64FCA714DC4A2C0099CBC0 /* smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D64FC7A14DC4A2C0099CBC0 /* smiley.png */; };
 		6D64FCA814DC4A2C0099CBC0 /* StyledTextTableTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC7C14DC4A2C0099CBC0 /* StyledTextTableTestController.m */; };
 		6D64FCA914DC4A2C0099CBC0 /* StyledTextTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC7E14DC4A2C0099CBC0 /* StyledTextTestController.m */; };
@@ -105,8 +103,6 @@
 		6D64FC6814DC4A2C0099CBC0 /* LauncherViewTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherViewTestController.h; sourceTree = "<group>"; };
 		6D64FC6914DC4A2C0099CBC0 /* LauncherViewTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherViewTestController.m; sourceTree = "<group>"; };
 		6D64FC6A14DC4A2C0099CBC0 /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
-		6D64FC6B14DC4A2C0099CBC0 /* MessageTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTestController.h; sourceTree = "<group>"; };
-		6D64FC6C14DC4A2C0099CBC0 /* MessageTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTestController.m; sourceTree = "<group>"; };
 		6D64FC6D14DC4A2C0099CBC0 /* MockDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockDataSource.h; sourceTree = "<group>"; };
 		6D64FC6E14DC4A2C0099CBC0 /* MockDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockDataSource.m; sourceTree = "<group>"; };
 		6D64FC6F14DC4A2C0099CBC0 /* MockPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockPhotoSource.h; sourceTree = "<group>"; };
@@ -116,8 +112,6 @@
 		6D64FC7514DC4A2C0099CBC0 /* PhotoTest2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTest2Controller.m; sourceTree = "<group>"; };
 		6D64FC7614DC4A2C0099CBC0 /* ScrollViewTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewTestController.h; sourceTree = "<group>"; };
 		6D64FC7714DC4A2C0099CBC0 /* ScrollViewTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewTestController.m; sourceTree = "<group>"; };
-		6D64FC7814DC4A2C0099CBC0 /* SearchTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTestController.h; sourceTree = "<group>"; };
-		6D64FC7914DC4A2C0099CBC0 /* SearchTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTestController.m; sourceTree = "<group>"; };
 		6D64FC7A14DC4A2C0099CBC0 /* smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smiley.png; sourceTree = "<group>"; };
 		6D64FC7B14DC4A2C0099CBC0 /* StyledTextTableTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyledTextTableTestController.h; sourceTree = "<group>"; };
 		6D64FC7C14DC4A2C0099CBC0 /* StyledTextTableTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyledTextTableTestController.m; sourceTree = "<group>"; };
@@ -216,8 +210,6 @@
 				6D64FC6714DC4A2C0099CBC0 /* ImageTest1Controller.m */,
 				6D64FC6814DC4A2C0099CBC0 /* LauncherViewTestController.h */,
 				6D64FC6914DC4A2C0099CBC0 /* LauncherViewTestController.m */,
-				6D64FC6B14DC4A2C0099CBC0 /* MessageTestController.h */,
-				6D64FC6C14DC4A2C0099CBC0 /* MessageTestController.m */,
 				6D64FC6D14DC4A2C0099CBC0 /* MockDataSource.h */,
 				6D64FC6E14DC4A2C0099CBC0 /* MockDataSource.m */,
 				6D64FC6F14DC4A2C0099CBC0 /* MockPhotoSource.h */,
@@ -226,8 +218,6 @@
 				6D64FC7514DC4A2C0099CBC0 /* PhotoTest2Controller.m */,
 				6D64FC7614DC4A2C0099CBC0 /* ScrollViewTestController.h */,
 				6D64FC7714DC4A2C0099CBC0 /* ScrollViewTestController.m */,
-				6D64FC7814DC4A2C0099CBC0 /* SearchTestController.h */,
-				6D64FC7914DC4A2C0099CBC0 /* SearchTestController.m */,
 				6D64FC7B14DC4A2C0099CBC0 /* StyledTextTableTestController.h */,
 				6D64FC7C14DC4A2C0099CBC0 /* StyledTextTableTestController.m */,
 				6D64FC7D14DC4A2C0099CBC0 /* StyledTextTestController.h */,
@@ -414,12 +404,10 @@
 				6D64FC9A14DC4A2C0099CBC0 /* DownloadTestModel.m in Sources */,
 				6D64FC9C14DC4A2C0099CBC0 /* ImageTest1Controller.m in Sources */,
 				6D64FC9D14DC4A2C0099CBC0 /* LauncherViewTestController.m in Sources */,
-				6D64FC9F14DC4A2C0099CBC0 /* MessageTestController.m in Sources */,
 				6D64FCA014DC4A2C0099CBC0 /* MockDataSource.m in Sources */,
 				6D64FCA114DC4A2C0099CBC0 /* MockPhotoSource.m in Sources */,
 				6D64FCA414DC4A2C0099CBC0 /* PhotoTest2Controller.m in Sources */,
 				6D64FCA514DC4A2C0099CBC0 /* ScrollViewTestController.m in Sources */,
-				6D64FCA614DC4A2C0099CBC0 /* SearchTestController.m in Sources */,
 				6D64FCA814DC4A2C0099CBC0 /* StyledTextTableTestController.m in Sources */,
 				6D64FCA914DC4A2C0099CBC0 /* StyledTextTestController.m in Sources */,
 				6D64FCAA14DC4A2C0099CBC0 /* StyleTestController.m in Sources */,

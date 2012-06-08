@@ -15,7 +15,7 @@
 //
 
 // UI
-#import "TTViewController.h"
+#import "TTBaseViewController.h"
 
 // Network
 #import "TTModelDelegate.h"
@@ -25,7 +25,7 @@
 /**
  * A view controller that manages a model in addition to a view.
  */
-@interface TTModelViewController : TTViewController <TTModelDelegate> {
+@interface TTModelViewController : TTBaseViewController <TTModelDelegate> {
   id<TTModel> _model;
   NSError*    _modelError;
 

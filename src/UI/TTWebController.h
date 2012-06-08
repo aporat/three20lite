@@ -19,7 +19,7 @@
 
 @protocol TTWebControllerDelegate;
 
-@interface TTWebController : TTModelViewController <UIWebViewDelegate, UIActionSheetDelegate> {
+@interface TTWebController : UIViewController <UIWebViewDelegate, UIActionSheetDelegate> {
 @protected
   UIWebView*        _webView;
 
