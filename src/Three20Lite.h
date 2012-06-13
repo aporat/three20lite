@@ -26,8 +26,5 @@
 // Style
 #import "Three20Style.h"
 
-// UINavigator
-#import "Three20UINavigator.h"
-
 // UI
 #import "Three20UI.h"
