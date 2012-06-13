@@ -41,9 +41,6 @@
 
 @synthesize model       = _model;
 @synthesize modelError  = _modelError;
-@synthesize navigationBarStyle      = _navigationBarStyle;
-@synthesize navigationBarTintColor  = _navigationBarTintColor;
-@synthesize statusBarStyle          = _statusBarStyle;
 @synthesize isViewAppearing         = _isViewAppearing;
 @synthesize hasViewAppeared         = _hasViewAppeared;
 
@@ -51,8 +48,6 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
-    _navigationBarStyle = UIBarStyleDefault;
-    _statusBarStyle = [[UIApplication sharedApplication] statusBarStyle];
     _flags.isViewInvalid = YES;
   }
 
@@ -78,7 +73,6 @@
   
   TTDCONDITIONLOG(TTDFLAG_VIEWCONTROLLERS, @"DEALLOC %@", self);
     
-  TT_RELEASE_SAFELY(_navigationBarTintColor);
   TT_RELEASE_SAFELY(_frozenState);
   
   // You would think UIViewController would call this in dealloc, but it doesn't!
@@ -226,16 +220,6 @@
 
   _isViewAppearing = YES;
   _hasViewAppeared = YES;
-  
-  if (!self.popupViewController) {
-    UINavigationBar* bar = self.navigationController.navigationBar;
-    bar.tintColor = _navigationBarTintColor;
-    bar.barStyle = _navigationBarStyle;
-    
-    if (!TTIsPad()) {
-      [[UIApplication sharedApplication] setStatusBarStyle:_statusBarStyle animated:YES];
-    }
-  }
   
   [super viewWillAppear:animated];
 }

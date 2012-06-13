@@ -30,7 +30,6 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
-    _statusBarStyle = [UIApplication sharedApplication].statusBarStyle;
   }
 
   return self;

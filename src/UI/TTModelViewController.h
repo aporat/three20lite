@@ -25,9 +25,6 @@
 @interface TTModelViewController : UIViewController <TTModelDelegate> {
 @protected
   NSDictionary*     _frozenState;
-  UIBarStyle        _navigationBarStyle;
-  UIColor*          _navigationBarTintColor;
-  UIStatusBarStyle  _statusBarStyle;
   
   BOOL _isViewAppearing;
   BOOL _hasViewAppeared;
@@ -214,30 +211,6 @@
  * Shows views to represent an error that occurred while loading the model.
  */
 - (void)showError:(BOOL)show;
-
-/**
- * The style of the navigation bar when this view controller is pushed onto
- * a navigation controller.
- *
- * @default UIBarStyleDefault
- */
-@property (nonatomic) UIBarStyle navigationBarStyle;
-
-/**
- * The color of the navigation bar when this view controller is pushed onto
- * a navigation controller.
- *
- * @default TTSTYLEVAR(navigationBarTintColor)
- */
-@property (nonatomic, retain) UIColor* navigationBarTintColor;
-
-/**
- * The style of the status bar when this view controller is appearing.
- *
- * @default [[UIApplication sharedApplication] statusBarStyle] via app's info.plist
- *
- */
-@property (nonatomic) UIStatusBarStyle statusBarStyle;
 
 /**
  * The view has appeared at least once and hasn't been removed due to a memory warning.

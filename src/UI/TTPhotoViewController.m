@@ -78,9 +78,9 @@ static const NSInteger kActivityLabelTag          = 96;
         target: nil
         action: nil] autorelease];
 
-    self.statusBarStyle = UIStatusBarStyleBlackTranslucent;
-    self.navigationBarStyle = UIBarStyleBlackTranslucent;
-    self.navigationBarTintColor = nil;
+  //  self.statusBarStyle = UIStatusBarStyleBlackTranslucent;
+   // self.navigationBarStyle = UIBarStyleBlackTranslucent;
+   // self.navigationBarTintColor = nil;
     self.wantsFullScreenLayout = YES;
     self.hidesBottomBarWhenPushed = YES;
 
@@ -515,11 +515,11 @@ static const NSInteger kActivityLabelTag          = 96;
   _toolbar = [[UIToolbar alloc] initWithFrame:
               CGRectMake(0, screenFrame.size.height - TT_ROW_HEIGHT,
                          screenFrame.size.width, TT_ROW_HEIGHT)];
-  if (self.navigationBarStyle == UIBarStyleDefault) {
-    _toolbar.tintColor = TTSTYLEVAR(toolbarTintColor);
-  }
+ // if (self.navigationBarStyle == UIBarStyleDefault) {
+  //  _toolbar.tintColor = TTSTYLEVAR(toolbarTintColor);
+ // }
 
-  _toolbar.barStyle = self.navigationBarStyle;
+//  _toolbar.barStyle = self.navigationBarStyle;
   _toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin;
   _toolbar.items = [NSArray arrayWithObjects:
                     space, _previousButton, space, _nextButton, space, nil];
