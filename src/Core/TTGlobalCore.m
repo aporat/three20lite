@@ -24,7 +24,7 @@ static void TTReleaseNoOp(CFAllocatorRef allocator, const void *value) { }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-NSMutableArray* TTCreateNonRetainingArray() {
+NSMutableArray* TTCreateNonRetainingArray(void) {
   CFArrayCallBacks callbacks = kCFTypeArrayCallBacks;
   callbacks.retain = TTRetainNoOp;
   callbacks.release = TTReleaseNoOp;
@@ -33,7 +33,7 @@ NSMutableArray* TTCreateNonRetainingArray() {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-NSMutableDictionary* TTCreateNonRetainingDictionary() {
+NSMutableDictionary* TTCreateNonRetainingDictionary(void) {
   CFDictionaryKeyCallBacks keyCallbacks = kCFTypeDictionaryKeyCallBacks;
   CFDictionaryValueCallBacks callbacks = kCFTypeDictionaryValueCallBacks;
   callbacks.retain = TTRetainNoOp;

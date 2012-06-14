@@ -47,7 +47,7 @@ void TTSetDefaultBundle(NSBundle* bundle) {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-NSBundle* TTGetDefaultBundle() {
+NSBundle* TTGetDefaultBundle(void) {
   return (nil != globalBundle) ? globalBundle : [NSBundle mainBundle];
 }
 

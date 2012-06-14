@@ -24,7 +24,7 @@ BOOL TTDeviceOSVersionIsAtLeast(double versionNumber) {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-Class TTUIPopoverControllerClass() {
+Class TTUIPopoverControllerClass(void) {
   static Class sClass = nil;
   if (nil == sClass) {
     sClass = NSClassFromString(@"UIPopoverController");

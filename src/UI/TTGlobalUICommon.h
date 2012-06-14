@@ -20,7 +20,7 @@
 /**
  * @return the current runtime version of the iPhone OS.
  */
-float TTOSVersion();
+float TTOSVersion(void);
 
 /**
  * Checks if the run-time version of the OS is at least a certain version.
@@ -35,42 +35,42 @@ BOOL TTOSVersionIsAtLeast(float version);
 /**
  * @return TRUE if the keyboard is visible.
  */
-BOOL TTIsKeyboardVisible();
+BOOL TTIsKeyboardVisible(void);
 
 /**
  * @return TRUE if the device has phone capabilities.
  */
-BOOL TTIsPhoneSupported();
+BOOL TTIsPhoneSupported(void);
 
 /**
  * @return TRUE if the device supports backgrounding
  */
-BOOL TTIsMultiTaskingSupported();
+BOOL TTIsMultiTaskingSupported(void);
 
 /**
  * @return TRUE if the device is iPad.
  */
-BOOL TTIsPad();
+BOOL TTIsPad(void);
 
 /**
  * @return the current device orientation.
  */
-UIDeviceOrientation TTDeviceOrientation();
+UIDeviceOrientation TTDeviceOrientation(void);
 
 /**
  * @return TRUE if the current device orientation is portrait or portrait upside down.
  */
-BOOL TTDeviceOrientationIsPortrait();
+BOOL TTDeviceOrientationIsPortrait(void);
 
 /**
  * @return TRUE if the current device orientation is landscape left, or landscape right.
  */
-BOOL TTDeviceOrientationIsLandscape();
+BOOL TTDeviceOrientationIsLandscape(void);
 
 /**
  * @return device full model name in human readable strings
  */
-NSString* TTDeviceModelName();
+NSString* TTDeviceModelName(void);
 
 /**
  * On iPhone/iPod touch
@@ -93,7 +93,7 @@ CGAffineTransform TTRotateTransformForOrientation(UIInterfaceOrientation orienta
  * From the Apple docs:
  * Frame of application screen area in points (i.e. entire screen minus status bar if visible)
  */
-CGRect TTApplicationFrame();
+CGRect TTApplicationFrame(void);
 
 /**
  * @return the toolbar height for a given orientation.
@@ -110,7 +110,7 @@ CGFloat TTKeyboardHeightForOrientation(UIInterfaceOrientation orientation);
 /**
  * @return the space between the edge of the screen and a grouped table cell. Larger on iPad.
  */
-CGFloat TTGroupedTableCellInset();
+CGFloat TTGroupedTableCellInset(void);
 
 /**
  * A convenient way to show a UIAlertView with a message.
