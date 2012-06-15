@@ -107,19 +107,6 @@ resumed at any time, which is a great performance helper.  Network threads often
 the UI thread, so you can suspend the network any time your app is momentarily graphically
 intensive.
 
-URL-based Navigation
---------------------
-
-[TTNavigator][] is for those grizzled old web developers like myself who want to
-organize their app by "pages" which can be displayed by visiting a URL.
-
-Your view controllers can simply register URL patterns that they handle, and when those URLs
-are visited the controllers will be created and displayed.  You can also register generic
-actions that are called when a URL is visited.
-
-TTNavigator also persists and restores the full path of navigation controllers and modal
-view controllers, so your users can quite the app and come back exactly where they left off.
-
 Learn more at [Three20.info][]
 
 [Facebook iPhone app]: http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=284882215&mt=8
