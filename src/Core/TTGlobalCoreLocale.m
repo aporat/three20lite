@@ -21,7 +21,7 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-NSLocale* TTCurrentLocale() {
+NSLocale* TTCurrentLocale(void) {
   NSArray* languages = [NSLocale preferredLanguages];
   if (languages.count > 0) {
     NSString* currentLanguage = [languages objectAtIndex:0];

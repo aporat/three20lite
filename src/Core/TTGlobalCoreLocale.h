@@ -21,7 +21,7 @@
  *
  * This is necessary because [NSLocale currentLocale] always returns en_US.
  */
-NSLocale* TTCurrentLocale();
+NSLocale* TTCurrentLocale(void);
 
 /**
  * @return A localized string from the Three20 bundle.

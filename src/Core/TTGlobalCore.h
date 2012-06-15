@@ -21,14 +21,14 @@
  *
  * Typically used with arrays of delegates.
  */
-NSMutableArray* TTCreateNonRetainingArray();
+NSMutableArray* TTCreateNonRetainingArray(void);
 
 /**
  * Creates a mutable dictionary which does not retain references to the values it contains.
  *
  * Typically used with dictionaries of delegates.
  */
-NSMutableDictionary* TTCreateNonRetainingDictionary();
+NSMutableDictionary* TTCreateNonRetainingDictionary(void);
 
 /**
  * Tests if an object is an array which is not empty.
