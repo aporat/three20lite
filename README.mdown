@@ -5,15 +5,15 @@ This fork contains some major changes from the main three20 repository.
 
 - All sub projects were into a simple project
 - Simplified installation using a CocoaPods (https://github.com/CocoaPods/CocoaPods)
-- XML & JSON extensions merged back to TTNetwork
+- XML & JSON extensions merged back to `TTNetwork`
 - SBSON is linked as a submodule
-- TTExtensionLoader removed
-- Removed TTViewController (All view controller implements from UIViewController)
+- `TTExtensionLoader` module was removed
+- Removed `TTViewController` (All view controller implements from UIViewController)
 - Removed YAJL JSON support
 - Removed old xcode templates
 - Appledoc Documentation
-- TTSplitViewController removed
-- TTNaviagtor removed
+- `TTSplitViewController` removed
+- `TTNaviagtor` & url mapping were removed
 
 
 Three20
@@ -59,7 +59,7 @@ Web image views
 -----------------------
 
 `TTImageView` makes it as easy to display an image as it is in HTML.  Just supply the URL
-of the image, and TTImageView loads it and displays it efficiently.  TTImageView also works
+of the image, and `TTImageView` loads it and displays it efficiently.  `TTImageView` also works
 with the HTTP cache described below to avoid hitting the network when possible.
 
 Internet-aware table view controllers
@@ -75,7 +75,7 @@ device.
 Better text fields
 ------------------
 
-`TTTextEdito` is a `UITextView` which can grow in height automatically as you type.  I use
+`TTTextEditor` is a `UITextView` which can grow in height automatically as you type.  I use
 this for entering messages in Facebook Chat, and it behaves similarly to the editor in Apple's
 SMS app.
 
