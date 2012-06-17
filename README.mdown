@@ -8,6 +8,7 @@ This fork contains some major changes from the main three20 repository.
 - XML & JSON extensions merged back to TTNetwork
 - SBSON is linked as a submodule
 - TTExtensionLoader removed
+- Removed TTViewController (All view controller implements from UIViewController)
 - Removed YAJL JSON support
 - Removed old xcode templates
 - Appledoc Documentation
@@ -61,13 +62,6 @@ You can supply your own "photo sources", which works similiarly to the data sour
 UITableView.  Unlike Apple's Photos app, it isn't limited to photos stored locally.  Your
 photos can be loaded from the network, and long lists of photos can be loaded incrementally.
 
-Message composer
-----------------
-
-[TTMessageController][] emulates the message composer in Apple's Mail app.  You can customize it
-to send any kind of message you want. Include your own set of message fields, or use the
-standard "To:" and "Subject:".  Recipient names can be autocompleted from a data source that
-you provide.
 
 Web image views
 -----------------------
@@ -106,20 +100,3 @@ supplying a dictionary of parameters.  The TTURL loading system can also be susp
 resumed at any time, which is a great performance helper.  Network threads often fight with
 the UI thread, so you can suspend the network any time your app is momentarily graphically
 intensive.
-
-Learn more at [Three20.info][]
-
-[Facebook iPhone app]: http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=284882215&mt=8
-[Three20.info]: http://Three20.info
-[Three20 Mailing List]: http://groups.google.com/group/three20/
-[Three20 Tagged Questions on StackOverflow]: http://stackoverflow.com/questions/tagged/three20
-[TTPhotoViewController]: http://github.com/facebook/three20/blob/master/src/Three20UI/Headers/TTPhotoViewController.h
-[TTMessageController]: http://github.com/facebook/three20/blob/master/src/Three20UI/Headers/TTMessageController.h
-[TTImageView]: http://github.com/facebook/three20/blob/master/src/Three20UI/Headers/TTImageView.h
-[TTTableViewController]: http://github.com/facebook/three20/blob/master/src/Three20UI/Headers/TTTableViewController.h
-[TTTableViewDataSource]: http://github.com/facebook/three20/blob/master/src/Three20UI/Headers/TTTableViewDataSource.h
-[TTURLRequest]: http://github.com/facebook/three20/blob/master/src/Three20Network/Headers/TTURLRequest.h
-[TTTextEditor]: http://github.com/facebook/three20/blob/master/src/Three20UI/Headers/TTTextEditor.h
-[TTPickerTextField]: http://github.com/facebook/three20/blob/master/src/Three20UI/Headers/TTPickerTextField.h
-[TTNavigator]: http://github.com/facebook/three20/blob/master/src/Three20UI/Headers/TTNavigator.h
-[TTModule Python Script]: http://three20.info/article/2010-10-06-Adding-Three20-To-Your-Project
