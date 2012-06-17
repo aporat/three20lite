@@ -25,4 +25,6 @@
 #import "UITableViewAdditions.h"
 #import "UIWebViewAdditions.h"
 #import "UIToolbarAdditions.h"
+#import "UIViewControllerAdditions.h"
+
 

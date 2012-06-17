@@ -126,6 +126,7 @@
 #import "TTTableSettingsItemCell.h"
 
 #import "TTErrorView.h"
+#import "TTTextEditor.h"
 
 #import "TTPhotoVersion.h"
 #import "TTPhotoSource.h"
