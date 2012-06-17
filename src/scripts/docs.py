@@ -36,7 +36,7 @@ def generate_appledoc(version):
 	logging.info("Generating appledoc")
 		
 	os.system("appledoc " + 
-              "--project-name Three20 " +
+              "--project-name Three20Lite " +
               "--project-company \"Facebook\" " + 
               "--company-id=com.facebook " + 
               "--output Docs/ " + 
@@ -51,16 +51,16 @@ def generate_appledoc(version):
               "--warn-invalid-crossref " +
               "--warn-missing-arg " + 
               "--keep-intermediate-files " +
-              "--docset-feed-name \"Three20 " + version + " Documentation\" " +
-              "--docset-feed-url http://aporat.github.com/three20/api/%DOCSETATOMFILENAME " + 
-              "--docset-package-url http://aporat.github.com/three20/api/%DOCSETPACKAGEFILENAME " + 
+              "--docset-feed-name \"Three20Lite " + version + " Documentation\" " +
+              "--docset-feed-url http://aporat.github.com/three20lite/api/%DOCSETATOMFILENAME " + 
+              "--docset-package-url http://aporat.github.com/three20lite/api/%DOCSETPACKAGEFILENAME " + 
               "--publish-docset " + 
-              "--verbose 5 src/")
+              "--verbose 6 src/")
 
 def publish_ghpages(version):
 		
 	logging.info("Cloning and checking out gh-pages")
-	os.system("git clone git@github.com:aporat/three20.git Docs/gh-pages")
+	os.system("git clone git@github.com:aporat/three20lite.git Docs/gh-pages")
 	os.system("cd Docs/gh-pages && git pull")
 	os.system("cd Docs/gh-pages && git checkout gh-pages")
 			
