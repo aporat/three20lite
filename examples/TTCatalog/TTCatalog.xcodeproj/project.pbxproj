@@ -10,7 +10,6 @@
 		6D64FC4114DC49EC0099CBC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D64FC4014DC49EC0099CBC0 /* UIKit.framework */; };
 		6D64FC4314DC49EC0099CBC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D64FC4214DC49EC0099CBC0 /* Foundation.framework */; };
 		6D64FC4514DC49EC0099CBC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D64FC4414DC49EC0099CBC0 /* CoreGraphics.framework */; };
-		6D64FC4B14DC49EC0099CBC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D64FC4914DC49EC0099CBC0 /* InfoPlist.strings */; };
 		6D64FC4D14DC49EC0099CBC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC4C14DC49EC0099CBC0 /* main.m */; };
 		6D64FC5114DC49EC0099CBC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC5014DC49EC0099CBC0 /* AppDelegate.m */; };
 		6D64FC9414DC4A2C0099CBC0 /* ActivityTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC5814DC4A2C0099CBC0 /* ActivityTestController.m */; };
@@ -20,7 +19,6 @@
 		6D64FC9814DC4A2C0099CBC0 /* defaultPerson.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D64FC5E14DC4A2C0099CBC0 /* defaultPerson.png */; };
 		6D64FC9914DC4A2C0099CBC0 /* DownloadProgressTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC6014DC4A2C0099CBC0 /* DownloadProgressTestController.m */; };
 		6D64FC9A14DC4A2C0099CBC0 /* DownloadTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC6214DC4A2C0099CBC0 /* DownloadTestModel.m */; };
-		6D64FC9B14DC4A2C0099CBC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D64FC6414DC4A2C0099CBC0 /* InfoPlist.strings */; };
 		6D64FC9C14DC4A2C0099CBC0 /* ImageTest1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC6714DC4A2C0099CBC0 /* ImageTest1Controller.m */; };
 		6D64FC9D14DC4A2C0099CBC0 /* LauncherViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D64FC6914DC4A2C0099CBC0 /* LauncherViewTestController.m */; };
 		6D64FC9E14DC4A2C0099CBC0 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D64FC6A14DC4A2C0099CBC0 /* mask.png */; };
@@ -80,7 +78,6 @@
 		6D64FC4214DC49EC0099CBC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6D64FC4414DC49EC0099CBC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6D64FC4814DC49EC0099CBC0 /* TTCatalog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTCatalog-Info.plist"; sourceTree = "<group>"; };
-		6D64FC4A14DC49EC0099CBC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6D64FC4C14DC49EC0099CBC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D64FC4E14DC49EC0099CBC0 /* TTCatalog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTCatalog-Prefix.pch"; sourceTree = "<group>"; };
 		6D64FC4F14DC49EC0099CBC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,7 +94,6 @@
 		6D64FC6014DC4A2C0099CBC0 /* DownloadProgressTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadProgressTestController.m; sourceTree = "<group>"; };
 		6D64FC6114DC4A2C0099CBC0 /* DownloadTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTestModel.h; sourceTree = "<group>"; };
 		6D64FC6214DC4A2C0099CBC0 /* DownloadTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTestModel.m; sourceTree = "<group>"; };
-		6D64FC6514DC4A2C0099CBC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		6D64FC6614DC4A2C0099CBC0 /* ImageTest1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTest1Controller.h; sourceTree = "<group>"; };
 		6D64FC6714DC4A2C0099CBC0 /* ImageTest1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTest1Controller.m; sourceTree = "<group>"; };
 		6D64FC6814DC4A2C0099CBC0 /* LauncherViewTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherViewTestController.h; sourceTree = "<group>"; };
@@ -161,6 +157,113 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D04655C158E4672007EC8A7 /* Tab Bar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D64FC8114DC4A2C0099CBC0 /* TabBarTestController.h */,
+				6D64FC8214DC4A2C0099CBC0 /* TabBarTestController.m */,
+			);
+			name = "Tab Bar Controller";
+			sourceTree = "<group>";
+		};
+		6D04655D158E4686007EC8A7 /* Download Progress Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D64FC5F14DC4A2C0099CBC0 /* DownloadProgressTestController.h */,
+				6D64FC6014DC4A2C0099CBC0 /* DownloadProgressTestController.m */,
+				6D64FC6114DC4A2C0099CBC0 /* DownloadTestModel.h */,
+				6D64FC6214DC4A2C0099CBC0 /* DownloadTestModel.m */,
+			);
+			name = "Download Progress Controller";
+			sourceTree = "<group>";
+		};
+		6D04655E158E4691007EC8A7 /* Buttons Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D64FC5914DC4A2C0099CBC0 /* ButtonTestController.h */,
+				6D64FC5A14DC4A2C0099CBC0 /* ButtonTestController.m */,
+			);
+			name = "Buttons Controller";
+			sourceTree = "<group>";
+		};
+		6D04655F158E46AD007EC8A7 /* Photos Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6DCCDEDA15196E77000659C7 /* PhotoTest1Controller.h */,
+				6DCCDEDB15196E77000659C7 /* PhotoTest1Controller.m */,
+				6D64FC6614DC4A2C0099CBC0 /* ImageTest1Controller.h */,
+				6D64FC6714DC4A2C0099CBC0 /* ImageTest1Controller.m */,
+				6D64FC6D14DC4A2C0099CBC0 /* MockDataSource.h */,
+				6D64FC6E14DC4A2C0099CBC0 /* MockDataSource.m */,
+				6D64FC6F14DC4A2C0099CBC0 /* MockPhotoSource.h */,
+				6D64FC7014DC4A2C0099CBC0 /* MockPhotoSource.m */,
+				6D64FC7414DC4A2C0099CBC0 /* PhotoTest2Controller.h */,
+				6D64FC7514DC4A2C0099CBC0 /* PhotoTest2Controller.m */,
+			);
+			name = "Photos Controller";
+			sourceTree = "<group>";
+		};
+		6D046560158E46B9007EC8A7 /* Scroll View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D64FC7614DC4A2C0099CBC0 /* ScrollViewTestController.h */,
+				6D64FC7714DC4A2C0099CBC0 /* ScrollViewTestController.m */,
+			);
+			name = "Scroll View Controller";
+			sourceTree = "<group>";
+		};
+		6D046561158E46C6007EC8A7 /* Launcher View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D64FC6814DC4A2C0099CBC0 /* LauncherViewTestController.h */,
+				6D64FC6914DC4A2C0099CBC0 /* LauncherViewTestController.m */,
+			);
+			name = "Launcher View Controller";
+			sourceTree = "<group>";
+		};
+		6D046562158E46D9007EC8A7 /* Activity Test Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D64FC5714DC4A2C0099CBC0 /* ActivityTestController.h */,
+				6D64FC5814DC4A2C0099CBC0 /* ActivityTestController.m */,
+			);
+			name = "Activity Test Controller";
+			sourceTree = "<group>";
+		};
+		6D046563158E46E7007EC8A7 /* Table Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D64FC8314DC4A2C0099CBC0 /* TableControlsTestController.h */,
+				6D64FC8414DC4A2C0099CBC0 /* TableControlsTestController.m */,
+				6D64FC8514DC4A2C0099CBC0 /* TableDragRefreshController.h */,
+				6D64FC8614DC4A2C0099CBC0 /* TableDragRefreshController.m */,
+				6D64FC8814DC4A2C0099CBC0 /* TableImageTestController.h */,
+				6D64FC8914DC4A2C0099CBC0 /* TableImageTestController.m */,
+				6D64FC8A14DC4A2C0099CBC0 /* TableItemTestController.h */,
+				6D64FC8B14DC4A2C0099CBC0 /* TableItemTestController.m */,
+				6D64FC8C14DC4A2C0099CBC0 /* TableTestController.h */,
+				6D64FC8D14DC4A2C0099CBC0 /* TableTestController.m */,
+				6D64FC8E14DC4A2C0099CBC0 /* TableWithBannerController.h */,
+				6D64FC8F14DC4A2C0099CBC0 /* TableWithBannerController.m */,
+				6D64FC9014DC4A2C0099CBC0 /* TableWithShadowController.h */,
+				6D64FC9114DC4A2C0099CBC0 /* TableWithShadowController.m */,
+			);
+			name = "Table Controllers";
+			sourceTree = "<group>";
+		};
+		6D046564158E4700007EC8A7 /* Styles Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D64FC7B14DC4A2C0099CBC0 /* StyledTextTableTestController.h */,
+				6D64FC7C14DC4A2C0099CBC0 /* StyledTextTableTestController.m */,
+				6D64FC7D14DC4A2C0099CBC0 /* StyledTextTestController.h */,
+				6D64FC7E14DC4A2C0099CBC0 /* StyledTextTestController.m */,
+				6D64FC7F14DC4A2C0099CBC0 /* StyleTestController.h */,
+				6D64FC8014DC4A2C0099CBC0 /* StyleTestController.m */,
+			);
+			name = "Styles Controllers";
+			sourceTree = "<group>";
+		};
 		6D64FC3114DC49EC0099CBC0 = {
 			isa = PBXGroup;
 			children = (
@@ -196,50 +299,15 @@
 				6DCCDED815196E21000659C7 /* Three20.bundle */,
 				6DCCDE7115195EDA000659C7 /* App Delegate */,
 				6DCCDE7215195F09000659C7 /* Catalog Controller */,
-				6D64FC5714DC4A2C0099CBC0 /* ActivityTestController.h */,
-				6D64FC5814DC4A2C0099CBC0 /* ActivityTestController.m */,
-				6DCCDEDA15196E77000659C7 /* PhotoTest1Controller.h */,
-				6DCCDEDB15196E77000659C7 /* PhotoTest1Controller.m */,
-				6D64FC5914DC4A2C0099CBC0 /* ButtonTestController.h */,
-				6D64FC5A14DC4A2C0099CBC0 /* ButtonTestController.m */,
-				6D64FC5F14DC4A2C0099CBC0 /* DownloadProgressTestController.h */,
-				6D64FC6014DC4A2C0099CBC0 /* DownloadProgressTestController.m */,
-				6D64FC6114DC4A2C0099CBC0 /* DownloadTestModel.h */,
-				6D64FC6214DC4A2C0099CBC0 /* DownloadTestModel.m */,
-				6D64FC6614DC4A2C0099CBC0 /* ImageTest1Controller.h */,
-				6D64FC6714DC4A2C0099CBC0 /* ImageTest1Controller.m */,
-				6D64FC6814DC4A2C0099CBC0 /* LauncherViewTestController.h */,
-				6D64FC6914DC4A2C0099CBC0 /* LauncherViewTestController.m */,
-				6D64FC6D14DC4A2C0099CBC0 /* MockDataSource.h */,
-				6D64FC6E14DC4A2C0099CBC0 /* MockDataSource.m */,
-				6D64FC6F14DC4A2C0099CBC0 /* MockPhotoSource.h */,
-				6D64FC7014DC4A2C0099CBC0 /* MockPhotoSource.m */,
-				6D64FC7414DC4A2C0099CBC0 /* PhotoTest2Controller.h */,
-				6D64FC7514DC4A2C0099CBC0 /* PhotoTest2Controller.m */,
-				6D64FC7614DC4A2C0099CBC0 /* ScrollViewTestController.h */,
-				6D64FC7714DC4A2C0099CBC0 /* ScrollViewTestController.m */,
-				6D64FC7B14DC4A2C0099CBC0 /* StyledTextTableTestController.h */,
-				6D64FC7C14DC4A2C0099CBC0 /* StyledTextTableTestController.m */,
-				6D64FC7D14DC4A2C0099CBC0 /* StyledTextTestController.h */,
-				6D64FC7E14DC4A2C0099CBC0 /* StyledTextTestController.m */,
-				6D64FC7F14DC4A2C0099CBC0 /* StyleTestController.h */,
-				6D64FC8014DC4A2C0099CBC0 /* StyleTestController.m */,
-				6D64FC8114DC4A2C0099CBC0 /* TabBarTestController.h */,
-				6D64FC8214DC4A2C0099CBC0 /* TabBarTestController.m */,
-				6D64FC8314DC4A2C0099CBC0 /* TableControlsTestController.h */,
-				6D64FC8414DC4A2C0099CBC0 /* TableControlsTestController.m */,
-				6D64FC8514DC4A2C0099CBC0 /* TableDragRefreshController.h */,
-				6D64FC8614DC4A2C0099CBC0 /* TableDragRefreshController.m */,
-				6D64FC8814DC4A2C0099CBC0 /* TableImageTestController.h */,
-				6D64FC8914DC4A2C0099CBC0 /* TableImageTestController.m */,
-				6D64FC8A14DC4A2C0099CBC0 /* TableItemTestController.h */,
-				6D64FC8B14DC4A2C0099CBC0 /* TableItemTestController.m */,
-				6D64FC8C14DC4A2C0099CBC0 /* TableTestController.h */,
-				6D64FC8D14DC4A2C0099CBC0 /* TableTestController.m */,
-				6D64FC8E14DC4A2C0099CBC0 /* TableWithBannerController.h */,
-				6D64FC8F14DC4A2C0099CBC0 /* TableWithBannerController.m */,
-				6D64FC9014DC4A2C0099CBC0 /* TableWithShadowController.h */,
-				6D64FC9114DC4A2C0099CBC0 /* TableWithShadowController.m */,
+				6D046562158E46D9007EC8A7 /* Activity Test Controller */,
+				6D04655E158E4691007EC8A7 /* Buttons Controller */,
+				6D04655D158E4686007EC8A7 /* Download Progress Controller */,
+				6D046561158E46C6007EC8A7 /* Launcher View Controller */,
+				6D04655F158E46AD007EC8A7 /* Photos Controller */,
+				6D046560158E46B9007EC8A7 /* Scroll View Controller */,
+				6D046564158E4700007EC8A7 /* Styles Controllers */,
+				6D04655C158E4672007EC8A7 /* Tab Bar Controller */,
+				6D046563158E46E7007EC8A7 /* Table Controllers */,
 				6D64FC4714DC49EC0099CBC0 /* Supporting Files */,
 			);
 			path = TTCatalog;
@@ -252,25 +320,15 @@
 				6D64FC5E14DC4A2C0099CBC0 /* defaultPerson.png */,
 				6DCCDE4B15195328000659C7 /* Icon@2x.png */,
 				6DCCDE4C15195328000659C7 /* Icon.png */,
-				6D64FC6314DC4A2C0099CBC0 /* en.lproj */,
 				6D64FC6A14DC4A2C0099CBC0 /* mask.png */,
 				6D64FC7114DC4A2C0099CBC0 /* person.jpg */,
 				6D64FC7A14DC4A2C0099CBC0 /* smiley.png */,
 				6D64FC8714DC4A2C0099CBC0 /* tableIcon.png */,
 				6D64FC4814DC49EC0099CBC0 /* TTCatalog-Info.plist */,
-				6D64FC4914DC49EC0099CBC0 /* InfoPlist.strings */,
 				6D64FC4C14DC49EC0099CBC0 /* main.m */,
 				6D64FC4E14DC49EC0099CBC0 /* TTCatalog-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6D64FC6314DC4A2C0099CBC0 /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				6D64FC6414DC4A2C0099CBC0 /* InfoPlist.strings */,
-			);
-			path = en.lproj;
 			sourceTree = "<group>";
 		};
 		6D64FCB614DC4A4B0099CBC0 /* Products */ = {
@@ -374,10 +432,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D64FC4B14DC49EC0099CBC0 /* InfoPlist.strings in Resources */,
 				6D64FC9714DC4A2C0099CBC0 /* defaultMusic.png in Resources */,
 				6D64FC9814DC4A2C0099CBC0 /* defaultPerson.png in Resources */,
-				6D64FC9B14DC4A2C0099CBC0 /* InfoPlist.strings in Resources */,
 				6D64FC9E14DC4A2C0099CBC0 /* mask.png in Resources */,
 				6D64FCA214DC4A2C0099CBC0 /* person.jpg in Resources */,
 				6D64FCA714DC4A2C0099CBC0 /* smiley.png in Resources */,
@@ -432,25 +488,6 @@
 			targetProxy = 6D64FCC914DC4A660099CBC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		6D64FC4914DC49EC0099CBC0 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6D64FC4A14DC49EC0099CBC0 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6D64FC6414DC4A2C0099CBC0 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6D64FC6514DC4A2C0099CBC0 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6D64FC5214DC49EC0099CBC0 /* Debug */ = {
