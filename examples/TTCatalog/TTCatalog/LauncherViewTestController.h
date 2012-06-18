@@ -1,6 +1,6 @@
 #import <Three20Lite/Three20Lite.h>
 
-@interface LauncherViewTestController : TTViewController <TTLauncherViewDelegate> {
+@interface LauncherViewTestController : UIViewController <TTLauncherViewDelegate> {
   TTLauncherView* _launcherView;
 }
 

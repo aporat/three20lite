@@ -27,7 +27,7 @@
  *
  * @threadsafe
  */
-void TTNetworkRequestStarted();
+void TTNetworkRequestStarted(void);
 
 /**
  * Decrement the number of active network requests.
@@ -36,7 +36,7 @@ void TTNetworkRequestStarted();
  *
  * @threadsafe
  */
-void TTNetworkRequestStopped();
+void TTNetworkRequestStopped(void);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Images

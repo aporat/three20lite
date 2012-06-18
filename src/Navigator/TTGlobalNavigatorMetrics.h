@@ -20,44 +20,44 @@
 /**
  * @return the current orientation of the visible view controller.
  */
-UIInterfaceOrientation TTInterfaceOrientation();
+UIInterfaceOrientation TTInterfaceOrientation(void);
 
 /**
  * @return the bounds of the screen with device orientation factored in.
  */
-CGRect TTScreenBounds();
+CGRect TTScreenBounds(void);
 
 /**
  * @return the application frame below the navigation bar.
  */
-CGRect TTNavigationFrame();
+CGRect TTNavigationFrame(void);
 
 /**
  * @return the application frame below the navigation bar and above a toolbar.
  */
-CGRect TTToolbarNavigationFrame();
+CGRect TTToolbarNavigationFrame(void);
 
 /**
  * @return the application frame below the navigation bar and above the keyboard.
  */
-CGRect TTKeyboardNavigationFrame();
+CGRect TTKeyboardNavigationFrame(void);
 
 /**
  * @return the height of the area containing the status bar and possibly the in-call status bar.
  */
-CGFloat TTStatusHeight();
+CGFloat TTStatusHeight(void);
 
 /**
  * @return the height of the area containing the status bar and navigation bar.
  */
-CGFloat TTBarsHeight();
+CGFloat TTBarsHeight(void);
 
 /**
  * @return the height of a toolbar considering the current orientation.
  */
-CGFloat TTToolbarHeight();
+CGFloat TTToolbarHeight(void);
 
 /**
  * @return the height of the keyboard considering the current orientation.
  */
-CGFloat TTKeyboardHeight();
+CGFloat TTKeyboardHeight(void);

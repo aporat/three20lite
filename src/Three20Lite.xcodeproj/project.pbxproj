@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D0AFF21158EAA2F008C119A /* TTTableGroupedHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0AFF1F158EAA2F008C119A /* TTTableGroupedHeaderView.h */; };
+		6D0AFF22158EAA2F008C119A /* TTTableGroupedHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AFF20158EAA2F008C119A /* TTTableGroupedHeaderView.m */; };
 		6D0DB39114DC10C400CA0177 /* NSArrayAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB36A14DC10C400CA0177 /* NSArrayAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB39214DC10C400CA0177 /* NSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB36B14DC10C400CA0177 /* NSArrayAdditions.m */; };
 		6D0DB39314DC10C400CA0177 /* NSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB36C14DC10C400CA0177 /* NSDataAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -203,15 +205,12 @@
 		6D0DB53814DC13B600CA0177 /* UIFontAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB4BB14DC13B600CA0177 /* UIFontAdditions.m */; };
 		6D0DB53914DC13B600CA0177 /* UIImageAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB4BC14DC13B600CA0177 /* UIImageAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB53A14DC13B600CA0177 /* UIImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB4BD14DC13B600CA0177 /* UIImageAdditions.m */; };
-		6D0DB55114DC143900CA0177 /* TTBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54314DC143900CA0177 /* TTBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB55214DC143900CA0177 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB54414DC143900CA0177 /* TTBaseViewController.m */; };
 		6D0DB55314DC143900CA0177 /* TTGlobalUICommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54514DC143900CA0177 /* TTGlobalUICommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB55414DC143900CA0177 /* TTGlobalUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB54614DC143900CA0177 /* TTGlobalUICommon.m */; };
 		6D0DB55514DC143900CA0177 /* UIView+TTUICommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54714DC143900CA0177 /* UIView+TTUICommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB55614DC143900CA0177 /* UIView+TTUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB54814DC143900CA0177 /* UIView+TTUICommon.m */; };
 		6D0DB55714DC143900CA0177 /* UIViewControllerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54914DC143900CA0177 /* UIViewControllerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB55814DC143900CA0177 /* UIViewControllerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB54A14DC143900CA0177 /* UIViewControllerAdditions.m */; };
-		6D0DB55914DC143900CA0177 /* UIViewControllerGarbageCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54B14DC143900CA0177 /* UIViewControllerGarbageCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB55A14DC143900CA0177 /* UIWindowAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB54C14DC143900CA0177 /* UIWindowAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB55B14DC143900CA0177 /* UIWindowAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB54D14DC143900CA0177 /* UIWindowAdditions.m */; };
 		6D0DB66714DC149700CA0177 /* Three20UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB55D14DC148A00CA0177 /* Three20UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -261,17 +260,6 @@
 		6D0DB69314DC149700CA0177 /* TTLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB58914DC148B00CA0177 /* TTLink.m */; };
 		6D0DB69414DC149700CA0177 /* TTListDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB58A14DC148B00CA0177 /* TTListDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB69514DC149700CA0177 /* TTListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB58B14DC148B00CA0177 /* TTListDataSource.m */; };
-		6D0DB69614DC149700CA0177 /* TTMessageController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB58C14DC148B00CA0177 /* TTMessageController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB69714DC149700CA0177 /* TTMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB58D14DC148B00CA0177 /* TTMessageController.m */; };
-		6D0DB69814DC149700CA0177 /* TTMessageControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB58E14DC148C00CA0177 /* TTMessageControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB69914DC149700CA0177 /* TTMessageField.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB58F14DC148C00CA0177 /* TTMessageField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB69A14DC149700CA0177 /* TTMessageField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB59014DC148C00CA0177 /* TTMessageField.m */; };
-		6D0DB69B14DC149700CA0177 /* TTMessageRecipientField.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB59114DC148C00CA0177 /* TTMessageRecipientField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB69C14DC149700CA0177 /* TTMessageRecipientField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB59214DC148C00CA0177 /* TTMessageRecipientField.m */; };
-		6D0DB69D14DC149700CA0177 /* TTMessageSubjectField.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB59314DC148C00CA0177 /* TTMessageSubjectField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB69E14DC149700CA0177 /* TTMessageSubjectField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB59414DC148D00CA0177 /* TTMessageSubjectField.m */; };
-		6D0DB69F14DC149700CA0177 /* TTMessageTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB59514DC148D00CA0177 /* TTMessageTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB6A014DC149700CA0177 /* TTMessageTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB59614DC148D00CA0177 /* TTMessageTextField.m */; };
 		6D0DB6A114DC149700CA0177 /* TTModelViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB59714DC148D00CA0177 /* TTModelViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB6A214DC149700CA0177 /* TTModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB59814DC148D00CA0177 /* TTModelViewController.m */; };
 		6D0DB6A314DC149700CA0177 /* TTNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB59914DC148D00CA0177 /* TTNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -429,16 +417,6 @@
 		6D0DB73F14DC149700CA0177 /* TTTableViewVarHeightDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB63514DC149600CA0177 /* TTTableViewVarHeightDelegate.m */; };
 		6D0DB74014DC149700CA0177 /* TTTabStrip.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB63614DC149600CA0177 /* TTTabStrip.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB74114DC149700CA0177 /* TTTabStrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB63714DC149600CA0177 /* TTTabStrip.m */; };
-		6D0DB74214DC149700CA0177 /* TTTextBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB63814DC149600CA0177 /* TTTextBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB74314DC149700CA0177 /* TTTextBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB63914DC149600CA0177 /* TTTextBarController.m */; };
-		6D0DB74414DC149700CA0177 /* TTTextBarDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB63A14DC149600CA0177 /* TTTextBarDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB74514DC149700CA0177 /* TTTextEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB63B14DC149600CA0177 /* TTTextEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB74614DC149700CA0177 /* TTTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB63C14DC149600CA0177 /* TTTextEditor.m */; };
-		6D0DB74714DC149700CA0177 /* TTTextEditorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB63D14DC149600CA0177 /* TTTextEditorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB74814DC149700CA0177 /* TTTextEditorInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB63E14DC149600CA0177 /* TTTextEditorInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB74914DC149700CA0177 /* TTTextEditorInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB63F14DC149600CA0177 /* TTTextEditorInternal.m */; };
-		6D0DB74A14DC149700CA0177 /* TTTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB64014DC149600CA0177 /* TTTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB74B14DC149700CA0177 /* TTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB64114DC149600CA0177 /* TTTextView.m */; };
 		6D0DB74C14DC149700CA0177 /* TTThumbsDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB64214DC149600CA0177 /* TTThumbsDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB74D14DC149700CA0177 /* TTThumbsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB64314DC149600CA0177 /* TTThumbsDataSource.m */; };
 		6D0DB74E14DC149700CA0177 /* TTThumbsTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB64414DC149600CA0177 /* TTThumbsTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -453,8 +431,6 @@
 		6D0DB75714DC149700CA0177 /* TTUnclippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB64D14DC149600CA0177 /* TTUnclippedView.m */; };
 		6D0DB75814DC149700CA0177 /* TTView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB64E14DC149600CA0177 /* TTView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB75914DC149700CA0177 /* TTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB64F14DC149600CA0177 /* TTView.m */; };
-		6D0DB75A14DC149700CA0177 /* TTViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB65014DC149600CA0177 /* TTViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB75B14DC149700CA0177 /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB65114DC149600CA0177 /* TTViewController.m */; };
 		6D0DB75C14DC149700CA0177 /* TTWebController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB65214DC149600CA0177 /* TTWebController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB75D14DC149700CA0177 /* TTWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB65314DC149600CA0177 /* TTWebController.m */; };
 		6D0DB76014DC149700CA0177 /* UINavigationControllerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB65614DC149600CA0177 /* UINavigationControllerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -469,17 +445,20 @@
 		6D0DB76D14DC149700CA0177 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB66314DC149700CA0177 /* UIViewAdditions.m */; };
 		6D0DB76E14DC149700CA0177 /* UIWebViewAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB66414DC149700CA0177 /* UIWebViewAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB76F14DC149700CA0177 /* UIWebViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB66514DC149700CA0177 /* UIWebViewAdditions.m */; };
-		6D0DB79C14DC15AA00CA0177 /* Three20UINavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB77214DC15AA00CA0177 /* Three20UINavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DB79D14DC15AA00CA0177 /* Three20UINavigator+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB77314DC15AA00CA0177 /* Three20UINavigator+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB79E14DC15AA00CA0177 /* TTBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB77414DC15AA00CA0177 /* TTBaseNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB79F14DC15AA00CA0177 /* TTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB77514DC15AA00CA0177 /* TTBaseNavigationController.m */; };
 		6D0DB7A314DC15AA00CA0177 /* TTGlobalNavigatorMetrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB77914DC15AA00CA0177 /* TTGlobalNavigatorMetrics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB7A414DC15AA00CA0177 /* TTGlobalNavigatorMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB77A14DC15AA00CA0177 /* TTGlobalNavigatorMetrics.m */; };
+		6D25AEB41581834F0082491B /* TTTextEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D25AEB21581834F0082491B /* TTTextEditor.h */; };
+		6D25AEB51581834F0082491B /* TTTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D25AEB31581834F0082491B /* TTTextEditor.m */; };
+		6D25AEBB158183770082491B /* TTTextEditorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D25AEB6158183770082491B /* TTTextEditorDelegate.h */; };
+		6D25AEBC158183770082491B /* TTTextEditorInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D25AEB7158183770082491B /* TTTextEditorInternal.h */; };
+		6D25AEBD158183780082491B /* TTTextEditorInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D25AEB8158183770082491B /* TTTextEditorInternal.m */; };
+		6D25AEBE158183780082491B /* TTTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D25AEB9158183770082491B /* TTTextView.h */; };
+		6D25AEBF158183780082491B /* TTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D25AEBA158183770082491B /* TTTextView.m */; };
 		6D5067F014DC28E000663F09 /* Three20Lite.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D5067EE14DC28E000663F09 /* Three20Lite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D5067F114DC28E000663F09 /* Three20+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D5067EF14DC28E000663F09 /* Three20+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D5067F914DC2B6C00663F09 /* Three20_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 6D5067F814DC2B6C00663F09 /* Three20_Prefix.pch */; };
-		6D94641D154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D94641B154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.h */; };
-		6D94641E154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D94641C154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.m */; };
 		6DD6C272151EA3DA003FC0FB /* NSObject+SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C258151EA3DA003FC0FB /* NSObject+SBJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DD6C273151EA3DA003FC0FB /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6C259151EA3DA003FC0FB /* NSObject+SBJson.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6DD6C274151EA3DA003FC0FB /* SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD6C25A151EA3DA003FC0FB /* SBJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -519,6 +498,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D0AFF1F158EAA2F008C119A /* TTTableGroupedHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableGroupedHeaderView.h; path = UI/TTTableGroupedHeaderView.h; sourceTree = "<group>"; };
+		6D0AFF20158EAA2F008C119A /* TTTableGroupedHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableGroupedHeaderView.m; path = UI/TTTableGroupedHeaderView.m; sourceTree = "<group>"; };
 		6D0DB36A14DC10C400CA0177 /* NSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSArrayAdditions.h; path = Core/NSArrayAdditions.h; sourceTree = "<group>"; };
 		6D0DB36B14DC10C400CA0177 /* NSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSArrayAdditions.m; path = Core/NSArrayAdditions.m; sourceTree = "<group>"; };
 		6D0DB36C14DC10C400CA0177 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataAdditions.h; path = Core/NSDataAdditions.h; sourceTree = "<group>"; };
@@ -715,15 +696,12 @@
 		6D0DB4BB14DC13B600CA0177 /* UIFontAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIFontAdditions.m; path = Style/UIFontAdditions.m; sourceTree = "<group>"; };
 		6D0DB4BC14DC13B600CA0177 /* UIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageAdditions.h; path = Style/UIImageAdditions.h; sourceTree = "<group>"; };
 		6D0DB4BD14DC13B600CA0177 /* UIImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageAdditions.m; path = Style/UIImageAdditions.m; sourceTree = "<group>"; };
-		6D0DB54314DC143900CA0177 /* TTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTBaseViewController.h; path = UI/TTBaseViewController.h; sourceTree = "<group>"; };
-		6D0DB54414DC143900CA0177 /* TTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TTBaseViewController.m; path = UI/TTBaseViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB54514DC143900CA0177 /* TTGlobalUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTGlobalUICommon.h; path = UI/TTGlobalUICommon.h; sourceTree = "<group>"; };
 		6D0DB54614DC143900CA0177 /* TTGlobalUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TTGlobalUICommon.m; path = UI/TTGlobalUICommon.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB54714DC143900CA0177 /* UIView+TTUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+TTUICommon.h"; path = "UI/UIView+TTUICommon.h"; sourceTree = "<group>"; };
 		6D0DB54814DC143900CA0177 /* UIView+TTUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "UIView+TTUICommon.m"; path = "UI/UIView+TTUICommon.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB54914DC143900CA0177 /* UIViewControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewControllerAdditions.h; path = UI/UIViewControllerAdditions.h; sourceTree = "<group>"; };
 		6D0DB54A14DC143900CA0177 /* UIViewControllerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = UIViewControllerAdditions.m; path = UI/UIViewControllerAdditions.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6D0DB54B14DC143900CA0177 /* UIViewControllerGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewControllerGarbageCollection.h; path = UI/UIViewControllerGarbageCollection.h; sourceTree = "<group>"; };
 		6D0DB54C14DC143900CA0177 /* UIWindowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWindowAdditions.h; path = UI/UIWindowAdditions.h; sourceTree = "<group>"; };
 		6D0DB54D14DC143900CA0177 /* UIWindowAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = UIWindowAdditions.m; path = UI/UIWindowAdditions.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB55D14DC148A00CA0177 /* Three20UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Three20UI.h; path = UI/Three20UI.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -773,17 +751,6 @@
 		6D0DB58914DC148B00CA0177 /* TTLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TTLink.m; path = UI/TTLink.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB58A14DC148B00CA0177 /* TTListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTListDataSource.h; path = UI/TTListDataSource.h; sourceTree = "<group>"; };
 		6D0DB58B14DC148B00CA0177 /* TTListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTListDataSource.m; path = UI/TTListDataSource.m; sourceTree = "<group>"; };
-		6D0DB58C14DC148B00CA0177 /* TTMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTMessageController.h; path = UI/TTMessageController.h; sourceTree = "<group>"; };
-		6D0DB58D14DC148B00CA0177 /* TTMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TTMessageController.m; path = UI/TTMessageController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		6D0DB58E14DC148C00CA0177 /* TTMessageControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTMessageControllerDelegate.h; path = UI/TTMessageControllerDelegate.h; sourceTree = "<group>"; };
-		6D0DB58F14DC148C00CA0177 /* TTMessageField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTMessageField.h; path = UI/TTMessageField.h; sourceTree = "<group>"; };
-		6D0DB59014DC148C00CA0177 /* TTMessageField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTMessageField.m; path = UI/TTMessageField.m; sourceTree = "<group>"; };
-		6D0DB59114DC148C00CA0177 /* TTMessageRecipientField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTMessageRecipientField.h; path = UI/TTMessageRecipientField.h; sourceTree = "<group>"; };
-		6D0DB59214DC148C00CA0177 /* TTMessageRecipientField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTMessageRecipientField.m; path = UI/TTMessageRecipientField.m; sourceTree = "<group>"; };
-		6D0DB59314DC148C00CA0177 /* TTMessageSubjectField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTMessageSubjectField.h; path = UI/TTMessageSubjectField.h; sourceTree = "<group>"; };
-		6D0DB59414DC148D00CA0177 /* TTMessageSubjectField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTMessageSubjectField.m; path = UI/TTMessageSubjectField.m; sourceTree = "<group>"; };
-		6D0DB59514DC148D00CA0177 /* TTMessageTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTMessageTextField.h; path = UI/TTMessageTextField.h; sourceTree = "<group>"; };
-		6D0DB59614DC148D00CA0177 /* TTMessageTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTMessageTextField.m; path = UI/TTMessageTextField.m; sourceTree = "<group>"; };
 		6D0DB59714DC148D00CA0177 /* TTModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTModelViewController.h; path = UI/TTModelViewController.h; sourceTree = "<group>"; };
 		6D0DB59814DC148D00CA0177 /* TTModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TTModelViewController.m; path = UI/TTModelViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB59914DC148D00CA0177 /* TTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = TTNavigationController.h; path = UI/TTNavigationController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -941,16 +908,6 @@
 		6D0DB63514DC149600CA0177 /* TTTableViewVarHeightDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableViewVarHeightDelegate.m; path = UI/TTTableViewVarHeightDelegate.m; sourceTree = "<group>"; };
 		6D0DB63614DC149600CA0177 /* TTTabStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTabStrip.h; path = UI/TTTabStrip.h; sourceTree = "<group>"; };
 		6D0DB63714DC149600CA0177 /* TTTabStrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTabStrip.m; path = UI/TTTabStrip.m; sourceTree = "<group>"; };
-		6D0DB63814DC149600CA0177 /* TTTextBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTextBarController.h; path = UI/TTTextBarController.h; sourceTree = "<group>"; };
-		6D0DB63914DC149600CA0177 /* TTTextBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTextBarController.m; path = UI/TTTextBarController.m; sourceTree = "<group>"; };
-		6D0DB63A14DC149600CA0177 /* TTTextBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTextBarDelegate.h; path = UI/TTTextBarDelegate.h; sourceTree = "<group>"; };
-		6D0DB63B14DC149600CA0177 /* TTTextEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTextEditor.h; path = UI/TTTextEditor.h; sourceTree = "<group>"; };
-		6D0DB63C14DC149600CA0177 /* TTTextEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTextEditor.m; path = UI/TTTextEditor.m; sourceTree = "<group>"; };
-		6D0DB63D14DC149600CA0177 /* TTTextEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTextEditorDelegate.h; path = UI/TTTextEditorDelegate.h; sourceTree = "<group>"; };
-		6D0DB63E14DC149600CA0177 /* TTTextEditorInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTextEditorInternal.h; path = UI/TTTextEditorInternal.h; sourceTree = "<group>"; };
-		6D0DB63F14DC149600CA0177 /* TTTextEditorInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTextEditorInternal.m; path = UI/TTTextEditorInternal.m; sourceTree = "<group>"; };
-		6D0DB64014DC149600CA0177 /* TTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTextView.h; path = UI/TTTextView.h; sourceTree = "<group>"; };
-		6D0DB64114DC149600CA0177 /* TTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTextView.m; path = UI/TTTextView.m; sourceTree = "<group>"; };
 		6D0DB64214DC149600CA0177 /* TTThumbsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTThumbsDataSource.h; path = UI/TTThumbsDataSource.h; sourceTree = "<group>"; };
 		6D0DB64314DC149600CA0177 /* TTThumbsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTThumbsDataSource.m; path = UI/TTThumbsDataSource.m; sourceTree = "<group>"; };
 		6D0DB64414DC149600CA0177 /* TTThumbsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTThumbsTableViewCell.h; path = UI/TTThumbsTableViewCell.h; sourceTree = "<group>"; };
@@ -965,8 +922,6 @@
 		6D0DB64D14DC149600CA0177 /* TTUnclippedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTUnclippedView.m; path = UI/TTUnclippedView.m; sourceTree = "<group>"; };
 		6D0DB64E14DC149600CA0177 /* TTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTView.h; path = UI/TTView.h; sourceTree = "<group>"; };
 		6D0DB64F14DC149600CA0177 /* TTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTView.m; path = UI/TTView.m; sourceTree = "<group>"; };
-		6D0DB65014DC149600CA0177 /* TTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTViewController.h; path = UI/TTViewController.h; sourceTree = "<group>"; };
-		6D0DB65114DC149600CA0177 /* TTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTViewController.m; path = UI/TTViewController.m; sourceTree = "<group>"; };
 		6D0DB65214DC149600CA0177 /* TTWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTWebController.h; path = UI/TTWebController.h; sourceTree = "<group>"; };
 		6D0DB65314DC149600CA0177 /* TTWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTWebController.m; path = UI/TTWebController.m; sourceTree = "<group>"; };
 		6D0DB65614DC149600CA0177 /* UINavigationControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UINavigationControllerAdditions.h; path = UI/UINavigationControllerAdditions.h; sourceTree = "<group>"; };
@@ -981,17 +936,20 @@
 		6D0DB66314DC149700CA0177 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewAdditions.m; path = UI/UIViewAdditions.m; sourceTree = "<group>"; };
 		6D0DB66414DC149700CA0177 /* UIWebViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWebViewAdditions.h; path = UI/UIWebViewAdditions.h; sourceTree = "<group>"; };
 		6D0DB66514DC149700CA0177 /* UIWebViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWebViewAdditions.m; path = UI/UIWebViewAdditions.m; sourceTree = "<group>"; };
-		6D0DB77214DC15AA00CA0177 /* Three20UINavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Three20UINavigator.h; path = Navigator/Three20UINavigator.h; sourceTree = "<group>"; };
-		6D0DB77314DC15AA00CA0177 /* Three20UINavigator+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Three20UINavigator+Additions.h"; path = "Navigator/Three20UINavigator+Additions.h"; sourceTree = "<group>"; };
 		6D0DB77414DC15AA00CA0177 /* TTBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTBaseNavigationController.h; path = Navigator/TTBaseNavigationController.h; sourceTree = "<group>"; };
 		6D0DB77514DC15AA00CA0177 /* TTBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TTBaseNavigationController.m; path = Navigator/TTBaseNavigationController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6D0DB77914DC15AA00CA0177 /* TTGlobalNavigatorMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTGlobalNavigatorMetrics.h; path = Navigator/TTGlobalNavigatorMetrics.h; sourceTree = "<group>"; };
 		6D0DB77A14DC15AA00CA0177 /* TTGlobalNavigatorMetrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TTGlobalNavigatorMetrics.m; path = Navigator/TTGlobalNavigatorMetrics.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6D25AEB21581834F0082491B /* TTTextEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTextEditor.h; path = UI/TTTextEditor.h; sourceTree = "<group>"; };
+		6D25AEB31581834F0082491B /* TTTextEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTextEditor.m; path = UI/TTTextEditor.m; sourceTree = "<group>"; };
+		6D25AEB6158183770082491B /* TTTextEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTextEditorDelegate.h; path = UI/TTTextEditorDelegate.h; sourceTree = "<group>"; };
+		6D25AEB7158183770082491B /* TTTextEditorInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTextEditorInternal.h; path = UI/TTTextEditorInternal.h; sourceTree = "<group>"; };
+		6D25AEB8158183770082491B /* TTTextEditorInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTextEditorInternal.m; path = UI/TTTextEditorInternal.m; sourceTree = "<group>"; };
+		6D25AEB9158183770082491B /* TTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTextView.h; path = UI/TTTextView.h; sourceTree = "<group>"; };
+		6D25AEBA158183770082491B /* TTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTextView.m; path = UI/TTTextView.m; sourceTree = "<group>"; };
 		6D5067EE14DC28E000663F09 /* Three20Lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20Lite.h; sourceTree = "<group>"; };
 		6D5067EF14DC28E000663F09 /* Three20+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Three20+Additions.h"; sourceTree = "<group>"; };
 		6D5067F814DC2B6C00663F09 /* Three20_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20_Prefix.pch; sourceTree = "<group>"; };
-		6D94641B154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableGroupedHeaderView.h; path = UI/TTTableGroupedHeaderView.h; sourceTree = "<group>"; };
-		6D94641C154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableGroupedHeaderView.m; path = UI/TTTableGroupedHeaderView.m; sourceTree = "<group>"; };
 		6DD6C258151EA3DA003FC0FB /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "../Vendor/SBJSON/Classes/NSObject+SBJson.h"; sourceTree = "<group>"; };
 		6DD6C259151EA3DA003FC0FB /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "../Vendor/SBJSON/Classes/NSObject+SBJson.m"; sourceTree = "<group>"; };
 		6DD6C25A151EA3DA003FC0FB /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = ../Vendor/SBJSON/Classes/SBJson.h; sourceTree = "<group>"; };
@@ -1143,8 +1101,11 @@
 		6D0DB53F14DC142D00CA0177 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6D0AFF1F158EAA2F008C119A /* TTTableGroupedHeaderView.h */,
+				6D0AFF20158EAA2F008C119A /* TTTableGroupedHeaderView.m */,
 				6D0DB55D14DC148A00CA0177 /* Three20UI.h */,
 				6D0DB55E14DC148A00CA0177 /* Three20UI+Additions.h */,
+				6D0DB81D14DC196A00CA0177 /* Global Navigator */,
 				6DCA657814DC1EB400880863 /* Action Sheet */,
 				6DCA657B14DC1EDF00880863 /* Activity Label */,
 				6DCA657914DC1EC200880863 /* Alert View */,
@@ -1154,7 +1115,6 @@
 				6DCA657E14DC1F0A00880863 /* Label */,
 				6DCA657714DC1E1200880863 /* Launcher View */,
 				6DCA657F14DC1F1C00880863 /* Link */,
-				6DCA657614DC1DFB00880863 /* Message Controller */,
 				6D4283C114DC204F002FDD03 /* Model View Controller */,
 				6DCA658014DC1F2900880863 /* Navigator */,
 				6D4283C014DC2043002FDD03 /* Page Control */,
@@ -1170,22 +1130,10 @@
 				6D4283BF14DC2017002FDD03 /* Text Editor */,
 				6D4283BD14DC2005002FDD03 /* Thumbs Controller */,
 				6D4283C814DC20C8002FDD03 /* View */,
-				6D4283C514DC20A0002FDD03 /* View Controller */,
 				6D4283C614DC20AC002FDD03 /* Web Controller */,
 				6DCA657414DC1DB900880863 /* Additions */,
-				6DCA657514DC1DE000880863 /* Base Controller */,
 			);
 			name = UI;
-			sourceTree = "<group>";
-		};
-		6D0DB77014DC159800CA0177 /* Navigator */ = {
-			isa = PBXGroup;
-			children = (
-				6D0DB77214DC15AA00CA0177 /* Three20UINavigator.h */,
-				6D0DB77314DC15AA00CA0177 /* Three20UINavigator+Additions.h */,
-				6D0DB81D14DC196A00CA0177 /* Global Navigator */,
-			);
-			name = Navigator;
 			sourceTree = "<group>";
 		};
 		6D0DB81714DC187000CA0177 /* Global */ = {
@@ -1398,16 +1346,13 @@
 		6D4283BF14DC2017002FDD03 /* Text Editor */ = {
 			isa = PBXGroup;
 			children = (
-				6D0DB63814DC149600CA0177 /* TTTextBarController.h */,
-				6D0DB63914DC149600CA0177 /* TTTextBarController.m */,
-				6D0DB63A14DC149600CA0177 /* TTTextBarDelegate.h */,
-				6D0DB63B14DC149600CA0177 /* TTTextEditor.h */,
-				6D0DB63C14DC149600CA0177 /* TTTextEditor.m */,
-				6D0DB63D14DC149600CA0177 /* TTTextEditorDelegate.h */,
-				6D0DB63E14DC149600CA0177 /* TTTextEditorInternal.h */,
-				6D0DB63F14DC149600CA0177 /* TTTextEditorInternal.m */,
-				6D0DB64014DC149600CA0177 /* TTTextView.h */,
-				6D0DB64114DC149600CA0177 /* TTTextView.m */,
+				6D25AEB6158183770082491B /* TTTextEditorDelegate.h */,
+				6D25AEB7158183770082491B /* TTTextEditorInternal.h */,
+				6D25AEB8158183770082491B /* TTTextEditorInternal.m */,
+				6D25AEB9158183770082491B /* TTTextView.h */,
+				6D25AEBA158183770082491B /* TTTextView.m */,
+				6D25AEB21581834F0082491B /* TTTextEditor.h */,
+				6D25AEB31581834F0082491B /* TTTextEditor.m */,
 			);
 			name = "Text Editor";
 			sourceTree = "<group>";
@@ -1469,15 +1414,6 @@
 				6D0DB5B714DC148F00CA0177 /* TTScrollViewDelegate.h */,
 			);
 			name = "Scroll View";
-			sourceTree = "<group>";
-		};
-		6D4283C514DC20A0002FDD03 /* View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				6D0DB65014DC149600CA0177 /* TTViewController.h */,
-				6D0DB65114DC149600CA0177 /* TTViewController.m */,
-			);
-			name = "View Controller";
 			sourceTree = "<group>";
 		};
 		6D4283C614DC20AC002FDD03 /* Web Controller */ = {
@@ -1800,7 +1736,6 @@
 				6D0DB54814DC143900CA0177 /* UIView+TTUICommon.m */,
 				6D0DB54914DC143900CA0177 /* UIViewControllerAdditions.h */,
 				6D0DB54A14DC143900CA0177 /* UIViewControllerAdditions.m */,
-				6D0DB54B14DC143900CA0177 /* UIViewControllerGarbageCollection.h */,
 				6D0DB54C14DC143900CA0177 /* UIWindowAdditions.h */,
 				6D0DB54D14DC143900CA0177 /* UIWindowAdditions.m */,
 				6D0DB65614DC149600CA0177 /* UINavigationControllerAdditions.h */,
@@ -1817,33 +1752,6 @@
 				6D0DB66514DC149700CA0177 /* UIWebViewAdditions.m */,
 			);
 			name = Additions;
-			sourceTree = "<group>";
-		};
-		6DCA657514DC1DE000880863 /* Base Controller */ = {
-			isa = PBXGroup;
-			children = (
-				6D0DB54314DC143900CA0177 /* TTBaseViewController.h */,
-				6D0DB54414DC143900CA0177 /* TTBaseViewController.m */,
-			);
-			name = "Base Controller";
-			sourceTree = "<group>";
-		};
-		6DCA657614DC1DFB00880863 /* Message Controller */ = {
-			isa = PBXGroup;
-			children = (
-				6D0DB58C14DC148B00CA0177 /* TTMessageController.h */,
-				6D0DB58D14DC148B00CA0177 /* TTMessageController.m */,
-				6D0DB58E14DC148C00CA0177 /* TTMessageControllerDelegate.h */,
-				6D0DB58F14DC148C00CA0177 /* TTMessageField.h */,
-				6D0DB59014DC148C00CA0177 /* TTMessageField.m */,
-				6D0DB59114DC148C00CA0177 /* TTMessageRecipientField.h */,
-				6D0DB59214DC148C00CA0177 /* TTMessageRecipientField.m */,
-				6D0DB59314DC148C00CA0177 /* TTMessageSubjectField.h */,
-				6D0DB59414DC148D00CA0177 /* TTMessageSubjectField.m */,
-				6D0DB59514DC148D00CA0177 /* TTMessageTextField.h */,
-				6D0DB59614DC148D00CA0177 /* TTMessageTextField.m */,
-			);
-			name = "Message Controller";
 			sourceTree = "<group>";
 		};
 		6DCA657714DC1E1200880863 /* Launcher View */ = {
@@ -1964,14 +1872,11 @@
 		6E7F96F2118E361F00443B46 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6D94641B154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.h */,
-				6D94641C154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.m */,
 				6D5067EE14DC28E000663F09 /* Three20Lite.h */,
 				6D5067EF14DC28E000663F09 /* Three20+Additions.h */,
 				6D5067F814DC2B6C00663F09 /* Three20_Prefix.pch */,
 				6D0DB36914DC10B500CA0177 /* Core */,
 				6D0DB3BC14DC12ED00CA0177 /* Network */,
-				6D0DB77014DC159800CA0177 /* Navigator */,
 				6D0DB53F14DC142D00CA0177 /* UI */,
 				6D0DB44014DC13A300CA0177 /* Style */,
 				6D0DB40314DC132F00CA0177 /* Vendor */,
@@ -2092,11 +1997,9 @@
 				6D0DB53514DC13B600CA0177 /* UIColorAdditions.h in Headers */,
 				6D0DB53714DC13B600CA0177 /* UIFontAdditions.h in Headers */,
 				6D0DB53914DC13B600CA0177 /* UIImageAdditions.h in Headers */,
-				6D0DB55114DC143900CA0177 /* TTBaseViewController.h in Headers */,
 				6D0DB55314DC143900CA0177 /* TTGlobalUICommon.h in Headers */,
 				6D0DB55514DC143900CA0177 /* UIView+TTUICommon.h in Headers */,
 				6D0DB55714DC143900CA0177 /* UIViewControllerAdditions.h in Headers */,
-				6D0DB55914DC143900CA0177 /* UIViewControllerGarbageCollection.h in Headers */,
 				6D0DB55A14DC143900CA0177 /* UIWindowAdditions.h in Headers */,
 				6D0DB66714DC149700CA0177 /* Three20UI.h in Headers */,
 				6D0DB66814DC149700CA0177 /* Three20UI+Additions.h in Headers */,
@@ -2125,12 +2028,6 @@
 				6D0DB69114DC149700CA0177 /* TTLauncherViewDelegate.h in Headers */,
 				6D0DB69214DC149700CA0177 /* TTLink.h in Headers */,
 				6D0DB69414DC149700CA0177 /* TTListDataSource.h in Headers */,
-				6D0DB69614DC149700CA0177 /* TTMessageController.h in Headers */,
-				6D0DB69814DC149700CA0177 /* TTMessageControllerDelegate.h in Headers */,
-				6D0DB69914DC149700CA0177 /* TTMessageField.h in Headers */,
-				6D0DB69B14DC149700CA0177 /* TTMessageRecipientField.h in Headers */,
-				6D0DB69D14DC149700CA0177 /* TTMessageSubjectField.h in Headers */,
-				6D0DB69F14DC149700CA0177 /* TTMessageTextField.h in Headers */,
 				6D0DB6A114DC149700CA0177 /* TTModelViewController.h in Headers */,
 				6D0DB6A314DC149700CA0177 /* TTNavigationController.h in Headers */,
 				6D0DB6A914DC149700CA0177 /* TTPageControl.h in Headers */,
@@ -2214,12 +2111,6 @@
 				6D0DB73C14DC149700CA0177 /* TTTableViewPlainVarHeightDelegate.h in Headers */,
 				6D0DB73E14DC149700CA0177 /* TTTableViewVarHeightDelegate.h in Headers */,
 				6D0DB74014DC149700CA0177 /* TTTabStrip.h in Headers */,
-				6D0DB74214DC149700CA0177 /* TTTextBarController.h in Headers */,
-				6D0DB74414DC149700CA0177 /* TTTextBarDelegate.h in Headers */,
-				6D0DB74514DC149700CA0177 /* TTTextEditor.h in Headers */,
-				6D0DB74714DC149700CA0177 /* TTTextEditorDelegate.h in Headers */,
-				6D0DB74814DC149700CA0177 /* TTTextEditorInternal.h in Headers */,
-				6D0DB74A14DC149700CA0177 /* TTTextView.h in Headers */,
 				6D0DB74C14DC149700CA0177 /* TTThumbsDataSource.h in Headers */,
 				6D0DB74E14DC149700CA0177 /* TTThumbsTableViewCell.h in Headers */,
 				6D0DB75014DC149700CA0177 /* TTThumbsTableViewCellDelegate.h in Headers */,
@@ -2228,7 +2119,6 @@
 				6D0DB75414DC149700CA0177 /* TTThumbView.h in Headers */,
 				6D0DB75614DC149700CA0177 /* TTUnclippedView.h in Headers */,
 				6D0DB75814DC149700CA0177 /* TTView.h in Headers */,
-				6D0DB75A14DC149700CA0177 /* TTViewController.h in Headers */,
 				6D0DB75C14DC149700CA0177 /* TTWebController.h in Headers */,
 				6D0DB76014DC149700CA0177 /* UINavigationControllerAdditions.h in Headers */,
 				6D0DB76614DC149700CA0177 /* UITabBarControllerAdditions.h in Headers */,
@@ -2236,8 +2126,6 @@
 				6D0DB76A14DC149700CA0177 /* UIToolbarAdditions.h in Headers */,
 				6D0DB76C14DC149700CA0177 /* UIViewAdditions.h in Headers */,
 				6D0DB76E14DC149700CA0177 /* UIWebViewAdditions.h in Headers */,
-				6D0DB79C14DC15AA00CA0177 /* Three20UINavigator.h in Headers */,
-				6D0DB79D14DC15AA00CA0177 /* Three20UINavigator+Additions.h in Headers */,
 				6D0DB79E14DC15AA00CA0177 /* TTBaseNavigationController.h in Headers */,
 				6D0DB7A314DC15AA00CA0177 /* TTGlobalNavigatorMetrics.h in Headers */,
 				6D5067F014DC28E000663F09 /* Three20Lite.h in Headers */,
@@ -2256,7 +2144,11 @@
 				6DD6C285151EA3DA003FC0FB /* SBJsonTokeniser.h in Headers */,
 				6DD6C287151EA3DA003FC0FB /* SBJsonUTF8Stream.h in Headers */,
 				6DD6C289151EA3DA003FC0FB /* SBJsonWriter.h in Headers */,
-				6D94641D154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.h in Headers */,
+				6D25AEB41581834F0082491B /* TTTextEditor.h in Headers */,
+				6D25AEBB158183770082491B /* TTTextEditorDelegate.h in Headers */,
+				6D25AEBC158183770082491B /* TTTextEditorInternal.h in Headers */,
+				6D25AEBE158183780082491B /* TTTextView.h in Headers */,
+				6D0AFF21158EAA2F008C119A /* TTTableGroupedHeaderView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2479,7 +2371,6 @@
 				6D0DB53614DC13B600CA0177 /* UIColorAdditions.m in Sources */,
 				6D0DB53814DC13B600CA0177 /* UIFontAdditions.m in Sources */,
 				6D0DB53A14DC13B600CA0177 /* UIImageAdditions.m in Sources */,
-				6D0DB55214DC143900CA0177 /* TTBaseViewController.m in Sources */,
 				6D0DB55414DC143900CA0177 /* TTGlobalUICommon.m in Sources */,
 				6D0DB55614DC143900CA0177 /* UIView+TTUICommon.m in Sources */,
 				6D0DB55814DC143900CA0177 /* UIViewControllerAdditions.m in Sources */,
@@ -2504,11 +2395,6 @@
 				6D0DB69014DC149700CA0177 /* TTLauncherView.m in Sources */,
 				6D0DB69314DC149700CA0177 /* TTLink.m in Sources */,
 				6D0DB69514DC149700CA0177 /* TTListDataSource.m in Sources */,
-				6D0DB69714DC149700CA0177 /* TTMessageController.m in Sources */,
-				6D0DB69A14DC149700CA0177 /* TTMessageField.m in Sources */,
-				6D0DB69C14DC149700CA0177 /* TTMessageRecipientField.m in Sources */,
-				6D0DB69E14DC149700CA0177 /* TTMessageSubjectField.m in Sources */,
-				6D0DB6A014DC149700CA0177 /* TTMessageTextField.m in Sources */,
 				6D0DB6A214DC149700CA0177 /* TTModelViewController.m in Sources */,
 				6D0DB6A414DC149700CA0177 /* TTNavigationController.m in Sources */,
 				6D0DB6AA14DC149700CA0177 /* TTPageControl.m in Sources */,
@@ -2583,17 +2469,12 @@
 				6D0DB73D14DC149700CA0177 /* TTTableViewPlainVarHeightDelegate.m in Sources */,
 				6D0DB73F14DC149700CA0177 /* TTTableViewVarHeightDelegate.m in Sources */,
 				6D0DB74114DC149700CA0177 /* TTTabStrip.m in Sources */,
-				6D0DB74314DC149700CA0177 /* TTTextBarController.m in Sources */,
-				6D0DB74614DC149700CA0177 /* TTTextEditor.m in Sources */,
-				6D0DB74914DC149700CA0177 /* TTTextEditorInternal.m in Sources */,
-				6D0DB74B14DC149700CA0177 /* TTTextView.m in Sources */,
 				6D0DB74D14DC149700CA0177 /* TTThumbsDataSource.m in Sources */,
 				6D0DB74F14DC149700CA0177 /* TTThumbsTableViewCell.m in Sources */,
 				6D0DB75214DC149700CA0177 /* TTThumbsViewController.m in Sources */,
 				6D0DB75514DC149700CA0177 /* TTThumbView.m in Sources */,
 				6D0DB75714DC149700CA0177 /* TTUnclippedView.m in Sources */,
 				6D0DB75914DC149700CA0177 /* TTView.m in Sources */,
-				6D0DB75B14DC149700CA0177 /* TTViewController.m in Sources */,
 				6D0DB75D14DC149700CA0177 /* TTWebController.m in Sources */,
 				6D0DB76114DC149700CA0177 /* UINavigationControllerAdditions.m in Sources */,
 				6D0DB76714DC149700CA0177 /* UITabBarControllerAdditions.m in Sources */,
@@ -2615,7 +2496,10 @@
 				6DD6C286151EA3DA003FC0FB /* SBJsonTokeniser.m in Sources */,
 				6DD6C288151EA3DA003FC0FB /* SBJsonUTF8Stream.m in Sources */,
 				6DD6C28A151EA3DA003FC0FB /* SBJsonWriter.m in Sources */,
-				6D94641E154F7BDC00FFC5A0 /* TTTableGroupedHeaderView.m in Sources */,
+				6D25AEB51581834F0082491B /* TTTextEditor.m in Sources */,
+				6D25AEBD158183780082491B /* TTTextEditorInternal.m in Sources */,
+				6D25AEBF158183780082491B /* TTTextView.m in Sources */,
+				6D0AFF22158EAA2F008C119A /* TTTableGroupedHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2671,6 +2555,7 @@
 				GCC_PREFIX_HEADER = Three20_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -2711,6 +2596,7 @@
 				GCC_PREFIX_HEADER = Three20_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -2734,6 +2620,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Three20_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",

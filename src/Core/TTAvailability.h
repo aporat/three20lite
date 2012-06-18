@@ -83,5 +83,5 @@ BOOL TTDeviceOSVersionIsAtLeast(double versionNumber);
  *
  * The class is cached to avoid repeated lookups.
  */
-Class TTUIPopoverControllerClass();
+Class TTUIPopoverControllerClass(void);
 

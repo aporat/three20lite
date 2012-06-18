@@ -47,7 +47,7 @@ void TTSetDefaultBundle(NSBundle* bundle);
  *
  * @see TTSetDefaultBundle
  */
-NSBundle* TTGetDefaultBundle();
+NSBundle* TTGetDefaultBundle(void);
 
 /**
  * @return The main bundle path concatenated with the given relative path.

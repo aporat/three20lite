@@ -78,9 +78,9 @@ static const NSInteger kActivityLabelTag          = 96;
         target: nil
         action: nil] autorelease];
 
-    self.statusBarStyle = UIStatusBarStyleBlackTranslucent;
-    self.navigationBarStyle = UIBarStyleBlackTranslucent;
-    self.navigationBarTintColor = nil;
+  //  self.statusBarStyle = UIStatusBarStyleBlackTranslucent;
+   // self.navigationBarStyle = UIBarStyleBlackTranslucent;
+   // self.navigationBarTintColor = nil;
     self.wantsFullScreenLayout = YES;
     self.hidesBottomBarWhenPushed = YES;
 
@@ -209,7 +209,7 @@ static const NSInteger kActivityLabelTag          = 96;
                   _centerPhotoIndex+1, _photoSource.numOfPhotos];
   }
 
-  if (![self.ttPreviousViewController isKindOfClass:[TTThumbsViewController class]]) {
+  if (![self.presentedViewController isKindOfClass:[TTThumbsViewController class]]) {
     if (_photoSource.numOfPhotos > 1) {
       self.navigationItem.rightBarButtonItem =
       [[[UIBarButtonItem alloc] initWithTitle:TTLocalizedString(@"See All",
@@ -374,13 +374,10 @@ static const NSInteger kActivityLabelTag          = 96;
     _thumbsController.photoSource = _photoSource;
   }
 
-    if ([self.navigationController isKindOfClass:[TTNavigationController class]]) {
-      [(TTNavigationController*)self.navigationController
-           pushViewController: _thumbsController
-       animatedWithTransition: UIViewAnimationTransitionCurlDown];
-
-    } else {
-      [self.navigationController pushViewController:_thumbsController animated:YES];
+  if ([self.navigationController.viewControllers indexOfObject:_thumbsController]) {
+    [self.navigationController popViewControllerAnimated:YES];
+  } else {
+    [self.navigationController pushViewController:_thumbsController animated:YES];
   }
 }
 
@@ -515,11 +512,11 @@ static const NSInteger kActivityLabelTag          = 96;
   _toolbar = [[UIToolbar alloc] initWithFrame:
               CGRectMake(0, screenFrame.size.height - TT_ROW_HEIGHT,
                          screenFrame.size.width, TT_ROW_HEIGHT)];
-  if (self.navigationBarStyle == UIBarStyleDefault) {
-    _toolbar.tintColor = TTSTYLEVAR(toolbarTintColor);
-  }
+ // if (self.navigationBarStyle == UIBarStyleDefault) {
+  //  _toolbar.tintColor = TTSTYLEVAR(toolbarTintColor);
+ // }
 
-  _toolbar.barStyle = self.navigationBarStyle;
+//  _toolbar.barStyle = self.navigationBarStyle;
   _toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin;
   _toolbar.items = [NSArray arrayWithObjects:
                     space, _previousButton, space, _nextButton, space, nil];

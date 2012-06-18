@@ -23,8 +23,5 @@
 // Style Additions
 #import "Three20Style+Additions.h"
 
-// UINavigator
-#import "Three20UINavigator+Additions.h"
-
 // UI Additions
 #import "Three20UI+Additions.h"

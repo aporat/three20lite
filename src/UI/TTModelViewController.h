@@ -14,9 +14,6 @@
 // limitations under the License.
 //
 
-// UI
-#import "TTViewController.h"
-
 // Network
 #import "TTModelDelegate.h"
 
@@ -25,7 +22,13 @@
 /**
  * A view controller that manages a model in addition to a view.
  */
-@interface TTModelViewController : TTViewController <TTModelDelegate> {
+@interface TTModelViewController : UIViewController <TTModelDelegate> {
+@protected
+  NSDictionary*     _frozenState;
+  
+  BOOL _isViewAppearing;
+  BOOL _hasViewAppeared;
+  
   id<TTModel> _model;
   NSError*    _modelError;
 
@@ -208,5 +211,15 @@
  * Shows views to represent an error that occurred while loading the model.
  */
 - (void)showError:(BOOL)show;
+
+/**
+ * The view has appeared at least once and hasn't been removed due to a memory warning.
+ */
+@property (nonatomic, readonly) BOOL hasViewAppeared;
+
+/**
+ * The view is about to appear and has not appeared yet.
+ */
+@property (nonatomic, readonly) BOOL isViewAppearing;
 
 @end

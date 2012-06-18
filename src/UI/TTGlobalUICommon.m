@@ -44,7 +44,7 @@ const CGFloat ttkDefaultFlipTransitionDuration  = 0.7f;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-float TTOSVersion() {
+float TTOSVersion(void) {
   return [[[UIDevice currentDevice] systemVersion] floatValue];
 }
 
@@ -99,7 +99,7 @@ BOOL TTOSVersionIsAtLeast(float version) {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-BOOL TTIsKeyboardVisible() {
+BOOL TTIsKeyboardVisible(void) {
   // Operates on the assumption that the keyboard is visible if and only if there is a first
   // responder; i.e. a control responding to key events
   UIWindow* window = [UIApplication sharedApplication].keyWindow;
@@ -108,24 +108,24 @@ BOOL TTIsKeyboardVisible() {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-BOOL TTIsPhoneSupported() {
+BOOL TTIsPhoneSupported(void) {
   NSString* deviceType = [UIDevice currentDevice].model;
   return [deviceType isEqualToString:@"iPhone"];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-BOOL TTIsMultiTaskingSupported() {
+BOOL TTIsMultiTaskingSupported(void) {
   return [[UIDevice currentDevice] isMultitaskingSupported];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-BOOL TTIsPad() {
+BOOL TTIsPad(void) {
   return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-UIDeviceOrientation TTDeviceOrientation() {
+UIDeviceOrientation TTDeviceOrientation(void) {
   UIDeviceOrientation orient = [[UIDevice currentDevice] orientation];
   if (UIDeviceOrientationUnknown == orient) {
     return UIDeviceOrientationPortrait;
@@ -137,7 +137,7 @@ UIDeviceOrientation TTDeviceOrientation() {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-BOOL TTDeviceOrientationIsPortrait() {
+BOOL TTDeviceOrientationIsPortrait(void) {
   UIDeviceOrientation orient = TTDeviceOrientation();
 
   switch (orient) {
@@ -151,7 +151,7 @@ BOOL TTDeviceOrientationIsPortrait() {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-BOOL TTDeviceOrientationIsLandscape() {
+BOOL TTDeviceOrientationIsLandscape(void) {
   UIDeviceOrientation orient = TTDeviceOrientation();
 
   switch (orient) {
@@ -165,7 +165,7 @@ BOOL TTDeviceOrientationIsLandscape() {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-NSString* TTDeviceModelName() {
+NSString* TTDeviceModelName(void) {
   size_t size;
   sysctlbyname("hw.machine", NULL, &size, NULL, 0);
   char *machine = malloc(size);
@@ -228,7 +228,7 @@ CGAffineTransform TTRotateTransformForOrientation(UIInterfaceOrientation orienta
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-CGRect TTApplicationFrame() {
+CGRect TTApplicationFrame(void) {
   CGRect frame = [UIScreen mainScreen].applicationFrame;
   return CGRectMake(0, 0, frame.size.width, frame.size.height);
 }
@@ -259,7 +259,7 @@ CGFloat TTKeyboardHeightForOrientation(UIInterfaceOrientation orientation) {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-CGFloat TTGroupedTableCellInset() {
+CGFloat TTGroupedTableCellInset(void) {
   return TTIsPad() ? ttkGroupedPadTableCellInset : ttkGroupedTableCellInset;
 }
 

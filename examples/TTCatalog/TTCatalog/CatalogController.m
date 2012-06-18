@@ -9,8 +9,6 @@
 #import "TableWithBannerController.h"
 #import "TableWithShadowController.h"
 #import "TableDragRefreshController.h"
-#import "SearchTestController.h"
-#import "MessageTestController.h"
 #import "ActivityTestController.h"
 #import "ScrollViewTestController.h"
 #import "LauncherViewTestController.h"
@@ -54,7 +52,6 @@
     @"Controls",
     [TTTableTextItem itemWithText:@"Buttons" accessory:UITableViewCellAccessoryDisclosureIndicator],
     [TTTableTextItem itemWithText:@"Tabs" accessory:UITableViewCellAccessoryDisclosureIndicator],
-    [TTTableTextItem itemWithText:@"Composers" accessory:UITableViewCellAccessoryDisclosureIndicator],
 
     @"Tables",
     [TTTableTextItem itemWithText:@"Table Items" accessory:UITableViewCellAccessoryDisclosureIndicator],
@@ -66,7 +63,6 @@
     [TTTableTextItem itemWithText:@"Table With Drag Refresh" accessory:UITableViewCellAccessoryDisclosureIndicator],
 
     @"Models",
-    [TTTableTextItem itemWithText:@"Model Search" accessory:UITableViewCellAccessoryDisclosureIndicator],
     [TTTableTextItem itemWithText:@"Model States" accessory:UITableViewCellAccessoryDisclosureIndicator],
 
     @"General",
@@ -82,7 +78,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)didSelectObject:(id)object atIndexPath:(NSIndexPath *)indexPath {
 
-  TTViewController* vc;
+  UIViewController* vc;
   if (indexPath.section==0) {
     if (indexPath.row==0) {
       vc = [[[PhotoTest1Controller alloc] initWithNibName:nil bundle:nil] autorelease];
@@ -100,8 +96,6 @@
       vc = [[[ButtonTestController alloc] initWithNibName:nil bundle:nil] autorelease];
     } else if (indexPath.row==1) {
       vc = [[[TabBarTestController alloc] initWithNibName:nil bundle:nil] autorelease];
-    } else {
-      vc = [[[MessageTestController alloc] initWithNibName:nil bundle:nil] autorelease];      
     }
   } else if (indexPath.section==3) {
     if (indexPath.row==0) {
@@ -120,9 +114,7 @@
       vc = [[[TableDragRefreshController alloc] initWithNibName:nil bundle:nil] autorelease];      
     }
   } else if (indexPath.section==4) {
-    if (indexPath.row==0) {
-      vc = [[[SearchTestController alloc] initWithNibName:nil bundle:nil] autorelease];
-    } else if (indexPath.row==1) {
+    if (indexPath.row==1) {
       vc = [[[TableTestController alloc] initWithNibName:nil bundle:nil] autorelease];
     } 
   } else if (indexPath.section==5) {

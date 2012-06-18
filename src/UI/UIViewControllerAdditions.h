@@ -54,13 +54,6 @@
 - (UIViewController*)topSubcontroller;
 
 /**
- * The view controller that comes before this one in a navigation controller's history.
- *
- * This is an App Store-compatible version of previousViewController.
- */
-- (UIViewController*)ttPreviousViewController;
-
-/**
  * The view controller that comes after this one in a navigation controller's history.
  */
 - (UIViewController*)nextViewController;
@@ -118,11 +111,6 @@
 - (void)restoreView:(NSDictionary*)state;
 
 /**
- * XXXjoe Not documenting this in the hopes that I can eliminate it ;)
- */
-- (void)persistNavigationPath:(NSMutableArray*)path;
-
-/**
  * Finishes initializing the controller after a TTNavigator-coordinated delay.
  *
  * If the controller was created in between calls to TTNavigator beginDelay and endDelay, then
@@ -144,13 +132,5 @@
  * Shortcut for its animated-optional cousin.
  */
 - (void)dismissModalViewController;
-
-/**
- * Forcefully initiates garbage collection. You may call this in your didReceiveMemoryWarning
- * message if you are worried about garbage collection memory consumption.
- *
- * See Articles/UI/GarbageCollection.mdown for a more detailed discussion.
- */
-+ (void)doCommonGarbageCollection;
 
 @end

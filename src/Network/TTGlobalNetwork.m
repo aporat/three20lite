@@ -27,7 +27,7 @@ static pthread_mutex_t  gMutex = PTHREAD_MUTEX_INITIALIZER;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-void TTNetworkRequestStarted() {
+void TTNetworkRequestStarted(void) {
   pthread_mutex_lock(&gMutex);
 
   if (0 == gNetworkTaskCount) {
@@ -40,7 +40,7 @@ void TTNetworkRequestStarted() {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-void TTNetworkRequestStopped() {
+void TTNetworkRequestStopped(void) {
   pthread_mutex_lock(&gMutex);
 
   --gNetworkTaskCount;
