@@ -374,13 +374,10 @@ static const NSInteger kActivityLabelTag          = 96;
     _thumbsController.photoSource = _photoSource;
   }
 
-    if ([self.navigationController isKindOfClass:[TTNavigationController class]]) {
-      [(TTNavigationController*)self.navigationController
-           pushViewController: _thumbsController
-       animatedWithTransition: UIViewAnimationTransitionCurlDown];
-
-    } else {
-      [self.navigationController pushViewController:_thumbsController animated:YES];
+  if ([self.navigationController.viewControllers indexOfObject:_thumbsController]) {
+    [self.navigationController popViewControllerAnimated:YES];
+  } else {
+    [self.navigationController pushViewController:_thumbsController animated:YES];
   }
 }
 
