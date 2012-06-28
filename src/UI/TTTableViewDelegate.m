@@ -209,7 +209,7 @@ static const NSUInteger kFirstTableSection = 0;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-  [TTURLRequestQueue mainQueue].suspended = YES;
+  [TTURLRequestQueue mainQueue].suspended = NO;
 
   [_controller didBeginDragging];
 

@@ -136,7 +136,10 @@ static const NSInteger kLoadMaxRetries = 2;
   
   NSURLRequest* URLRequest = [_queue createNSURLRequest:request URL:URL];
 
-  _connection = [[NSURLConnection alloc] initWithRequest:URLRequest delegate:self];
+  // To allow requests while scrolling we must schedule the conenction in other run loop
+  _connection = [[NSURLConnection alloc] initWithRequest:URLRequest delegate:self startImmediately:NO];
+  [_connection scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+  [_connection start];
 }
 
 

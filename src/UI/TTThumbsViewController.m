@@ -39,6 +39,7 @@
 #import "TTGlobalCoreLocale.h"
 #import "TTGlobalCoreRects.h"
 #import "TTCorePreprocessorMacros.h"
+#import "TTURLRequestQueue.h"
 
 static CGFloat kThumbnailRowHeight = 150.0f;
 
@@ -66,6 +67,10 @@ static CGFloat kThumbnailRowHeight = 150.0f;
   return self;
 }
 
+- (void)didBeginDragging {
+    [super didBeginDragging];
+    [TTURLRequestQueue mainQueue].suspended = NO;
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithDelegate:(id<TTThumbsViewControllerDelegate>)delegate {
