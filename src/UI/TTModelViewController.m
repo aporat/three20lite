@@ -66,6 +66,31 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+- (TTTableViewController*)searchViewController {
+  return _searchController.searchResultsViewController;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setSearchViewController:(TTTableViewController*)searchViewController {
+  if (searchViewController) {
+    if (nil == _searchController) {
+      UISearchBar* searchBar = [[[UISearchBar alloc] init] autorelease];
+      [searchBar sizeToFit];
+      
+      _searchController = [[TTSearchDisplayController alloc] initWithSearchBar:searchBar
+                                                            contentsController:self];
+    }
+    
+    _searchController.searchResultsViewController = searchViewController;
+    
+  } else {
+    _searchController.searchResultsViewController = nil;
+    TT_RELEASE_SAFELY(_searchController);
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)dealloc {
   [_model.delegates removeObject:self];
   TT_RELEASE_SAFELY(_model);
