@@ -14,8 +14,12 @@
 // limitations under the License.
 //
 
+@class TTTableViewController;
+
 // Network
 #import "TTModelDelegate.h"
+
+#import "TTSearchDisplayController.h"
 
 @protocol TTModel;
 
@@ -24,6 +28,7 @@
  */
 @interface TTModelViewController : UIViewController <TTModelDelegate> {
 @protected
+  TTSearchDisplayController* _searchController;
   NSDictionary*     _frozenState;
   
   BOOL _isViewAppearing;
@@ -54,6 +59,9 @@
  * An error that occurred while trying to load content.
  */
 @property (nonatomic, retain) NSError* modelError;
+
+@property (nonatomic, retain) TTTableViewController* searchViewController;
+
 
 /**
  * Creates the model that the controller manages.
