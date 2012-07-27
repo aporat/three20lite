@@ -196,23 +196,14 @@ static const CGFloat kFrameDuration = 1.0/40.0f;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (CGFloat)pageWidth {
-  if (UIInterfaceOrientationIsLandscape(_orientation)) {
-    return self.height;
-
-  } else {
     return self.width;
-  }
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (CGFloat)pageHeight {
-  if (UIInterfaceOrientationIsLandscape(_orientation)) {
-    return self.width;
 
-  } else {
     return self.height;
-  }
 }
 
 
