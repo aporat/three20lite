@@ -17,8 +17,7 @@
 - (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nil bundle:nil];
   if ( self ){
-    _colors = [[NSArray arrayWithObjects:
-                [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1],
+    _colors = [@[[UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1],
                 [UIColor blueColor],
                 [UIColor redColor],
                 [UIColor yellowColor],
@@ -27,9 +26,7 @@
                 [UIColor purpleColor],
                 [UIColor brownColor],
                 [UIColor magentaColor],
-                [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1],
-                nil
-                ] retain];
+                [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1]] retain];
   }
   return self;
 }

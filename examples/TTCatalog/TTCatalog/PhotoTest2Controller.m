@@ -10,8 +10,7 @@
     // initWithType:MockPhotoSourceLoadError
     // initWithType:MockPhotoSourceDelayed|MockPhotoSourceLoadError
     title:@"Flickr Photos"
-    photos:[NSArray arrayWithObjects:
-    [[[MockPhoto alloc]
+    photos:@[[[[MockPhoto alloc]
       initWithURL:@"http://farm4.static.flickr.com/3246/2957580101_33c799fc09_o.jpg"
       smallURL:@"http://farm4.static.flickr.com/3246/2957580101_d63ef56b15_t.jpg"
       size:CGSizeMake(960, 1280)] autorelease],
@@ -261,10 +260,7 @@
     [[[MockPhoto alloc]
       initWithURL:@"http://farm4.static.flickr.com/3118/3122869991_c15255d889.jpg"
       smallURL:@"http://farm4.static.flickr.com/3118/3122869991_c15255d889_t.jpg"
-      size:CGSizeMake(500, 406)] autorelease],
-
-    nil
-  ]
+      size:CGSizeMake(500, 406)] autorelease]]
 
   photos2:nil
 //  photos2:[[NSArray alloc] initWithObjects:

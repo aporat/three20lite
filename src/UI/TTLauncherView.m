@@ -657,7 +657,7 @@ static const NSInteger kDefaultColumnCount = 3;
     if (!_springLoadTimer) {
     _springLoadTimer = [NSTimer scheduledTimerWithTimeInterval:kSpringLoadTimeInterval
                                 target:self selector:@selector(springLoadTimer:)
-                                userInfo:[NSNumber numberWithBool:goToPreviousPage] repeats:NO];
+                                userInfo:@(goToPreviousPage) repeats:NO];
     }
 
   } else {

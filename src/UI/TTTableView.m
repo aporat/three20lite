@@ -222,10 +222,8 @@ static const CGFloat kCancelHighlightThreshold = 4.0f;
   CGColorRef lightColor = [self.backgroundColor
                            colorWithAlphaComponent:0.0].CGColor;
 
-  newShadow.colors = [NSArray arrayWithObjects:
-            (id)(inverse ? lightColor : darkColor),
-            (id)(inverse ? darkColor : lightColor),
-            nil];
+  newShadow.colors = @[(id)(inverse ? lightColor : darkColor),
+            (id)(inverse ? darkColor : lightColor)];
   return newShadow;
 }
 

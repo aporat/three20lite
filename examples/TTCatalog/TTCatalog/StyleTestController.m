@@ -18,9 +18,7 @@
   UIColor* blue = RGBCOLOR(191, 197, 208);
   UIColor* darkBlue = RGBCOLOR(109, 132, 162);
 
-  NSArray* styles = [NSArray arrayWithObjects:
-    // Rectangle
-    [TTSolidFillStyle styleWithColor:[UIColor whiteColor] next:
+  NSArray* styles = @[[TTSolidFillStyle styleWithColor:[UIColor whiteColor] next:
     [TTSolidBorderStyle styleWithColor:black width:1 next:nil]],
 
     // Rounded rectangle
@@ -153,9 +151,7 @@
     // simple bottom only border
     [TTShapeStyle styleWithShape:[TTRectangleShape shape] next:
     [TTSolidFillStyle styleWithColor:RGBCOLOR(255, 255, 255) next:
-    [TTFourBorderStyle styleWithTop:nil right:nil bottom:black left:nil width:5 next:nil]]],
-
-    nil];
+    [TTFourBorderStyle styleWithTop:nil right:nil bottom:black left:nil width:5 next:nil]]]];
 
   CGFloat padding = 10.0f;
   CGFloat viewWidth = scrollView.width/2 - padding*2;

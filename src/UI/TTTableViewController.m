@@ -323,7 +323,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)persistView:(NSMutableDictionary*)state {
   CGFloat scrollY = _tableView.contentOffset.y;
-  [state setObject:[NSNumber numberWithFloat:scrollY] forKey:@"scrollOffsetY"];
+  [state setObject:@(scrollY) forKey:@"scrollOffsetY"];
   return [super persistView:state];
 }
 
@@ -521,7 +521,7 @@
 
           } else if (newIndexPath.length == 2) {
             TTDCONDITIONLOG(TTDFLAG_TABLEVIEWMODIFICATIONS, @"UPDATING ROW AT %@", newIndexPath);
-            [_tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
+            [_tableView reloadRowsAtIndexPaths:@[newIndexPath]
                               withRowAnimation:UITableViewRowAnimationTop];
           }
           [self invalidateView];
@@ -555,7 +555,7 @@
 
           } else if (newIndexPath.length == 2) {
             TTDCONDITIONLOG(TTDFLAG_TABLEVIEWMODIFICATIONS, @"INSERTING ROW AT %@", newIndexPath);
-            [_tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
+            [_tableView insertRowsAtIndexPaths:@[newIndexPath]
                               withRowAnimation:UITableViewRowAnimationTop];
           }
           [self invalidateView];
@@ -589,7 +589,7 @@
 
           } else if (newIndexPath.length == 2) {
             TTDCONDITIONLOG(TTDFLAG_TABLEVIEWMODIFICATIONS, @"DELETING ROW AT %@", newIndexPath);
-            [_tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
+            [_tableView deleteRowsAtIndexPaths:@[newIndexPath]
                               withRowAnimation:UITableViewRowAnimationLeft];
           }
           [self invalidateView];

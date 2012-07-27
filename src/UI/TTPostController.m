@@ -323,7 +323,7 @@ static const CGFloat kMarginY = 6.0f;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)persistView:(NSMutableDictionary*)state {
-  [state setObject:[NSNumber numberWithBool:YES] forKey:@"__important__"];
+  [state setObject:@(YES) forKey:@"__important__"];
 
 
   [state setObject:self.textView.text forKey:@"text"];

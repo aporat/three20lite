@@ -31,9 +31,7 @@
   _launcherView.persistenceMode = TTLauncherPersistenceModeAll;
   
   if (![_launcherView restoreLauncherItems]) {
-    _launcherView.pages = [NSArray arrayWithObjects:
-      [NSArray arrayWithObjects:
-        [[[TTLauncherItem alloc] initWithTitle:@"Button 1"
+    _launcherView.pages = @[@[[[[TTLauncherItem alloc] initWithTitle:@"Button 1"
                                image:@"bundle://Icon.png"
                                URL:nil canDelete:YES] autorelease],
         [[[TTLauncherItem alloc] initWithTitle:@"Button 2"
@@ -53,18 +51,13 @@
                                URL:@"fb://item6" canDelete:YES] autorelease],
         [[[TTLauncherItem alloc] initWithTitle:@"Button 7"
                                image:@"bundle://Icon.png"
-                               URL:@"fb://item7" canDelete:YES] autorelease],
-        nil],
-      [NSArray arrayWithObjects:
-        [[[TTLauncherItem alloc] initWithTitle:@"Button 8"
+                               URL:@"fb://item7" canDelete:YES] autorelease]],
+      @[[[[TTLauncherItem alloc] initWithTitle:@"Button 8"
                                image:@"bundle://Icon.png"
                                URL:nil canDelete:YES] autorelease],
         [[[TTLauncherItem alloc] initWithTitle:@"Button 9"
                                image:@"bundle://Icon.png"
-                               URL:nil canDelete:YES] autorelease],
-        nil],
-        nil
-      ];
+                               URL:nil canDelete:YES] autorelease]]];
   }
   [self.view addSubview:_launcherView];
 

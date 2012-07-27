@@ -1680,14 +1680,14 @@ static const CGFloat kFrameDuration = 1.0/40.0f;
 
   UIView* centerPage = self.centerPage;
   if (centerPage) {
-    [visiblePages setObject:self.centerPage forKey:[NSNumber numberWithInt:_centerPageIndex]];
+    [visiblePages setObject:self.centerPage forKey:@(_centerPageIndex)];
   }
 
   NSInteger minPageIndex = _centerPageIndex - kOffscreenPages;
   for (NSInteger i = _centerPageIndex - 1; i >= 0 && i >= minPageIndex; --i) {
     UIView* page = [self pageAtIndex:i create:YES];
     if (page) {
-      [visiblePages setObject:page forKey:[NSNumber numberWithInt:i]];
+      [visiblePages setObject:page forKey:@(i)];
     }
   }
 
@@ -1696,7 +1696,7 @@ static const CGFloat kFrameDuration = 1.0/40.0f;
   for (NSInteger i = _centerPageIndex + 1; i < pageCount && i <= maxPageIndex; ++i) {
     UIView* page = [self pageAtIndex:i create:YES];
     if (page) {
-      [visiblePages setObject:page forKey:[NSNumber numberWithInt:i]];
+      [visiblePages setObject:page forKey:@(i)];
     }
   }
 

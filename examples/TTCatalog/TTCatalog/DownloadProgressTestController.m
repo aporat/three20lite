@@ -66,11 +66,9 @@ static NSString* const k10MBDownloadTitle = @"Download 10MB File";
   [_activityLabel setText: @"View Loaded"];
   [self.view addSubview: _activityLabel];
   
-  NSArray *buttons = [NSArray arrayWithObjects: 
-                      [TTButton buttonWithStyle:@"toolbarRoundButton:" title:k1MBDownloadTitle],
+  NSArray *buttons = @[[TTButton buttonWithStyle:@"toolbarRoundButton:" title:k1MBDownloadTitle],
                       [TTButton buttonWithStyle:@"toolbarRoundButton:" title:k5MBDownloadTitle],
-                      [TTButton buttonWithStyle:@"toolbarRoundButton:" title:k10MBDownloadTitle],
-                      nil];
+                      [TTButton buttonWithStyle:@"toolbarRoundButton:" title:k10MBDownloadTitle]];
   for (TTButton* button in buttons) {
     [button setFont: [UIFont systemFontOfSize: 16.0f]];
     [button sizeToFit];
