@@ -157,8 +157,7 @@
     TTButton* remoteAvatarButton = [TTButton buttonWithStyle:@"remoteAvatarButton:"];
     [remoteAvatarButton setImage:@"url" forState:UIControlStateNormal];
 
-  NSArray* buttons = [NSArray arrayWithObjects:
-    [TTButton buttonWithStyle:@"toolbarButton:" title:@"Toolbar Button"],
+  NSArray* buttons = @[[TTButton buttonWithStyle:@"toolbarButton:" title:@"Toolbar Button"],
     [TTButton buttonWithStyle:@"toolbarRoundButton:" title:@"Round Button"],
     [TTButton buttonWithStyle:@"toolbarBackButton:" title:@"Back Button"],
     [TTButton buttonWithStyle:@"toolbarForwardButton:" title:@"Forward Button"],
@@ -167,8 +166,7 @@
     [TTButton buttonWithStyle:@"blueToolbarButton:" title:@"Blue Button"],
     [TTButton buttonWithStyle:@"embossedButton:" title:@"Embossed Button"],
     [TTButton buttonWithStyle:@"dropButton:" title:@"Shadow Button"],
-    remoteAvatarButton,
-    nil];
+    remoteAvatarButton];
 
   for (TTButton* button in buttons) {
     button.font = [UIFont boldSystemFontOfSize:_fontSize];

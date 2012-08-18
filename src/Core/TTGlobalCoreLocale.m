@@ -68,7 +68,7 @@ NSString* TTDescriptionForError(NSError* error) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 NSString* TTFormatInteger(NSInteger num) {
-  NSNumber* number = [NSNumber numberWithInt:num];
+  NSNumber* number = @(num);
   NSNumberFormatter* formatter = [[NSNumberFormatter alloc] init];
   [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
   NSString* formatted = [formatter stringFromNumber:number];

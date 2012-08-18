@@ -10,26 +10,7 @@
     // initWithType:MockPhotoSourceLoadError
     // initWithType:MockPhotoSourceDelayed|MockPhotoSourceLoadError
     title:@"Flickr Photos"
-    photos:[NSArray arrayWithObjects:
-    // Request fails immediately due to DNS error
-//    [[[MockPhoto alloc]
-//      initWithURL:@"http://example.com"
-//      smallURL:@"http://example.com"
-//      size:CGSizeMake(320, 480)] autorelease],
-
-    // 404 on both URL and thumbnail
-//    [[[MockPhoto alloc]
-//      initWithURL:@"http://farm4.static.flickr.com/3425/3214x620333_daf56d25e5.jpg?v=0"
-//      smallURL:@"http://farm4.static.flickr.com/3425/3214620333_daf56d25e5_t.jpg"
-//      size:CGSizeMake(320, 480)] autorelease],
-
-    // Returns HTML instead of image
-//    [[[MockPhoto alloc]
-//      initWithURL:@"http://flickr.com"
-//      smallURL:@"http://farm4.static.flickr.com/3444/3223645618_f5e2fa7fea_t.jpg"
-//      size:CGSizeMake(320, 480)] autorelease],    
-
-    [[[MockPhoto alloc]
+    photos:@[[[[MockPhoto alloc]
       initWithURL:@"http://farm4.static.flickr.com/3099/3164979221_6c0e583f7d.jpg?v=0"
       smallURL:@"http://farm4.static.flickr.com/3099/3164979221_6c0e583f7d_t.jpg"
       size:CGSizeMake(320, 480)] autorelease],
@@ -96,9 +77,7 @@ just from typing this! Are we truncated yet? Just a few more characters I guess.
     [[[MockPhoto alloc]
       initWithURL:@"http://farm3.static.flickr.com/2300/2179038972_65f1e5f8c4.jpg"
       smallURL:@"http://farm3.static.flickr.com/2300/2179038972_65f1e5f8c4_t.jpg"
-      size:CGSizeMake(391, 500)] autorelease],
-
-    nil]
+      size:CGSizeMake(391, 500)] autorelease]]
 
     photos2:nil
   ] autorelease];

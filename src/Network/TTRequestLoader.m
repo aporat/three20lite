@@ -136,7 +136,10 @@ static const NSInteger kLoadMaxRetries = 2;
   
   NSURLRequest* URLRequest = [_queue createNSURLRequest:request URL:URL];
 
-  _connection = [[NSURLConnection alloc] initWithRequest:URLRequest delegate:self];
+  // To allow requests while scrolling we must schedule the conenction in other run loop
+  _connection = [[NSURLConnection alloc] initWithRequest:URLRequest delegate:self startImmediately:NO];
+  [_connection scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+  [_connection start];
 }
 
 
@@ -268,7 +271,7 @@ static const NSInteger kLoadMaxRetries = 2;
       // request:processErrorResponse:data: does not return one.
       if (!error) {
         TTDCONDITIONLOG(TTDFLAG_URLREQUEST, @"  FAILED LOADING (%d) %@", _response.statusCode, _urlPath);
-        NSDictionary* userInfo = [NSDictionary dictionaryWithObject:data forKey:kTTErrorResponseDataKey];
+        NSDictionary* userInfo = @{kTTErrorResponseDataKey: data};
         error = [NSError errorWithDomain:NSURLErrorDomain code:_response.statusCode userInfo:userInfo];
       }
     }

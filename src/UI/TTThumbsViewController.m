@@ -39,6 +39,7 @@
 #import "TTGlobalCoreLocale.h"
 #import "TTGlobalCoreRects.h"
 #import "TTCorePreprocessorMacros.h"
+#import "TTURLRequestQueue.h"
 
 static CGFloat kThumbnailRowHeight = 150.0f;
 
@@ -56,9 +57,6 @@ static CGFloat kThumbnailRowHeight = 150.0f;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
-//    self.statusBarStyle = UIStatusBarStyleBlackTranslucent;
- //   self.navigationBarStyle = UIBarStyleBlackTranslucent;
- //   self.navigationBarTintColor = nil;
     self.wantsFullScreenLayout = YES;
     self.hidesBottomBarWhenPushed = YES;
   }
@@ -66,6 +64,10 @@ static CGFloat kThumbnailRowHeight = 150.0f;
   return self;
 }
 
+- (void)didBeginDragging {
+    [super didBeginDragging];
+    [TTURLRequestQueue mainQueue].suspended = NO;
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithDelegate:(id<TTThumbsViewControllerDelegate>)delegate {

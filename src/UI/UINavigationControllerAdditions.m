@@ -91,7 +91,7 @@ TT_FIX_CATEGORY_BUG(UINavigationControllerAdditions)
 - (NSString*)keyForSubcontroller:(UIViewController*)controller {
   NSInteger controllerIndex = [self.viewControllers indexOfObject:controller];
   if (controllerIndex != NSNotFound) {
-    return [NSNumber numberWithInt:controllerIndex].stringValue;
+    return @(controllerIndex).stringValue;
 
   } else {
     return nil;

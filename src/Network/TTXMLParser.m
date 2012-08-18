@@ -315,7 +315,7 @@ static NSString* kInternalKey_Array         = @"___Array___";
 
   // if it's not an array, then make it a 1-element array
   if (![object isKindOfClass:[NSArray class]]) {
-    object = [NSArray arrayWithObject:object];
+    object = @[object];
   }
 
   return object;
