@@ -386,29 +386,4 @@ const NSTimeInterval TTURLRequestUseQueueTimeout = -1.0;
   return [[TTURLRequestQueue mainQueue] createNSURLRequest:self URL:nil];
 }
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark -
-#pragma mark Properties
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-/**
- * Deprecated
- */
-- (void)setURL:(NSString*)urlPath {
-  NSString* aUrlPath = [urlPath copy];
-  [_urlPath release];
-  _urlPath = aUrlPath;
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-/**
- * Deprecated
- */
-- (NSString*)URL {
-  return _urlPath;
-}
-
 @end
