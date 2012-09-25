@@ -69,6 +69,7 @@ static const CGFloat kHPadding  = 10.0f;
 - (id)initWithFrame:(CGRect)frame {
 	self = [super initWithFrame:frame];
   if (self) {
+      self.backgroundColor = [UIColor whiteColor];
     _imageView = [[UIImageView alloc] init];
     _imageView.contentMode = UIViewContentModeCenter;
     [self addSubview:_imageView];
