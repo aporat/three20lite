@@ -483,7 +483,6 @@
       TTErrorView* errorView = [[[TTErrorView alloc] initWithTitle:title
                                                           subtitle:subtitle
                                                              image:image] autorelease];
-      errorView.backgroundColor = _tableView.backgroundColor;
       self.emptyView = errorView;
 
     } else {
