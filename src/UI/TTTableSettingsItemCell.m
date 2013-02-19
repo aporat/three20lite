@@ -51,17 +51,20 @@
     self.textLabel.textAlignment = UITextAlignmentRight; 
     self.detailTextLabel.textAlignment = UITextAlignmentLeft;
 
-    self.detailTextLabel.frame = CGRectMake(30, 
-                                      self.detailTextLabel.frame.origin.y, 
-                                      self.detailTextLabel.frame.size.width, 
-                                      self.detailTextLabel.frame.size.height);
     
-    self.textLabel.frame = CGRectMake(self.contentView.frame.size.width - self.textLabel.frame.size.width - 10, 
+    self.textLabel.frame = CGRectMake(self.contentView.frame.size.width - self.textLabel.frame.size.width - 10,
                                       self.textLabel.frame.origin.y, 
                                       self.textLabel.frame.size.width, 
                                       self.textLabel.frame.size.height);
     
     
+      [self.textLabel sizeToFit];
+      
+      self.detailTextLabel.frame = CGRectMake(30,
+                                              self.detailTextLabel.frame.origin.y,
+                                              self.contentView.frame.size.width - self.textLabel.frame.size.width - 50,
+                                              self.detailTextLabel.frame.size.height);
+      [self.contentView bringSubviewToFront:self.textLabel];
   }
   
   
