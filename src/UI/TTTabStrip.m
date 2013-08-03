@@ -84,37 +84,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)updateOverflow {
-  if (_scrollView.contentOffset.x < (_scrollView.contentSize.width-self.width)) {
-    if (!_overflowRight) {
-      _overflowRight = [[TTView alloc] init];
-      _overflowRight.style = TTSTYLE(tabOverflowRight);
-      _overflowRight.userInteractionEnabled = NO;
-      _overflowRight.backgroundColor = [UIColor clearColor];
-      [_overflowRight sizeToFit];
-      [self addSubview:_overflowRight];
-    }
 
-    _overflowRight.left = self.width-_overflowRight.width;
-    _overflowRight.hidden = NO;
-
-  } else {
-    _overflowRight.hidden = YES;
-  }
-  if (_scrollView.contentOffset.x > 0) {
-    if (!_overflowLeft) {
-      _overflowLeft = [[TTView alloc] init];
-      _overflowLeft.style = TTSTYLE(tabOverflowLeft);
-      _overflowLeft.userInteractionEnabled = NO;
-      _overflowLeft.backgroundColor = [UIColor clearColor];
-      [_overflowLeft sizeToFit];
-      [self addSubview:_overflowLeft];
-    }
-
-    _overflowLeft.hidden = NO;
-
-  } else {
-    _overflowLeft.hidden = YES;
-  }
 }
 
 
