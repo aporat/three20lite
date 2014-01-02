@@ -506,21 +506,18 @@
     return
       [TTShapeStyle styleWithShape:[TTRoundedRectangleShape shapeWithRadius:TT_ROUNDED] next:
       [TTInsetStyle styleWithInset:UIEdgeInsetsMake(9, 1, 8, 1) next:
-      [TTShadowStyle styleWithColor:RGBACOLOR(255,255,255,0.8) blur:0 offset:CGSizeMake(0, 1) next:
-      [TTReflectiveFillStyle styleWithColor:TTSTYLEVAR(tabBarTintColor) next:
-      [TTInnerShadowStyle styleWithColor:RGBACOLOR(0,0,0,0.3) blur:1 offset:CGSizeMake(1, 1) next:
-      [TTInsetStyle styleWithInset:UIEdgeInsetsMake(-1, -1, -1, -1) next:
+      [TTSolidFillStyle styleWithColor:TTSTYLEVAR(tabBarTintColor) next:
       [TTBoxStyle styleWithPadding:UIEdgeInsetsMake(0, 10, 0, 10) next:
       [TTTextStyle styleWithFont:[UIFont boldSystemFontOfSize:13]  color:[UIColor whiteColor]
                    minimumFontSize:8 shadowColor:[UIColor colorWithWhite:0 alpha:0.5]
-                   shadowOffset:CGSizeMake(0, -1) next:nil]]]]]]]];
+                   shadowOffset:CGSizeMake(0, 0) next:nil]]]]];
 
   } else {
     return
       [TTBoxStyle styleWithPadding:UIEdgeInsetsMake(0, 10, 0, 10) next:
       [TTTextStyle styleWithFont:[UIFont boldSystemFontOfSize:13]  color:self.linkTextColor
                    minimumFontSize:8 shadowColor:[UIColor colorWithWhite:1 alpha:0.9]
-                   shadowOffset:CGSizeMake(0, -1) next:nil]];
+                   shadowOffset:CGSizeMake(0, 0) next:nil]];
   }
 }
 
@@ -1006,7 +1003,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (UIFont*)tableFont {
-  return [UIFont boldSystemFontOfSize:17];
+  return [UIFont systemFontOfSize:17];
 }
 
 
