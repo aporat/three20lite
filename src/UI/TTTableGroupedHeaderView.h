@@ -15,14 +15,12 @@
 //
 
 // UI
-#import "TTTableViewCell.h"
+#import "TTView.h"
 
-@class TTTableLinkedItem;
-@class TTImageView;
-
-@interface TTTableLinkedItemCell : TTTableViewCell {
-  TTTableLinkedItem* _item;
-  TTImageView* _moreView;
+@interface TTTableGroupedHeaderView : TTView {
+  UILabel* _label;
 }
+
+- (id)initWithTitle:(NSString*)title;
 
 @end

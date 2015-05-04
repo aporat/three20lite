@@ -122,15 +122,27 @@
 
     UIImage* arrowImage = TTSTYLEVAR(tableRefreshHeaderArrowImage);
     _arrowImage = [[UIImageView alloc]
-                   initWithFrame:CGRectMake(25.0f, frame.size.height - 60.0f,
-                                            arrowImage.size.width, arrowImage.size.height)];
+                   init];
+    NSLocale* locale = TTCurrentLocale();
+    if ([locale.localeIdentifier isEqualToString:@"he"]) {
+      _arrowImage.frame = CGRectMake(frame.size.width-arrowImage.size.width-25.0f, frame.size.height - 60.0f,
+                                     arrowImage.size.width, arrowImage.size.height);
+    } else {
+      _arrowImage.frame = CGRectMake(25.0f, frame.size.height - 60.0f,
+                                       arrowImage.size.width, arrowImage.size.height);
+    }
+    
     _arrowImage.image             = arrowImage;
     [_arrowImage layer].transform = CATransform3DMakeRotation(M_PI, 0.0f, 0.0f, 1.0f);
     [self addSubview:_arrowImage];
 
     _activityView = [[UIActivityIndicatorView alloc]
                      initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    _activityView.frame = CGRectMake( 30.0f, frame.size.height - 38.0f, 20.0f, 20.0f );
+    if ([locale.localeIdentifier isEqualToString:@"he"]) {
+      _activityView.frame = CGRectMake(frame.size.width-20- 30.0f, frame.size.height - 38.0f, 20.0f, 20.0f );
+   } else {
+      _activityView.frame = CGRectMake(30.0f, frame.size.height - 38.0f, 20.0f, 20.0f );      
+    }
     _activityView.hidesWhenStopped  = YES;
     [self addSubview:_activityView];
   }
@@ -167,6 +179,12 @@
 
     [NSDateFormatter setDefaultFormatterBehavior:NSDateFormatterBehaviorDefault];
     NSDateFormatter* formatter = [[[NSDateFormatter alloc] init] autorelease];
+    
+    NSLocale* locale = TTCurrentLocale();
+    if ([locale.localeIdentifier isEqualToString:@"he"]) {
+      [formatter setLocale:locale];
+    }
+    
     [formatter setDateStyle:NSDateFormatterShortStyle];
     [formatter setTimeStyle:NSDateFormatterShortStyle];
     _lastUpdatedLabel.text = [NSString stringWithFormat:

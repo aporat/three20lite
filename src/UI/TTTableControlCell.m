@@ -186,6 +186,21 @@ static const CGFloat kControlPadding = 8.0f;
     _control.frame = CGRectMake(minX, floor(self.contentView.height/2 - _control.height/2),
                                 contentWidth, _control.height);
   }
+  
+  NSLocale* locale = TTCurrentLocale();
+  if ([locale.localeIdentifier isEqualToString:@"he"]) {
+    self.textLabel.textAlignment = UITextAlignmentRight;
+    self.textLabel.frame = CGRectMake(self.contentView.size.width-10-self.textLabel.frame.size.width,
+                                      self.textLabel.frame.origin.y,
+                                      self.textLabel.frame.size.width,
+                                      self.textLabel.frame.size.height); 
+    
+    _control.frame = CGRectMake(10,
+                               _control.frame.origin.y, 
+                                _control.frame.size.width, 
+                                _control.frame.size.height); 
+  }
+  
 }
 
 

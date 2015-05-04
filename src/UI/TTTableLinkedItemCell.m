@@ -18,7 +18,7 @@
 
 // UI
 #import "TTTableLinkedItem.h"
-
+#import "TTImageView.h"
 
 // Style
 #import "TTGlobalStyle.h"
@@ -63,10 +63,30 @@
     TTTableLinkedItem* item = object;
 
     if (item.accessoryType) {
-      self.accessoryType = item.accessoryType;
-    } else if (nil != item.delegate && nil != item.selector) {
-      self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-      self.selectionStyle = TTSTYLEVAR(tableSelectionStyle);
+        NSLocale* locale = TTCurrentLocale();
+        if ([locale.localeIdentifier isEqualToString:@"he"]) {
+          [_moreView removeFromSuperview];
+          TT_RELEASE_SAFELY(_moreView);
+          
+          _moreView = [[TTImageView alloc] init];
+          UITableView* tableView = (UITableView*)self.superview;
+          if (tableView.style == UITableViewStylePlain) {
+            _moreView.frame = CGRectMake(10, 16, 9, 13);
+          } else {
+            _moreView.frame = CGRectMake(10, 16, 9, 13);          
+          }
+          _moreView.urlPath = @"bundle://more.png";
+          [self.contentView addSubview:_moreView]; 
+        } else {
+          self.accessoryType = item.accessoryType;
+        }
+      } else {
+        NSLocale* locale = TTCurrentLocale();
+         if ([locale.localeIdentifier isEqualToString:@"he"]) {
+           [_moreView removeFromSuperview];
+           TT_RELEASE_SAFELY(_moreView);
+         }
+
     }
   }
 }

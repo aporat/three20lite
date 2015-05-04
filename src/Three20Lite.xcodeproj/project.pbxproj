@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D0AFF21158EAA2F008C119A /* TTTableGroupedHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0AFF1F158EAA2F008C119A /* TTTableGroupedHeaderView.h */; };
+		6D0AFF22158EAA2F008C119A /* TTTableGroupedHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AFF20158EAA2F008C119A /* TTTableGroupedHeaderView.m */; };
 		6D0DB39114DC10C400CA0177 /* NSArrayAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB36A14DC10C400CA0177 /* NSArrayAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0DB39214DC10C400CA0177 /* NSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DB36B14DC10C400CA0177 /* NSArrayAdditions.m */; };
 		6D0DB39314DC10C400CA0177 /* NSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0DB36C14DC10C400CA0177 /* NSDataAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -496,6 +498,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D0AFF1F158EAA2F008C119A /* TTTableGroupedHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableGroupedHeaderView.h; path = UI/TTTableGroupedHeaderView.h; sourceTree = "<group>"; };
+		6D0AFF20158EAA2F008C119A /* TTTableGroupedHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableGroupedHeaderView.m; path = UI/TTTableGroupedHeaderView.m; sourceTree = "<group>"; };
 		6D0DB36A14DC10C400CA0177 /* NSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSArrayAdditions.h; path = Core/NSArrayAdditions.h; sourceTree = "<group>"; };
 		6D0DB36B14DC10C400CA0177 /* NSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSArrayAdditions.m; path = Core/NSArrayAdditions.m; sourceTree = "<group>"; };
 		6D0DB36C14DC10C400CA0177 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataAdditions.h; path = Core/NSDataAdditions.h; sourceTree = "<group>"; };
@@ -1097,6 +1101,8 @@
 		6D0DB53F14DC142D00CA0177 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6D0AFF1F158EAA2F008C119A /* TTTableGroupedHeaderView.h */,
+				6D0AFF20158EAA2F008C119A /* TTTableGroupedHeaderView.m */,
 				6D0DB55D14DC148A00CA0177 /* Three20UI.h */,
 				6D0DB55E14DC148A00CA0177 /* Three20UI+Additions.h */,
 				6D0DB81D14DC196A00CA0177 /* Global Navigator */,
@@ -2142,6 +2148,7 @@
 				6D25AEBB158183770082491B /* TTTextEditorDelegate.h in Headers */,
 				6D25AEBC158183770082491B /* TTTextEditorInternal.h in Headers */,
 				6D25AEBE158183780082491B /* TTTextView.h in Headers */,
+				6D0AFF21158EAA2F008C119A /* TTTableGroupedHeaderView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2492,6 +2499,7 @@
 				6D25AEB51581834F0082491B /* TTTextEditor.m in Sources */,
 				6D25AEBD158183780082491B /* TTTextEditorInternal.m in Sources */,
 				6D25AEBF158183780082491B /* TTTextView.m in Sources */,
+				6D0AFF22158EAA2F008C119A /* TTTableGroupedHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

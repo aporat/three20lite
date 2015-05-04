@@ -106,8 +106,14 @@ static const UILineBreakMode kLineBreakMode = UILineBreakModeWordWrap;
 - (void)layoutSubviews {
   [super layoutSubviews];
 
+  NSLocale* locale = TTCurrentLocale();
+  if ([locale.localeIdentifier isEqualToString:@"he"]) {
+    self.textLabel.frame = CGRectMake(self.contentView.frame.size.width-self.textLabel.frame.size.width,
+                                      self.textLabel.frame.origin.y, self.textLabel.frame.size.width, self.textLabel.frame.size.height);
+  } else {
+  }
   self.textLabel.frame = CGRectInset(self.contentView.bounds,
-                                     kTableCellHPadding, kTableCellVPadding);
+                                     kTableCellHPadding, kTableCellVPadding);    
 }
 
 
@@ -124,7 +130,7 @@ static const UILineBreakMode kLineBreakMode = UILineBreakModeWordWrap;
 
     TTTableTextItem* item = object;
     self.textLabel.text = item.text;
-	self.textLabel.backgroundColor = TTSTYLEVAR(backgroundTextColor);
+    self.textLabel.backgroundColor = TTSTYLEVAR(backgroundTextColor);
 
     if ([object isKindOfClass:[TTTableButton class]]) {
       self.textLabel.font = TTSTYLEVAR(tableButtonFont);
@@ -141,7 +147,12 @@ static const UILineBreakMode kLineBreakMode = UILineBreakModeWordWrap;
     } else if ([object isKindOfClass:[TTTableLongTextItem class]]) {
       self.textLabel.font = TTSTYLEVAR(font);
       self.textLabel.textColor = TTSTYLEVAR(textColor);
-      self.textLabel.textAlignment = UITextAlignmentLeft;
+      NSLocale* locale = TTCurrentLocale();
+      if ([locale.localeIdentifier isEqualToString:@"he"]) {
+        self.textLabel.textAlignment = UITextAlignmentRight;
+      } else {
+        self.textLabel.textAlignment = UITextAlignmentLeft;
+      }
 
     } else if ([object isKindOfClass:[TTTableGrayTextItem class]]) {
       self.textLabel.font = TTSTYLEVAR(font);
@@ -151,7 +162,13 @@ static const UILineBreakMode kLineBreakMode = UILineBreakModeWordWrap;
     } else {
       self.textLabel.font = TTSTYLEVAR(tableFont);
       self.textLabel.textColor = TTSTYLEVAR(textColor);
-      self.textLabel.textAlignment = UITextAlignmentLeft;
+      NSLocale* locale = TTCurrentLocale();
+      if ([locale.localeIdentifier isEqualToString:@"he"]) {
+        self.accessoryType = UITableViewCellAccessoryNone;
+      self.textLabel.textAlignment = UITextAlignmentRight;
+      } else {
+        self.textLabel.textAlignment = UITextAlignmentLeft;
+      }
     }
   }
 }
