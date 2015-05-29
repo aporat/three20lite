@@ -15,6 +15,7 @@
 //
 
 #import "NSDateAdditions.h"
+#import "TTGlobalCoreLocale.h"
 
 // Core
 #import "TTCorePreprocessorMacros.h"
