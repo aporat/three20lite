@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.source_files =  'src/*.{h,m}', 'src/{Core,Network,Navigator,UI,Style}/*.{h,m}'
   s.resources    =  "src/Three20.bundle"
   s.frameworks   =  'QuartzCore'
-
+  sp.requires_arc  = false
+  sp.compiler_flags = '-fno-objc-arc'
   s.dependency 'SBJson'
 end
